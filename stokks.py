@@ -13,7 +13,7 @@ def safe_convert(value):
         return 0.0  # Return None if conversion fail
 
 # Replace with your OpenAI API key
-
+# 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
@@ -63,7 +63,7 @@ def main(link):
     MajorTranscript.append(transcript)
     
     if not transcript:
-        print("Failed to retrieve transcript.")
+        print("Failed to retrieve transcript. " + link + transcript)
         return
 
     # Define token limit
