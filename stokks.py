@@ -63,7 +63,7 @@ def main(link):
     MajorTranscript.append(transcript)
     
     if not transcript:
-        print("Failed to retrieve transcript. " + link + transcript)
+        print("Failed to retrieve transcript. " + str(link) + str(transcript))
         return
 
     # Define token limit
