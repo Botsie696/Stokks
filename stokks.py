@@ -5,7 +5,7 @@ import json
 import ast
 import re
 import financedata
-
+import os
 def safe_convert(value):
     try:
         return float(value)  # Try to convert to float
@@ -13,7 +13,10 @@ def safe_convert(value):
         return 0.0  # Return None if conversion fail
 
 # Replace with your OpenAI API key
-openai.api_key = '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'
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+
 def clean_and_extract(data):
     # Remove unwanted characters like ` and '
     clean_data = re.sub(r"[`']", "", data)
