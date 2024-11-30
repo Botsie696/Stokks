@@ -34,8 +34,11 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python stokks.py
 
-      - name: Upload CSV
+      - name: Upload CSV and Text Files
         uses: actions/upload-artifact@v4
         with:
-          name: output-csv
-          path: output.csv
+          name: stokks-artifacts
+          path: |
+            output.csv
+            sorted_dictionary_output.txt
+            recommendations_output.txt
