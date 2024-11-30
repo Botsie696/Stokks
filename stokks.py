@@ -37,7 +37,7 @@ def get_youtube_transcript(video_url):
         transcript_text = ' '.join([entry['text'] for entry in transcript])
         return transcript_text
     except Exception as e:
-        # print(f"Error retrieving transcript: {e}")
+        print(f"Error retrieving transcript: {e}")
         return None
 
 def ask_chatgpt(prompt):
