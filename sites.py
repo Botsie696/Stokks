@@ -52,12 +52,12 @@ if len(MainStokksArray) < 10:
 # Print the final list of 10 videos
 # pprint.pprint(MainStokksArray)
 
-# results = YoutubeSearch('Stocks to buy now', max_results=7).to_dict()
+results = YoutubeSearch('Stocks to buy now', max_results=8).to_dict()
 # pprint.pprint(results)
-# for v in results:
-#     Link = 'https://www.youtube.com' + v['url_suffix']
-#     print(v['url_suffix'])
-#     MainStokksArray.append(Link)
+for v in results:
+    Link = 'https://www.youtube.com' + v['url_suffix']
+    print(v['url_suffix'])
+    MainStokksArray.append(Link)
 
 MainStokksArray = list(set(MainStokksArray))
  
