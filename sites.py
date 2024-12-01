@@ -14,7 +14,7 @@ for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
     MainStokksArray.append(Link)
 
-results = YoutubeSearch('Stocks to buy now', max_results=10).to_dict()
+results = YoutubeSearch('Stocks to buy now', max_results=16).to_dict()
 # pprint.pprint(results)
 for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
