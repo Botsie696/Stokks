@@ -6,6 +6,30 @@ import requests
  
 import requests
 ProxyToggles = False
+def get_proxies_from_api():
+    url = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all"
+    response = requests.get(url)
+    proxies = response.text.splitlines()
+    return proxies
+
+# Example usage
+proxies = get_proxies_from_api()
+# print(proxies)
+
+# Convert proxies to the required format
+def convert_to_proxy_list(proxies):
+    proxy_list = []
+    for proxy in proxies:
+        proxy_dict = {"http": f"http://{proxy}", "https": f"http://{proxy}"}
+        proxy_list.append(proxy_dict)
+    return proxy_list
+
+# Fetch proxies and convert them
+proxies = get_proxies_from_api()
+PROXIES_LIST = convert_to_proxy_list(proxies)
+# print(PROXIES_LIST)
+ProxyWorks = ""
+
 def test_proxy(proxy):
     try:
         # Test if the proxy works
@@ -19,52 +43,11 @@ def test_proxy(proxy):
         # print(f"Proxy failed: ==={proxy}=== - {e}")
         pass
     return False
-def get_proxies_from_api():
-    url = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=US"
-    response = requests.get(url)
-    proxies = response.text.splitlines()
-    return proxies
-
-# Example usage
-proxies = get_proxies_from_api()
-# print(proxies)
-def get_working_proxies(proxies):
-    """
-    Filter out working proxies from a list.
-    """
-    working_proxies = []
-    for proxy in proxies:
-        if test_proxy(proxy):
-            working_proxies.append(proxy)
-            print("-")
-            if (len(working_proxies) >= 3):
-                return working_proxies
-        print("+")
-    return working_proxies
-# Convert proxies to the required format
-def convert_to_proxy_list(proxies):
-    proxy_list = []
-    for proxy in proxies:
-        proxy_dict = {"http": f"http://{proxy}", "https": f"http://{proxy}"}
-        proxy_list.append(proxy_dict)
-    return proxy_list
-
-# Fetch proxies and convert them
-proxies = get_proxies_from_api()
-print("Done worald")
-PROXIES_LIST = convert_to_proxy_list(proxies)
-print("Done worwld")
-PROXIES_LIST = get_working_proxies(PROXIES_LIST)
-print("Done world")
-# print(PROXIES_LIST)
-ProxyWorks = ""
-
-
 
 def get_youtube_transcriptOnce(video_url):
-            global ProxyWorks
-            proxy = ProxyWorks
-        
+        global ProxyWorks
+        proxy = ProxyWorks
+        if test_proxy(ProxyWorks):
             try:
                 # Extract video ID from the URL
                 video_id = video_url.split("v=")[-1]
@@ -79,8 +62,8 @@ def get_youtube_transcriptOnce(video_url):
                 # ProxyToggles = False
                 pass
                  
-            print("All proxies failed.")
-            return None
+        print("All proxies failed.")
+        return None
 def get_youtube_transcript(video_url):
     global ProxyToggles  # Declare ProxyToggles as global to modify its value
     global ProxyWorks    #
@@ -112,8 +95,7 @@ if __name__ == "__main__":
     transcript = get_youtube_transcript(sites.MainStokksArray[0])
     i = 0
     # print(transcript)
-    print(len(transcript))
-    transcript = "Subtitles are disabled for this video"
+    # transcript = "Subtitles are disabled for this video"
     while ((transcript == None or ('Subtitles are disabled for this video' in transcript)) and i < len(sites.MainStokksArray)):
         transcript = get_youtube_transcript(sites.MainStokksArray[i])
         print("Trans ==> ")
