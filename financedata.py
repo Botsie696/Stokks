@@ -173,9 +173,9 @@ def find_stock_ticker(company_name):
 
 # print("TOKL" + find_stock_ticker("TESLA"))
 # print(ConsistancyScore("tesla" , 6 , Distance=5))
-# print(ConsistancyScore("APLD" , 6 , Distance=5))
-# print(ConsistancyScore("SOFI" , 6 , Distance=5))
-# print(ConsistancyScore("PLTR" , 6 , Distance=5))
+print(ConsistancyScore("APLD" , 6 , Distance=5))
+print(ConsistancyScore("PSIX" , 6 , Distance=5))
+print(ConsistancyScore("PLTR" , 6 , Distance=5))
 
 # Price watcher of all the stocks, checks price and gives rates 
 # Edit youtube links search 

@@ -7,6 +7,7 @@ import re
 import financedata
 import os
 import videoFetcher
+import dataprovider
 def safe_convert(value):
     try:
         return float(value)  # Try to convert to float
@@ -95,14 +96,14 @@ def main(link):
     for index, chunk in enumerate(transcript_chunks, start=1):
         # print(f"Processing chunk {index}/{len(transcript_chunks)}...")
         prompt = (
-            "Based on the following transcript, identify all stock recommendations mentioned "
-            "(Give every stock names and stock symbols with max 10-word descriptions each"
-            "Make bullet points for all stocks, explaining why each stock is selected and why it will rise):\n\n"
+            "Based on the following transcript, identify all stock recommendations mentioned make sure only stock names "
+            "(Give every stock names and stock symbols with max 12-word descriptions each"
+            "Make bullet points for all stocks, explaining why each stock is selected and why it will rise max ):\n\n"
             f"{chunk}"
         )
         recommendations = ask_chatgpt(prompt)
         if recommendations:
-            full_recommendations += recommendations + "\n"
+            full_recommendations += " " + recommendations
         else:
             print(f"Failed to retrieve recommendations for chunk {index}.")
 
@@ -240,7 +241,7 @@ if __name__ == "__main__":
             # print("Printing data for " + n)
             Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
             StockRev = financedata.GetRevenue(Name)
-            ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , 7)
+            ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , dataprovider.Months , Distance=dataprovider.DepthForScore)
             Rise[n] = str(Percent)
             Consistency[n] = ConsisStockRev
             ConsistencyScores[n] = ScoresMids

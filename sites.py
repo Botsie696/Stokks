@@ -3,6 +3,7 @@ from youtube_search import YoutubeSearch
 # Debugging: Print the full structure of results
 import pprint
 # 
+import dataprovider
 
 # Add according to days that came up today only and yday 
 # 
@@ -25,7 +26,7 @@ def is_recent_upload(published_time):
     return False
 
 # Search for videos with a higher max_results to ensure enough videos are available
-results = YoutubeSearch('best Stocks to buy now', max_results=40).to_dict()
+results = YoutubeSearch('best Stocks to buy now', max_results=dataprovider.NoSites * 5).to_dict()
 
 # Debugging: Print the full structure of results
  
@@ -38,7 +39,7 @@ for video in results:
         MainStokksArray.append(Link)
 
 # Ensure we get at least 10 videos
-MainStokksArray = MainStokksArray[:18]  # Get only the first 10 videos
+MainStokksArray = MainStokksArray[:14]  # Get only the first 10 videos
 
 # If fewer than 10 videos are found, fill the list with non-recent uploads
 if len(MainStokksArray) < 10:
@@ -52,7 +53,7 @@ if len(MainStokksArray) < 10:
 # Print the final list of 10 videos
 # pprint.pprint(MainStokksArray)
 
-results = YoutubeSearch('Stocks to buy now', max_results=8).to_dict()
+results = YoutubeSearch('Stocks to buy now this month', max_results=dataprovider.NoSites).to_dict()
 # pprint.pprint(results)
 for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
