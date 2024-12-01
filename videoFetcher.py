@@ -96,7 +96,7 @@ if __name__ == "__main__":
     i = 0
     # print(transcript)
     transcript = "Subtitles are disabled for this video"
-    while ((transcript == None or ('Subtitles are disabled for this video' in transcript))) and i < len(sites.MainStokksArray)):
+    while ((transcript == None or ('Subtitles are disabled for this video' in transcript)) and i < len(sites.MainStokksArray)):
         transcript = get_youtube_transcript(sites.MainStokksArray[i])
         print("Trans ==> ")
         i += 1
