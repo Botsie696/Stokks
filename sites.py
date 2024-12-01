@@ -7,7 +7,7 @@ import pprint
 # Add according to days that came up today only and yday 
 # 
 # Search for videos
-results = YoutubeSearch('Stocks', max_results=12).to_dict()
+results = YoutubeSearch('Stocks', max_results=4).to_dict()
 # pprint.pprint(results)
 MainStokksArray = []
 for v in results:
