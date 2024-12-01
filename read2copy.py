@@ -33,8 +33,8 @@ def merge_csv_files(file1_path, file2_path  , newFile):
     file2_data, file2_headers = read_csv_to_dict(file2_path)
 
     # Ensure headers match; if not, align them
-    if file1_headers != file2_headers:
-        raise ValueError("Headers of the two files do not match.")
+    # if file1_headers != file2_headers:
+    #     raise ValueError("Headers of the two files do not match.")
 
     # Merge file1 into file2
     merged_data = file2_data.copy()  # Start with all rows from file2
