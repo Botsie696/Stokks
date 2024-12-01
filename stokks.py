@@ -64,7 +64,7 @@ import math
 def main(link):
     video_url = link  # Replace with your YouTube video URL
     
-    transcript = videoFetcher.get_youtube_transcript(video_url)  # Fetch the YouTube transcript
+    transcript = videoFetcher.get_youtube_transcriptOnce(video_url)  # Fetch the YouTube transcript
     MajorTranscript.append(transcript)
     
     if not transcript:
@@ -150,7 +150,7 @@ def analyze_recommendations(recommendations_list, trend):
         
         # Combine responses from all chunks
         final_response = " ".join(responses)
-        print(final_response)
+        # print(final_response)
         return final_response
 
     except Exception as e:
@@ -166,7 +166,7 @@ def convertTo(recommendations_list, trend):
         response = ask_chatgpt(prompt)
         if response:
             # print("Most Common Stock Recommendations:")
-            print(response)
+            # print(response)
             return response
         else:
             print("Failed to analyze stock recommendations with ChatGPT.")
@@ -272,8 +272,9 @@ if __name__ == "__main__":
 
         # Write to a text file
         file_path = "sorted_dictionary_output.txt"
-        print("Dicted")
-        print(sorted_dict)
+        # print("Dicted")
+        # print(sorted_dict)
+        print("Writing to File")
         with open(file_path, "w") as file:
             for key, value in sorted_dict.items():
                ScoresPuts =0
@@ -289,7 +290,7 @@ if __name__ == "__main__":
                except TypeError:
                    pass
                    
-               print(ScoresPuts)
+               
                
                file.write(
                     f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
