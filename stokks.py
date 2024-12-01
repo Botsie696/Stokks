@@ -254,16 +254,18 @@ if __name__ == "__main__":
             StockRevenue[n] = StockRev 
             
             print("Safe converting")
-
-            if safe_convert(ScoresMids) > HighestConsistancyScore:
-                HighestConsistancyScore = ScoresMids
-            if safe_convert(Average)> HighestAverageScore:
-                HighestAverageScore = Average
-            if safe_convert(Median) > HighestMedianScore:
-                HighestMedianScore = Median
-             
-            if safe_convert(Percent) > HighestRiseScore:
-                HighestRiseScore = Percent
+            try:
+                if safe_convert(ScoresMids) > HighestConsistancyScore:
+                    HighestConsistancyScore = ScoresMids
+                if safe_convert(Average)> HighestAverageScore:
+                    HighestAverageScore = Average
+                if safe_convert(Median) > HighestMedianScore:
+                    HighestMedianScore = Median
+                
+                if safe_convert(Percent) > HighestRiseScore:
+                    HighestRiseScore = Percent
+            except Exception as e:
+                print("error but go" + e)
             
 
         for key, value in Rise.items():
