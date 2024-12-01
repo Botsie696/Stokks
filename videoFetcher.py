@@ -55,12 +55,12 @@ def get_youtube_transcriptOnce(video_url):
                 transcript = YouTubeTranscriptApi.get_transcript(video_id, proxies=proxy)
                 # Combine transcript segments into a single string
                 transcript_text = ' '.join([entry['text'] for entry in transcript])
-                
+                print("Proxy trial")
                 return transcript_text
             except Exception as e:
                 print(f"Failed to retrieve transcript with proxy {proxy}: {e}")
                 # ProxyToggles = False
-                pass
+                
                  
         print("All proxies failed.")
         return None
@@ -83,7 +83,7 @@ def get_youtube_transcript(video_url):
                 return transcript_text
             except Exception as e:
                 print(f"Failed to retrieve transcript with proxy {proxWorker}: {e}")
-                # ProxyToggles = False
+                ProxyToggles = False
                 continue
                  
     print("All proxies failed.")
