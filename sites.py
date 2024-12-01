@@ -4,7 +4,7 @@ from youtube_search import YoutubeSearch
 import pprint
 # 
 import dataprovider
-
+# pprint.pprint(MainStokksArray)
 # Add according to days that came up today only and yday 
 # 
 # Search for videos
@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 def is_recent_upload(published_time):
     today = datetime.now()
     yesterday = today - timedelta(days=1)
-    
+     
     # Adjust for string matching based on the format returned by YoutubeSearch
     if "ago" in published_time:
         if "day" in published_time and ("1 day" in published_time or "hours" in published_time or "2 days" in published_time):
@@ -27,7 +27,20 @@ def is_recent_upload(published_time):
 
 # Search for videos with a higher max_results to ensure enough videos are available
 results = YoutubeSearch('best Stocks to buy now', max_results=(dataprovider.NoSites * 10)).to_dict()
-
+newResults = []
+for n in dataprovider.Youtubers:
+    Stocks = YoutubeSearch(('Stocks to buy with ' +n), max_results=(dataprovider.YoutubersDetailsSites * 3)).to_dict()
+    BestStocks = []
+    
+    for video in Stocks:
+        print("nones")
+        if is_recent_upload(video.get('publish_time', '')):
+            print("nonese1")
+            Link = 'https://www.youtube.com' + video['url_suffix']
+            BestStocks.append(Link)
+    newResults = newResults + BestStocks[:dataprovider.YoutubersDetailsSites ]
+ 
+    
 # Debugging: Print the full structure of results
  
 # pprint.pprint(results)
@@ -35,9 +48,10 @@ results = YoutubeSearch('best Stocks to buy now', max_results=(dataprovider.NoSi
 # Filter for recently uploaded videos
 MainStokksArray = []
 for video in results:
-    if is_recent_upload(video.get('published_time', '')):
+    if is_recent_upload(video.get('publish_time', '')):
         Link = 'https://www.youtube.com' + video['url_suffix']
         MainStokksArray.append(Link)
+
 
 
  
@@ -63,9 +77,10 @@ for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
     print(v['url_suffix'])
     MainStokksArray.append(Link)
-
+MainStokksArray = MainStokksArray + newResults
 MainStokksArray = list(set(MainStokksArray))
- 
+print(len(MainStokksArray))
+print(len(newResults))
 # print(MainStokksArray)
 
 # results = YoutubeSearch('Top Stocks to buy Now under 50$', max_results=12).to_dict()

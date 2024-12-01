@@ -205,10 +205,11 @@ if __name__ == "__main__":
         
         AllResults = ""
         AllData = []
+        print("Onto AllRecommendations")
         for n in AllRecommendations:
             result = analyze_recommendations(string_recommendations , n)
             output_file.write(n + "\n" + result + "\n\n")
-            
+            print("Once done")
             data = convertTo((result), "Convert all stocks mentioned in this transcript to Stock symbols (They could be in brackets too like (TSLA) or maybe just mentioned), example Nasdaq to being NDAQ and add that to an ARRAY ONLY, if stock symbol is not mentioned just give entire stock name,o, FORMAT SHOULD BE THIS WAY ONLY, no other texts,  this format only give one array , Make sure to get all the stocks mentioned in these transcript, double check on them, give data like:  [NDAQ,APPLE,x,Y,Z]")
             stock_symbols = clean_and_extract(data)
             AllData = AllData + stock_symbols
@@ -240,6 +241,8 @@ if __name__ == "__main__":
         for n in stock_symbols:
             # print("Printing data for " + n)
             Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
+            if (Price == "NONE" or Price == None or Price == "NONE"):
+                pass
             StockRev = financedata.GetRevenue(Name)
             ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , dataprovider.Months , Distance=dataprovider.DepthForScore)
             Rise[n] = str(Percent)
@@ -249,6 +252,7 @@ if __name__ == "__main__":
             MedianScore[n] = Median
             StockPrice[n] = Price
             StockRevenue[n] = StockRev 
+            
             
 
             if safe_convert(ScoresMids) > HighestConsistancyScore:
