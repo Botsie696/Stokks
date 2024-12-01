@@ -1,5 +1,8 @@
 from youtube_search import YoutubeSearch
-
+from fp.fp import FreeProxy
+proxy = FreeProxy(country_id=['US', 'BR']).get()
+print(proxy)
+print("Proxu")
 # Debugging: Print the full structure of results
 import pprint
 # 
