@@ -23,7 +23,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def clean_and_extract(data):
     # Remove unwanted characters like `, ', and "
-    clean_data = re.sub(r"[`'\"]", "", data)
+    clean_data = re.sub(r"[`'\"*]", "", data)
 
     # Extract the array content
     if clean_data.startswith("[") and clean_data.endswith("]"):
