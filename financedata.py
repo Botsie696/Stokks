@@ -8,7 +8,7 @@ from dateutil.relativedelta import relativedelta
  
 def AnalyseWithYahoo(data, Repeast=False):
     try:
-        CommonData = {}
+        
         # Clean the input stock symbol
         stock_symbol = re.sub(r"['\"\-\\\.]", "", data).strip()
         
@@ -47,8 +47,7 @@ def AnalyseWithYahoo(data, Repeast=False):
         # Calculate price rise and percentage rise
         price_rise = last_close - first_close
         CurrentPrice = str(f"{last_close:.2f}")
-        print(CurrentPrice+ "$ Current price")
-        CommonData["Price"] = CurrentPrice
+         
         
         percentage_rise = (price_rise / first_close) * 100
         
@@ -151,10 +150,10 @@ def ConsistancyScore(Stock , Months , Distance = 15):
         PercentageChanges.append(percentage_rise)
     
     Average = round(AverageIncrease / Total, 2)
-    print("Average: " + str(Average))  # Rounds to 2 decimal places
+    # print("Average: " + str(Average))  # Rounds to 2 decimal places
     median_percentage_change = np.median(PercentageChanges)
     MEd = round(median_percentage_change, 2)
-    print("Median: " + str(MEd))  # Rounds to 2 decimal places
+    # print("Median: " + str(MEd))  # Rounds to 2 decimal places
     ScoresMids = round(Score / Total, 2)
     return str(f"{str(Score)}/{str(Total)}")  , Average , MEd  , ScoresMids
         
@@ -183,7 +182,7 @@ def find_stock_ticker(company_name):
 # chat ai with data as all the transcripts without bulletpoints
 # Revenue 
 # For summary ask chatgpt to give summary for eachs stock seperated by +++
-
+# Check for revenue growth 
 
 # buy PSIX & sell microstrategy buy pltr as well for rest and (APLD) APPLIED BACKCHAIN 
 # Consider HIMS
