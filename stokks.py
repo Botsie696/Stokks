@@ -6,6 +6,7 @@ import ast
 import re
 import financedata
 import os
+import videoFetcher
 def safe_convert(value):
     try:
         return float(value)  # Try to convert to float
@@ -27,7 +28,7 @@ def clean_and_extract(data):
 
     # Split into a list
     return [item.strip() for item in clean_data.split(",")]
-def get_youtube_transcript(video_url):
+def get_youtube_transcripts(video_url):
     try:
         # Extract video ID from the URL
         video_id = video_url.split("v=")[-1]
@@ -39,6 +40,9 @@ def get_youtube_transcript(video_url):
     except Exception as e:
         print(f"Error retrieving transcript: {e}")
         return None
+import requests
+
+
 
 def ask_chatgpt(prompt):
     try:
@@ -59,7 +63,8 @@ import math
 
 def main(link):
     video_url = link  # Replace with your YouTube video URL
-    transcript = get_youtube_transcript(video_url)  # Fetch the YouTube transcript
+    
+    transcript = videoFetcher.get_youtube_transcript(video_url)  # Fetch the YouTube transcript
     MajorTranscript.append(transcript)
     
     if not transcript:
