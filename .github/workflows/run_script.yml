@@ -2,7 +2,10 @@ name: Run Stokks Script Daily
 
 on:
   schedule:
-    - cron: '0 16 * * *'  # Runs daily at 8:00 AM UTC
+    - cron: '0 16 * * *'  # 8:00 AM PT
+    - cron: '0 19 * * *'  # 11:00 AM PT
+    - cron: '0 1 * * *'   # 5:00 PM PT (next day UTC)
+    - cron: '0 5 * * *'   # 9:00 PM PT (next day UTC)
   workflow_dispatch:  # Allows manual trigger if needed
 
 jobs:
