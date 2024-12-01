@@ -19,17 +19,18 @@ def is_recent_upload(published_time):
     
     # Adjust for string matching based on the format returned by YoutubeSearch
     if "ago" in published_time:
-        if "day" in published_time and ("1 day" in published_time or "hours" in published_time):
+        if "day" in published_time and ("1 day" in published_time or "hours" in published_time or "2 days" in published_time):
             return True
         elif "hour" in published_time or "minute" in published_time:
             return True
     return False
 
 # Search for videos with a higher max_results to ensure enough videos are available
-results = YoutubeSearch('best Stocks to buy now', max_results=dataprovider.NoSites * 5).to_dict()
+results = YoutubeSearch('best Stocks to buy now', max_results=dataprovider.NoSites * 10).to_dict()
 
 # Debugging: Print the full structure of results
  
+pprint.pprint(results)
 
 # Filter for recently uploaded videos
 MainStokksArray = []
@@ -38,8 +39,11 @@ for video in results:
         Link = 'https://www.youtube.com' + video['url_suffix']
         MainStokksArray.append(Link)
 
+
+ 
+
 # Ensure we get at least 10 videos
-MainStokksArray = MainStokksArray[:14]  # Get only the first 10 videos
+MainStokksArray = MainStokksArray[:dataprovider.NoSites]  # Get only the first 10 videos
 
 # If fewer than 10 videos are found, fill the list with non-recent uploads
 if len(MainStokksArray) < 10:
@@ -53,7 +57,7 @@ if len(MainStokksArray) < 10:
 # Print the final list of 10 videos
 # pprint.pprint(MainStokksArray)
 
-results = YoutubeSearch('Stocks to buy now this month', max_results=dataprovider.NoSites).to_dict()
+results = YoutubeSearch('Stocks to buy now this month', max_results=dataprovider.NoSites / 2).to_dict()
 # pprint.pprint(results)
 for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
