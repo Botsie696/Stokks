@@ -91,7 +91,7 @@ def get_youtube_transcript(video_url):
 
 # https://youtu.be/haDjmBT9tu4?si=K_a1Fu-SaUTnvniE
 # Example usage
-if __name__ == "__main__":
+def run():
     transcript = get_youtube_transcript(sites.MainStokksArray[0])
     i = 0
     # print(transcript)
@@ -107,3 +107,4 @@ if __name__ == "__main__":
     #     transcript = get_youtube_transcript(video_url)
     #     if transcript:
     #         print("transcript received")
+run()
