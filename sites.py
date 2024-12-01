@@ -7,14 +7,14 @@ import pprint
 # Add according to days that came up today only and yday 
 # 
 # Search for videos
-results = YoutubeSearch('Stocks', max_results=5).to_dict()
+results = YoutubeSearch('Stocks to buy december', max_results=5).to_dict()
 # pprint.pprint(results)
 MainStokksArray = []
 for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
     MainStokksArray.append(Link)
 
-results = YoutubeSearch('Stocks to buy now', max_results=16).to_dict()
+results = YoutubeSearch('Stocks to buy now', max_results=14).to_dict()
 # pprint.pprint(results)
 for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
@@ -22,12 +22,6 @@ for v in results:
     MainStokksArray.append(Link)
 
 
-results = YoutubeSearch('Stocks to buy now december', max_results=5).to_dict()
-# pprint.pprint(results)
-for v in results:
-    Link = 'https://www.youtube.com' + v['url_suffix']
-    print(v['url_suffix'])
-    MainStokksArray.append(Link)
 
 MainStokksArray = list(set(MainStokksArray))
 # print(MainStokksArray)
