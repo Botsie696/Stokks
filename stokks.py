@@ -93,7 +93,7 @@ def main(link):
         # print(f"Processing chunk {index}/{len(transcript_chunks)}...")
         prompt = (
             "Based on the following transcript, identify all stock recommendations mentioned "
-            "(Give stock names and stock symbols with max 12-word descriptions each, prices if mentioned. "
+            "(Give every stock names and stock symbols with max 10-word descriptions each"
             "Make bullet points for all stocks, explaining why each stock is selected and why it will rise):\n\n"
             f"{chunk}"
         )
@@ -173,11 +173,11 @@ def convertTo(recommendations_list, trend):
     except Exception as e:
         print(f"Error analyzing recommendations: {e}")
 # Common stocks
-stocksAnalysis1 = "Based on the following list of stock recommendations, identify the most common stocks mentioned and top 10-12 stocks in total  and give only stock names and price if mentioned and make sure to mention how many times it has been mentioned overall from all transcripts:\n\n"
+stocksAnalysis1 = "Based on the following list of stock recommendations, identify the most common stocks mentioned and top 15-18 stocks in total  and give only stock names and price if mentioned and make sure to mention how many times it has been mentioned overall from all transcripts:\n\n"
 # Stocks to invest in from common 
 Confident = "Based on the following list, which stock had a hard on recommendations, which transcript or transcripts were really confident to buy this one stock "
 # News 
-StockRose = "Which stock risen up the most of these transcripts, give only top 10 stocks that you feel according to transcripts rose the most, only stock names and why "
+StockRose = "Which stock risen up the most of these transcripts, give only top 10-20 stocks that you feel according to transcripts rose the most, only stock names and why "
 # some
 
 StockRose = "Which stocks is a rise for couple of months, and has growth and will grow"
@@ -261,7 +261,7 @@ if __name__ == "__main__":
         for key, value in Rise.items():
             print(f"{key}: {value}")
         # print(Rise)
-
+        
         file_path = "stocks.txt"
 
         # Filter and convert values to numbers
