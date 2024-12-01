@@ -38,7 +38,7 @@ for video in results:
         MainStokksArray.append(Link)
 
 # Ensure we get at least 10 videos
-MainStokksArray = MainStokksArray[:14]  # Get only the first 10 videos
+MainStokksArray = MainStokksArray[:18]  # Get only the first 10 videos
 
 # If fewer than 10 videos are found, fill the list with non-recent uploads
 if len(MainStokksArray) < 10:
