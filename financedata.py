@@ -169,10 +169,11 @@ def find_stock_ticker(company_name):
     except Exception as e:
         return f"Error occurred: {e}"
     
-AnalyseWithYahoo("tesla")
+# AnalyseWithYahoo("tesla")
 
-print("TOKL" + find_stock_ticker("TESLA"))
-print(ConsistancyScore("tesla" , 6 , Distance=5))
+
+# print("TOKL" + find_stock_ticker("TESLA"))
+# print(ConsistancyScore("tesla" , 6 , Distance=5))
 # print(ConsistancyScore("APLD" , 6 , Distance=5))
 # print(ConsistancyScore("SOFI" , 6 , Distance=5))
 # print(ConsistancyScore("PLTR" , 6 , Distance=5))
