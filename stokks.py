@@ -215,7 +215,7 @@ if __name__ == "__main__":
             AllData = AllData + stock_symbols
         # Collect the strings from each analysis and write them to the file
 
-        
+        print("Onto setting the list")
 
         # data = convertTo((AllResults), "Convert all stocks mentioned in this transcript to Stock symbols (They could be in brackets too like (TSLA) or maybe just mentioned), example Nasdaq to being NDAQ and add that to an ARRAY ONLY, if stock symbol is not mentioned just give entire stock name,o, FORMAT SHOULD BE THIS WAY ONLY, no other texts,  this format only give one array , Make sure to get all the stocks mentioned in these transcript, double check on them, give data like:  [NDAQ,APPLE,x,Y,Z]")
         # output_file.write(data + "\n\n")
@@ -237,7 +237,7 @@ if __name__ == "__main__":
         HighestAverageScore = 0
         HighestConsistancyScore = 0
         HighestRiseScore = 0
-        
+        print("Onto setting the to the loop")
         for n in stock_symbols:
             # print("Printing data for " + n)
             Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
@@ -253,7 +253,7 @@ if __name__ == "__main__":
             StockPrice[n] = Price
             StockRevenue[n] = StockRev 
             
-            
+            print("Safe converting")
 
             if safe_convert(ScoresMids) > HighestConsistancyScore:
                 HighestConsistancyScore = ScoresMids
