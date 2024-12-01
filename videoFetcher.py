@@ -94,10 +94,11 @@ def get_youtube_transcript(video_url):
 if __name__ == "__main__":
     transcript = get_youtube_transcript(sites.MainStokksArray[0])
     i = 0
-    print(transcript)
-    while (transcript == None and i < len(sites.MainStokksArray)):
+    # print(transcript)
+    transcript = "Subtitles are disabled for this video"
+    while ((transcript == None or len(transcript) < 40) and i < len(sites.MainStokksArray)):
         transcript = get_youtube_transcript(sites.MainStokksArray[i])
-        print(transcript)
+        print("Trans ==> ")
         i += 1
     print("Next")
     # transcript = get_youtube_transcriptOnce(sites.MainStokksArray[0])
