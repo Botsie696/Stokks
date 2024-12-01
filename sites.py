@@ -26,7 +26,7 @@ def is_recent_upload(published_time):
     return False
 
 # Search for videos with a higher max_results to ensure enough videos are available
-results = YoutubeSearch('best Stocks to buy now', max_results=dataprovider.NoSites * 10).to_dict()
+results = YoutubeSearch('best Stocks to buy now', max_results=(dataprovider.NoSites * 10)).to_dict()
 
 # Debugging: Print the full structure of results
  
@@ -57,7 +57,7 @@ if len(MainStokksArray) < 10:
 # Print the final list of 10 videos
 # pprint.pprint(MainStokksArray)
 
-results = YoutubeSearch('Stocks to buy now this month', max_results=dataprovider.NoSites / 2).to_dict()
+results = YoutubeSearch('Stocks to buy now this month', max_results=int(dataprovider.NoSites / 2)).to_dict()
 # pprint.pprint(results)
 for v in results:
     Link = 'https://www.youtube.com' + v['url_suffix']
