@@ -48,10 +48,11 @@ def get_youtube_transcript(video_url):
     global ProxyToggles  # Declare ProxyToggles as global to modify its value
     global ProxyWorks    #
     for proxy in PROXIES_LIST:
+        proxWorker = proxy
         if ProxyToggles:
-            proxy = ProxyWorks
+            proxWorker = ProxyWorks
             
-        if test_proxy(proxy):
+        if test_proxy(proxWorker):
             try:
                 # Extract video ID from the URL
                 video_id = video_url.split("v=")[-1]
@@ -59,11 +60,12 @@ def get_youtube_transcript(video_url):
                 transcript = YouTubeTranscriptApi.get_transcript(video_id, proxies=proxy)
                 # Combine transcript segments into a single string
                 transcript_text = ' '.join([entry['text'] for entry in transcript])
-                ProxyWorks = proxy
+                ProxyWorks = proxWorker
                 ProxyToggles = True
                 return transcript_text
             except Exception as e:
                 print(f"Failed to retrieve transcript with proxy {proxy}: {e}")
+                ProxyToggles = False
                  
     print("All proxies failed.")
     return None
