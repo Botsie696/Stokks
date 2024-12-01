@@ -14,7 +14,7 @@ def get_proxies_from_api():
 
 # Example usage
 proxies = get_proxies_from_api()
-
+print(proxies)
 
 # Convert proxies to the required format
 def convert_to_proxy_list(proxies):
@@ -39,7 +39,7 @@ def test_proxy(proxy):
             
             return True
     except Exception as e:
-        print(f"Failing proxy  + {proxy}")
+        # print(f"Failing proxy  + {proxy}")
         # print(f"Proxy failed: ==={proxy}=== - {e}")
         pass
     return False
@@ -66,6 +66,7 @@ def get_youtube_transcript(video_url):
             except Exception as e:
                 print(f"Failed to retrieve transcript with proxy {proxy}: {e}")
                 ProxyToggles = False
+                continue
                  
     print("All proxies failed.")
     return None
@@ -73,8 +74,10 @@ def get_youtube_transcript(video_url):
 # https://youtu.be/haDjmBT9tu4?si=K_a1Fu-SaUTnvniE
 # Example usage
 # if __name__ == "__main__":
+#     transcript = get_youtube_transcript(sites.MainStokksArray[0])
+#     print("Next")
 #     for n in sites.MainStokksArray: 
 #         video_url = n
-#         # transcript = get_youtube_transcript(video_url)
+#         transcript = get_youtube_transcript(video_url)
 #         if transcript:
-#             print(transcript)
+#             print("transcript received")
