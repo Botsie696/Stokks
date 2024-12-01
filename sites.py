@@ -30,7 +30,7 @@ results = YoutubeSearch('best Stocks to buy now', max_results=dataprovider.NoSit
 
 # Debugging: Print the full structure of results
  
-pprint.pprint(results)
+# pprint.pprint(results)
 
 # Filter for recently uploaded videos
 MainStokksArray = []
