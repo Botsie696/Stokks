@@ -69,8 +69,6 @@ def get_youtube_transcript(video_url):
     global ProxyWorks    #
     for proxy in PROXIES_LIST:
         proxWorker = proxy
-        if ProxyToggles:
-            proxWorker = ProxyWorks
             
         if test_proxy(proxWorker):
             try:
@@ -95,8 +93,14 @@ def get_youtube_transcript(video_url):
 # Example usage
 if __name__ == "__main__":
     transcript = get_youtube_transcript(sites.MainStokksArray[0])
+    i = 0
+    print(transcript)
+    while (transcript == None and i < len(sites.MainStokksArray)):
+        transcript = get_youtube_transcript(sites.MainStokksArray[i])
+        print(transcript)
+        i += 1
     print("Next")
-    transcript = get_youtube_transcriptOnce(sites.MainStokksArray[0])
+    # transcript = get_youtube_transcriptOnce(sites.MainStokksArray[0])
     # for n in sites.MainStokksArray: 
     #     video_url = n
     #     transcript = get_youtube_transcript(video_url)
