@@ -27,3 +27,5 @@ with open(input_file, "r") as txt_file, open(output_file, "w", newline="") as cs
 
 print(f"CSV file created at {output_file}") 
 print(f"Data has been written to {output_file}")
+
+import read2copy
