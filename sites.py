@@ -17,10 +17,10 @@ def is_recent_upload(published_time):
     today = datetime.now()
     yesterday = today - timedelta(days=1)
      
-    print(published_time)
+    published_time = str(published_time)
     # Adjust for string matching based on the format returned by YoutubeSearch
     if "ago" in published_time:
-        if "day" in published_time and ("1 day" in published_time or "hours" in published_time or "2 days" in published_time):
+        if "day" in published_time and ("1 day" in published_time or "hours" in published_time or "2 days" in published_time or '0' in published_time):
             return True
         elif "hour" in published_time or "minute" in published_time:
             return True
