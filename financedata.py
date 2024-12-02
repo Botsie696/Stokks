@@ -97,27 +97,36 @@ def GetPriceOf(Stock):
 # Example usage
 
 def GetRevenue(Stock):
-    # Clean the input stock symbol
-    Stock = re.sub(r"['\"\-\\\.]", "", Stock).strip()
-    # print("Stock is " + Stock)
-    
-    # Fetch company metadata to get revenue
-    ticker = yf.Ticker(Stock)
-    stock_info = ticker.info
-    
-    # Extract revenue (if available)
-    revenue = stock_info.get("totalRevenue", None)  # Revenue is in raw numbers (e.g., USD)
-    if revenue is None:
-        return "N/A"
-    else:
-        # Convert revenue to billions or millions for readability
-        if revenue >= 1e9:
-            return f"${revenue / 1e9:.2f} B"
-        elif revenue >= 1e6:
-            return f"${revenue / 1e6:.2f} M"
-        else:
-            return f"${revenue:.2f}"
+    try:
+        # Clean the input stock symbol
+        Stock = re.sub(r"['\"\-\\\.]", "", Stock).strip()
+        
+        # Fetch company metadata to get revenue
+        ticker = yf.Ticker(Stock)
 
+        # Attempt to fetch stock information
+        try:
+            stock_info = ticker.info
+        except Exception as e:
+            return f"N/A"
+
+        # Extract revenue (if available)
+        revenue = stock_info.get("totalRevenue", None)  # Revenue is in raw numbers (e.g., USD)
+        if revenue is None:
+            return f"Revenue data not available for {Stock}."
+        else:
+            # Convert revenue to billions or millions for readability
+            if revenue >= 1e9:
+                return f"${revenue / 1e9:.2f} B"
+            elif revenue >= 1e6:
+                return f"${revenue / 1e6:.2f} M"
+            else:
+                return f"${revenue:.2f}"
+
+    except Exception as e:
+        # Catch all other errors
+        return f"n/a"
+    
 def ConsistancyScore(Stock , Months , Distance = 15):
     
     Score = 0
@@ -173,10 +182,10 @@ def find_stock_ticker(company_name):
 
 # print("TOKL" + find_stock_ticker("TESLA"))
 # print(ConsistancyScore("tesla" , 6 , Distance=5))
-print(ConsistancyScore("APLD" , 6 , Distance=5))
-print(ConsistancyScore("PSIX" , 6 , Distance=5))
-print(ConsistancyScore("PLTR" , 6 , Distance=5))
-
+# print(ConsistancyScore("PLTR" , 6 , Distance=5))
+# print(ConsistancyScore("PSIX" , 6 , Distance=5))
+# print(ConsistancyScore("VOO" , 6 , Distance=5))
+# print(GetRevenue("PLTR"))
 # Price watcher of all the stocks, checks price and gives rates 
 # Edit youtube links search 
 # chat ai with data as all the transcripts without bulletpoints
