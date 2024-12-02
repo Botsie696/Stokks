@@ -60,10 +60,10 @@ def AnalyseWithYahoo(data, Repeast=False):
         if not Repeast:
             new_symbol = SearchSymbol(data)
             if new_symbol == "NONE":
-                return "NONE" , "NONE"
+                return "NONE" , "NONE" , "n/a"
             return AnalyseWithYahoo(new_symbol, Repeast=True)
         # print(f"An error occurred while processing symbol '{data}': {e}")
-        return "N/A"  , "n/a"
+        return "N/A"  , "n/a"  , "n/a"
 
 def SearchSymbol(company_name):
     try:
