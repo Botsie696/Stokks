@@ -238,11 +238,13 @@ if __name__ == "__main__":
         HighestConsistancyScore = 0
         HighestRiseScore = 0
         print("Onto setting the to the loop")
+        StockFinalSyms = []
         for n in stock_symbols:
             # print("Printing data for " + n)
             Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
             if (Price == "NONE" or Price == None or Price == "NONE"):
                 pass
+            StockFinalSyms.append(Name)
             StockRev = financedata.GetRevenue(Name)
             ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , dataprovider.Months , Distance=dataprovider.DepthForScore)
             Rise[n] = str(Percent)
@@ -307,4 +309,29 @@ if __name__ == "__main__":
                     f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts}\n"
                     )
         import read
-               
+        input_file = "sorted_dictionary_output.txt" 
+        read.StoreData("output.csv" , input_file)
+
+        # File path
+        file_path = "StockList.txt"
+
+        # Array of values to append
+        values_to_append = list(set(StockFinalSyms))
+        # Read the existing data from the file and split it into a set of unique values
+        with open(file_path, "r") as file:
+            existing_data = file.read().strip()
+            existing_values = set(existing_data.split(",")) if existing_data else set()
+
+        # Add new values to the set
+        existing_values.update(values_to_append)
+        existing_values = list(set(existing_values))
+        # Convert the set back to a sorted, comma-separated string (optional sorting for consistency)
+        updated_data = ",".join(sorted(existing_values))
+
+        # Write the updated data back to the file
+        with open(file_path, "w") as file:
+            file.write(updated_data)
+
+        print("Data appended successfully!")
+
+                    
