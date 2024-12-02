@@ -33,7 +33,7 @@ for n in dataprovider.Youtubers:
     BestStocks = []
     
     for video in Stocks:
-        print("nones")
+      
         if is_recent_upload(video.get('publish_time', '')):
             print("nonese1")
             Link = 'https://www.youtube.com' + video['url_suffix']
