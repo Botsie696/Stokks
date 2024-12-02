@@ -1,5 +1,5 @@
 DepthForScore = 14
 Months = 7
-NoSites = 1
+NoSites = 8
 Youtubers = ["Felix & Friends (Goat Academy)"  ,"Invest with Henry"  , "Stock Moe"  , "Chris Sain"]
-YoutubersDetailsSites = 1
+YoutubersDetailsSites = 3
