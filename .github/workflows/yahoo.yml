@@ -2,7 +2,10 @@ name: Run yahoo gainers
 
 on:
   schedule:
-    - cron: '0 20 * * *'  # 12:00 PM PT (UTC is 8 hours ahead of PT during standard time)
+    - cron: '0 16 * * *'  # 8:00 AM PT
+    - cron: '0 19 * * *'  # 11:00 AM PT
+    - cron: '0 1 * * *'   # 5:00 PM PT (next day UTC)
+    - cron: '0 5 * * *'   # 9:00 PM PT (next day UTC)
   workflow_dispatch:  # Allows manual trigger if needed
 
 jobs:
