@@ -29,6 +29,7 @@ jobs:
 
       - name: Check for changes
         run: |
+          git config --global --add safe.directory $(pwd)
           if [[ -n "$(git status --porcelain)" ]]; then
             echo "Changes detected, committing files."
           else
@@ -37,7 +38,7 @@ jobs:
           fi
 
       - name: Commit and Push Files
-        if: always()  # Ensures this step runs even if there are no changes
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
