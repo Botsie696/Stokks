@@ -1,5 +1,3 @@
-name: Run yahoo gainers
-
 on:
   schedule:
     - cron: '0 16 * * *'  # 8:00 AM PT
@@ -29,7 +27,17 @@ jobs:
       - name: Run yahoo.py script
         run: python yahoo.py
 
+      - name: Check for changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "Changes detected, committing files."
+          else
+            echo "No changes to commit."
+            exit 0
+          fi
+
       - name: Commit and Push Files
+        if: always()  # Ensures this step runs even if there are no changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
