@@ -237,6 +237,9 @@ if __name__ == "__main__":
         HighestAverageScore = 0
         HighestConsistancyScore = 0
         HighestRiseScore = 0
+        EstimatedPrice = {}
+        StockRecommended = {}
+        PriceRise = {}
         print("Onto setting the to the loop")
         StockFinalSyms = []
         for n in stock_symbols:
@@ -244,17 +247,22 @@ if __name__ == "__main__":
             Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
             if (Price == "NONE" or Price == None or Price == "NONE"):
                 pass
+            estimatedPrice , Recommended = financedata.GetEstimatePrice(Name)
             StockFinalSyms.append(Name)
             StockRev = financedata.GetRevenue(Name)
             ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , dataprovider.Months , Distance=dataprovider.DepthForScore)
             Rise[n] = str(Percent)
+            EstimatedPrice[n] = estimatedPrice
+            StockRecommended[n] = Recommended
             Consistency[n] = ConsisStockRev
             ConsistencyScores[n] = ScoresMids
             AverageScore[n] = Average
             MedianScore[n] = Median
             StockPrice[n] = Price
             StockRevenue[n] = StockRev 
-            
+
+            PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
+            PriceRise[n] = round(PricePop , 2)
             print("Safe converting")
             try:
                 if safe_convert(ScoresMids) > HighestConsistancyScore:
@@ -306,7 +314,7 @@ if __name__ == "__main__":
                
                file.write(
                     f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
-                    f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts}\n"
+                    f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
                     )
         import read
         input_file = "sorted_dictionary_output.txt" 
