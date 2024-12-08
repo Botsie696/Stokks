@@ -33,8 +33,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add yahoo.csv YahooDirec.txt
-          git commit -m "Run Stokks Script Daily"
+          git add YahooDirec.txt yahoo.csv
+          git commit -m "Run yahoo gainers"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
