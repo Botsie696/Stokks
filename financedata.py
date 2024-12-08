@@ -132,7 +132,7 @@ def ConsistancyScore(Stock , Months , Distance = 15):
     Score = 0
     Stock = re.sub(r"['\"\-\\\.]", "", Stock).strip()
     # Download the stock data
-    end_date = datetime.datetime.today() 
+    end_date = datetime.datetime.today()
     start_date = end_date - datetime.timedelta(days=Months*30)  # Approx 6 months
     stock_data = yf.download(Stock, start=start_date, end=end_date, progress=False)
 
@@ -178,9 +178,51 @@ def find_stock_ticker(company_name):
         return f"Error occurred: {e}"
     
 # print(AnalyseWithYahoo("AI"))
-
+dis = 5
+mons = 1
 # print("TOKL" + find_stock_ticker("TESLA"))
-# print(ConsistancyScore("tesla" , 6 , Distance=5))
+print(ConsistancyScore("SOFI" , mons , Distance=dis) , "SOFI")
+print(ConsistancyScore("HIMS" , mons , Distance=dis) , "HIMS")
+print(ConsistancyScore("HUT" , mons , Distance=dis) , "HUT")
+print(ConsistancyScore("APP" , mons, Distance=dis) ,"APP")
+print(ConsistancyScore("BTDR" , mons , Distance=dis) , "BTDR")
+
+Average = 0
+Median = 0
+
+Comp = ["SOFI"  , "APP" , "BTDR"]
+AverageSC = []
+MedianSC = []
+GrowthSc = []
+for n in Comp:
+    growth, average, median , score = ConsistancyScore(n , mons, Distance=dis)
+    Average += average
+    Median += median
+    AverageSC.append(average)
+    MedianSC.append(median)
+    GrowthSc.append(growth)
+k = 0
+for n in Comp:
+    Avg = AverageSC[k] / max(AverageSC)
+    Med = MedianSC[k] / max(MedianSC)
+    numerator, denominator = map(int, GrowthSc[k].split('/'))
+
+# Perform the division
+    result = numerator / denominator
+    print( n  , round((Avg + Med + result) , 2) , GrowthSc[k])
+    k += 1
+
+
+
+# growth , average, mid, score
+# BTDR 
+# HUT
+# APP
+# HIMS
+# SOFI
+
+# APP - BTDR - HUT - SOFI - HIMS
+
 # print(ConsistancyScore("PLTR" , 6 , Distance=5))
 # print(ConsistancyScore("PSIX" , 6 , Distance=5))
 # print(ConsistancyScore("VOO" , 6 , Distance=5))
@@ -194,3 +236,146 @@ def find_stock_ticker(company_name):
 
 # buy PSIX & sell microstrategy buy pltr as well for rest and (APLD) APPLIED BACKCHAIN 
 # Consider HIMS
+
+
+# SOFI 0.76 3/6 = 2.96 + .5 + .25 = 3.46 - Buy
+# APP 1.48 4/6 = 3.63 + 1 = 4.63 - strong buy
+# BTDR 2.63 5/6 = 3.58 - .5 = 3.08 - strong buy 
+
+import yfinance as yf
+
+ 
+
+
+# BTDR 2.63 5/6 = 3.58 - .5 = 3.08 - strong buy 
+def GetEstimatePrice(StockName):
+# Specify the stock ticker
+    ticker = StockName  # Replace with the stock ticker you're interested in
+
+    # Fetch the stock data
+    stock = yf.Ticker(ticker)
+
+    # Get valuation metrics
+    info = stock.info
+
+    # Extract relevant details
+    valuation_measures = {
+        "Market Cap": info.get("marketCap"),
+        "Enterprise Value": info.get("enterpriseValue"),
+        "Trailing P/E": info.get("trailingPE"),
+        "Forward P/E": info.get("forwardPE"),
+        "PEG Ratio (5yr expected)": info.get("pegRatio"),
+        "Price/Sales (ttm)": info.get("priceToSalesTrailing12Months"),
+        "Price/Book (mrq)": info.get("priceToBook"),
+        "Enterprise Value/Revenue": info.get("enterpriseToRevenue"),
+        "Enterprise Value/EBITDA": info.get("enterpriseToEbitda"),
+    }
+
+    # Extract Financial Highlights
+    financial_highlights = {
+        "Profit Margin": info.get("profitMargins"),
+        "Return on Assets (ttm)": info.get("returnOnAssets"),
+        "Return on Equity (ttm)": info.get("returnOnEquity"),
+        "Revenue (ttm)": info.get("totalRevenue"),
+        "Net Income Avi to Common (ttm)": info.get("netIncomeToCommon"),
+        "Diluted EPS (ttm)": info.get("trailingEps"),
+        "Total Cash (mrq)": info.get("totalCash"),
+        "Total Debt/Equity (mrq)": info.get("debtToEquity"),
+        "Levered Free Cash Flow (ttm)": info.get("freeCashflow"),
+    }
+
+    # Extract Market Sentiment Metrics
+    market_sentiment = {
+        "Avg Vol (3 month)": info.get("averageVolume"),
+        "Avg Vol (10 day)": info.get("averageDailyVolume10Day"),
+        "Shares Outstanding": info.get("sharesOutstanding"),
+        "Float": info.get("floatShares"),
+        "Held by Insiders (%)": info.get("heldPercentInsiders"),
+        "Held by Institutions (%)": info.get("heldPercentInstitutions"),
+        "Short % of Float": info.get("shortPercentOfFloat"),
+        "Short Ratio": info.get("shortRatio"),
+    }
+
+    # Format and display the output
+    # print("Financial Highlights:")
+    for key, value in financial_highlights.items():
+        if isinstance(value, (float, int)):
+            value = f"{value:,.2f}"
+        # print(f"{key}: {value}")
+
+    # print("\nMarket Sentiment Metrics:")
+    for key, value in market_sentiment.items():
+        if isinstance(value, (float, int)):
+            value = f"{value:,.2f}"
+        # print(f"{key}: {value}")
+
+    # Define the price estimation logic
+    def estimate_price(market_cap, shares_outstanding, adjustments=1):
+        if not market_cap or not shares_outstanding:
+            return "Data unavailable"
+        estimated_price = (market_cap / shares_outstanding) * adjustments
+        return round(estimated_price, 2)
+
+    # Simulate shares outstanding
+    shares_outstanding = market_sentiment.get("Shares Outstanding", 1e10)  # Replace with real data
+
+    # Estimate adjustments based on metrics
+    adjustments = 1
+
+    # Incorporate Financial Highlights
+    if financial_highlights["Profit Margin"] and financial_highlights["Profit Margin"] < 0:
+        adjustments *= 0.8
+    if financial_highlights["Return on Equity (ttm)"] and financial_highlights["Return on Equity (ttm)"] > 0.15:
+        adjustments *= 1.1
+
+    # Incorporate Market Sentiment
+    if market_sentiment["Short % of Float"] and market_sentiment["Short % of Float"] > 10:
+        adjustments *= 0.9  # Penalize for high short interest
+    if market_sentiment["Held by Institutions (%)"] and market_sentiment["Held by Institutions (%)"] > 50:
+        adjustments *= 1.1  # Reward for institutional confidence
+    if market_sentiment["Avg Vol (10 day)"] and market_sentiment["Avg Vol (3 month)"]:
+        if market_sentiment["Avg Vol (10 day)"] > market_sentiment["Avg Vol (3 month)"]:
+            adjustments *= 1.05  # Reward for increasing trading activity
+    if valuation_measures["Trailing P/E"] and valuation_measures["Trailing P/E"] > 50:
+        adjustments *= 0.95  # Penalize for high P/E
+    if valuation_measures["Enterprise Value/Revenue"] and valuation_measures["Enterprise Value/Revenue"] > 10:
+        adjustments *= 0.9  # Penalize for high EV/Revenue
+    # # adjustments *= 5.02
+ 
+
+   
+    # Calculate the estimated price
+    estimated_price = estimate_price(valuation_measures["Market Cap"], shares_outstanding, adjustments)
+    
+    # Print valuation measures and price estimate
+    # print("\nValuation Measures:")
+    for key, value in valuation_measures.items():
+        if isinstance(value, (float, int)):
+            value = f"{value:,.2f}"
+        # print(f"{key}: {value}")
+    prc = float(GetPriceOf(StockName))
+    print(prc)
+    Price =  1 - round((prc / estimated_price) , 2)
+    
+    # print("Upd" , round(Price , 2))
+    # print(f"\nEstimated Price: ${estimated_price}")
+# Retrieve the latest recommendations
+    recommendations = stock.recommendations
+    # Process the recommendations
+    most_recommended = ""
+    if recommendations is not None and not recommendations.empty:
+        # print("Recent Analyst Recommendations:")
+        # print(recommendations.tail(300))  # Display the last 10 recommendations
+
+        # Aggregate totals for recommendation columns
+        recommendation_summary = recommendations[["strongBuy", "buy", "hold", "sell", "strongSell"]].sum()
+
+        # Find the most recommended rating
+        most_recommended = recommendation_summary.idxmax()
+
+        # print(f"\nThe most recommended rating is: {most_recommended} with a total count of {most_recommended_count}.")
+    
+
+    return float(estimated_price) , most_recommended
+ 
+

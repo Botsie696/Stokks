@@ -12,7 +12,7 @@ def safe_convert(value):
 # URL of Yahoo Finance Day Gainers page
 url = 'https://finance.yahoo.com/screener/predefined/day_gainers/'
 url2 = 'https://finance.yahoo.com/screener/predefined/growth_technology_stocks/'
-
+url3 = 'https://finance.yahoo.com/screener/predefined/aggressive_small_caps/'
 def GetStocks(url):
 # Set headers to mimic a browser visit
     headers = {
@@ -31,7 +31,7 @@ stock_symbols = GetStocks(url)
 stock_symbols2 = GetStocks(url2)
 
 stock_symbols += stock_symbols2
-
+# stock_symbols = GetStocks(url3)
 # Print the extracted stock symbols
 for symbol in stock_symbols:
     print(symbol)
@@ -49,6 +49,9 @@ def GetStocks(stock_symbols):
         HighestAverageScore = 0
         HighestConsistancyScore = 0
         HighestRiseScore = 0
+        EstimatedPrice = {}
+        StockRecommended = {}
+        PriceRise = {}
         print("Onto setting the to the loop")
         StockFinalSyms = []
         for n in stock_symbols:
@@ -56,17 +59,22 @@ def GetStocks(stock_symbols):
             Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
             if (Price == "NONE" or Price == None or Price == "NONE"):
                 pass
+            estimatedPrice , Recommended = financedata.GetEstimatePrice(Name)
             StockFinalSyms.append(Name)
             StockRev = financedata.GetRevenue(Name)
             ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , dataprovider.Months , Distance=dataprovider.DepthForScore)
             Rise[n] = str(Percent)
+            EstimatedPrice[n] = estimatedPrice
+            StockRecommended[n] = Recommended
             Consistency[n] = ConsisStockRev
             ConsistencyScores[n] = ScoresMids
             AverageScore[n] = Average
             MedianScore[n] = Median
             StockPrice[n] = Price
             StockRevenue[n] = StockRev 
-            
+
+            PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
+            PriceRise[n] = round(PricePop , 2)
             print("Safe converting")
             try:
                 if safe_convert(ScoresMids) > HighestConsistancyScore:
@@ -82,6 +90,7 @@ def GetStocks(stock_symbols):
                 print("error but go" + e)
             
 
+
         for key, value in Rise.items():
             print(f"{key}: {value}")
         # print(Rise)
@@ -95,7 +104,7 @@ def GetStocks(stock_symbols):
         sorted_dict = dict(sorted(filtered_dict.items(), key=lambda item: item[1]))
 
         # Write to a text file
-        file_path = "YahooDirec.txt"
+        file_path = "sorted_dictionary_output.txt"
         # print("Dicted")
         # print(sorted_dict)
         print("Writing to File")
@@ -118,7 +127,7 @@ def GetStocks(stock_symbols):
                
                file.write(
                     f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
-                    f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts}\n"
+                    f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
                     )
         import read
         read.StoreData("yahoo.csv" , file_path)
