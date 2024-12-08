@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np 
 from yahooquery import search
 from dateutil.relativedelta import relativedelta
- 
+import dataprovider
 def AnalyseWithYahoo(data, Repeast=False):
     try:
         
@@ -14,7 +14,7 @@ def AnalyseWithYahoo(data, Repeast=False):
         
         # Define date range
         end_date = datetime.datetime.today()
-        start_date = end_date - datetime.timedelta(days=6*30)  # Approx 6 months
+        start_date = end_date - datetime.timedelta(days=dataprovider.Months*30)  # Approx 6 months
         
         # Fetch historical data
         stock_data = yf.download(stock_symbol, start=start_date, end=end_date, progress=False)
@@ -168,7 +168,7 @@ def ConsistancyScore(Stock , Months , Distance = 15):
         
         
 
-     
+
 def find_stock_ticker(company_name):
     # Search for the company using yfinance's Ticker search feature
     try:
@@ -177,8 +177,7 @@ def find_stock_ticker(company_name):
     except Exception as e:
         return f"Error occurred: {e}"
     
-# AnalyseWithYahoo("tesla")
-
+# print(AnalyseWithYahoo("AI"))
 
 # print("TOKL" + find_stock_ticker("TESLA"))
 # print(ConsistancyScore("tesla" , 6 , Distance=5))
