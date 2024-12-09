@@ -19,7 +19,6 @@ def safe_convert(value):
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
- 
 
 def clean_and_extract(data):
     # Remove unwanted characters like `, ', and "
@@ -276,7 +275,7 @@ if __name__ == "__main__":
                 if safe_convert(Percent) > HighestRiseScore:
                     HighestRiseScore = Percent
             except Exception as e:
-                print("error but go" + e)
+                print("error but go")
             
 
         for key, value in Rise.items():
