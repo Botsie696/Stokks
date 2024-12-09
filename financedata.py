@@ -180,37 +180,37 @@ def find_stock_ticker(company_name):
 # print(AnalyseWithYahoo("AI"))
 dis = 5
 mons = 1
-# print("TOKL" + find_stock_ticker("TESLA"))
-print(ConsistancyScore("SOFI" , mons , Distance=dis) , "SOFI")
-print(ConsistancyScore("HIMS" , mons , Distance=dis) , "HIMS")
-print(ConsistancyScore("HUT" , mons , Distance=dis) , "HUT")
-print(ConsistancyScore("APP" , mons, Distance=dis) ,"APP")
-print(ConsistancyScore("BTDR" , mons , Distance=dis) , "BTDR")
+# # print("TOKL" + find_stock_ticker("TESLA"))
+# print(ConsistancyScore("SOFI" , mons , Distance=dis) , "SOFI")
+# print(ConsistancyScore("HIMS" , mons , Distance=dis) , "HIMS")
+# print(ConsistancyScore("HUT" , mons , Distance=dis) , "HUT")
+# print(ConsistancyScore("APP" , mons, Distance=dis) ,"APP")
+# print(ConsistancyScore("BTDR" , mons , Distance=dis) , "BTDR")
 
 Average = 0
 Median = 0
 
-Comp = ["SOFI"  , "APP" , "BTDR"]
-AverageSC = []
-MedianSC = []
-GrowthSc = []
-for n in Comp:
-    growth, average, median , score = ConsistancyScore(n , mons, Distance=dis)
-    Average += average
-    Median += median
-    AverageSC.append(average)
-    MedianSC.append(median)
-    GrowthSc.append(growth)
-k = 0
-for n in Comp:
-    Avg = AverageSC[k] / max(AverageSC)
-    Med = MedianSC[k] / max(MedianSC)
-    numerator, denominator = map(int, GrowthSc[k].split('/'))
+# Comp = ["SOFI"  , "APP" , "BTDR"]
+# AverageSC = []
+# MedianSC = []
+# GrowthSc = []
+# for n in Comp:
+#     growth, average, median , score = ConsistancyScore(n , mons, Distance=dis)
+#     Average += average
+#     Median += median
+#     AverageSC.append(average)
+#     MedianSC.append(median)
+#     GrowthSc.append(growth)
+# k = 0
+# for n in Comp:
+#     Avg = AverageSC[k] / max(AverageSC)
+#     Med = MedianSC[k] / max(MedianSC)
+#     numerator, denominator = map(int, GrowthSc[k].split('/'))
 
-# Perform the division
-    result = numerator / denominator
-    print( n  , round((Avg + Med + result) , 2) , GrowthSc[k])
-    k += 1
+# # Perform the division
+#     result = numerator / denominator
+#     print( n  , round((Avg + Med + result) , 2) , GrowthSc[k])
+#     k += 1
 
 
 
@@ -241,8 +241,7 @@ for n in Comp:
 # SOFI 0.76 3/6 = 2.96 + .5 + .25 = 3.46 - Buy
 # APP 1.48 4/6 = 3.63 + 1 = 4.63 - strong buy
 # BTDR 2.63 5/6 = 3.58 - .5 = 3.08 - strong buy 
-
-import yfinance as yf
+ 
 
  
 
@@ -377,10 +376,12 @@ def GetEstimatePrice(StockName):
             # print(f"\nThe most recommended rating is: {most_recommended} with a total count of {most_recommended_count}.")
         
 
-        return float(estimated_price) , most_recommended
+        return float(estimated_price)   , most_recommended
     except Exception as e:
         return 1 , 'n/a'
         print("Error dint find value at financedata.py")
         
+ 
+ 
+# print(GetEstimatePrice("LULU"))
 
-# print(GetEstimatePrice("PLTR"))
