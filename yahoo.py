@@ -31,11 +31,12 @@ stock_symbols = GetStocks(url)
 stock_symbols2 = GetStocks(url2)
 
 stock_symbols += stock_symbols2
+
+# import allstocks
+# stock_symbols = allstocks.common_stock_symbols
 # stock_symbols = GetStocks(url3)
 # Print the extracted stock symbols
-for symbol in stock_symbols:
-    print(symbol)
-
+ 
 
 Rise = {}
 def GetStocks(stock_symbols):
@@ -73,10 +74,11 @@ def GetStocks(stock_symbols):
             StockPrice[n] = Price
             StockRevenue[n] = StockRev 
 
-            PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
-            PriceRise[n] = round(PricePop , 2)
-            print("Safe converting")
+          
             try:
+                PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
+                PriceRise[n] = round(PricePop , 2)
+                print("Safe converting")
                 if safe_convert(ScoresMids) > HighestConsistancyScore:
                     HighestConsistancyScore = ScoresMids
                 if safe_convert(Average)> HighestAverageScore:
@@ -87,7 +89,7 @@ def GetStocks(stock_symbols):
                 if safe_convert(Percent) > HighestRiseScore:
                     HighestRiseScore = Percent
             except Exception as e:
-                print("error but go" + e)
+                print("error but go" )
             
 
 
@@ -124,7 +126,7 @@ def GetStocks(stock_symbols):
                    pass
                    
                
-               
+            if key in StockRevenue and key in PriceRise:  
                file.write(
                     f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
                     f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
