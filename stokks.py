@@ -261,10 +261,11 @@ if __name__ == "__main__":
             StockPrice[n] = Price
             StockRevenue[n] = StockRev 
 
-            PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
-            PriceRise[n] = round(PricePop , 2)
+           
             print("Safe converting")
             try:
+                PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
+                PriceRise[n] = round(PricePop , 2)
                 if safe_convert(ScoresMids) > HighestConsistancyScore:
                     HighestConsistancyScore = ScoresMids
                 if safe_convert(Average)> HighestAverageScore:
@@ -282,7 +283,7 @@ if __name__ == "__main__":
             print(f"{key}: {value}")
         # print(Rise)
         
-        file_path = "stocks.txt"
+        
 
         # Filter and convert values to numbers
         filtered_dict = {k: safe_convert(v) for k, v in Rise.items() if safe_convert(v) is not None}
@@ -311,11 +312,11 @@ if __name__ == "__main__":
                    pass
                    
                
-               
-               file.write(
-                    f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
-                    f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
-                    )
+               if key in StockRevenue and key in PriceRise:
+                file.write(
+                        f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
+                        f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
+                        )
         import read
         input_file = "sorted_dictionary_output.txt" 
         read.StoreData("output.csv" , input_file)

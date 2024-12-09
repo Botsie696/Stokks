@@ -9,15 +9,15 @@ def safe_convert(value):
 
 # Replace with your OpenAI
 def GetFileData():
-        file_path = "StockList.txt"
-        # Array of values to append
-        
-        # Read the existing data from the file and split it into a set of unique values
-        with open(file_path, "r") as file:
-            existing_data = file.read().strip()
-            existing_values = set(existing_data.split(",")) if existing_data else set()
-            return existing_values
-        return []
+    file_path = "StockList.txt"
+    # Read the existing data from the file and split it into a set of unique values
+    with open(file_path, "r") as file:
+        existing_data = file.read().strip()
+        # Strip each value of extra spaces or newlines
+        existing_values = {value.strip() for value in existing_data.split(",")} if existing_data else set()
+        return existing_values
+    return []
+
 
 Rise = {}
 def GetStocks(stock_symbols):
@@ -55,10 +55,11 @@ def GetStocks(stock_symbols):
             StockPrice[n] = Price
             StockRevenue[n] = StockRev 
 
-            PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
-            PriceRise[n] = round(PricePop , 2)
+           
             print("Safe converting")
             try:
+                PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
+                PriceRise[n] = round(PricePop , 2)
                 if safe_convert(ScoresMids) > HighestConsistancyScore:
                     HighestConsistancyScore = ScoresMids
                 if safe_convert(Average)> HighestAverageScore:
@@ -69,7 +70,7 @@ def GetStocks(stock_symbols):
                 if safe_convert(Percent) > HighestRiseScore:
                     HighestRiseScore = Percent
             except Exception as e:
-                print("error but go" + e)
+                print("error but go")
             
         # print(Rise)
          
@@ -100,11 +101,11 @@ def GetStocks(stock_symbols):
                    pass
                    
                
-               
-               file.write(
-                    f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
-                    f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
-                    )
+               if key in StockRevenue and key in PriceRise:
+                file.write(
+                        f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
+                        f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
+                        )
         import read
         
 
