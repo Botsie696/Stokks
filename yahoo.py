@@ -126,11 +126,11 @@ def GetStocks(stock_symbols):
                    pass
                    
                
-            if key in StockRevenue and key in PriceRise:  
-               file.write(
-                    f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
-                    f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
-                    )
+               if key in StockRevenue and key in PriceRise:  
+                 file.write(
+                      f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
+                      f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
+                      )
         import read
         read.StoreData("yahoo.csv" , file_path)
         
