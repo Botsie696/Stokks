@@ -104,7 +104,7 @@ def GetStocks(stock_symbols):
         sorted_dict = dict(sorted(filtered_dict.items(), key=lambda item: item[1]))
 
         # Write to a text file
-        file_path = "sorted_dictionary_output.txt"
+        file_path = "YahooDirec.txt"
         # print("Dicted")
         # print(sorted_dict)
         print("Writing to File")
