@@ -98,7 +98,7 @@ def GetStocks(stock_symbols):
             estimatedPrice , Recommended = financedata.GetEstimatePrice(Name)
             StockFinalSyms.append(Name)
             StockRev = financedata.GetRevenue(Name)
-            ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , 4, Distance=8)
+            ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , 1, Distance=6)
             Rise[n] = str(Percent)
             EstimatedPrice[n] = estimatedPrice
             StockRecommended[n] = Recommended
