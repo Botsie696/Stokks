@@ -64,7 +64,6 @@ stock_symbols = common_stock_symbols
 # stock_symbols = GetStocks(url3)
 # Print the extracted stock symbols
  
-stock_symbols = stock_symbols[:10]
 Rise = {}
 
 def GetStocks(stock_symbols):
