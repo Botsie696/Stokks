@@ -13,6 +13,9 @@ def safe_convert(value):
 url = 'https://finance.yahoo.com/screener/predefined/day_gainers/'
 url2 = 'https://finance.yahoo.com/screener/predefined/growth_technology_stocks/'
 url3 = 'https://finance.yahoo.com/screener/predefined/aggressive_small_caps/'
+url4 = 'https://finance.yahoo.com/screener/predefined/most_actives/'
+# https://finance.yahoo.com/markets/stocks/most-active/
+# https://finance.yahoo.com/screener/predefined/most-active/
 def GetStocks(url):
 # Set headers to mimic a browser visit
     headers = {
@@ -29,8 +32,12 @@ def GetStocks(url):
 
 stock_symbols = GetStocks(url)
 stock_symbols2 = GetStocks(url2)
+stock_symbols3 = GetStocks(url3)
+stock_symbols4 = GetStocks(url4)
 
 stock_symbols += stock_symbols2
+stock_symbols += stock_symbols3
+stock_symbols += stock_symbols4
 
 # import allstocks
 # stock_symbols = allstocks.common_stock_symbols
