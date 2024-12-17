@@ -2,7 +2,8 @@ import requests
 import financedata
 import dataprovider
 from lxml import html
- 
+import re
+# Add price targets
 def safe_convert(value):
     try:
         return float(value)  # Try to convert to float
@@ -10,34 +11,44 @@ def safe_convert(value):
         return 0.0  # Return None if conversion fail
 
 # URL of Yahoo Finance Day Gainers page
-url = 'https://finance.yahoo.com/screener/predefined/day_gainers/'
+url1 = 'https://finance.yahoo.com/screener/predefined/day_gainers/'
+url8 = 'https://finance.yahoo.com/research-hub/screener/day_gainers/'
 url2 = 'https://finance.yahoo.com/screener/predefined/growth_technology_stocks/'
 url3 = 'https://finance.yahoo.com/screener/predefined/aggressive_small_caps/'
-url4 = 'https://finance.yahoo.com/screener/predefined/most_actives/'
-# https://finance.yahoo.com/markets/stocks/most-active/
-# https://finance.yahoo.com/screener/predefined/most-active/
-def GetStocks(url):
-# Set headers to mimic a browser visit
+url4 = 'https://finance.yahoo.com/markets/stocks/most-active/'
+url5 =  'https://finance.yahoo.com/research-hub/screener/most_actives/'
+url6 = 'https://finance.yahoo.com/markets/stocks/52-week-gainers/'
+url7 = 'https://finance.yahoo.com/markets/stocks/trending/'
+def GetStock(url):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36"
     }
-
-    # Fetch the page content
     response = requests.get(url, headers=headers)
-    # Parse the HTML content
-    tree = html.fromstring(response.content)
-    # Extract stock symbols using XPath
-    stock_symbols = tree.xpath('//a[@data-test="quoteLink"]/text()')
-    return stock_symbols
+    # with open("Trial.txt", "w") as file:
+    #     file.write(str(response.content))
+    if response.status_code == 200:
+        try:
+            # Extract both 'symbol' and 'data-symbol' attributes
+            data_symbols = re.findall(r'data-symbol="(.*?)"', response.text)
+            symbols = re.findall(r'"symbol":"(.*?)"', response.text)
+            
+            # Combine and deduplicate
+            all_symbols = data_symbols + symbols
+            seen = set()
+            unique_symbols = [x for x in all_symbols if not (x in seen or seen.add(x))]
+            return unique_symbols
+        except Exception as e:
+            print(f"Error parsing symbols: {e}")
+    else:
+        print(f"Failed to fetch data. HTTP Status Code: {response.status_code}")
+    return []
 
-stock_symbols = GetStocks(url)
-stock_symbols2 = GetStocks(url2)
-stock_symbols3 = GetStocks(url3)
-stock_symbols4 = GetStocks(url4)
-
-stock_symbols += stock_symbols2
-stock_symbols += stock_symbols3
-stock_symbols += stock_symbols4
+stock_symbols = []
+urlsHub = [url1 , url2 , url3 , url4 , url5 , url6 , url7 , url8]
+for n in urlsHub:
+    stock_symbols += GetStock(n)
+stock_symbols = list(set(stock_symbols))
+print(stock_symbols , len(stock_symbols))
 
 # import allstocks
 # stock_symbols = allstocks.common_stock_symbols
@@ -46,7 +57,9 @@ stock_symbols += stock_symbols4
  
 
 Rise = {}
+
 def GetStocks(stock_symbols):
+        
         StockPrice = {}
         StockRevenue = {}
         Consistency = {}
@@ -63,6 +76,8 @@ def GetStocks(stock_symbols):
         print("Onto setting the to the loop")
         StockFinalSyms = []
         for n in stock_symbols:
+                
+            # time.sleep(3)
             # print("Printing data for " + n)
             Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
             if (Price == "NONE" or Price == None or Price == "NONE"):
@@ -97,12 +112,10 @@ def GetStocks(stock_symbols):
                     HighestRiseScore = Percent
             except Exception as e:
                 print("error but go" )
+                continue
             
 
 
-        for key, value in Rise.items():
-            print(f"{key}: {value}")
-        # print(Rise)
         
        
 
@@ -130,14 +143,16 @@ def GetStocks(stock_symbols):
                     
                     ScoresPuts = round((Meds + Avgs + vals + consis) , 2)
                except TypeError:
+                   print("Type error")
                    pass
-                   
+            
                
                if key in StockRevenue and key in PriceRise:  
-                 file.write(
-                      f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
-                      f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
-                      )
+                    print("Adding file")
+                    file.write(
+                            f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
+                            f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
+                            )
         import read
         read.StoreData("yahoo.csv" , file_path)
         
