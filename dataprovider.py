@@ -1,5 +1,5 @@
-DepthForScore = 15
+DepthForScore = 7
 Months = 4
-NoSites = 6
+NoSites = 9
 Youtubers = ["Felix & Friends (Goat Academy)", "FinancialEducation Jeremy Lefebvre " ,"Invest With Corey"  ,"Invest with Henry"  , "Stock Moe"  , "Chris Sain"]
 YoutubersDetailsSites = 3
