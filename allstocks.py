@@ -86,7 +86,7 @@ def GetStocks(stock_symbols):
         q = 0
         for n in stock_symbols:
                 
-            time.sleep(1)
+            time.sleep(2)
             if (q % 30 == 0):
                 print("Stock: " , n)
             q += 1
