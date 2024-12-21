@@ -8,6 +8,7 @@ import financedata
 import os
 import videoFetcher
 import dataprovider
+import betterstokks
 def safe_convert(value):
     try:
         return float(value)  # Try to convert to float
@@ -97,7 +98,7 @@ def main(link):
         prompt = (
             "Based on the following transcript, identify all stock recommendations mentioned make sure only stock names "
             "(Give every stock names and stock symbols with max 12-word descriptions each"
-            "Make bullet points for all stocks, explaining why each stock is selected and why it will rise max ):\n\n"
+            "Make bullet points for all stocks, explaining why each stock is selected and why it will rise or drop max ):\n\n"
             f"{chunk}"
         )
         recommendations = ask_chatgpt(prompt)
@@ -176,7 +177,7 @@ def convertTo(recommendations_list, trend):
     except Exception as e:
         print(f"Error analyzing recommendations: {e}")
 # Common stocks
-stocksAnalysis1 = "Based on the following list of stock recommendations, identify the most common stocks mentioned and top 15-18 stocks in total  and give only stock names and price if mentioned and make sure to mention how many times it has been mentioned overall from all transcripts:\n\n"
+stocksAnalysis1 = "Based on the following list of stock recommendations, identify the most common stocks mentioned and top 15-18 stocks in total  and give only stock names and mention how many times it has been mentioned overall from all transcripts:\n\n"
 # Stocks to invest in from common 
 Confident = "Based on the following list, which stock had a hard on recommendations, which transcript or transcripts were really confident to buy this one stock "
 # News 
@@ -184,7 +185,7 @@ StockRose = "Which stock risen up the most of these transcripts, give only top 1
 # some
 
 StockRose = "Which stocks is a rise for couple of months, and has growth and will grow"
-Which = "According to you what stocks should I buy on which stocks might go really high from these transcripts, only stock names "
+Which = "Which stock is a sell, and what is the general stock opinion of each stock "
 # some
 TORise= "Name all the stocks mentioned in these stocks, stock name and its symbol"
 
@@ -212,119 +213,26 @@ if __name__ == "__main__":
             data = convertTo((result), "Convert all stocks mentioned in this transcript to Stock symbols (They could be in brackets too like (TSLA) or maybe just mentioned), example Nasdaq to being NDAQ and add that to an ARRAY ONLY, if stock symbol is not mentioned just give entire stock name,o, FORMAT SHOULD BE THIS WAY ONLY, no other texts,  this format only give one array , Make sure to get all the stocks mentioned in these transcript, double check on them, give data like:  [NDAQ,APPLE,x,Y,Z]")
             stock_symbols = clean_and_extract(data)
             AllData = AllData + stock_symbols
+            print(stock_symbols  , "\n")
         # Collect the strings from each analysis and write them to the file
 
         print("Onto setting the list")
 
-        # data = convertTo((AllResults), "Convert all stocks mentioned in this transcript to Stock symbols (They could be in brackets too like (TSLA) or maybe just mentioned), example Nasdaq to being NDAQ and add that to an ARRAY ONLY, if stock symbol is not mentioned just give entire stock name,o, FORMAT SHOULD BE THIS WAY ONLY, no other texts,  this format only give one array , Make sure to get all the stocks mentioned in these transcript, double check on them, give data like:  [NDAQ,APPLE,x,Y,Z]")
-        # output_file.write(data + "\n\n")
-        # print("==" + data + "====")
-        
         AllData = list(set(AllData))
-         
+        # Perform analysis
         stock_symbols = AllData
-        # print(stock_symbols)
-        Rise = {}
-
-        StockPrice = {}
-        StockRevenue = {}
-        Consistency = {}
-        AverageScore = {}
-        MedianScore = {}
-        ConsistencyScores = {}
-        HighestMedianScore =0 
-        HighestAverageScore = 0
-        HighestConsistancyScore = 0
-        HighestRiseScore = 0
-        EstimatedPrice = {}
-        StockRecommended = {}
-        PriceRise = {}
-        print("Onto setting the to the loop")
-        StockFinalSyms = []
-        for n in stock_symbols:
-            # print("Printing data for " + n)
-            Percent, Price  , Name = financedata.AnalyseWithYahoo(n)
-            if (Price == "NONE" or Price == None or Price == "NONE"):
-                pass
-            estimatedPrice , Recommended = financedata.GetEstimatePrice(Name)
-            StockFinalSyms.append(Name)
-            StockRev = financedata.GetRevenue(Name)
-            ConsisStockRev , Average , Median , ScoresMids = financedata.ConsistancyScore(Name , dataprovider.Months , Distance=dataprovider.DepthForScore)
-            Rise[n] = str(Percent)
-            EstimatedPrice[n] = estimatedPrice
-            StockRecommended[n] = Recommended
-            Consistency[n] = ConsisStockRev
-            ConsistencyScores[n] = ScoresMids
-            AverageScore[n] = Average
-            MedianScore[n] = Median
-            StockPrice[n] = Price
-            StockRevenue[n] = StockRev 
-
-           
-            print("Safe converting")
-            try:
-                PricePop =  1 - round((float(Price) / estimatedPrice) , 2)
-                PriceRise[n] = round(PricePop , 2)
-                if safe_convert(ScoresMids) > HighestConsistancyScore:
-                    HighestConsistancyScore = ScoresMids
-                if safe_convert(Average)> HighestAverageScore:
-                    HighestAverageScore = Average
-                if safe_convert(Median) > HighestMedianScore:
-                    HighestMedianScore = Median
-                
-                if safe_convert(Percent) > HighestRiseScore:
-                    HighestRiseScore = Percent
-            except Exception as e:
-                print("error but go")
-            
-
-        for key, value in Rise.items():
-            print(f"{key}: {value}")
-        # print(Rise)
-        
-        
-
-        # Filter and convert values to numbers
-        filtered_dict = {k: safe_convert(v) for k, v in Rise.items() if safe_convert(v) is not None}
-
-        # Sort the dictionary by value
-        sorted_dict = dict(sorted(filtered_dict.items(), key=lambda item: item[1]))
-
-        # Write to a text file
         file_path = "sorted_dictionary_output.txt"
-        # print("Dicted")
-        # print(sorted_dict)
-        print("Writing to File")
-        with open(file_path, "w") as file:
-            for key, value in sorted_dict.items():
-               ScoresPuts =0
-               try:
-                    print(MedianScore)
-                    print(key)
-                    Meds = (MedianScore[key] / HighestMedianScore)
-                    Avgs = (AverageScore[key] / HighestAverageScore)
-                    vals = (value / HighestRiseScore)
-                    consis = (ConsistencyScores[key] / HighestConsistancyScore)
-                    
-                    ScoresPuts = round((Meds + Avgs + vals + consis) , 2)
-               except TypeError:
-                   pass
-                   
-               
-               if key in StockRevenue and key in PriceRise:
-                file.write(
-                        f"{key},{value},{StockPrice[key]},{StockRevenue[key]},"
-                        f"{Consistency[key]},{AverageScore[key]},{MedianScore[key]},{ScoresPuts},{EstimatedPrice[key]},{StockRecommended[key]},{PriceRise[key]}\n"
-                        )
+        betterstokks.WriteToFileAverage(stock_symbols , file_path)
+         # Add to csv file 
         import read
-        input_file = "sorted_dictionary_output.txt" 
-        read.StoreData("output.csv" , input_file)
+        
+        read.StoreData("output.csv" , file_path)
 
         # File path
         file_path = "StockList.txt"
 
         # Array of values to append
-        values_to_append = list(set(StockFinalSyms))
+        values_to_append = list(set(stock_symbols))
         # Read the existing data from the file and split it into a set of unique values
         with open(file_path, "r") as file:
             existing_data = file.read().strip()

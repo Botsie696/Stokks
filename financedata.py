@@ -6,6 +6,8 @@ import numpy as np
 from yahooquery import search
 from dateutil.relativedelta import relativedelta
 import dataprovider
+import time
+from requests.exceptions import HTTPError
 def AnalyseWithYahoo(data, Repeast=False):
     try:
         
@@ -42,6 +44,7 @@ def AnalyseWithYahoo(data, Repeast=False):
             last_close = float(stock_data['Close'].iloc[-1])  # Convert to scalar
         except IndexError:
             # print(f"Error: Insufficient data for symbol '{stock_symbol}'.")
+            
             return "NONE"  , "NONE" , stock_symbol
         
         # Calculate price rise and percentage rise
@@ -57,6 +60,10 @@ def AnalyseWithYahoo(data, Repeast=False):
         return round(percentage_rise , 2) , CurrentPrice , stock_symbol
     
     except Exception as e:
+        if '429' in str(e):
+            print("Error in timer me")
+            time.sleep(10)
+
         if not Repeast:
             new_symbol = SearchSymbol(data)
             if new_symbol == "NONE":
@@ -76,6 +83,9 @@ def SearchSymbol(company_name):
         # print(f"No symbol found for company name: '{company_name}'")
         return find_stock_ticker(company_name)
     except Exception as e:
+        if '429' in str(e):
+            print("Error in timer me")
+            time.sleep(10)
         # print(f"Error occurred during symbol search for '{company_name}': {e}")
         return "NONE"
     
@@ -108,6 +118,10 @@ def GetRevenue(Stock):
         try:
             stock_info = ticker.info
         except Exception as e:
+            if '429' in str(e):
+                print("Error in timer me")
+                time.sleep(10)
+                # retries += 1
             return f"N/A"
 
         # Extract revenue (if available)
@@ -175,6 +189,10 @@ def find_stock_ticker(company_name):
         search_results = yf.Ticker(company_name)
         return search_results.ticker if search_results.ticker else "N/A"
     except Exception as e:
+        if '429' in str(e):
+                print("Error in timer me")
+                time.sleep(10)
+                # retries += 1
         return f"Error occurred: {e}"
     
 # print(AnalyseWithYahoo("AI"))
@@ -377,11 +395,28 @@ def GetEstimatePrice(StockName):
         
 
         return float(estimated_price)   , most_recommended
+
     except Exception as e:
+        
         return 1 , 'n/a'
         print("Error dint find value at financedata.py")
         
  
- 
-# print(GetEstimatePrice("LULU"))
+# print(GetEstimatePrice('ASAN'))
 
+def GetRec(ticker):
+        stock = yf.Ticker(ticker)
+        recommendations = stock.recommendations
+        # Process the recommendations
+        most_recommended = ""
+        if recommendations is not None and not recommendations.empty:
+            # print("Recent Analyst Recommendations:")
+            # print(recommendations.tail(300))  # Display the last 10 recommendations
+
+            # Aggregate totals for recommendation columns
+            recommendation_summary = recommendations[["strongBuy", "buy", "hold", "sell", "strongSell"]].sum()
+
+            # Find the most recommended rating
+            most_recommended = recommendation_summary.idxmax()
+
+        return most_recommended
