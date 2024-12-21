@@ -68,87 +68,87 @@ def calculate_average(dictionary):
     return total / count
 def ConsistancyScore(Stock, Months, Distance=15):
     
+    try:
+        # Fetch historical stock prices
+        ticker = yf.Ticker(Stock)
+        if not ticker.info or 'symbol' not in ticker.info or not ticker.info['symbol']:
+                print(f"Ticker '{Stock}' does not exist.")
+                Name = financedata.SearchSymbol(Stock)
+                ticker = yf.Ticker(Name)
+                
+        hist = ticker.history(period=f"{Months}mo")
+        # hist = ticker.history(start='2024-10-01', end='2024-12-18')
 
-    # Fetch historical stock prices
-    ticker = yf.Ticker(Stock)
-    if not ticker.info or 'symbol' not in ticker.info or not ticker.info['symbol']:
-            print(f"Ticker '{Stock}' does not exist.")
-            Name = financedata.SearchSymbol(Stock)
-            ticker = yf.Ticker(Name)
-            
-    print(ticker)
-    hist = ticker.history(period=f"{Months}mo")
-    # hist = ticker.history(start='2024-10-01', end='2024-12-18')
+        # Calculate daily price changes
+        price_changes = hist['High'].pct_change()
 
-    # Calculate daily price changes
-    price_changes = hist['High'].pct_change()
+        # Extract required metrics
+        avg_price_change = price_changes.mean()
+        med_price_change = price_changes.median()
 
-    # Extract required metrics
-    avg_price_change = price_changes.mean()
-    med_price_change = price_changes.median()
+        # Prepare daily prices list
+        daily_prices = hist['Close'].reset_index().rename(columns={'index': 'Date', 'Close': 'Price'})
 
-    # Prepare daily prices list
-    daily_prices = hist['Close'].reset_index().rename(columns={'index': 'Date', 'Close': 'Price'})
+        # Initialize score and collect medians
+        score = 0
+        meds = []
+        total = len(price_changes)
 
-    # Initialize score and collect medians
-    score = 0
-    meds = []
-    total = len(price_changes)
+        for i in range(3, total):
+            current_price = daily_prices.loc[i, 'Price']
 
-    for i in range(3, total):
-        current_price = daily_prices.loc[i, 'Price']
+            if price_changes.iloc[i] > 0 and current_price > daily_prices.loc[i - 3, 'Price']:
+                score += 1
 
-        if price_changes.iloc[i] > 0 and current_price > daily_prices.loc[i - 3, 'Price']:
-            score += 1
+            # Penalize for consistent downward movement
+            if (price_changes.iloc[i] < 0 and price_changes.iloc[i - 2] < 0 and price_changes.iloc[i - 3] < 0):
+                score -= 1
+            elif (i > 6 and current_price < daily_prices.loc[i - 6, 'Price']):
+                score -= 1
+            elif (i > Distance and current_price < daily_prices.loc[i - Distance, 'Price']):
+                score -= 1
 
-        # Penalize for consistent downward movement
-        if (price_changes.iloc[i] < 0 and price_changes.iloc[i - 2] < 0 and price_changes.iloc[i - 3] < 0):
-            score -= 1
-        elif (i > 6 and current_price < daily_prices.loc[i - 6, 'Price']):
-            score -= 1
-        elif (i > Distance and current_price < daily_prices.loc[i - Distance, 'Price']):
-            score -= 1
+            # Collect median prices at intervals
+            if i % 10 == 0:
+                meds.append(current_price)
+        Price = 0
+        if (total > 0):
+            Price = round(daily_prices.loc[total-1, 'Price'],2)
+        # Calculate percentage change from collected medians
+        perk = calculate_percent_changes(meds) if len(meds) >= 2 else 0
 
-        # Collect median prices at intervals
-        if i % 10 == 0:
-            meds.append(current_price)
-    Price = 0
-    if (total > 0):
-        Price = round(daily_prices.loc[total-1, 'Price'],2)
-    # Calculate percentage change from collected medians
-    perk = calculate_percent_changes(meds) if len(meds) >= 2 else 0
+        # Retrieve earnings data
+        eps, surprise = StockEarnings(ticker)
 
-    # Retrieve earnings data
-    eps, surprise = StockEarnings(ticker)
+        recommendations = ticker.recommendations
+            # Process the recommendations
+        most_recommended = ""
+        if recommendations is not None and not recommendations.empty:
+            # print("Recent Analyst Recommendations:")
+            # print(recommendations.tail(300))  # Display the last 10 recommendations
 
-    recommendations = ticker.recommendations
-        # Process the recommendations
-    most_recommended = ""
-    if recommendations is not None and not recommendations.empty:
-        # print("Recent Analyst Recommendations:")
-        # print(recommendations.tail(300))  # Display the last 10 recommendations
+            # Aggregate totals for recommendation columns
+            recommendation_summary = recommendations[["strongBuy", "buy", "hold", "sell", "strongSell"]].sum()
 
-        # Aggregate totals for recommendation columns
-        recommendation_summary = recommendations[["strongBuy", "buy", "hold", "sell", "strongSell"]].sum()
+            # Find the most recommended rating
+            most_recommended = recommendation_summary.idxmax()
 
-        # Find the most recommended rating
-        most_recommended = recommendation_summary.idxmax()
-
-    
-    # print(Stock , Price)
-    # Return computed values
-    return (
-        perk,
-        round((avg_price_change * 100) * 30, 2),
-        round((med_price_change * 100) * 30, 2),
-        f"{score}/{total}",
-        round(score, 2),
-        eps,
-        surprise , 
-        Price , 
-        most_recommended
-    )
-
+        
+        # print(Stock , Price)
+        # Return computed values
+        return (
+            perk,
+            round((avg_price_change * 100) * 30, 2),
+            round((med_price_change * 100) * 30, 2),
+            f"{score}/{total}",
+            round(score, 2),
+            eps,
+            surprise , 
+            Price , 
+            most_recommended
+        )
+    except Exception as e:
+        return None
 
 months = 3
 
@@ -160,7 +160,10 @@ def calculate_weighted_scores(stock_symbols, months):
     StoreData = {}
     
     for n in stock_symbols:
-        consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations = ConsistancyScore(n, months)
+        gotcha = ConsistancyScore(n, months)
+        if (gotcha == None):
+            continue
+        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations) = gotcha
         
         if med_price_change > 0 and avg_price_change > 0:
             StoreData[n] = {
@@ -206,8 +209,8 @@ def calculate_weighted_scores(stock_symbols, months):
             print(n , "LOW EPS")
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
 
-# Example usage
-# sorted_scores = calculate_weighted_scores(stock_symbols, months)
+# # Example usage
+# sorted_scores = calculate_weighted_scores(['PLTR'], months)
 # print(sorted_scores)
 
 
@@ -229,4 +232,5 @@ def WriteToFileAverage(stock_symbols , file_path):
                     f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']}\n"
                     )
         
+ 
  
