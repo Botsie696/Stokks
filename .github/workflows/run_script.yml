@@ -37,8 +37,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin
+          git pull --rebase origin main
           git add output.csv sorted_dictionary_output.txt StockList.txt recommendations_output.txt
-          git commit -m "Latest to be latest youtube stokks"
-          git push
+          git commit -m "Latest to be latest youtube stokks" || echo "No changes to commit"
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
