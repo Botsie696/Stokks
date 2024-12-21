@@ -23,11 +23,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Set up OpenAI API Key
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
+
       - name: Run Stokks script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -37,8 +39,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git stash --include-untracked  # Stash all changes
           git fetch origin
           git pull --rebase origin main
+          git stash pop || echo "No stash to apply"
           git add output.csv sorted_dictionary_output.txt StockList.txt recommendations_output.txt
           git commit -m "Latest to be latest youtube stokks" || echo "No changes to commit"
           git push origin main
