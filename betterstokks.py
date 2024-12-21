@@ -225,7 +225,7 @@ def WriteToFileAverage(stock_symbols , file_path):
                 
                 # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec
                 file.write(
-                    f"{key},{value},{StoreData[key]['Mid']},"
+                    f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
                     f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']}\n"
                     )
         
