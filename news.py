@@ -118,6 +118,7 @@ def GetNews():
                 
                
         except Exception as e:
+            print(str(e))
             pass
             # print(article["title"])
             i += 1
