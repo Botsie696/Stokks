@@ -29,8 +29,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git stash push -m "Stashing changes before rebase" || echo "No changes to stash"  # Stash changes
           git fetch origin
           git pull --rebase origin main  # Rebase local changes on top of remote
+          git stash pop || echo "No stashed changes to apply"  # Apply stashed changes
           git add outputnew.csv OldData.txt
           git commit -m "Run Stokks Script Daily" || echo "No changes to commit"
           git push origin main
