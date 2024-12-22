@@ -90,26 +90,21 @@ import yfinance as yf
 def get_latest_news(ticker):
     stock = yf.Ticker(ticker)
     news = stock.news
+
     if news:
         # Extract the latest article (assuming the news list is sorted by date)
         latest_article = news[0]
+        latest_article1 = news[1]
         title = latest_article.get('content', {}).get('title', 'No Title')
+        title2 =  latest_article1.get('content', {}).get('title', 'No Title')
         pub_date = latest_article.get('content', {}).get('pubDate', 'No Date')
-        return title, pub_date
+        return title + title2, pub_date
     else:
         return "No news available.", "No Date"
 
-# Example usage
-latest_title, latest_time = get_latest_news("RSI")
-print(f"Latest Title: {latest_title}")
-print(f"Published Time: {latest_time}")
-
-
-# Example usage
-get_latest_news("RSI")
 
 StocksNews = {}
-# stock_symbols = ['QUBT' , 'META' , 'RDDT' , "AAPL"]
+# stock_symbols = ['APP']
 print(stock_symbols)
 
 def is_news_today_or_yesterday(pub_date):
