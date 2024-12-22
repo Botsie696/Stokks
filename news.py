@@ -86,7 +86,7 @@ def find_keys_with_partial_match(data_dict, match_array):
 def get_latest_news(ticker):
     stock = yf.Ticker(ticker)
     news = stock.news
-    # print(str(news))
+    print(str(news))
     return news
 StocksNews = {}
 # stock_symbols = ['QUBT' , 'META' , 'RDDT' , "AAPL"]
