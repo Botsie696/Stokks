@@ -33,7 +33,7 @@ jobs:
           git fetch origin
           git pull --rebase origin main  # Rebase local changes on top of remote
           git stash pop || echo "No stashed changes to apply"  # Apply stashed changes
-          git add outputnew.csv OldData.txt
+          git add newyahoo.csv AllStocksWorking.txt
           git commit -m "Run Stokks Script Daily" || echo "No changes to commit"
           git push origin main
         env:
