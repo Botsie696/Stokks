@@ -103,17 +103,17 @@ def GetNews():
             for article in latest_news:
                 if (i > 1):
                     break
-                publish_time = datetime.utcfromtimestamp(article['providerPublishTime'])
-                current_date = datetime.utcnow().date()
-                yesterday_date = current_date - timedelta(days=1)
-                print(f"Title: {article['title']}")
-                print(f"Published: {publish_time}")
+                # publish_time = datetime.utcfromtimestamp(article['providerPublishTime'])
+                # current_date = datetime.utcnow().date()
+                # yesterday_date = current_date - timedelta(days=1)
+                # print(f"Title: {article['title']}")
+                # print(f"Published: {publish_time}")
                 # Determine if the article is published today, yesterday, or earlier
-                if publish_time.date() == current_date or publish_time.date() == yesterday_date:
-                    day_info = "Today"
-                    totals += article['title'] + " "
-                
-                
+                # if publish_time.date() == current_date or publish_time.date() == yesterday_date:
+                #     day_info = "Today"
+                    
+                totals += article['title'] + " "
+                i += 1
                 print(f"Title: {article['title']}")
                 
                
