@@ -69,10 +69,11 @@ def calculate_average(dictionary):
     if (count == 0):
         return count
     return total / count
-def ConsistancyScore(Stock, Months, Distance=15, doAgain=False):
+def ConsistancyScore(Stock, Months, Distance=15):
     
     try:
         # Fetch historical stock prices
+       
         ticker = yf.Ticker(Stock)
         if not ticker.info or 'symbol' not in ticker.info or not ticker.info['symbol']:
                 print(f"Ticker '{Stock}' does not exist.", ticker)
@@ -84,7 +85,7 @@ def ConsistancyScore(Stock, Months, Distance=15, doAgain=False):
                 print("Name is still an ussue" + str(Name))
                 
                 
-        hist = ticker.history(period=f"{Months}mo")
+        hist = ticker.history(period=f"{Months}mo" )
         # hist = ticker.history(start='2024-10-01', end='2024-12-18')
         
         # print("===", str(hist) , "Histroou")
@@ -157,12 +158,9 @@ def ConsistancyScore(Stock, Months, Distance=15, doAgain=False):
             most_recommended
         )
     except HTTPError as e:
-            if e.response.status_code == 429:
-                print(f"Rate limited. Retrying in 5 seconds... (Attempt { 1})")
-                time.sleep(5)
-            else:
-                print(f"HTTP error: {e}")
-                
+            if e.response.status_code == 429:  # Too many requests
+                print("Rate limit hit. Retrying...")
+                time.sleep(10)
     except Exception as e:
         if ("429" in str(e)):
             print("This is an major")
@@ -174,18 +172,79 @@ months = 3
 Scores = {}
 
 
+def get_proxies_from_api():
+    url = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=US"
+    response = requests.get(url)
+    proxies = response.text.splitlines()
+    return proxies
 
-def calculate_weighted_scores(stock_symbols, months,timer=False):
+# Convert proxies to the required format
+def convert_to_proxy_list(proxies):
+    proxy_list = []
+    for proxy in proxies:
+        proxy_dict = {"http": f"http://{proxy}", "https": f"http://{proxy}"}
+        proxy_list.append(proxy_dict)
+    return proxy_list
+
+def validate_proxy(proxy):
+    url = "http://httpbin.org/ip"  # Simple endpoint to test proxy
+    try:
+        response = requests.get(url, proxies=proxy, timeout=5)
+        if response.status_code == 200:
+            print(f"Proxy {proxy} is valid")
+            return True
+    except Exception as e:
+        print(f"Proxy {proxy} failed: {e}")
+    return False
+
+
+
+# Fetch and convert proxies
+def proxiesList():
+    proxies_raw = get_proxies_from_api()
+    proxies = convert_to_proxy_list(proxies_raw)
+    newProxy = []
+    for n in proxies:
+        item = validate_proxy(n)
+        if (item):
+            newProxy.append(n)
+        if len(newProxy) >= 3:
+            break;
+    proxies = newProxy
+    return proxies
+
+
+def calculate_weighted_scores(stock_symbols, months,timer=False ):
     StoreData = {}
     
-    for n in stock_symbols:
-        gotcha = ConsistancyScore(n, months)
-        # time.sleep(2)
-        if (timer==True):
-            time.sleep(2)
-        if (gotcha == None):
-            
+    proxy_index = 0
+    proxy = None
+    proxies = []
+    value = 0
+     
+    if (timer):
+        proxies = proxiesList()
 
+    for n in stock_symbols:
+        value += 1
+        
+        # time.sleep(2)
+      
+        if (timer==True):
+            if value % 10 == 0 and value > 0:
+                proxy_index = (proxy_index + 1) % len(proxies)
+                proxy = proxies[proxy_index]
+                session = requests.Session()
+                session.proxies = proxies
+                
+                yf.shared._requests = proxy
+                time.sleep(10)
+                print(f"Switching to proxy: {proxies[proxy_index]}")
+            # time.sleep(2)
+        
+        gotcha = ConsistancyScore(n, months)
+        if (gotcha == None):
+            # value += 1
             continue
         (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations) = gotcha
         
@@ -235,8 +294,9 @@ def calculate_weighted_scores(stock_symbols, months,timer=False):
 
 
 # # Example usage
+# value = 0
 # for n in range(1,5000):
-#     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months)
+#     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months, value=n+4 , timer=True)
 #     # print(sorted_scores)
 #     print(n)
 
@@ -260,4 +320,5 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False):
                     )
         
  
- 
+ # Function to fetch proxies from the API
+
