@@ -1,0 +1,40 @@
+name: Run NewsScript
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # Every 2 hours
+  workflow_dispatch:  # Allows manual trigger if needed
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run news.py script
+        run: python news.py
+
+      - name: Commit and Push Files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git stash push -m "Stashing changes before rebase" || echo "No changes to stash"  # Stash changes
+          git fetch origin
+          git pull --rebase origin main  # Rebase local changes on top of remote
+          git stash pop || echo "No stashed changes to apply"  # Apply stashed changes
+          git add News-Report.txt
+          git commit -m "Run News Script Every 2 Hours" || echo "No changes to commit"
+          git push origin main
+        env:
