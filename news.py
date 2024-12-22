@@ -104,7 +104,7 @@ def get_latest_news(ticker):
 
 
 StocksNews = {}
-# stock_symbols = ['APP']
+# stock_symbols = ['APP' , 'TPC' , 'SPOT' , 'PLTR']
 print(stock_symbols)
 
 def is_news_today_or_yesterday(pub_date):
@@ -156,7 +156,7 @@ stocker = GetNews()
 
 prompt = (
             "Based on the following which stock will rise the highest based on their recent news, which is the highest, given array in descending order from most rise to least rise:\n\n"
-            f"{stocker} give reason why the stock will rise based on the reasons and make sure to split each stock with next line gap"
+            f"{stocker}" +  "give reason why the stock will rise based on the reasons and make sure to split each stock with next line gap , return in json like format with stock ticker symbols only, no other words, sentence, or explanation. example [AAPL:[explanation],META:[explanaton]]"
         )
 # return in array like format with stock ticker symbols only, no other words, sentence, or explanation. example [AAPL,META]
 
@@ -176,11 +176,12 @@ def ask_chatgpt(prompt):
         return None
 
 ecommendations = ask_chatgpt(prompt)
-stock_symbols = ecommendations.strip("[]").split(",")
-cleaned_list = [item.strip('"').strip("'") for item in stock_symbols]
-for n in stock_symbols:
-    print(n)
-print(stock_symbols)
+print("rec==" , ecommendations , "==")
+# stock_symbols = ecommendations.strip("[]").split(",")
+# cleaned_list = [item.strip('"').strip("'") for item in stock_symbols]
+# for n in stock_symbols:
+#     print(n)
+# print(stock_symbols)
 
 file_name = "News-Report.txt"
 with open(file_name, 'w') as file:
