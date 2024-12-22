@@ -86,7 +86,7 @@ def find_keys_with_partial_match(data_dict, match_array):
 def get_latest_news(ticker):
     stock = yf.Ticker(ticker)
     news = stock.news
-    print(str(news))
+    # print(str(news))
     return news
 StocksNews = {}
 # stock_symbols = ['QUBT' , 'META' , 'RDDT' , "AAPL"]
@@ -99,28 +99,28 @@ def GetNews():
             totals = ""
             # print(latest_news)
             i = 0
-            print(n)
+            print(latest_news , '\n' ,len(latest_news) , "=--------------------------------")
             for article in latest_news:
                 if (i > 1):
                     break
-                # publish_time = datetime.utcfromtimestamp(article['providerPublishTime'])
-                # current_date = datetime.utcnow().date()
-                # yesterday_date = current_date - timedelta(days=1)
-                # print(f"Title: {article['title']}")
-                # print(f"Published: {publish_time}")
+                publish_time = datetime.utcfromtimestamp(article['pubDate'])
+                current_date = datetime.utcnow().date()
+                yesterday_date = current_date - timedelta(days=1)
+                print(f"Title: {article['title']}")
+                print(f"Published: {publish_time}")
                 # Determine if the article is published today, yesterday, or earlier
-                # if publish_time.date() == current_date or publish_time.date() == yesterday_date:
-                #     day_info = "Today"
-                    
-                totals += article['title'] + " "
+                if publish_time.date() == current_date or publish_time.date() == yesterday_date:
+                    day_info = "Today"
+                    totals += article['title'] + " "
+                
                 i += 1
                 print(f"Title: {article['title']}")
                 
                
         except Exception as e:
-            print(str(e))
-            pass
-            # print(article["title"])
+            print("with")
+            continue
+            # print(article["title"]) 
             i += 1
         print("Done--")
         StocksNews[n] = totals
