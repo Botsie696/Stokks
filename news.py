@@ -83,45 +83,69 @@ def find_keys_with_partial_match(data_dict, match_array):
     return matching_keys
 
 
+import yfinance as yf
+
+import yfinance as yf
+
 def get_latest_news(ticker):
     stock = yf.Ticker(ticker)
     news = stock.news
-    # print(str(news))
-    return news
+    if news:
+        # Extract the latest article (assuming the news list is sorted by date)
+        latest_article = news[0]
+        title = latest_article.get('content', {}).get('title', 'No Title')
+        pub_date = latest_article.get('content', {}).get('pubDate', 'No Date')
+        return title, pub_date
+    else:
+        return "No news available.", "No Date"
+
+# Example usage
+latest_title, latest_time = get_latest_news("RSI")
+print(f"Latest Title: {latest_title}")
+print(f"Published Time: {latest_time}")
+
+
+# Example usage
+get_latest_news("RSI")
+
 StocksNews = {}
 # stock_symbols = ['QUBT' , 'META' , 'RDDT' , "AAPL"]
 print(stock_symbols)
+
+def is_news_today_or_yesterday(pub_date):
+    if pub_date:
+        pub_date_dt = datetime.strptime(pub_date, '%Y-%m-%dT%H:%M:%SZ')
+        now = datetime.utcnow()
+        yesterday = now - timedelta(days=1)
+        
+        # Check if the news was published today or yesterday
+        return pub_date_dt.date() == now.date() or pub_date_dt.date() == yesterday.date()
+    return False
+
 def GetNews():
     for n in stock_symbols:
         try:
-            ticker = n # Replace with your desired stock ticker
-            latest_news = get_latest_news(ticker)
-            totals = ""
-            # print(latest_news)
-            i = 0
-            print(latest_news , '\n' ,len(latest_news) , "=--------------------------------")
-            for article in latest_news:
-                if (i > 1):
-                    break
-                publish_time = datetime.utcfromtimestamp(article['pubDate'])
-                current_date = datetime.utcnow().date()
-                yesterday_date = current_date - timedelta(days=1)
-                print(f"Title: {article['title']}")
-                print(f"Published: {publish_time}")
+                ticker = n # Replace with your desired stock ticker
+                title , publish_time  = get_latest_news(ticker)
+                totals = ""
+                # print(latest_news)
+             
+                print(title , '\n' ,publish_time , "=--------------------------------")
+             
                 # Determine if the article is published today, yesterday, or earlier
-                if publish_time.date() == current_date or publish_time.date() == yesterday_date:
-                    day_info = "Today"
-                    totals += article['title'] + " "
+                if is_news_today_or_yesterday(publish_time):
+                  
+                    totals += title+ " "
                 
-                i += 1
-                print(f"Title: {article['title']}")
+        
+                print(f"Title: {title}")
                 
                
         except Exception as e:
-            print("with")
-            continue
+            print("with" + str(e))
+            
             # print(article["title"]) 
-            i += 1
+      
         print("Done--")
         StocksNews[n] = totals
         # print(n + ":" + totals)
