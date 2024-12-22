@@ -93,30 +93,32 @@ StocksNews = {}
 print(stock_symbols)
 def GetNews():
     for n in stock_symbols:
-    
-        ticker = n # Replace with your desired stock ticker
-        latest_news = get_latest_news(ticker)
-        totals = ""
-        # print(latest_news)
-        i = 0
-        for article in latest_news:
-            if (i > 1):
-                break
-            publish_time = datetime.utcfromtimestamp(article['providerPublishTime'])
-            current_date = datetime.utcnow().date()
-            yesterday_date = current_date - timedelta(days=1)
-            print(f"Title: {article['title']}")
-            print(f"Published: {publish_time}")
-            # Determine if the article is published today, yesterday, or earlier
-            if publish_time.date() == current_date or publish_time.date() == yesterday_date:
-                day_info = "Today"
-                totals += article['title'] + " "
-            
-            
-            print(f"Title: {article['title']}")
-            
+        try:
+            ticker = n # Replace with your desired stock ticker
+            latest_news = get_latest_news(ticker)
+            totals = ""
+            # print(latest_news)
+            i = 0
+            print(n)
+            for article in latest_news:
+                if (i > 1):
+                    break
+                publish_time = datetime.utcfromtimestamp(article['providerPublishTime'])
+                current_date = datetime.utcnow().date()
+                yesterday_date = current_date - timedelta(days=1)
+                print(f"Title: {article['title']}")
+                print(f"Published: {publish_time}")
+                # Determine if the article is published today, yesterday, or earlier
+                if publish_time.date() == current_date or publish_time.date() == yesterday_date:
+                    day_info = "Today"
+                    totals += article['title'] + " "
+                
+                
+                print(f"Title: {article['title']}")
+                
                
-            
+        except Exception as e:
+            pass
             # print(article["title"])
             i += 1
         print("Done--")
