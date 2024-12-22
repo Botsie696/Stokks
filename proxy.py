@@ -22,7 +22,7 @@ import betterstokks
 Rise = {}
 def GetStocks(stock_symbols):
         file_path = "OldData.txt"
-        betterstokks.WriteToFileAverage(stock_symbols , file_path)
+        betterstokks.WriteToFileAverage(stock_symbols , file_path, timers=True)
         import read
         
 

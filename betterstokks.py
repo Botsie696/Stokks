@@ -3,8 +3,11 @@ import requests
 from lxml import html
 import re
 import numpy as np
-
 import financedata
+from requests.exceptions import HTTPError
+import time
+
+
 # Get earnings data
 def StockEarnings(stock):
     try:
@@ -66,19 +69,25 @@ def calculate_average(dictionary):
     if (count == 0):
         return count
     return total / count
-def ConsistancyScore(Stock, Months, Distance=15):
+def ConsistancyScore(Stock, Months, Distance=15, doAgain=False):
     
     try:
         # Fetch historical stock prices
         ticker = yf.Ticker(Stock)
         if not ticker.info or 'symbol' not in ticker.info or not ticker.info['symbol']:
-                print(f"Ticker '{Stock}' does not exist.")
+                print(f"Ticker '{Stock}' does not exist.", ticker)
+                
                 Name = financedata.SearchSymbol(Stock)
                 ticker = yf.Ticker(Name)
+                # if ()
+                
+                print("Name is still an ussue" + str(Name))
+                
                 
         hist = ticker.history(period=f"{Months}mo")
         # hist = ticker.history(start='2024-10-01', end='2024-12-18')
-
+        
+        # print("===", str(hist) , "Histroou")
         # Calculate daily price changes
         price_changes = hist['High'].pct_change()
 
@@ -147,7 +156,17 @@ def ConsistancyScore(Stock, Months, Distance=15):
             Price , 
             most_recommended
         )
+    except HTTPError as e:
+            if e.response.status_code == 429:
+                print(f"Rate limited. Retrying in 5 seconds... (Attempt { 1})")
+                time.sleep(5)
+            else:
+                print(f"HTTP error: {e}")
+                
     except Exception as e:
+        if ("429" in str(e)):
+            print("This is an major")
+        print("ME+ majorjob -", e, "ME+-")
         return None
 
 months = 3
@@ -156,12 +175,17 @@ Scores = {}
 
 
 
-def calculate_weighted_scores(stock_symbols, months):
+def calculate_weighted_scores(stock_symbols, months,timer=False):
     StoreData = {}
     
     for n in stock_symbols:
         gotcha = ConsistancyScore(n, months)
+        # time.sleep(2)
+        if (timer==True):
+            time.sleep(2)
         if (gotcha == None):
+            
+
             continue
         (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations) = gotcha
         
@@ -209,16 +233,19 @@ def calculate_weighted_scores(stock_symbols, months):
             print(n , "LOW EPS")
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
 
+
 # # Example usage
-# sorted_scores = calculate_weighted_scores(['PLTR'], months)
-# print(sorted_scores)
+# for n in range(1,5000):
+#     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months)
+#     # print(sorted_scores)
+#     print(n)
 
 
 
 
-def WriteToFileAverage(stock_symbols , file_path):
+def WriteToFileAverage(stock_symbols , file_path,timers=False):
         
-        sorted_dict , StoreData = calculate_weighted_scores(stock_symbols , 3)
+        sorted_dict , StoreData = calculate_weighted_scores(stock_symbols , 3,timer=timers)
        
         # print("Dicted")
         # print(sorted_dict)
