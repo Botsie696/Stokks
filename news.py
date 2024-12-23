@@ -124,7 +124,9 @@ def is_news_today_or_yesterday(pub_date):
     return False
 
 def GetNews():
+    totals = ""
     for n in stock_symbols:
+        
         try:
                 ticker = n # Replace with your desired stock ticker
                 title , publish_time  = get_latest_news(ticker)
