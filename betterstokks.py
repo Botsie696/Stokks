@@ -89,6 +89,8 @@ def ConsistancyScore(Stock, Months, Distance=15):
         # Fetch historical stock prices
        
         ticker = yf.Ticker(Stock)
+        fifty_two_week_low = ticker.info.get("fiftyTwoWeekLow")
+        fifty_two_week_high = ticker.info.get("fiftyTwoWeekHigh")
         if not ticker.info or 'symbol' not in ticker.info or not ticker.info['symbol']:
                 print(f"Ticker '{Stock}' does not exist.", ticker)
                 
@@ -169,7 +171,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
             eps,
             surprise , 
             Price , 
-            most_recommended
+            most_recommended , f"{fifty_two_week_low}-{fifty_two_week_high}"
         )
     except HTTPError as e:
             if e.response.status_code == 429:  # Too many requests
@@ -260,7 +262,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         if (gotcha == None):
             # value += 1
             continue
-        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations) = gotcha
+        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL) = gotcha
         
         if med_price_change > 0 and avg_price_change > 0:
             StoreData[n] = {
@@ -272,7 +274,8 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
                 'Surprise': Surprise, 
                 'Growth Rate': scores_mids, 
                 'Price': price, 
-                'recommendation' : recommendations
+                'recommendation' : recommendations , 
+                '52WeekLowHigh' : weeksHL
             }
 
     if not StoreData:
@@ -330,7 +333,7 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False):
                 # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
-                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']}\n"
+                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']}\n"
                     )
         
  
