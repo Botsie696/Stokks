@@ -63,12 +63,26 @@ def calculate_average(dictionary):
     Returns:
         float: The average value of the numeric values in the dictionary.
     """
+    # Extract numeric values from the dictionary
     numeric_values = [value for value in dictionary if isinstance(value, (int, float))]
-    total = sum(numeric_values)
-    count = len(numeric_values)
-    if (count == 0):
-        return count
+    
+    # Sort the numeric values in descending order
+    numeric_values.sort(reverse=True)
+    
+    # Calculate the top 30% threshold
+    top_30_percent_count = max(1, int(len(numeric_values) * 0.3))  # Ensure at least one value is included
+    
+    # Take the top 30% of numeric values
+    top_30_percent_values = numeric_values[:top_30_percent_count]
+    
+    # Calculate the average
+    if not top_30_percent_values:
+        return 0  # Avoid division by zero if no numeric values are found
+    
+    total = sum(top_30_percent_values)
+    count = len(top_30_percent_values)
     return total / count
+
 def ConsistancyScore(Stock, Months, Distance=15):
     
     try:
