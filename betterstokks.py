@@ -144,7 +144,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
             PriceChangeMonth = round((1 - (daily_prices.loc[(total-30), 'Price'] / currentPrice)) * 100,2)
         PriceChangeFromHigh52 = round(1 - (currentPrice / fifty_two_week_high), 2)
         
-        print(Stock , "Price change: " + str(PriceChangeFromHigh52 * 100))
+        # print(Stock , "Price change: " + str(PriceChangeFromHigh52 * 100))
         if (total > 0):
             Price = round(daily_prices.loc[total-1, 'Price'],2)
         # Calculate percentage change from collected medians
@@ -342,11 +342,11 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False):
         print("Writing to File")
         with open(file_path, "w") as file:
             for key, value in sorted_dict:
-                
+                print(key)
                 # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
-                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh'],{StoreData[key]['PriceChangeMonth'],{StoreData[key]['PriceChangeFromHigh52']}}}\n"
+                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh'],{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']}}\n"
                     )
         
  
