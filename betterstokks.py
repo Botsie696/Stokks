@@ -138,6 +138,13 @@ def ConsistancyScore(Stock, Months, Distance=15):
             if i % 10 == 0:
                 meds.append(current_price)
         Price = 0
+        PriceChangeMonth = 0
+        currentPrice =  daily_prices.loc[(total-1), 'Price']
+        if (total > 30):
+            PriceChangeMonth = round((1 - (daily_prices.loc[(total-30), 'Price'] / currentPrice)) * 100,2)
+        PriceChangeFromHigh52 = round(1 - (currentPrice / fifty_two_week_high), 2)
+        
+        print(Stock , "Price change: " + str(PriceChangeFromHigh52 * 100))
         if (total > 0):
             Price = round(daily_prices.loc[total-1, 'Price'],2)
         # Calculate percentage change from collected medians
@@ -171,7 +178,8 @@ def ConsistancyScore(Stock, Months, Distance=15):
             eps,
             surprise , 
             Price , 
-            most_recommended , f"{fifty_two_week_low}-{fifty_two_week_high}"
+            most_recommended , f"{fifty_two_week_low}-{fifty_two_week_high}" , 
+            PriceChangeMonth , PriceChangeFromHigh52
         )
     except HTTPError as e:
             if e.response.status_code == 429:  # Too many requests
@@ -262,7 +270,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         if (gotcha == None):
             # value += 1
             continue
-        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL) = gotcha
+        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52) = gotcha
         
         if med_price_change > 0 and avg_price_change > 0:
             StoreData[n] = {
@@ -275,7 +283,9 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
                 'Growth Rate': scores_mids, 
                 'Price': price, 
                 'recommendation' : recommendations , 
-                '52WeekLowHigh' : weeksHL
+                '52WeekLowHigh' : weeksHL , 
+                'PriceChangeMonth' : PriceChangeMonth , 
+                'PriceChangeFromHigh52' : PriceChangeFromHigh52
             }
 
     if not StoreData:
@@ -286,13 +296,15 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
     averages = [data['Avg'] for data in StoreData.values()]
     scores_incr = [data['Sore'] for data in StoreData.values()]
     streak_month = [data['Consis'] for data in StoreData.values()]
+    MonthAvgRise = [data['PriceChangeMonth'] for data in StoreData.values()]
 
     # Calculate averages only once
     highestMid = calculate_average(medians)
     highestAvg = calculate_average(averages)
     highestSStore = calculate_average(scores_incr)
     highestConsis = calculate_average(streak_month)
-
+    highestAvgRise = calculate_average(MonthAvgRise)
+    
     Scores = {}
 
     for n, data in StoreData.items():
@@ -300,11 +312,12 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         WeightAvg = data['Avg'] / highestAvg
         WeightIncr = data['Sore'] / highestSStore
         WeightConsis = data['Consis'] / highestConsis
-        WeightEps = 2 if data['Eps'] > 0 else 0
-        WeightSurp = 2 if data['Surprise'] > 0 else -1
-
+        WeightAvgMonthrise = data['PriceChangeMonth'] / highestAvgRise
+        WeightEps = 1 if data['Eps'] > 0 else 0
+        WeightSurp = 1 if data['Surprise'] > 0 else -1
+        print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
         if WeightMid > 0:
-            Scores[n] = round((WeightMid * 2) + (WeightAvg * 0.68) + (WeightIncr * 2) + WeightConsis + (WeightEps * 3) + (WeightSurp * 2), 2)
+            Scores[n] = round((WeightMid * 1.8) + (WeightAvg * 0.68) + (WeightIncr * 1) + WeightConsis + (WeightEps * 1.1) + (WeightSurp * 1) + (WeightAvgMonthrise * 1.5), 2)
         else:
             print(n , "LOW EPS")
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
@@ -317,8 +330,8 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     # print(sorted_scores)
 #     print(n)
 
-
-
+# sorted_scores = calculate_weighted_scores(['QUBT','ALAB' ,'RGTI'], months)
+# print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False):
         
@@ -333,7 +346,7 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False):
                 # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
-                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']}\n"
+                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh'],{StoreData[key]['PriceChangeMonth'],{StoreData[key]['PriceChangeFromHigh52']}}}\n"
                     )
         
  
