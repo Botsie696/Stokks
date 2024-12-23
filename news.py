@@ -55,7 +55,7 @@ stock_symbols = GatherStocks()
 
 
 # Hot
-KeyWordsHot = ["Phase" , "Positive" , "Top Line" , "Top-Line" , "Significant" , "Demonstrates" , "Treatment" , "Drug Trial" , "Drug Trials" , "Agreement" , "Cancer" , "partner" , "Partnership" , "Collaboration" , "Improvment" , "success" , "Billionarie" , "Carl Ichan" , "Increase" , "Award" , "Awarded" , "Primary" , "Signs" , "Deals"]
+KeyWordsHot = ["achieves" , "achieve", "Investment" , "Invest" , "Power" , "Phase" , "Positive" , "Top Line" , "Top-Line" , "Significant" , "Demonstrates" , "Treatment" , "Drug Trial" , "Drug Trials" , "Agreement" , "Cancer" , "partner" , "Partnership" , "Collaboration" , "Improvment" , "success" , "Billionarie" , "Carl Ichan" , "Increase" , "Award" , "Awarded" , "Primary" , "Signs" , "Deals"]
 KeyWordGood = ["Phase" , "FDA" , "Approval" , "Beneficial" , "Fast Track" , "Breaout" , "Acquisition" , "Expand" , "Expansion" , "Contract" , "Completes" , "Promising" , "Achieve" , "Launches" , "Merger" , "Gain" , "beat" , "Buy rating" , "strong buy" , "outperform", "Price target raised" , "raised"]
 KeyWordsHot += KeyWordGood
 KeyWordsHot = [item.lower() for item in KeyWordsHot]
@@ -98,13 +98,19 @@ def get_latest_news(ticker):
         title = latest_article.get('content', {}).get('title', 'No Title')
         title2 =  latest_article1.get('content', {}).get('title', 'No Title')
         pub_date = latest_article.get('content', {}).get('pubDate', 'No Date')
-        return title + title2, pub_date
+        articleNum = 2
+        finalTitle = title + title2
+        date = news[articleNum].get('content', {}).get('pubDate', 'No Date')
+        while (is_news_today_or_yesterday(date)):
+            finalTitle += news[articleNum].get('content', {}).get('title', 'No Title')
+            articleNum+=1
+            date = news[articleNum].get('content', {}).get('pubDate', 'No Date')
+        return finalTitle, pub_date
     else:
         return "No news available.", "No Date"
 
-
 StocksNews = {}
-# stock_symbols = ['APP' , 'TPC' , 'SPOT' , 'PLTR']
+# stock_symbols = ['RUM'  ,'APP' , "RGTI"]
 print(stock_symbols)
 
 def is_news_today_or_yesterday(pub_date):
