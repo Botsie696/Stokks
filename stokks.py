@@ -214,13 +214,23 @@ if __name__ == "__main__":
             stock_symbols = clean_and_extract(data)
             AllData = AllData + stock_symbols
             print(stock_symbols  , "\n")
-        # Collect the strings from each analysis and write them to the file
-
+     
+        YoutuberList = sites.YoutubeTitleStocks
+        prompt = (
+            "Return all the stock Ticker symbols mentioned in the strings below, return in an array format only - FORMAT SHOULD BE THIS WAY ONLY, no other texts,  this format only give one array , Make sure to get all the stocks mentioned in these transcript, double check on them, give data like:  [NDAQ,APPLE,x,Y,Z] "
+            f"{YoutuberList}"
+        )
+        rec = ask_chatgpt(prompt)
+        print("rec" , rec)
+        listStocks = clean_and_extract(rec)
         print("Onto setting the list")
-
+        # stock_symbols += listStocks
+        print(listStocks)
+        AllData += listStocks
         AllData = list(set(AllData))
         # Perform analysis
         stock_symbols = AllData
+        print("list" , stock_symbols , "--me")
         file_path = "sorted_dictionary_output.txt"
         betterstokks.WriteToFileAverage(stock_symbols , file_path)
          # Add to csv file 

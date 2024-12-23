@@ -50,28 +50,33 @@ MainStokksArray = []
 #         Link = 'https://www.youtube.com' + video['url_suffix']
 #         MainStokksArray.append(Link)
 
-youtubers = ["mr. sicko Trading"]
+youtubers = ["mr. sicko Trading", "UndeRadar Talks"]
 
  
 
 # More videos of youtubers
 MainStokksArray = MainStokksArray[:dataprovider.NoSites]  # Get only the first 10 videos
+YoutubeTitleStocks = []
 for n in youtubers:
-    Stocks = YoutubeSearch(('Latest stocks with ' + n), max_results=(dataprovider.YoutubersDetailsSites * 150)).to_dict()
+    Stocks = YoutubeSearch(('Latest stocks with ' + n), max_results=(dataprovider.YoutubersDetailsSites * 500)).to_dict()
     BestStocks = []
+    
     # pprint.pprint(Stocks)
     for video in Stocks:
         
         if is_recent_upload(video.get('publish_time', '')):
-            
-            Link = 'https://www.youtube.com' + video['url_suffix']
-            BestStocks.append(Link)
+            print(video['title'])
+            # Link = 'https://www.youtube.com' + video['url_suffix']
+            BestStocks.append(video['title'])
         
-    newResults = newResults + BestStocks[:10]
+    YoutubeTitleStocks += BestStocks
+    
+    # newResults = newResults + BestStocks[:15]
     # print("==========" , len(BestStocks)  , n)
     
 
 
 MainStokksArray = MainStokksArray + newResults
 MainStokksArray = list(set(MainStokksArray))
+# MainStokksArray = MainStokksArray[:2] # Change this 
 print(len(MainStokksArray))
