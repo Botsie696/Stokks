@@ -77,10 +77,13 @@ def calculate_average(dictionary):
     
     # Calculate the average
     if not top_30_percent_values:
-        return 0  # Avoid division by zero if no numeric values are found
-    
+        print("Total")
+        return 1  # Avoid division by zero if no numeric values are found
+  
     total = sum(top_30_percent_values)
     count = len(top_30_percent_values)
+    if (total / count == 0): 
+        return 1
     return total / count
 
 def ConsistancyScore(Stock, Months, Distance=15):
@@ -89,6 +92,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
         # Fetch historical stock prices
        
         ticker = yf.Ticker(Stock)
+        
         fifty_two_week_low = ticker.info.get("fiftyTwoWeekLow")
         fifty_two_week_high = ticker.info.get("fiftyTwoWeekHigh")
         if not ticker.info or 'symbol' not in ticker.info or not ticker.info['symbol']:
@@ -98,15 +102,16 @@ def ConsistancyScore(Stock, Months, Distance=15):
                 ticker = yf.Ticker(Name)
                 # if ()
                 
-                print("Name is still an ussue" + str(Name))
+                # print("Name is still an ussue" + str(Name))
                 
-                
-        hist = ticker.history(period=f"{Months}mo" )
-        # hist = ticker.history(start='2024-10-01', end='2024-12-18')
+        # was three months 
+        hist = ticker.history(period=f"{1}mo" , interval ='1d' )
+        # hist = ticker.history(start='2024-11-15', end='2024-12-26' , interval='1d')
+        # hist = yf.download(ticker, period="1mo", interval="1d")
         
         # print("===", str(hist) , "Histroou")
         # Calculate daily price changes
-        price_changes = hist['High'].pct_change()
+        price_changes = hist['Close'].pct_change()
 
         # Extract required metrics
         avg_price_change = price_changes.mean()
@@ -138,7 +143,8 @@ def ConsistancyScore(Stock, Months, Distance=15):
             if i % 10 == 0:
                 meds.append(current_price)
         Price = 0
-        PriceChangeMonth = 0
+        PriceChangeMonth = 1
+        
         currentPrice =  daily_prices.loc[(total-1), 'Price']
         if (total > 30):
             PriceChangeMonth = round((1 - (daily_prices.loc[(total-30), 'Price'] / currentPrice)) * 100,2)
@@ -253,6 +259,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         value += 1
         
         # time.sleep(2)
+       
       
         if (timer==True):
             if value % 10 == 0 and value > 0:
@@ -267,6 +274,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             # time.sleep(2)
         
         gotcha = ConsistancyScore(n, months)
+        
         if (gotcha == None):
             # value += 1
             continue
@@ -315,9 +323,9 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         WeightAvgMonthrise = data['PriceChangeMonth'] / highestAvgRise
         WeightEps = 1 if data['Eps'] > 0 else 0
         WeightSurp = 1 if data['Surprise'] > 0 else -1
-        print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
+        # print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
         if WeightMid > 0:
-            Scores[n] = round((WeightMid * 1.8) + (WeightAvg * 0.68) + (WeightIncr * 1) + WeightConsis + (WeightEps * 1.1) + (WeightSurp * 1) + (WeightAvgMonthrise * 1.5), 2)
+            Scores[n] = round((WeightMid * 1.4) + (WeightAvg * 0.68) + (WeightIncr * 1) + WeightConsis + (WeightEps * 1.1) + (WeightSurp * 1) + (WeightAvgMonthrise * 1.5), 2)
         else:
             print(n , "LOW EPS")
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
@@ -330,7 +338,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     # print(sorted_scores)
 #     print(n)
 
-# sorted_scores = calculate_weighted_scores(['QUBT','ALAB' ,'RGTI'], months)
+# sorted_scores = calculate_weighted_scores(['RR' , 'LAES' , 'RGTI'], months)
 # print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False):
@@ -352,3 +360,16 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False):
 # WriteToFileAverage(['QUBT' , 'PLTR'] , "out.txt")
  # Function to fetch proxies from the API
 
+# Replace 'AAPL' with your desired ticker symbol
+# ticker = "KOD"
+# analyze_ticker(ticker)
+
+
+
+# 1959872.73 -- bbai
+# 2156477.27 - pltr
+# 3251318.18 - ACHR
+# 2156477.27 - rgti
+# 1094595.45 - QBTS
+# 805127.27 - QUBT
+# 547104.55 RKLB
