@@ -338,8 +338,8 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     # print(sorted_scores)
 #     print(n)
 
-sorted_scores = calculate_weighted_scores(['RR' , 'LAES' , 'RGTI'], 1)
-print(sorted_scores)
+# sorted_scores = calculate_weighted_scores(['RR' , 'LAES' , 'RGTI'], 1)
+# print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
