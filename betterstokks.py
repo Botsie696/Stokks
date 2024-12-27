@@ -105,7 +105,8 @@ def ConsistancyScore(Stock, Months, Distance=15):
                 # print("Name is still an ussue" + str(Name))
                 
         # was three months 
-        hist = ticker.history(period=f"{1}mo" , interval ='1d' )
+        hist = ticker.history(period=f"{Months}mo" , interval ='1d' )
+        print(Months)
         # hist = ticker.history(start='2024-11-15', end='2024-12-26' , interval='1d')
         # hist = yf.download(ticker, period="1mo", interval="1d")
         
@@ -197,7 +198,6 @@ def ConsistancyScore(Stock, Months, Distance=15):
         print("ME+ majorjob -", e, "ME+-")
         return None
 
-months = 3
 
 Scores = {}
 
@@ -338,12 +338,12 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     # print(sorted_scores)
 #     print(n)
 
-# sorted_scores = calculate_weighted_scores(['RR' , 'LAES' , 'RGTI'], months)
-# print(sorted_scores)
+sorted_scores = calculate_weighted_scores(['RR' , 'LAES' , 'RGTI'], 1)
+print(sorted_scores)
 
-def WriteToFileAverage(stock_symbols , file_path,timers=False):
+def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
-        sorted_dict , StoreData = calculate_weighted_scores(stock_symbols , 3,timer=timers)
+        sorted_dict , StoreData = calculate_weighted_scores(stock_symbols , months , timer=timers)
        
         # print("Dicted")
         # print(sorted_dict)
