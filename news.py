@@ -56,7 +56,7 @@ stock_symbols = GatherStocks()
 
 # Hot
 KeyWordsHot = ["achieves" , "achieve", "Investment" , "Invest" , "Power" , "Phase" , "Positive" , "Top Line" , "Top-Line" , "Significant" , "Demonstrates" , "Treatment" , "Drug Trial" , "Drug Trials" , "Agreement" , "Cancer" , "partner" , "Partnership" , "Collaboration" , "Improvment" , "success" , "Billionarie" , "Carl Ichan" , "Increase" , "Award" , "Awarded" , "Primary" , "Signs" , "Deals"]
-KeyWordGood = ["Phase" , "FDA" , "Approval" , "Beneficial" , "Fast Track" , "Breaout" , "Acquisition" , "Expand" , "Expansion" , "Contract" , "Completes" , "Promising" , "Achieve" , "Launches" , "Merger" , "Gain" , "beat" , "Buy rating" , "strong buy" , "outperform", "Price target raised" , "raised"]
+KeyWordGood = ["Expand" , "Phase" , "FDA" , "Approval" , "Beneficial" , "Fast Track" , "Breaout" , "Acquisition" , "Expand" , "Expansion" , "Contract" , "Completes" , "Promising" , "Achieve" , "Launches" , "Merger" , "Gain" , "beat" , "Buy rating" , "strong buy" , "outperform", "Price target raised" , "raised"]
 KeyWordsHot += KeyWordGood
 KeyWordsHot = [item.lower() for item in KeyWordsHot]
  
