@@ -23,7 +23,7 @@ def is_recent_upload(published_time):
     return False
 
 # Search for videos with a higher max_results to ensure enough videos are available
-results = YoutubeSearch('best Stocks to buy now', max_results=(dataprovider.NoSites * 50)).to_dict()
+
 newResults = []
 for n in dataprovider.Youtubers:
     Stocks = YoutubeSearch(('Latest stocks with ' + n), max_results=(dataprovider.YoutubersDetailsSites * 150)).to_dict()
@@ -42,13 +42,13 @@ for n in dataprovider.Youtubers:
 # Debugging: Print the full structure of results
  
 
-
+results = YoutubeSearch('best Stocks to buy now', max_results=(dataprovider.NoSites * 50)).to_dict()
 # Filter for recently uploaded videos
 MainStokksArray = []
-# for video in results:
-#     if is_recent_upload(video.get('publish_time', '')):
-#         Link = 'https://www.youtube.com' + video['url_suffix']
-#         MainStokksArray.append(Link)
+for video in results:
+    if is_recent_upload(video.get('publish_time', '')):
+        Link = 'https://www.youtube.com' + video['url_suffix']
+        MainStokksArray.append(Link)
 
 youtubers = ["mr. sicko Trading", "UndeRadar Talks"]
 
@@ -63,7 +63,7 @@ for n in youtubers:
     
     # pprint.pprint(Stocks)
     for video in Stocks:
-        
+        published_time = video.get('publish_time', '')
         if is_recent_upload(video.get('publish_time', '')):
             print(video['title'])
             # Link = 'https://www.youtube.com' + video['url_suffix']
@@ -73,7 +73,6 @@ for n in youtubers:
     
     # newResults = newResults + BestStocks[:15]
     # print("==========" , len(BestStocks)  , n)
-    
 
 
 MainStokksArray = MainStokksArray + newResults
