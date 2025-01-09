@@ -1,8 +1,7 @@
 import yfinance as yf
 import pandas as pd
 import yfinance as yf
-import pandas as pd
-import matplotlib.pyplot as plt
+
 
 def analyze_ticker(ticker , data=None):
     # Download data for the past 1 month with daily intervals
