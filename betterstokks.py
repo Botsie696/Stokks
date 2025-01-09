@@ -373,7 +373,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         # print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
         if WeightMid > 0:
             # Scores[n] = round((WeightMid * 1.2) + (WeightAvg * 0.68) + (WeightIncr * 1.8) + WeightConsis + (WeightAvgMonthrise * 1.5) + priceEstmate, 2)1
-            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1) + (WeightAvgMonthrise * 1.1) + priceEstmate , 2)
+            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1)  + priceEstmate , 2)
         else:
             print(n , "LOW EPS")
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
@@ -389,8 +389,8 @@ ticket_symbols = [
    'SOUN' , 'RDDT' 
 ]
 
-sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
-print(sorted_scores)
+# sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
+# print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
@@ -402,10 +402,10 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         with open(file_path, "w") as file:
             for key, value in sorted_dict:
                 print(key)
-                # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec , targetHigh  , 52WeekLowHigh , PriceChangeMonth , PriceChangeFromHigh52 , targetHigh , MyEstimate rec , averageVolume
+                # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec   , 52WeekLowHigh , PriceChangeMonth , PriceChangeFromHigh52 , targetHigh , MyEstimate rec , averageVolume
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
-                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']}{StoreData[key]['MyEstimate']}{StoreData[key]['averageVolume']}\n"
+                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']},{StoreData[key]['MyEstimate']},{StoreData[key]['averageVolume']}\n"
                     )
         
 # WriteToFileAverage(['QUBT' , 'PLTR'] , "out.txt")
