@@ -237,7 +237,8 @@ def ConsistancyScore(Stock, Months, Distance=15):
                 print("Rate limit hit. Retrying...")
                 time.sleep(10)
 
-
+    except Exception as e:
+        pass
 
 Scores = {}
 
@@ -386,7 +387,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     # print(sorted_scores)
 #     print(n)
 ticket_symbols = [
-   'SOUN' , 'RDDT' 
+   'RGTI' , 'BBAI' 
 ]
 
 # sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
