@@ -6,7 +6,27 @@ import numpy as np
 import financedata
 from requests.exceptions import HTTPError
 import time
+import buytime
 
+def convert_to_readable(num):
+    """
+    Convert large numbers to a more readable format.
+
+    Args:
+        num (float): The number to be converted.
+
+    Returns:
+        str: The number in a more readable format.
+    """
+
+    if num >= 1e9:
+        return f"{num / 1e9:.2f} billion"
+    elif num >= 1e6:
+        return f"{num / 1e6:.2f} million"
+    elif num >= 1e3:
+        return f"{num / 1e3:.2f} thousand"
+    else:
+        return str(num)
 
 # Get earnings data
 def StockEarnings(stock):
@@ -70,7 +90,7 @@ def calculate_average(dictionary):
     numeric_values.sort(reverse=True)
     
     # Calculate the top 30% threshold
-    top_30_percent_count = max(1, int(len(numeric_values) * 0.3))  # Ensure at least one value is included
+    top_30_percent_count = max(1, int(len(numeric_values) * 0.4))  # Ensure at least one value is included
     
     # Take the top 30% of numeric values
     top_30_percent_values = numeric_values[:top_30_percent_count]
@@ -83,6 +103,7 @@ def calculate_average(dictionary):
     total = sum(top_30_percent_values)
     count = len(top_30_percent_values)
     if (total / count == 0): 
+        print("NOT" , total , count)
         return 1
     return total / count
 
@@ -103,13 +124,12 @@ def ConsistancyScore(Stock, Months, Distance=15):
                 # if ()
                 
                 # print("Name is still an ussue" + str(Name))
-                
+
         # was three months 
-        hist = ticker.history(period=f"{Months}mo" , interval ='1d' )
-        print(Months)
-        # hist = ticker.history(start='2024-11-15', end='2024-12-26' , interval='1d')
+        hist = ticker.history(period=f"{Months}mo" , interval ='5d' )
+        # hist = ticker.history(start='2024-12-15', end='2025-01-05' , interval='5d')
         # hist = yf.download(ticker, period="1mo", interval="1d")
-        
+       
         # print("===", str(hist) , "Histroou")
         # Calculate daily price changes
         price_changes = hist['Close'].pct_change()
@@ -126,40 +146,58 @@ def ConsistancyScore(Stock, Months, Distance=15):
         meds = []
         total = len(price_changes)
 
-        for i in range(3, total):
+        for i in range(0, total):
             current_price = daily_prices.loc[i, 'Price']
 
-            if price_changes.iloc[i] > 0 and current_price > daily_prices.loc[i - 3, 'Price']:
+            if i > 2 and price_changes.iloc[i] > 0 and current_price > daily_prices.loc[i - 2, 'Price']:
+                score += 1
+            if i > 1 and price_changes.iloc[i] > 0 and current_price > daily_prices.loc[i - 1, 'Price']:
                 score += 1
 
             # Penalize for consistent downward movement
-            if (price_changes.iloc[i] < 0 and price_changes.iloc[i - 2] < 0 and price_changes.iloc[i - 3] < 0):
+            if i > 2 and (price_changes.iloc[i] < 0 and price_changes.iloc[i - 1]):
                 score -= 1
-            elif (i > 6 and current_price < daily_prices.loc[i - 6, 'Price']):
-                score -= 1
-            elif (i > Distance and current_price < daily_prices.loc[i - Distance, 'Price']):
+               
+            if (i > 6 and current_price < daily_prices.loc[i - 6, 'Price']):
                 score -= 1
 
+            elif (i > Distance and current_price < daily_prices.loc[i - Distance, 'Price']):
+                score -= 1
+            
+            if (i > 1):
+                p = 1 - (current_price / daily_prices.loc[i - 1, 'Price']) 
+                p *= 100
+                if (p > 13):
+                    score -= 2
+            
             # Collect median prices at intervals
-            if i % 10 == 0:
-                meds.append(current_price)
+            
+            meds.append(current_price)
+            
         Price = 0
         PriceChangeMonth = 1
         
         currentPrice =  daily_prices.loc[(total-1), 'Price']
-        if (total > 30):
-            PriceChangeMonth = round((1 - (daily_prices.loc[(total-30), 'Price'] / currentPrice)) * 100,2)
+        if Months == 1  and total > 1:
+            PriceChangeMonth = round((1 - (daily_prices.loc[0, 'Price'] / currentPrice)) * 100,2)
+        else:
+            if (total > 1):
+                PriceChangeMonth = round((1 - (daily_prices.loc[(int(total / 2)), 'Price'] / currentPrice)) * 100,2)
+            
+
         PriceChangeFromHigh52 = round(1 - (currentPrice / fifty_two_week_high), 2)
         PriceChangeFromHigh52 *= 100
         # print(Stock , "Price change: " + str(PriceChangeFromHigh52 * 100))
         if (total > 0):
             Price = round(daily_prices.loc[total-1, 'Price'],2)
         # Calculate percentage change from collected medians
-        perk = calculate_percent_changes(meds) if len(meds) >= 2 else 0
+        perk = calculate_percent_changes(meds) if len(meds) >= 1 else 0
 
         # Retrieve earnings data
         eps, surprise = StockEarnings(ticker)
-
+        averageVolume = hist['Volume'].mean()
+      
+        averageVolumeString = convert_to_readable(int(averageVolume))
         recommendations = ticker.recommendations
             # Process the recommendations
         most_recommended = ""
@@ -172,10 +210,16 @@ def ConsistancyScore(Stock, Months, Distance=15):
 
             # Find the most recommended rating
             most_recommended = recommendation_summary.idxmax()
-
         
+        MyEstimate = buytime.analyze_ticker(ticker,data= hist)
+        # print(MyEstimate)
         # print(Stock , Price)
         # Return computed values
+        priceEstmate = 0.1
+        targetHigh = .1
+        if 'targetMeanPrice' in ticker.info and 'targetHighPrice' in ticker.info:
+            priceEstmate = round((ticker.info.get('targetMeanPrice') +  ticker.info.get('targetHighPrice'))/ 2,2)
+            targetHigh = ticker.info.get('targetHighPrice')
         return (
             perk,
             round((avg_price_change * 100) * 30, 2),
@@ -186,17 +230,13 @@ def ConsistancyScore(Stock, Months, Distance=15):
             surprise , 
             Price , 
             most_recommended , f"{fifty_two_week_low}-{fifty_two_week_high}" , 
-            PriceChangeMonth , PriceChangeFromHigh52
+            PriceChangeMonth , PriceChangeFromHigh52  , priceEstmate , targetHigh , MyEstimate , averageVolumeString 
         )
     except HTTPError as e:
             if e.response.status_code == 429:  # Too many requests
                 print("Rate limit hit. Retrying...")
                 time.sleep(10)
-    except Exception as e:
-        if ("429" in str(e)):
-            print("This is an major")
-        print("ME+ majorjob -", e, "ME+-")
-        return None
+
 
 
 Scores = {}
@@ -278,7 +318,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         if (gotcha == None):
             # value += 1
             continue
-        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52) = gotcha
+        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume ) = gotcha
         
         if med_price_change > 0 and avg_price_change > 0:
             StoreData[n] = {
@@ -293,7 +333,9 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
                 'recommendation' : recommendations , 
                 '52WeekLowHigh' : weeksHL , 
                 'PriceChangeMonth' : PriceChangeMonth , 
-                'PriceChangeFromHigh52' : PriceChangeFromHigh52
+                'PriceChangeFromHigh52' : PriceChangeFromHigh52  , 
+                'priceEstmate' : priceEstmate , 'targetHigh' : targetHigh , 'MyEstimate' : MyEstimate , 
+                'averageVolume' : averageVolume 
             }
 
     if not StoreData:
@@ -305,14 +347,13 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
     scores_incr = [data['Sore'] for data in StoreData.values()]
     streak_month = [data['Consis'] for data in StoreData.values()]
     MonthAvgRise = [data['PriceChangeMonth'] for data in StoreData.values()]
-
     # Calculate averages only once
+   
     highestMid = calculate_average(medians)
     highestAvg = calculate_average(averages)
     highestSStore = calculate_average(scores_incr)
     highestConsis = calculate_average(streak_month)
     highestAvgRise = calculate_average(MonthAvgRise)
-    
     Scores = {}
 
     for n, data in StoreData.items():
@@ -323,9 +364,16 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         WeightAvgMonthrise = data['PriceChangeMonth'] / highestAvgRise
         WeightEps = 1 if data['Eps'] > 0 else 0
         WeightSurp = 1 if data['Surprise'] > 0 else -1
+        priceEstmate = 1
+        if (months != 1):
+            priceEstmate = data['targetHigh'] / data['Price']
+           
+        
+        
         # print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
         if WeightMid > 0:
-            Scores[n] = round((WeightMid * 1.4) + (WeightAvg * 0.68) + (WeightIncr * 1) + WeightConsis + (WeightEps * 1.1) + (WeightSurp * 1) + (WeightAvgMonthrise * 1.5), 2)
+            # Scores[n] = round((WeightMid * 1.2) + (WeightAvg * 0.68) + (WeightIncr * 1.8) + WeightConsis + (WeightAvgMonthrise * 1.5) + priceEstmate, 2)1
+            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1) + (WeightAvgMonthrise * 1.1) + priceEstmate , 2)
         else:
             print(n , "LOW EPS")
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
@@ -337,9 +385,12 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months, value=n+4 , timer=True)
 #     # print(sorted_scores)
 #     print(n)
+ticket_symbols = [
+   'SOUN' , 'RDDT' 
+]
 
-# sorted_scores = calculate_weighted_scores(['RR' , 'LAES' , 'RGTI'], 1)
-# print(sorted_scores)
+sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
+print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
@@ -351,10 +402,10 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         with open(file_path, "w") as file:
             for key, value in sorted_dict:
                 print(key)
-                # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec
+                # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec , targetHigh  , 52WeekLowHigh , PriceChangeMonth , PriceChangeFromHigh52 , targetHigh , MyEstimate rec , averageVolume
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
-                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']}\n"
+                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']}{StoreData[key]['MyEstimate']}{StoreData[key]['averageVolume']}\n"
                     )
         
 # WriteToFileAverage(['QUBT' , 'PLTR'] , "out.txt")
