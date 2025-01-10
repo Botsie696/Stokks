@@ -74,6 +74,6 @@ Rise = {}
 
 
 file_path = "YahooDirec.txt"
-betterstokks.WriteToFileAverage(stock_symbols , file_path  )
+betterstokks.WriteToFileAverage(stock_symbols , file_path  , timers=True )
 import read
 read.StoreData("yahoo.csv" , file_path)
