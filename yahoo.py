@@ -22,6 +22,13 @@ url6 = 'https://finance.yahoo.com/markets/stocks/52-week-gainers/'
 url7 = 'https://finance.yahoo.com/markets/stocks/trending/'
 url8 = 'https://finance.yahoo.com/research-hub/screener/most_active_penny_stocks'
 url9 = 'https://finance.yahoo.com/screener/predefined/most_active_penny_stocks'
+url10 = 'https://finance.yahoo.com/research-hub/screener/analyst_strong_buy_stocks/'
+url11 = 'https://finance.yahoo.com/research-hub/screener/morningstar_five_star_stocks/'
+url12 = 'https://finance.yahoo.com/research-hub/screener/top_stocks_owned_by_goldman_sachs/'
+url13 = 'https://finance.yahoo.com/research-hub/screener/analyst_strong_buy_stocks/'
+url14 = 'https://finance.yahoo.com/research-hub/screener/top_stocks_owned_by_ray_dalio/'
+url15 = 'https://finance.yahoo.com/research-hub/screener/latest_analyst_upgraded_stocks/'
+url16 = 'https://finance.yahoo.com/research-hub/screener/top_stocks_owned_by_warren_buffet/'
 
 def GetStock(url):
     headers = {
@@ -50,7 +57,7 @@ def GetStock(url):
 def GatherStocks():
     stock_symbols = []
     # stock_symbols = ['RDDT' , 'QUBT' , 'PLTR' , 'TSLA' ]
-    urlsHub = [url1 , url2 , url3 , url4 , url5 , url6 , url7 , url8 , url9 ]
+    urlsHub = [url1 , url2 , url3 , url4 , url5 , url6 , url7 , url8 , url9 , url10 , url11  , url12 , url13 , url14 , url15 , url16]
     for n in urlsHub:
         stock_symbols += GetStock(n)
     
@@ -67,6 +74,6 @@ Rise = {}
 
 
 file_path = "YahooDirec.txt"
-betterstokks.WriteToFileAverage(stock_symbols , file_path )
+betterstokks.WriteToFileAverage(stock_symbols , file_path  )
 import read
 read.StoreData("yahoo.csv" , file_path)
