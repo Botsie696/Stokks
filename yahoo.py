@@ -20,7 +20,8 @@ url4 = 'https://finance.yahoo.com/markets/stocks/most-active/'
 url5 =  'https://finance.yahoo.com/research-hub/screener/most_actives/'
 url6 = 'https://finance.yahoo.com/markets/stocks/52-week-gainers/'
 url7 = 'https://finance.yahoo.com/markets/stocks/trending/'
-
+url8 = 'https://finance.yahoo.com/research-hub/screener/most_active_penny_stocks'
+url9 = 'https://finance.yahoo.com/screener/predefined/most_active_penny_stocks'
 
 def GetStock(url):
     headers = {
@@ -49,7 +50,7 @@ def GetStock(url):
 def GatherStocks():
     stock_symbols = []
     # stock_symbols = ['RDDT' , 'QUBT' , 'PLTR' , 'TSLA' ]
-    urlsHub = [url1 , url2 , url3 , url4 , url5 , url6 , url7 ]
+    urlsHub = [url1 , url2 , url3 , url4 , url5 , url6 , url7 , url8 , url9 ]
     for n in urlsHub:
         stock_symbols += GetStock(n)
     
