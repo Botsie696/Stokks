@@ -35,7 +35,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add Recommendor.txt Recommendor.csv
           git commit -m "Run Recommendor gainers"
-          git pull origin master
-          git push origin master
+          git push -f origin master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
