@@ -101,9 +101,9 @@ def GatherStocks():
 
     stock_symbols = list(set(stock_symbols))
     return stock_symbols
-# stock_symbols += GatherStocks()
-# stock_symbols = list(set(stock_symbols))
-stock_symbols = ['FOA' , 'TSLA' , 'AAPL']
+stock_symbols += GatherStocks()
+stock_symbols = list(set(stock_symbols))
+
 print(stock_symbols)
 # Initialize a list to store data
 data = []
