@@ -16,10 +16,59 @@ stock = yf.Ticker(ticker_symbol)
 industry = stock.info.get("industry", "Industry not available")
 sector = stock.info.get("sector", "Sector not available")
 
-print(f"Ticker: {ticker_symbol}")
-print(f"Sector: {sector}")
-print(f"Industry: {industry}")
-
+stocksSP500 = [
+    "AAPL", "NVDA", "MSFT", "GOOG", "GOOGL", "AMZN", "META", "TSLA", "AVGO", "BRK.B", 
+    "WMT", "LLY", "JPM", "V", "UNH", "XOM", "MA", "ORCL", "COST", "HD",
+    "PG", "NFLX", "BAC", "JNJ", "ABBV", "CRM", "CVX", "KO", "MRK", "TMUS", 
+    "CSCO", "WFC", "ACN", "NOW", "TMO", "AXP", "IBM", "MCD", "BX", "MS", 
+    "PEP", "LIN", "DIS", "ISRG", "ABT", "AMD", "GE", "GS", "PM", "ADBE", 
+    "INTU", "QCOM", "TXN", "DHR", "CAT", "VZ", "BKNG", "T", "PLTR", "RTX",
+    "PFE", "SPGI", "BLK", "ANET", "HON", "AMGN", "LOW", "BSX", "AMAT", "SYK",
+    "CMCSA", "UBER", "NEE", "PGR", "UNP", "C", "TJX", "ETN", "SCHW", "COP",
+    "BA", "KKR", "ADP", "FI", "PANW", "BMY", "GILD", "DE", "LMT", "MU",
+    "VRTX", "ADI", "NKE", "UPS", "SBUX", "CB", "MDT", "MMC", "GEV", "PLD",
+    "LRCX", "CEG", "KLAC", "SO", "ELV", "APO", "EQIX", "MO", "CRWD", "TT",
+    "APH", "PYPL", "WM", "SHW", "CME", "INTC", "MCO", "CDNS", "ICE", "DUK",
+    "PH", "AMT", "ABNB", "DELL", "WELL", "CI", "CMG", "HCA", "CTAS", "SNPS",
+    "MSI", "AON", "MAR", "MDLZ", "PNC", "REGN", "USB", "EOG", "MCK", "ZTS",
+    "FTNT", "ITW", "AJG", "MMM", "GD", "TDG", "CL", "ORLY", "BDX", "WMB",
+    "EMR", "COF", "NOC", "WDAY", "FDX", "APD", "ECL", "TGT", "RSG", "SPG",
+    "KMI", "CSX", "ADSK", "RCL", "CVS", "CARR", "OKE", "HLT", "DLR", "TFC",
+    "VST", "AFL", "FCX", "PCAR", "MET", "BK", "GM", "AZO", "SLB", "ROP",
+    "CPRT", "CHTR", "NSC", "TRV", "NXPI", "JCI", "GWW", "FANG", "PSA", "PAYX",
+    "ROST", "AMP", "SRE", "AEP", "CMI", "MNST", "LULU", "OXY", "ALL", "PSX",
+    "FICO", "PWR", "HWM", "MPC", "COR", "O", "MSCI", "D", "NEM", "URI",
+    "AIG", "DHI", "HES", "NDAQ", "AXON", "EW", "DAL", "BKR", "KR", "DFS",
+    "TEL", "TRGP", "PEG", "FIS", "KMB", "KDP", "FAST", "PRU", "AME", "GLW",
+    "VLO", "GRMN", "KVUE", "LHX", "A", "CTVA", "GEHC", "F", "VRSK", "IT",
+    "ODFL", "PCG", "EXC", "CTSH", "CBRE", "EA", "IQV", "CCI", "XEL", "OTIS",
+    "SYY", "UAL", "LEN", "IR", "KHC", "YUM", "RMD", "IDXX", "LVS", "ACGL",
+    "VMC", "WAB", "STZ", "ETR", "HUM", "EXR", "GIS", "HSY", "CCL", "EBAY",
+    "DECK", "WTW", "RJF", "TTWO", "CNC", "MTB", "HPQ", "MLM", "ROK", "HIG",
+    "ED", "DD", "DXCM", "EFX", "AVB", "TPL", "VICI", "IRM", "MCHP", "LYV",
+    "WEC", "ANSS", "CAH", "EQT", "TSCO", "BRO", "HPE", "MPWR", "CSGP", "K",
+    "KEYS", "NUE", "XYL", "FITB", "STT", "GDDY", "DOW", "GPN", "SW", "EL",
+    "PPG", "EQR", "FTV", "BR", "MTD", "DOV", "EIX", "CHD", "SYF", "VLTO",
+    "DTE", "ADM", "CDW", "CPAY", "VTR", "TROW", "NVR", "WST", "TYL", "WBD",
+    "HAL", "DVN", "NTAP", "AWK", "LYB", "AEE", "PPL", "HBAN", "EXPE", "ON",
+    "WAT", "HUBB", "ROL", "FE", "PHM", "FOXA", "PTC", "TER", "LII", "WDC",
+    "BIIB", "WRB", "FOX", "ATO", "TDY", "CINF", "DRI", "RF", "ZBH", "IFF",
+    "SBAC", "CTRA", "ES", "ERIE", "PKG", "CNP", "STE", "FSLR", "NRG", "CBOE",
+    "LDOS", "VRSN", "ZBRA", "LUV", "WY", "NTRS", "CLX", "CMS", "LH", "ULTA",
+    "TSN", "MKC", "SMCI", "CFG", "PODD", "STX", "IP", "INVH", "ESS", "COO",
+    "BBY", "MAA", "STLD", "L", "JBHT", "PFG", "SNA", "FDS", "TRMB", "DGX",
+    "NI", "JBL", "ARE", "GEN", "KEY", "HRL", "J", "MOH", "HOLX", "MRNA",
+    "OMC", "GPC", "BLDR", "PNR", "BF.B", "NWS", "ALGN", "DG", "DLTR", "IEX",
+    "MAS", "BALL", "CF", "TPR", "NWSA", "EXPD", "EG", "BAX", "UDR", "FFIV",
+    "AVY", "RL", "KIM", "LNT", "SWKS", "TXT", "DOC", "APTV", "VTRS", "DPZ",
+    "RVTY", "EVRG", "INCY", "AMCR", "AKAM", "EPAM", "JNPR", "DVA", "JKHY",
+    "REG", "POOL", "CAG", "SWK", "UHS", "KMX", "CHRW", "BXP", "HST", "CPT",
+    "TECH", "SOLV", "NDSN", "BG", "NCLH", "PAYC", "CPB", "DAY", "ALLE", "TAP",
+    "SJM", "AIZ", "ALB", "WBA", "EMN", "BEN", "IPG", "AOS", "CRL", "MGM",
+    "GL", "LKQ", "GNRC", "PNW", "ENPH", "WYNN", "APA", "FRT", "HSIC", "LW",
+    "AES", "MKTX", "TFX", "HAS", "MOS", "MTCH", "MHK", "HII", "IVZ", "CE",
+    "PARA", "BWA", "CZR", "FMC"
+]
 
 
 stock_symbols = ['TSSI', 'WGS', 'RCAT', 'APP', 'KINS', 'AENT', 'WLFC', 'CANG', 'BYRN', 'RKLB', 'SUPV', 'RDW', 'RDDT', 'ETON', 'PLTR', 'RGTI', 'QUBT', 'EXOD', 'EAT', 'NN', 'EUDA', 'DAVE', 'CRDO', 'CLS', 'BMA', 'ALLT', 'REAL', 'GGAL', 'MTEK', 'VST', 'BBAR', 'WAVE', 'LFVN', 'MESO', 'AGX', 'PDEX', 'ICLK', 'LUNR', 'CVNA', 'RAIL', 'TLN', 'MSTR', 'UI', 'SEI', 'SMTC', 'DSP', 'BKTI', 'IPX', 'ADMA', 'HOOD', 'SMWB', 'PPTA', 'QFIN', 'IONQ', 'TATT', 'SE', 'GEV', 'EDN', 'OXBR', 'TPC', 'INSG', 'SOUN', 'DOGZ', 'PL', 'YPF', 'PRM', 'ARQT', 'CMPO', 'ECOR', 'TECX', 'USLM', 'TARS', 'SFM', 'INOD', 'RZLT', 'CLBT', 'ZETA', 'CRVS', 'UAL', 'DDL', 'SMR', 'JVA', 'RSI', 'TPB', 'FTAI', 'VRNA', 'QTWO', 'ELMD', 'PRTH', 'NTRA', 'PRAX', 'KOD', 'COMM', 'AVPT', 'APEI', 'CAVA', 'EOSE', 'SPOT', 'FLXS', 'NVDA']
@@ -137,7 +186,7 @@ def GetTicker(months):
 
 # Create a DataFrame
 
-def RunIndustry(months):
+def RunIndustry(months , SP500 = False):
     
     GetTicker(months)
     df = pd.DataFrame(data)
@@ -151,10 +200,15 @@ def RunIndustry(months):
     print(sector_trends)
     print("\nTrending Industries:")
     print(industry_trends)
-
-    sector_trends.to_csv(f"sector_trends{months}.csv", header=True)
-    industry_trends.to_csv(f"industry_trends{months}.csv", header=True)
+    if SP500:
+        sector_trends.to_csv(f"sector_trendsSP500.csv", header=False)
+        industry_trends.to_csv(f"industry_trendsSP500.csv", header=False)
+    else:
+        sector_trends.to_csv(f"sector_trends{months}.csv", header=False)
+        industry_trends.to_csv(f"industry_trends{months}.csv", header=False)
 
 RunIndustry(1)
 data = []
 RunIndustry(3)
+stock_symbols = stocksSP500
+RunIndustry(1  , SP500 = True)
