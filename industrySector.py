@@ -171,8 +171,11 @@ def GetTicker(months):
             # Get sector, industry, and recent price change
             sector = info.get("sector", "N/A")
             industry = info.get("industry", "N/A")
-            recent_price = stock.history(period=f"{months}mo")  # Get 1-month price history
-            
+            recent_price = None
+            if months != 5:
+                recent_price = stock.history(period=f"{months}mo")  # Get 1-month price history
+            else:
+                recent_price = stock.history(period=f"5d")  # Get 1-month price history
             # Calculate performance (percentage change)
             if not recent_price.empty:
                 price_change = (recent_price["Close"][-1] - recent_price["Close"][0]) / recent_price["Close"][0] * 100
@@ -210,5 +213,7 @@ def RunIndustry(months , SP500 = False):
 RunIndustry(1)
 data = []
 RunIndustry(3)
-stock_symbols = stocksSP500
+stock_symbols += stocksSP500
+stock_symbols = list(set(stock_symbols))
+RunIndustry(5)
 RunIndustry(1  , SP500 = True)
