@@ -1,4 +1,6 @@
 name: Run Recommendor gainers
+permissions:
+  contents: write
 
 on:
   schedule:
