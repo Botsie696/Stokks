@@ -124,7 +124,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
                 # if ()
                 
                 # print("Name is still an ussue" + str(Name))
-
+        
         # was three months 
         hist = ticker.history(period=f"{Months}mo" , interval ='5d' )
         # hist = ticker.history(start='2024-12-15', end='2025-01-05' , interval='5d')
@@ -223,6 +223,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
         # Return computed values
         priceEstmate = 0.1
         targetHigh = .1
+        
         if 'targetMeanPrice' in ticker.info and 'targetHighPrice' in ticker.info:
             priceEstmate = round((ticker.info.get('targetMeanPrice') +  ticker.info.get('targetHighPrice'))/ 2,2)
             targetHigh = ticker.info.get('targetHighPrice')
@@ -244,7 +245,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
                 time.sleep(10)
 
     except Exception as e:
-
+        print('ERROR HERE')
         pass
 
 Scores = {}
@@ -328,23 +329,23 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             continue
         (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry ) = gotcha
         
-        if med_price_change > 0 and avg_price_change > 0:
-            StoreData[n] = {
-                'Mid': med_price_change,
-                'Avg': round(avg_price_change,2),
-                'Sore': Sore,
-                'Consis': consistency_score,
-                'Eps': Eps,
-                'Surprise': Surprise, 
-                'Growth Rate': scores_mids, 
-                'Price': price, 
-                'recommendation' : recommendations , 
-                '52WeekLowHigh' : weeksHL , 
-                'PriceChangeMonth' : PriceChangeMonth , 
-                'PriceChangeFromHigh52' : PriceChangeFromHigh52  , 
-                'priceEstmate' : priceEstmate , 'targetHigh' : targetHigh , 'MyEstimate' : MyEstimate , 
-                'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry
-            }
+    
+        StoreData[n] = {
+            'Mid': med_price_change,
+            'Avg': round(avg_price_change,2),
+            'Sore': Sore,
+            'Consis': consistency_score,
+            'Eps': Eps,
+            'Surprise': Surprise, 
+            'Growth Rate': scores_mids, 
+            'Price': price, 
+            'recommendation' : recommendations , 
+            '52WeekLowHigh' : weeksHL , 
+            'PriceChangeMonth' : PriceChangeMonth , 
+            'PriceChangeFromHigh52' : PriceChangeFromHigh52  , 
+            'priceEstmate' : priceEstmate , 'targetHigh' : targetHigh , 'MyEstimate' : MyEstimate , 
+            'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry
+        }
 
     if not StoreData:
         return {}
@@ -404,7 +405,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
         sorted_dict , StoreData = calculate_weighted_scores(stock_symbols , months , timer=timers)
-       
+        # print(StoreData)
         # print("Dicted")
         # print(sorted_dict)
         print("Writing to File")

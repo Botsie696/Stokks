@@ -1,6 +1,6 @@
 import yfinance as yf
 import betterstokks
-stocks = ["AAL", "TSLA", "YPF", "NVDA", "SOFI", "ALLT", "KMDA", "BBAI", "LAES", "VRME", "RR"]
+stocks = ["AAL", "TSLA", "YPF", "NVDA", "SOFI", "ALLT", "KMDA", "BBAI", "LAES", "VRME", "RR" , 'PLTR' , 'SOUN' ]
 
 
 file_path = "PersonalStocks.txt"
