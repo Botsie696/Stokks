@@ -135,7 +135,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
         sector = ticker.info.get("sector", "N/A")
         industry = ticker.info.get("industry", "N/A")
         
-        
+        beta =  ticker.info.get("beta", "N/A")
         price_changes = hist['Close'].pct_change()
 
         # Extract required metrics
@@ -237,7 +237,8 @@ def ConsistancyScore(Stock, Months, Distance=15):
             surprise , 
             Price , 
             most_recommended , f"{fifty_two_week_low}-{fifty_two_week_high}" , 
-            PriceChangeMonth , PriceChangeFromHigh52  , priceEstmate , targetHigh , MyEstimate , averageVolumeString , sector , industry
+            PriceChangeMonth , PriceChangeFromHigh52  , priceEstmate , targetHigh , MyEstimate , averageVolumeString , sector , industry , 
+            beta
         )
     except HTTPError as e:
             if e.response.status_code == 429:  # Too many requests
@@ -327,7 +328,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         if (gotcha == None):
             # value += 1
             continue
-        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry ) = gotcha
+        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry , beta ) = gotcha
         
     
         StoreData[n] = {
@@ -344,7 +345,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             'PriceChangeMonth' : PriceChangeMonth , 
             'PriceChangeFromHigh52' : PriceChangeFromHigh52  , 
             'priceEstmate' : priceEstmate , 'targetHigh' : targetHigh , 'MyEstimate' : MyEstimate , 
-            'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry
+            'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry , 'beta' : beta
         }
 
     if not StoreData:
@@ -416,7 +417,7 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
                     f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']},{StoreData[key]['MyEstimate']},{StoreData[key]['averageVolume']},"
-                    f"{StoreData[key]['sector']},{StoreData[key]['industry']}\n"
+                    f"{StoreData[key]['sector']},{StoreData[key]['industry']},{StoreData[key]['beta']}\n"
                     )
         
 # WriteToFileAverage(['QUBT' , 'PLTR'] , "out.txt")
