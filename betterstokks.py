@@ -2,6 +2,7 @@ import yfinance as yf
 import requests
 from lxml import html
 import re
+import math
 import numpy as np
 import financedata
 from requests.exceptions import HTTPError
@@ -135,13 +136,19 @@ def ConsistancyScore(Stock, Months, Distance=15):
         sector = ticker.info.get("sector", "N/A")
         industry = ticker.info.get("industry", "N/A")
         
-        beta =  ticker.info.get("beta", "N/A")
+        beta = ticker.info.get("beta", "N/A")
         price_changes = hist['Close'].pct_change()
-
+        betaAddition = 0
+        if (beta != 'N/A' and beta > 0):
+            betaAddition = (Months * 30) / 5
+            betaAddition = beta / betaAddition
+        else:
+            beta = 1
         # Extract required metrics
         avg_price_change = price_changes.mean()
         med_price_change = price_changes.median()
-
+        
+        med_price_change = ((betaAddition/2) + med_price_change)
         # Prepare daily prices list
         daily_prices = hist['Close'].reset_index().rename(columns={'index': 'Date', 'Close': 'Price'})
 
@@ -160,21 +167,21 @@ def ConsistancyScore(Stock, Months, Distance=15):
 
             # Penalize for consistent downward movement
             if i > 2 and (price_changes.iloc[i] < 0 and price_changes.iloc[i - 1]):
-                score -= 1
+                score -= min(1 / beta , 1)
                
-            if (i > 6 and current_price < daily_prices.loc[i - 6, 'Price']):
-                score -= 1
+            if (i > 6 and (current_price < daily_prices.loc[i - 6, 'Price'])):
+                score -= min(1 / beta , 1)
 
-            elif (i > Distance and current_price < daily_prices.loc[i - Distance, 'Price']):
-                score -= 1
+            elif (i > Distance and (current_price < daily_prices.loc[i - Distance, 'Price'])):
+                score -= min(1 / beta , 1)
             
             if (i > 1):
                 p = 1 - (current_price / daily_prices.loc[i - 1, 'Price']) 
                 p *= 100
                 if (p > 10):
-                    score -= 2
+                    score -= min(2 / beta , 2)
                 elif (p > 14):
-                    score -= 3
+                    score -= min(3 / beta , 3)
             
             # Collect median prices at intervals
             
@@ -183,7 +190,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
         Price = 0
         PriceChangeMonth = 1
         
-        currentPrice =  daily_prices.loc[(total-1), 'Price']
+        currentPrice = daily_prices.loc[(total-1), 'Price']
         if Months == 1  and total > 1:
             PriceChangeMonth = round((1 - (daily_prices.loc[0, 'Price'] / currentPrice)) * 100,2)
         else:
@@ -223,7 +230,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
         # Return computed values
         priceEstmate = 0.1
         targetHigh = .1
-        
+        score = math.ceil(score)
         if 'targetMeanPrice' in ticker.info and 'targetHighPrice' in ticker.info:
             priceEstmate = round((ticker.info.get('targetMeanPrice') +  ticker.info.get('targetHighPrice'))/ 2,2)
             targetHigh = ticker.info.get('targetHighPrice')
@@ -330,7 +337,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             continue
         (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry , beta ) = gotcha
         
-    
+        
         StoreData[n] = {
             'Mid': med_price_change,
             'Avg': round(avg_price_change,2),
@@ -386,7 +393,10 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         #     Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1)  + priceEstmate , 2)
         # else:
         #     print(n , "LOW EPS")
-        Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1.2) + priceEstmate , 2)
+            # Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1.2) + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
+        
+        if (data['Price'] > 0.01):
+            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
 
 
@@ -397,7 +407,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     # print(sorted_scores)
 #     print(n)
 # ticket_symbols = [
-#    'FNMA'  , 'ZVSA' , 'AAL' , 'RGTI'
+#    'FNMA'  , 'RGTI' , 'AAL' , 'SUPV' , 'RCAT' , 'UAL' , 'ALLT'
 # ]
 
 # sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
