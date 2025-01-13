@@ -91,7 +91,7 @@ def calculate_average(dictionary):
     numeric_values.sort(reverse=True)
     
     # Calculate the top 30% threshold
-    top_30_percent_count = max(1, int(len(numeric_values) * 0.4))  # Ensure at least one value is included
+    top_30_percent_count = max(1, int(len(numeric_values) * 0.5))  # Ensure at least one value is included
     
     # Take the top 30% of numeric values
     top_30_percent_values = numeric_values[:top_30_percent_count]
@@ -161,9 +161,9 @@ def ConsistancyScore(Stock, Months, Distance=15):
             current_price = daily_prices.loc[i, 'Price']
 
             if i > 2 and price_changes.iloc[i] > 0 and current_price > daily_prices.loc[i - 2, 'Price']:
-                score += 1
+                score += min(1 / beta , 1)
             if i > 1 and price_changes.iloc[i] > 0 and current_price > daily_prices.loc[i - 1, 'Price']:
-                score += 1
+                  score += min(1 / beta , 1)
 
             # Penalize for consistent downward movement
             if i > 2 and (price_changes.iloc[i] < 0 and price_changes.iloc[i - 1]):
@@ -396,7 +396,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             # Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1.2) + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
         
         if (data['Price'] > 0.01):
-            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
+            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.6) + (WeightIncr * 1.6) + WeightConsis + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
 
 
@@ -406,12 +406,12 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months, value=n+4 , timer=True)
 #     # print(sorted_scores)
 #     print(n)
-# ticket_symbols = [
-#    'FNMA'  , 'RGTI' , 'AAL' , 'SUPV' , 'RCAT' , 'UAL' , 'ALLT'
-# ]
+ticket_symbols = [
+   'SES' , 'SLRX', 'ALLT'  , 'AAL' , 'RGTI' , 'UAL'
+]
 
-# sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
-# print(sorted_scores)
+sorted_scores = calculate_weighted_scores(ticket_symbols, 1)
+print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
