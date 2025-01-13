@@ -376,9 +376,9 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         WeightSurp = 1 if data['Surprise'] > 0 else -1
         priceEstmate = 1
         if (months != 1):
-            priceEstmate = data['targetHigh'] / data['Price']
+            priceEstmate = min( data['targetHigh'] / data['Price'] , 2.6)
            
-        
+            print(n , priceEstmate)
        
         # print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
         # if WeightMid > 0:
@@ -397,7 +397,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     # print(sorted_scores)
 #     print(n)
 # ticket_symbols = [
-#    'FNMA'  , 'UAL' , 'RGTI'
+#    'FNMA'  , 'ZVSA' , 'AAL' , 'RGTI'
 # ]
 
 # sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
