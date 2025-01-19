@@ -4,6 +4,6 @@ stocks = ["AAL", "TSLA", "YPF", "NVDA", "SOFI", "ALLT", "KMDA", "BBAI", "LAES", 
 stocks += ["GRRR", "TARS" , "RCAT" , "SPCB" , "SUPV" , "ACHR" , "LUNR" , "LBRT"]
 
 file_path = "PersonalStocks.txt"
-betterstokks.WriteToFileAverage(stocks , file_path   ,  months=1)
+betterstokks.WriteToFileAverage(stocks , file_path   ,  months=3)
 import read
 read.StoreData("PersonalStocks.csv" , file_path )
