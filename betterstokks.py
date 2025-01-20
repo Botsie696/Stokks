@@ -8,7 +8,7 @@ import financedata
 from requests.exceptions import HTTPError
 import time
 import buytime
-
+import supportlevel
 def convert_to_readable(num):
     """
     Convert large numbers to a more readable format.
@@ -41,6 +41,7 @@ def StockEarnings(stock):
         # Calculate sums
         EpsDiff = round(sum(numeric_eps_diff_values), 2)
         Surprise = round(sum(numeric_surprise_values), 2)
+       
  
         # print(Eps,  Surprise)
         # print(earnings_data)
@@ -98,13 +99,11 @@ def calculate_average(dictionary):
     
     # Calculate the average
     if not top_30_percent_values:
-        print("Total")
         return 1  # Avoid division by zero if no numeric values are found
   
     total = sum(top_30_percent_values)
     count = len(top_30_percent_values)
     if (total / count == 0): 
-        print("NOT" , total , count)
         return 1
     return total / count
 
@@ -136,8 +135,9 @@ def ConsistancyScore(Stock, Months, Distance=15):
         sector = ticker.info.get("sector", "N/A")
         industry = ticker.info.get("industry", "N/A")
         
-        beta = ticker.info.get("beta", "N/A")
+        beta = ticker.info.get("beta", 1)
         price_changes = hist['Close'].pct_change()
+        
         betaAddition = 0
         if (beta != 'N/A' and beta > 0):
             betaAddition = (Months * 30) / 5
@@ -223,7 +223,8 @@ def ConsistancyScore(Stock, Months, Distance=15):
 
             # Find the most recommended rating
             most_recommended = recommendation_summary.idxmax()
-        
+        SupportLvl , breakoutLvl = supportlevel.SupportLevel(hist, beta=beta)
+         
         MyEstimate = buytime.analyze_ticker(ticker,data= hist)
         # print(MyEstimate)
         # print(Stock , Price)
@@ -231,6 +232,9 @@ def ConsistancyScore(Stock, Months, Distance=15):
         priceEstmate = 0.1
         targetHigh = .1
         score = math.ceil(score)
+
+        
+         
         if 'targetMeanPrice' in ticker.info and 'targetHighPrice' in ticker.info:
             priceEstmate = round((ticker.info.get('targetMeanPrice') +  ticker.info.get('targetHighPrice'))/ 2,2)
             targetHigh = ticker.info.get('targetHighPrice')
@@ -245,7 +249,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
             Price , 
             most_recommended , f"{fifty_two_week_low}-{fifty_two_week_high}" , 
             PriceChangeMonth , PriceChangeFromHigh52  , priceEstmate , targetHigh , MyEstimate , averageVolumeString , sector , industry , 
-            beta
+            beta , SupportLvl , breakoutLvl
         )
     except HTTPError as e:
             if e.response.status_code == 429:  # Too many requests
@@ -335,7 +339,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         if (gotcha == None):
             # value += 1
             continue
-        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry , beta ) = gotcha
+        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry , beta  , SupportLvl , breakoutLvl) = gotcha
         
         
         StoreData[n] = {
@@ -352,7 +356,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             'PriceChangeMonth' : PriceChangeMonth , 
             'PriceChangeFromHigh52' : PriceChangeFromHigh52  , 
             'priceEstmate' : priceEstmate , 'targetHigh' : targetHigh , 'MyEstimate' : MyEstimate , 
-            'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry , 'beta' : beta
+            'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry , 'beta' : beta , 'SupportLvl' :  SupportLvl , 'breakoutLvl' : breakoutLvl
         }
 
     if not StoreData:
@@ -385,8 +389,11 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         if (months != 1):
             priceEstmate = min( data['targetHigh'] / data['Price'] , 2.6)
            
-            print(n , priceEstmate)
-       
+            # print(n , priceEstmate)
+        supportPrice = data['SupportLvl'] / data['Price'] 
+        supportPriceBreakout = data['Price'] / data['breakoutLvl']   
+        data['CloseSupportBuy'] = round(supportPrice,2)
+        data['CloseBreakOutBuy'] = round(supportPriceBreakout,2)
         # print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
         # if WeightMid > 0:
         #     # Scores[n] = round((WeightMid * 1.2) + (WeightAvg * 0.68) + (WeightIncr * 1.8) + WeightConsis + (WeightAvgMonthrise * 1.5) + priceEstmate, 2)1
@@ -396,7 +403,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             # Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1.2) + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
         
         if (data['Price'] > 0.01):
-            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.6) + (WeightIncr * 1.6) + WeightConsis + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
+            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.6) + (WeightIncr * 1.6) + (WeightConsis * 1.6) + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
 
 
@@ -406,12 +413,12 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months, value=n+4 , timer=True)
 #     # print(sorted_scores)
 #     print(n)
-ticket_symbols = [
-   'SES' , 'SLRX', 'ALLT'  , 'AAL' , 'RGTI' , 'UAL'
-]
+# ticket_symbols = [
+#    'ACHR' , 'LUNR' , 'LBRT'
+# ]
 
-sorted_scores = calculate_weighted_scores(ticket_symbols, 1)
-print(sorted_scores)
+# sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
+# print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
@@ -423,11 +430,12 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         with open(file_path, "w") as file:
             for key, value in sorted_dict:
                 print(key)
-                # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec   , 52WeekLowHigh , PriceChangeMonth , PriceChangeFromHigh52 , targetHigh , MyEstimate rec , averageVolume
+                # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec   , 52WeekLowHigh , PriceChangeMonth , PriceChangeFromHigh52 , targetHigh , MyEstimate rec , averageVolume , SupportLvl , breakoutLvl , CloseSupportBuy ,  CloseBreakOutBuy
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
                     f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']},{StoreData[key]['MyEstimate']},{StoreData[key]['averageVolume']},"
-                    f"{StoreData[key]['sector']},{StoreData[key]['industry']},{StoreData[key]['beta']}\n"
+                    f"{StoreData[key]['sector']},{StoreData[key]['industry']},{StoreData[key]['beta']},{StoreData[key]['SupportLvl']},{StoreData[key]['breakoutLvl']}\n"
+                    f"{StoreData[key]['CloseSupportBuy']},{StoreData[key]['CloseBreakOutBuy']}"
                     )
         
 # WriteToFileAverage(['QUBT' , 'PLTR'] , "out.txt")
@@ -438,11 +446,4 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
 # analyze_ticker(ticker)
 
 
-
-# 1959872.73 -- bbai
-# 2156477.27 - pltr
-# 3251318.18 - ACHR
-# 2156477.27 - rgti
-# 1094595.45 - QBTS
-# 805127.27 - QUBT
-# 547104.55 RKLB
+ 
