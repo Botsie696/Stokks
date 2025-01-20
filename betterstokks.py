@@ -434,8 +434,8 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
                 file.write(
                     f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
                     f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']},{StoreData[key]['MyEstimate']},{StoreData[key]['averageVolume']},"
-                    f"{StoreData[key]['sector']},{StoreData[key]['industry']},{StoreData[key]['beta']},{StoreData[key]['SupportLvl']},{StoreData[key]['breakoutLvl']}\n"
-                    f"{StoreData[key]['CloseSupportBuy']},{StoreData[key]['CloseBreakOutBuy']}"
+                    f"{StoreData[key]['sector']},{StoreData[key]['industry']},{StoreData[key]['beta']},{StoreData[key]['SupportLvl']},{StoreData[key]['breakoutLvl']},"
+                    f"{StoreData[key]['CloseSupportBuy']},{StoreData[key]['CloseBreakOutBuy']}\n"
                     )
         
 # WriteToFileAverage(['QUBT' , 'PLTR'] , "out.txt")
