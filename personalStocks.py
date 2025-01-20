@@ -1,7 +1,7 @@
 import yfinance as yf
 import betterstokks
-stocks = ["AAL", "TSLA", "YPF", "NVDA", "SOFI", "ALLT", "KMDA", "BBAI", "LAES", "VRME", "RR" , 'PLTR' , 'SOUN' ]
-stocks += ["GRRR", "TARS" , "RCAT" , "SPCB" , "SUPV" , "ACHR" , "LUNR" , "LBRT"]
+stocks = ["AAL", "TSLA", "NVDA", "SOFI", "ALLT", "KMDA", "BBAI",  "VRME", "RR" , 'PLTR' , 'SOUN' ]
+stocks += ["GRRR", "TARS" , "RCAT" , "SPCB" , "SUPV" , "ACHR" , "LUNR" , "LBRT" , "SWMB" , "HUT" , "KTOS" , "CRK" , "SEI" , "WULF"]
 
 file_path = "PersonalStocks.txt"
 betterstokks.WriteToFileAverage(stocks , file_path   ,  months=3)
