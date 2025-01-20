@@ -3,7 +3,7 @@ import pandas as pd
 
 # Define the ticker symbol and the period
 months = 3
-ticker = "LBRT"  # Replace with your desired ticker symbol
+ticker = "WULF"  # Replace with your desired ticker symbol
 period = f"{months}mo"  # The last month of data
 ticker = yf.Ticker(ticker)
 # Download the historical data
@@ -12,19 +12,18 @@ ticker = yf.Ticker(ticker)
 # Get the minimum closing price within the last month
 def SupportLevel(data=None , beta=None):
     if (data is None):
-        print("Not here")
         data = ticker.history(period=f"{months}mo" , interval ='5d' )
         start_date = "2024-08-01"
-        end_date = "2024-10-17"
+        end_date = "2024-11-08"
 
         # Fetch historical data
         # data = ticker.history(start=start_date, end=end_date, interval='5d')
 
     
-    support_price = data['Close'].min()
+    support_price = data['Low'].min()
     
-    BreakoutLevel = data['Close'].mean()
-    price_changes = data['Close'].pct_change().mean()
+    BreakoutLevel = data['High'].mean()
+    price_changes = data['High'].pct_change().mean()
   
     # print(currentPrice)
     BreakoutLevelVolume = data['Volume'].median()
@@ -43,5 +42,5 @@ def SupportLevel(data=None , beta=None):
     
     return BreakoutLevel , BreakoutLevelCalc
 
-price , breakout = SupportLevel(beta=1.72);
-print(price , breakout , 1)
+# price , breakout = SupportLevel(beta= 2.30);
+# print(price , breakout )
