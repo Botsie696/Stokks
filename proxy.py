@@ -20,14 +20,18 @@ def GetFileData():
 
 import betterstokks
 Rise = {}
-def GetStocks(stock_symbols):
-        file_path = "OldData.txt"
-        betterstokks.WriteToFileAverage(stock_symbols , file_path, timers=True)
-        import read
+def GetStocks(stock_symbols  , file , month):
+        file_path = file
+        betterstokks.WriteToFileAverage(stock_symbols , file_path, timers=True , months=month)
+        
         
 
 stockToLook = GetFileData()
 print(stockToLook)
-GetStocks(stockToLook)
+GetStocks(stockToLook , "OldData.txt" , 3)
 import read
 read.StoreData("outputnew.csv" , "OldData.txt" )
+
+
+GetStocks(stockToLook , "OldData1month.txt" , 1)
+read.StoreData("outputnew1month.csv" , "OldData1month.txt" )
