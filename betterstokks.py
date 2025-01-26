@@ -138,7 +138,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
         beta = ticker.info.get("beta", 1)
         price_changes = hist['Close'].pct_change()
         volumeChanges = hist['Volume'].pct_change().mean()
-        
+        volumeChanges =  round(min(volumeChanges , 2.5),2)
         betaAddition = 0
         if (beta != 'N/A' and beta > 0):
             betaAddition = (Months * 30) / 5
@@ -389,7 +389,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         WeightSurp = 1 if data['Surprise'] > 0 else -1
         priceEstmate = 1
         if (months != 1):
-            priceEstmate = min( data['targetHigh'] / data['Price'] , 2.6)
+            priceEstmate = round(min( data['targetHigh'] / data['Price'] , 2.6),2)
            
             # print(n , priceEstmate)
         supportPrice = data['SupportLvl'] / data['Price'] 
@@ -406,7 +406,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             # Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1.2) + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
         
         if (data['Price'] > 0.03):
-            Scores[n] = round((WeightMid * 1.4) + (WeightAvg * 0.8) + (WeightIncr * 1.5) + (WeightConsis * 1.4) + priceEstmate + (WeightAvgMonthrise * 0.6) + data['volumeChanges'] , 2)
+            Scores[n] = round((WeightMid * 1.4) + (WeightAvg * 0.6) + (WeightIncr * 1.5) + (WeightConsis * 1.4) + priceEstmate + (WeightAvgMonthrise * 0.6) + data['volumeChanges'] , 2)
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
 
 
@@ -416,12 +416,12 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months, value=n+4 , timer=True)
 #     # print(sorted_scores)
 #     print(n)
-ticket_symbols = [
-   'ACHR'  , 'SOUN'  , 'OKLO' , 'PLTR' , 'TARS'
-]
+# ticket_symbols = [
+#    'ACHR'  , 'SOUN'  , 'OKLO' , 'RGTI' , 'TARS' , 'NEHC'
+# ]
 
-sorted_scores = calculate_weighted_scores(ticket_symbols, 1)
-print(sorted_scores)
+# sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
+# print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
