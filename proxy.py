@@ -27,7 +27,8 @@ def GetStocks(stock_symbols  , file , month):
         
 
 stockToLook = GetFileData()
-print(stockToLook)
+stockToLook = list(set(stockToLook))
+# print(stockToLook)
 GetStocks(stockToLook , "OldData.txt" , 3)
 import read
 read.StoreData("outputnew.csv" , "OldData.txt" )
