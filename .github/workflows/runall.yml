@@ -32,7 +32,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin
           git merge origin/main --no-edit  # Merge origin/main to the local branch
-          git add outputnew.csv OldData.txt
+          git add outputnew.csv OldData.txt OldData1month.txt outputnew1month.csv
           git commit -m "Run Stokks Script Daily" || echo "No changes to commit"
           git push origin main
         env:
