@@ -89,3 +89,8 @@ file_path = "Recommendor.txt"
 betterstokks.WriteToFileAverage(stock_symbols , file_path , timers=True )
 import read
 read.StoreData("Recommendor.csv" , file_path)
+
+#  One month 
+file_path = "Recommendor1month.txt"
+betterstokks.WriteToFileAverage(stock_symbols , file_path , timers=True  , months=1)
+read.StoreData("Recommendor1month.csv" , file_path)

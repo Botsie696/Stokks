@@ -137,6 +137,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
         
         beta = ticker.info.get("beta", 1)
         price_changes = hist['Close'].pct_change()
+        volumeChanges = hist['Volume'].pct_change().mean()
         
         betaAddition = 0
         if (beta != 'N/A' and beta > 0):
@@ -249,7 +250,7 @@ def ConsistancyScore(Stock, Months, Distance=15):
             Price , 
             most_recommended , f"{fifty_two_week_low}-{fifty_two_week_high}" , 
             PriceChangeMonth , PriceChangeFromHigh52  , priceEstmate , targetHigh , MyEstimate , averageVolumeString , sector , industry , 
-            beta , SupportLvl , breakoutLvl
+            beta , SupportLvl , breakoutLvl , volumeChanges
         )
     except HTTPError as e:
             if e.response.status_code == 429:  # Too many requests
@@ -339,7 +340,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         if (gotcha == None):
             # value += 1
             continue
-        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry , beta  , SupportLvl , breakoutLvl) = gotcha
+        (consistency_score, avg_price_change, med_price_change, scores_mids, Sore, Eps, Surprise , price , recommendations , weeksHL , PriceChangeMonth , PriceChangeFromHigh52 , priceEstmate , targetHigh , MyEstimate , averageVolume , sector , industry , beta  , SupportLvl , breakoutLvl , volumeChanges) = gotcha
         
         
         StoreData[n] = {
@@ -356,7 +357,8 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
             'PriceChangeMonth' : PriceChangeMonth , 
             'PriceChangeFromHigh52' : PriceChangeFromHigh52  , 
             'priceEstmate' : priceEstmate , 'targetHigh' : targetHigh , 'MyEstimate' : MyEstimate , 
-            'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry , 'beta' : beta , 'SupportLvl' :  SupportLvl , 'breakoutLvl' : breakoutLvl
+            'averageVolume' : averageVolume  , 'sector' : sector , 'industry' : industry , 'beta' : beta , 'SupportLvl' :  SupportLvl , 'breakoutLvl' : breakoutLvl , 
+            'volumeChanges' : volumeChanges
         }
 
     if not StoreData:
@@ -394,6 +396,7 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         supportPriceBreakout = data['Price'] / data['breakoutLvl']   
         data['CloseSupportBuy'] = round(supportPrice,2)
         data['CloseBreakOutBuy'] = round(supportPriceBreakout,2)
+        
         # print(WeightMid , WeightAvg , WeightIncr , WeightConsis , WeightEps , WeightSurp)
         # if WeightMid > 0:
         #     # Scores[n] = round((WeightMid * 1.2) + (WeightAvg * 0.68) + (WeightIncr * 1.8) + WeightConsis + (WeightAvgMonthrise * 1.5) + priceEstmate, 2)1
@@ -402,8 +405,8 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
         #     print(n , "LOW EPS")
             # Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.68) + (WeightIncr * 1.6) + WeightConsis + (WeightEps * 1.2) + (WeightSurp * 1.2) + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
         
-        if (data['Price'] > 0.01):
-            Scores[n] = round((WeightMid * 1.7) + (WeightAvg * 0.6) + (WeightIncr * 1.6) + (WeightConsis * 1.6) + priceEstmate + (WeightAvgMonthrise * 0.6) , 2)
+        if (data['Price'] > 0.03):
+            Scores[n] = round((WeightMid * 1.4) + (WeightAvg * 0.8) + (WeightIncr * 1.5) + (WeightConsis * 1.4) + priceEstmate + (WeightAvgMonthrise * 0.6) + data['volumeChanges'] , 2)
     return sorted(Scores.items(), key=lambda item: item[1]) , StoreData
 
 
@@ -413,12 +416,12 @@ def calculate_weighted_scores(stock_symbols, months,timer=False ):
 #     sorted_scores = calculate_weighted_scores(['RDDT' , 'PLTR' , 'QUBT'], months, value=n+4 , timer=True)
 #     # print(sorted_scores)
 #     print(n)
-# ticket_symbols = [
-#    'ACHR' , 'LUNR' , 'LBRT'
-# ]
+ticket_symbols = [
+   'ACHR'  , 'SOUN'  , 'OKLO' , 'PLTR' , 'TARS'
+]
 
-# sorted_scores = calculate_weighted_scores(ticket_symbols, 3)
-# print(sorted_scores)
+sorted_scores = calculate_weighted_scores(ticket_symbols, 1)
+print(sorted_scores)
 
 def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         
@@ -430,13 +433,14 @@ def WriteToFileAverage(stock_symbols , file_path,timers=False , months=3):
         with open(file_path, "w") as file:
             for key, value in sorted_dict:
                 print(key)
+                if (value > 0):
                 # Name, Score,Price, Median, Average, Sore, Eps, Surprise, Growth Rate , Rec   , 52WeekLowHigh , PriceChangeMonth , PriceChangeFromHigh52 , targetHigh , MyEstimate rec , averageVolume , SupportLvl , breakoutLvl , CloseSupportBuy ,  CloseBreakOutBuy
-                file.write(
-                    f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
-                    f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']},{StoreData[key]['MyEstimate']},{StoreData[key]['averageVolume']},"
-                    f"{StoreData[key]['sector']},{StoreData[key]['industry']},{StoreData[key]['beta']},{StoreData[key]['SupportLvl']},{StoreData[key]['breakoutLvl']},"
-                    f"{StoreData[key]['CloseSupportBuy']},{StoreData[key]['CloseBreakOutBuy']}\n"
-                    )
+                    file.write(
+                        f"{key},{value},{StoreData[key]['Price']},{StoreData[key]['Mid']},"
+                        f"{StoreData[key]['Avg']},{StoreData[key]['Sore']},{StoreData[key]['Eps']},{StoreData[key]['Surprise']},{StoreData[key]['Growth Rate']},{StoreData[key]['recommendation']},{StoreData[key]['52WeekLowHigh']},{StoreData[key]['PriceChangeMonth']},{StoreData[key]['PriceChangeFromHigh52']},{StoreData[key]['targetHigh']},{StoreData[key]['priceEstmate']},{StoreData[key]['MyEstimate']},{StoreData[key]['averageVolume']},"
+                        f"{StoreData[key]['sector']},{StoreData[key]['industry']},{StoreData[key]['beta']},{StoreData[key]['SupportLvl']},{StoreData[key]['breakoutLvl']},"
+                        f"{StoreData[key]['CloseSupportBuy']},{StoreData[key]['CloseBreakOutBuy']},{StoreData[key]['volumeChanges']}\n"
+                        )
         
 # WriteToFileAverage(['QUBT' , 'PLTR'] , "out.txt")
  # Function to fetch proxies from the API
