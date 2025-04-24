@@ -1,23 +1,26 @@
-Shell Companies,58.65385197323476
 Insurance - Property & Casualty,46.48619134985007
 Beverages - Brewers,38.17055908342065
 Gold,37.12605635084286
+Solar,25.902433923900606
 Medical Instruments & Supplies,22.122113759122335
 Resorts & Casinos,9.632655552455358
 Other Precious Metals & Mining,8.313540627242844
-N/A,8.149371614270635
+N/A,8.014478200568709
 Health Information Services,6.758948264148044
 Mortgage Finance,6.56707838018256
 Tobacco,2.9006427599564244
 Copper,-0.5319125808195513
-Banks - Regional,-0.9951610562510318
+Software - Application,-0.9347251938279335
+Banks - Regional,-0.9362700659247766
+Other Industrial Metals & Mining,-1.6723769658800063
+Shell Companies,-1.7075566335784274
 Gambling,-2.8095685718163503
-Software - Application,-3.986281747967668
+Credit Services,-3.0508154022671925
 Diagnostics & Research,-5.424314676693886
 Travel Services,-5.4460460786891565
 Grocery Stores,-5.73648646615401
-Drug Manufacturers - Specialty & Generic,-7.713725518308172
-Insurance - Life,-7.978122630265095
+Medical Devices,-5.935248099592526
+Drug Manufacturers - Specialty & Generic,-7.713725518308173
 Oil & Gas Midstream,-8.07017637788794
 Telecom Services,-8.822232117850419
 Medical Care Facilities,-9.069801082899371
@@ -26,28 +29,25 @@ Industrial Distribution,-9.311568475969167
 Farm & Heavy Construction Machinery,-10.307337416203112
 Rental & Leasing Services,-10.590679634952123
 Farm Products,-10.902282402464342
+Utilities - Independent Power Producers,-10.962873136173172
 Healthcare Plans,-11.279717513199776
+Aerospace & Defense,-11.880385090060727
 Communication Equipment,-12.255972406098957
 Internet Content & Information,-12.300328381359318
 Auto & Truck Dealerships,-12.377821620121054
-Aerospace & Defense,-12.769885750836794
-Metal Fabrication,-13.597735152719016
+Metal Fabrication,-13.59773295519384
 Biotechnology,-13.76734281874404
-Software - Infrastructure,-14.054357296335189
+Software - Infrastructure,-14.054357296335187
 Drug Manufacturers - General,-14.181681645457738
 REIT - Office,-14.332231851243742
 Restaurants,-15.328913176034442
 Consumer Electronics,-16.03460955297105
 Banks - Diversified,-16.17682869519014
-Other Industrial Metals & Mining,-16.776859394046305
-Credit Services,-18.132359044033855
 Education & Training Services,-18.15053655255674
-Medical Devices,-19.919062852974832
+Insurance - Life,-19.255968930989294
 Specialty Industrial Machinery,-20.005745803028162
 Oil & Gas Integrated,-20.28808043050946
 Real Estate Services,-20.383571284048063
-Utilities - Independent Power Producers,-20.795772095027512
-Leisure,-20.827618181302118
 Asset Management,-20.88420398354552
 Electronics & Computer Distribution,-20.973972135271232
 Semiconductor Equipment & Materials,-21.970877220086386
@@ -59,7 +59,7 @@ Internet Retail,-24.650903659211576
 Entertainment,-24.88043040360857
 Utilities - Regulated Electric,-25.277056827580687
 Household & Personal Products,-26.42740383874908
-Electronic Components,-27.015988915085863
+Electronic Components,-27.015988915085867
 Utilities - Renewable,-27.036008174978857
 Insurance Brokers,-28.187915239044237
 Auto Parts,-28.290679967240735
@@ -67,12 +67,13 @@ REIT - Hotel & Motel,-29.31955741289416
 Information Technology Services,-29.351296163179345
 Oil & Gas Equipment & Services,-29.630837249817873
 Auto Manufacturers,-32.121393936781594
-Semiconductors,-32.89629894422707
+Computer Hardware,-32.68385073264631
+Semiconductors,-32.87116068379469
 Apparel Retail,-32.948015851636676
 Uranium,-33.004924459479824
+Leisure,-34.48677748322968
 Capital Markets,-35.60364659047843
 Electrical Equipment & Parts,-35.68739783071147
-Computer Hardware,-36.355546332451624
 Airlines,-37.29196264227921
 Building Products & Equipment,-38.930585521845046
 Luxury Goods,-39.07075165546074
@@ -83,7 +84,6 @@ Chemicals,-46.410891527335394
 Integrated Freight & Logistics,-47.00388039147292
 Oil & Gas E&P,-49.27113773552262
 Railroads,-55.209125191260654
-Solar,-61.14636002808578
 Marine Shipping,-64.30678464002067
 Insurance - Reinsurance,-71.75211005602175
 Personal Services,-87.82608665230143
