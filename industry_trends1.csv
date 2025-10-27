@@ -1,20 +1,20 @@
-Asset Management,385.4522094702608
+Asset Management,577.5757734030076
 Real Estate - Development,325.00001637090503
 Real Estate Services,137.8531495616597
 Electrical Equipment & Parts,69.069246318993
-Semiconductors,41.66081364261318
-Medical Devices,37.223758414721416
+Medical Devices,37.22375841472141
 Conglomerates,36.40662027810171
-Computer Hardware,32.17265030922607
-Specialty Industrial Machinery,31.103468256590794
+Semiconductors,34.97027587586469
+Specialty Industrial Machinery,31.103468256590787
+Biotechnology,29.74196346830151
+Capital Markets,29.123905035090104
 Utilities - Renewable,28.87250696536634
-Biotechnology,28.7908018659804
 Beverages - Non-Alcoholic,28.571430947251553
-Capital Markets,25.646815976425575
-N/A,24.26692856191592
+Computer Hardware,28.369078848339896
 Diagnostics & Research,24.021957357175058
 Building Products & Equipment,23.726348494811774
 Oil & Gas Drilling,23.417721184719994
+Other Industrial Metals & Mining,23.329067219002592
 Other Precious Metals & Mining,22.631574931897617
 Oil & Gas Equipment & Services,21.384405497925304
 Semiconductor Equipment & Materials,19.997321890486486
@@ -23,7 +23,7 @@ Metal Fabrication,18.346407626842396
 Financial Data & Stock Exchanges,15.57598507724373
 Marine Shipping,15.552693170680792
 Auto Parts,15.513625848036332
-Software - Infrastructure,14.73284463139522
+Software - Infrastructure,14.915520902366191
 Pharmaceutical Retailers,13.861384853149497
 Healthcare Plans,13.75978694283086
 Engineering & Construction,13.580100419826971
@@ -31,15 +31,16 @@ Communication Equipment,13.552267757867236
 REIT - Mortgage,12.729036597156574
 Utilities - Regulated Electric,12.378152378481936
 Banks - Regional,11.055138429843439
-Chemicals,10.676462556128122
+Chemicals,10.67646255612812
 Airlines,10.572340182393411
 Uranium,10.466724571063889
 Aerospace & Defense,10.042124190927755
-Software - Application,6.859007911811684
-Drug Manufacturers - General,6.65139248149811
+Oil & Gas E&P,8.101539559534828
+Software - Application,7.266470815612313
 Farm & Heavy Construction Machinery,6.568575915181553
 Building Materials,5.5132366068566405
 Railroads,3.4883712724666665
+Electronic Components,3.0742870210211004
 Insurance Brokers,2.999997138977051
 Grocery Stores,2.49905737714994
 Insurance - Property & Casualty,2.424240050030331
@@ -51,17 +52,15 @@ Utilities - Independent Power Producers,1.2526935316746084
 Restaurants,0.39916333395775716
 Oil & Gas Integrated,0.3560350244519424
 Specialty Chemicals,0.2759742957267932
-Electronic Components,0.2638201732715416
-Beverages - Brewers,0.23591293830871685
-Drug Manufacturers - Specialty & Generic,0.062322113272670725
-Information Technology Services,0.03669977312525574
-Gold,0.02139620127711339
+Drug Manufacturers - Specialty & Generic,0.062322113272670975
+Information Technology Services,0.03669977312525565
+Gold,0.021396201277113447
 Shell Companies,0.0
 Consulting Services,-0.1123176174264997
 Oil & Gas Midstream,-0.19607357316996205
 Electronics & Computer Distribution,-0.5428645059157574
+N/A,-0.7228133476528075
 "Furnishings, Fixtures & Appliances",-1.098953048075534
-Other Industrial Metals & Mining,-1.302624924248522
 Auto Manufacturers,-2.4891743623350053
 Department Stores,-2.5000021396538625
 Insurance - Life,-2.799256789280107
@@ -69,6 +68,7 @@ REIT - Office,-3.0651312996745355
 Advertising Agencies,-3.111370970934117
 Household & Personal Products,-3.9787823906186777
 Packaged Foods,-4.442138770799357
+Beverages - Brewers,-4.782604233754287
 Education & Training Services,-4.914583362365469
 Medical Care Facilities,-4.974576440319251
 Internet Content & Information,-5.426800095868573
@@ -80,9 +80,9 @@ Tobacco,-6.998564798912675
 Entertainment,-7.230766002948467
 Telecom Services,-7.960166127125551
 Rental & Leasing Services,-8.493504893501514
-Internet Retail,-8.532299101869446
-Gambling,-9.485572033989254
+Internet Retail,-9.983550095339012
 Consumer Electronics,-10.870507632285655
+Gambling,-11.208242520732293
 Insurance - Reinsurance,-11.855670736578201
 Mortgage Finance,-12.369798831307781
 Leisure,-14.641076834565766
