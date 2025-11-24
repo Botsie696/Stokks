@@ -1,15 +1,15 @@
 Real Estate - Development,625.0000090949472
-Asset Management,195.28883900653616
 Semiconductor Equipment & Materials,129.74205421304356
 Oil & Gas Midstream,78.30188544857218
 Luxury Goods,77.66097530303126
-N/A,70.92900604477641
 Consulting Services,67.4900675535514
 Solar,57.552692334298676
 Marine Shipping,57.44142286517226
 Computer Hardware,56.85488510993138
 Waste Management,56.47481832375443
+Other Industrial Metals & Mining,53.16223229303418
 Biotechnology,51.90215496872355
+Software - Infrastructure,48.816450177814986
 Electrical Equipment & Parts,47.038135238244216
 Silver,42.77777170693457
 Diagnostics & Research,39.948782546136954
@@ -17,33 +17,32 @@ Utilities - Renewable,39.64665115974244
 Oil & Gas Equipment & Services,28.169406151536556
 Specialty Industrial Machinery,26.988092231843698
 Utilities - Regulated Electric,26.242040362576052
+REIT - Healthcare Facilities,25.141493273207864
 Other Precious Metals & Mining,24.81669335663892
 Medical Devices,23.80479934221943
 Drug Manufacturers - General,23.78890857551527
-Communication Equipment,23.060123886423916
+Communication Equipment,23.060123886423913
 Engineering & Construction,22.792232046634236
 Gold,21.29988821862683
+Advertising Agencies,17.79116518586026
 Semiconductors,17.63279890849884
 Electronic Components,17.590210968879656
-Software - Infrastructure,15.46054366870785
-Other Industrial Metals & Mining,15.257978113658972
 Education & Training Services,12.877065595779804
 REIT - Mortgage,12.630371261745626
-Medical Care Facilities,11.971423414426624
-Metal Fabrication,9.355985532638933
+Capital Markets,12.123694707931854
+Metal Fabrication,9.355981550755166
 Uranium,9.134618470654798
-Advertising Agencies,8.89558259293013
-Apparel Retail,8.347963884023537
-Banks - Regional,7.5707484511998
+Apparel Retail,8.347963884023535
+Banks - Regional,7.596030573248744
 Real Estate Services,6.843578741519542
-Utilities - Independent Power Producers,6.6655677626823255
+Utilities - Independent Power Producers,6.665567762682325
 Insurance - Property & Casualty,6.636346012260451
-Capital Markets,6.308390732956442
 Specialty Chemicals,5.038396960602796
-Auto Manufacturers,4.528030931278824
-Internet Content & Information,3.704013602189297
 Auto Parts,1.9021145984341397
+Internet Content & Information,1.0306463890202775
 Entertainment,0.9419831869564685
+Auto Manufacturers,-0.2851921828922537
+Internet Retail,-1.198918594082187
 Tobacco,-1.4036032976194153
 Building Materials,-2.0562667230162224
 Recreational Vehicles,-2.578878937291977
@@ -53,20 +52,21 @@ Telecom Services,-4.6929039995457495
 Apparel Manufacturing,-5.518883199986909
 Chemicals,-6.215743161455867
 Information Technology Services,-6.372681707182865
-Packaged Foods,-7.110524039418396
+Packaged Foods,-7.110524039418398
 Aerospace & Defense,-7.126429195340676
-Software - Application,-7.943258183825703
-Drug Manufacturers - Specialty & Generic,-9.198616242401428
+Drug Manufacturers - Specialty & Generic,-9.19861624240143
+Medical Care Facilities,-9.788475321313257
+Software - Application,-10.262372243953651
 Rental & Leasing Services,-10.634488154589047
 Health Information Services,-12.550410857654152
 Medical Instruments & Supplies,-13.32668543546429
 Auto & Truck Dealerships,-13.395375479393193
 Railroads,-13.697100277691284
 Consumer Electronics,-13.725665064154878
+N/A,-13.87549917749057
 Electronics & Computer Distribution,-15.112455827898131
 Trucking,-15.24026578603658
 Airlines,-15.852081403004743
-Internet Retail,-16.527754359576598
 "Furnishings, Fixtures & Appliances",-17.04890823127706
 Healthcare Plans,-18.122710978919706
 Gambling,-19.595561124731653
@@ -79,7 +79,8 @@ Insurance - Reinsurance,-29.281767300824978
 Grocery Stores,-33.55140701575787
 Oil & Gas Integrated,-35.55653839252128
 Farm Products,-37.063207228903934
-Household & Personal Products,-38.536584401400134
+Asset Management,-39.61706216017592
+Household & Personal Products,-39.62377161370098
 Specialty Retail,-41.8345737842761
 Insurance Brokers,-47.211898629031154
 Security & Protection Services,-47.61904626746833
