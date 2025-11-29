@@ -3,7 +3,7 @@ Luxury Goods,70.66405528236194
 Silver,45.030909757311875
 Semiconductor Equipment & Materials,37.01062860877581
 Other Industrial Metals & Mining,34.36414808807552
-Biotechnology,33.88285459056566
+Biotechnology,33.641768682274595
 Recreational Vehicles,32.45085544151628
 Solar,31.438638818337665
 Electrical Equipment & Parts,28.202343540154242
@@ -11,10 +11,11 @@ Gold,25.947079277658275
 Marine Shipping,22.507166602631344
 Other Precious Metals & Mining,20.735004125682163
 Copper,18.972457751229204
+"Artificial Intelligence (AI), Generative AI, Machine Learning, Natural Language Processing, SaaS",18.00966999928647
 Engineering & Construction,16.7337368933821
 Diagnostics & Research,15.64166808709291
 Computer Hardware,15.399283336572836
-Real Estate Services,15.244647784807633
+Real Estate Services,15.24464778480763
 Scientific & Technical Instruments,11.800849458683087
 Resorts & Casinos,11.449951309466678
 Capital Markets,10.763326574493648
@@ -29,47 +30,48 @@ Personal Services,8.212018238632947
 Lodging,8.126101263731613
 Chemicals,8.092533789732835
 Metal Fabrication,7.890329979085223
-Oil & Gas Midstream,7.783643545156648
 REIT - Healthcare Facilities,7.734140843211764
 Integrated Freight & Logistics,7.685950348814977
-Electronic Components,6.880599075306589
+Electronic Components,6.880599075306588
 Semiconductors,6.88037287686401
 Education & Training Services,6.1194269217771735
 Medical Care Facilities,5.994433864991827
-Discount Stores,5.90724530698763
-Apparel Manufacturing,5.7286416250215035
+Apparel Manufacturing,5.728641625021504
 Residential Construction,5.6939219276065725
-Auto & Truck Dealerships,5.565728009794921
+Auto & Truck Dealerships,5.565728009794922
 Insurance - Property & Casualty,5.448912210584741
 Packaged Foods,5.298323581128131
 Health Information Services,5.246176592913947
 Specialty Chemicals,5.226746935572799
+Discount Stores,5.102836994733201
 Utilities - Regulated Electric,5.063522508841863
 Oil & Gas E&P,5.0568917946038265
 Oil & Gas Equipment & Services,4.992260835220879
 REIT - Hotel & Motel,4.649349199655434
 Internet Content & Information,4.6220027933683445
+Information Technology Services,4.386277818461858
 Steel,4.186091769716712
 Beverages - Non-Alcoholic,4.169180628296997
 Consulting Services,4.145629566952796
 Airlines,4.107668381807697
-Information Technology Services,3.763451673758288
+Oil & Gas Integrated,3.9982615578681586
 Banks - Diversified,3.74193132707338
 Beverages - Brewers,3.6843650026036836
 Financial Data & Stock Exchanges,3.6576851530604633
 REIT - Residential,3.655589804420449
 Auto Parts,3.48503354901395
-Tools & Accessories,3.2979774375905375
+Tools & Accessories,3.297977437590538
 Waste Management,3.27618954052061
 Consumer Electronics,3.101929289509619
 Utilities - Regulated Gas,3.0967102763661694
-Oil & Gas Integrated,2.8927732368255947
-Medical Instruments & Supplies,2.528272664285015
+Footwear & Accessories,2.5541055460598434
+Medical Instruments & Supplies,2.5282726642850144
+Oil & Gas Midstream,2.495685399331898
 Confectioners,2.440882554649456
-Communication Equipment,2.4082244644814175
+Communication Equipment,2.408224464481417
 Tobacco,2.250263654312813
 Insurance - Diversified,2.227136937692345
-Auto Manufacturers,2.167196574326721
+Auto Manufacturers,2.1671965743267214
 Insurance - Life,2.1062610602782383
 Pollution & Treatment Controls,1.9958628295611995
 Utilities - Independent Power Producers,1.8745850396105064
@@ -77,47 +79,46 @@ Railroads,1.7285155296215486
 Oil & Gas Refining & Marketing,1.624498455529486
 Utilities - Diversified,1.618590337327103
 Rental & Leasing Services,1.5223591057329153
-REIT - Retail,1.45048667176357
-Telecom Services,1.1068598159459433
+REIT - Retail,1.4504866717635698
+Telecom Services,1.106859815945943
 Security & Protection Services,1.1029590096817947
 Food Distribution,1.0049308965337294
+Electronic Gaming & Multimedia,0.9587457081101233
 Packaging & Containers,0.9170397420677586
-Home Improvement Retail,0.8858256225251786
-REIT - Office,0.7388303034517512
+Home Improvement Retail,0.8858256225251788
+REIT - Office,0.7388303034517514
 Asset Management,0.6014451122904062
-Healthcare Plans,0.40544765617279666
+Healthcare Plans,0.405447656172797
 Building Materials,0.3702174798599383
-Restaurants,0.15124721675239913
-Farm & Heavy Construction Machinery,0.1474366233689356
+Restaurants,0.15124721675239897
+Farm & Heavy Construction Machinery,0.14743662336893557
 Trucking,0.06754493048629862
-REIT - Industrial,-0.20504306552201756
-Gambling,-0.42864735516837654
+REIT - Industrial,-0.2050430655220175
+Gambling,-0.4286473551683767
 Household & Personal Products,-0.6392552937066083
 Utilities - Regulated Water,-0.6807777359415901
 Specialty Industrial Machinery,-1.0674987057049041
-Footwear & Accessories,-1.1631606122827685
 Farm Products,-1.1751703510389102
-REIT - Specialty,-1.1773830506913985
+REIT - Specialty,-1.1773830506913987
 Specialty Business Services,-1.370172586696228
 REIT - Diversified,-1.4814832415986432
 Mortgage Finance,-1.770706234580791
-Aerospace & Defense,-2.208823896654244
-Industrial Distribution,-2.428384287679774
+Industrial Distribution,-2.4283842876797745
+Aerospace & Defense,-2.603339127293985
 Conglomerates,-2.962833058476885
 "Furnishings, Fixtures & Appliances",-2.9707804263045587
-Software - Application,-3.4033746190628364
-N/A,-3.576372150844632
-Travel Services,-3.6407217117553827
+Software - Application,-3.5381973796548944
+Travel Services,-3.640721711755383
 Software - Infrastructure,-3.7189159636472704
 Insurance Brokers,-3.934960226610981
 Entertainment,-4.050338773608169
-Credit Services,-4.4191637327314
+Credit Services,-4.419163732731401
+N/A,-4.743961678042318
 Building Products & Equipment,-5.687759491176418
 Agricultural Inputs,-5.990450954842633
-Electronic Gaming & Multimedia,-6.051267349808277
 Insurance - Reinsurance,-7.793486258702645
 Drug Manufacturers - Specialty & Generic,-8.4698847916381
-Internet Retail,-9.473305459417265
+Internet Retail,-9.473305459417263
 Grocery Stores,-10.108342491325132
 Specialty Retail,-11.843323130609654
 Beverages - Wineries & Distilleries,-13.779115171297557
