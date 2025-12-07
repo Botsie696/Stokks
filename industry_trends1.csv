@@ -2,14 +2,14 @@ Specialty Chemicals,101.18389082929842
 Shell Companies,100.0
 Silver,52.32869089312517
 Other Industrial Metals & Mining,46.76288538875749
-Internet Retail,43.12106188923956
 Auto & Truck Dealerships,37.78519639839163
+Internet Retail,30.955140243028453
 Luxury Goods,29.205175014225787
+Discount Stores,29.023086514320475
 Real Estate - Development,26.315793343445538
 Beverages - Brewers,26.250004215204967
 Biotechnology,25.200613931887442
 Other Precious Metals & Mining,24.316544854023796
-Discount Stores,20.91988057701829
 Chemicals,20.067630751651414
 "Furnishings, Fixtures & Appliances",19.454988260843624
 Restaurants,19.09834987738841
@@ -25,41 +25,44 @@ Apparel Manufacturing,13.471111825114148
 Education & Training Services,12.520372467189345
 Medical Instruments & Supplies,11.86986779168346
 Marine Shipping,10.91499488701241
-Apparel Retail,10.557072400351164
-Drug Manufacturers - General,10.510280273222053
-Communication Equipment,8.993167890113414
-Engineering & Construction,8.491336814931033
+Apparel Retail,10.557072400351165
+Communication Equipment,9.069357888245296
+Engineering & Construction,8.491336814931035
 Medical Devices,8.40321575404351
 Rental & Leasing Services,7.7927877060486175
 Insurance - Life,7.5468387295831745
-Internet Content & Information,7.48047002994556
 Farm & Heavy Construction Machinery,7.266501268784137
 Footwear & Accessories,7.093988835797899
 Drug Manufacturers - Specialty & Generic,6.915852252043848
 Building Materials,6.319453521262597
+Drug Manufacturers - General,6.164664082613051
 Insurance - Reinsurance,6.015031663510011
+Entertainment,5.3675592309781806
 Electronic Components,5.32028666931502
 Telecom Services,4.81182519377349
 Electrical Equipment & Parts,4.7001244242182025
 Mortgage Finance,4.516818496483904
 REIT - Retail,4.309673733671357
 Semiconductors,3.7039025916442547
-Entertainment,3.6900905148555054
 Railroads,3.4897707245411143
+Internet Content & Information,3.028636671662286
 Aerospace & Defense,2.483852962627092
 Utilities - Regulated Electric,2.335720914805017
-Capital Markets,2.2520907331836897
-Real Estate Services,1.982394549912808
+Insurance - Diversified,2.2690870079895222
+Capital Markets,2.25209073318369
+Real Estate Services,1.9823945499128082
 Uranium,1.436645202410895
 Auto Manufacturers,1.2505681948596201
 Tobacco,0.952983039839256
-Software - Application,0.21893455887274532
+Banks - Diversified,0.5168767301967537
+Software - Application,0.21893455887274524
 Electronics & Computer Distribution,0.20886452527256574
 Healthcare Plans,0.05934886740338885
-Software - Infrastructure,0.021786767593174616
+Software - Infrastructure,0.02178676759317435
 Insurance - Property & Casualty,-0.00045197629216470685
+Oil & Gas Integrated,-0.05131670364142552
+Specialty Industrial Machinery,-0.6625298042929099
 Leisure,-1.3529712817299022
-Oil & Gas Integrated,-1.9989034312324052
 Metal Fabrication,-2.9285463559101315
 Banks - Regional,-3.068319256925698
 Oil & Gas Equipment & Services,-3.188245302431704
@@ -68,14 +71,13 @@ Home Improvement Retail,-3.2965214873640236
 Advertising Agencies,-3.3641814311154077
 Computer Hardware,-3.4895183531379055
 REIT - Specialty,-4.088600628765052
-Credit Services,-4.183476909214892
-N/A,-5.579479850160555
+Utilities - Independent Power Producers,-4.248572752421789
+Credit Services,-5.523805023157212
 Auto Parts,-5.6059067672719
-Utilities - Independent Power Producers,-5.946419568676467
 Information Technology Services,-6.028449359372019
 Travel Services,-6.199077480310801
+N/A,-6.533001383234882
 Conglomerates,-8.104105148609229
-Specialty Industrial Machinery,-8.435545892065733
 Medical Care Facilities,-9.308475039304248
 Utilities - Renewable,-10.229418523779051
 Farm Products,-10.569334972893394
@@ -86,7 +88,7 @@ Solar,-13.907934093912727
 Specialty Retail,-14.025308019060217
 Insurance Brokers,-17.2619030301938
 Oil & Gas E&P,-18.43971607221107
-Packaged Foods,-24.057317907822718
+Packaged Foods,-24.05731790782272
 Health Information Services,-26.60594605098991
 Consulting Services,-63.88889046085498
 Steel,-85.33333274674791
