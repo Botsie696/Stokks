@@ -1,20 +1,22 @@
 Semiconductors,21.79532590504057
 Other Precious Metals & Mining,19.20316239348227
+Other Industrial Metals & Mining,15.296153063730914
 Education & Training Services,13.839958802831845
+Software - Infrastructure,13.65897446975243
 Gold,13.604302120698124
 Rental & Leasing Services,12.482972431458562
 Aerospace & Defense,11.598203817488942
 Consulting Services,10.301137592753925
+Consumer Electronics,10.191617969659664
 Oil & Gas E&P,9.749202684403178
 Metal Fabrication,8.871651724898141
 Railroads,8.689103023344357
-Oil & Gas Equipment & Services,8.155962664033876
-Biotechnology,7.803249650334952
-Chemicals,7.795750791668438
+Oil & Gas Equipment & Services,8.155962664033874
+Chemicals,7.795750791668437
 Apparel Manufacturing,7.656374168544839
 Scientific & Technical Instruments,7.389967721268041
 Oil & Gas Midstream,7.247024848804139
-Medical Distribution,6.720846864706084
+Medical Distribution,6.7208468647060835
 Gambling,6.502508785840482
 Waste Management,6.376327652954934
 Engineering & Construction,5.97251910660388
@@ -22,7 +24,6 @@ Utilities - Regulated Water,5.592630786557598
 Communication Equipment,5.422313091894993
 REIT - Specialty,4.869668140507351
 REIT - Healthcare Facilities,4.763378475799623
-Other Industrial Metals & Mining,4.279403903907118
 Grocery Stores,4.236105478220926
 REIT - Retail,4.117919634653243
 Medical Devices,4.115635711168172
@@ -34,45 +35,46 @@ Telecom Services,3.5906466242795227
 REIT - Industrial,3.548677155436492
 Utilities - Regulated Electric,3.5482524750306905
 Specialty Business Services,3.321138090136381
-N/A,3.3015913098431717
 Confectioners,3.298811091455751
-Financial Data & Stock Exchanges,3.097219907006895
+Financial Data & Stock Exchanges,3.0979447240038054
 Pollution & Treatment Controls,2.9866303344288285
+N/A,2.757763726727758
 Electronic Components,2.4588364704090226
-Conglomerates,2.315616406608173
+Conglomerates,2.3156164066081737
 Insurance - Property & Casualty,2.2923032296529895
 REIT - Diversified,2.2735527450619286
-Medical Care Facilities,2.0889785369178515
-Resorts & Casinos,1.974585260523596
+Medical Care Facilities,2.088978536917851
+Biotechnology,2.0391346321087354
+Resorts & Casinos,1.9745852605235958
 Building Materials,1.8839576308767012
 Entertainment,1.6590613963457117
 Food Distribution,1.3563499429371464
 Advertising Agencies,1.257370237563375
-Integrated Freight & Logistics,1.1246820768111274
+Integrated Freight & Logistics,1.1246820768111276
 Medical Instruments & Supplies,1.0599829892007553
-Utilities - Independent Power Producers,1.0487885603369662
+Utilities - Independent Power Producers,1.0487885603369664
 Insurance - Diversified,0.7776610155728595
 Household & Personal Products,0.6746979748147138
 Copper,0.6374737771944443
-Oil & Gas Refining & Marketing,0.5343298962823472
+Oil & Gas Refining & Marketing,0.5483115318171116
 REIT - Hotel & Motel,0.4718657653373908
-Drug Manufacturers - General,0.4438410952496764
-Semiconductor Equipment & Materials,0.40700405412836216
-Building Products & Equipment,0.2446066182758973
+Drug Manufacturers - General,0.44384109524967646
+Semiconductor Equipment & Materials,0.40700405412836227
 Restaurants,0.1504420929289362
-Information Technology Services,0.0447520521905565
+Information Technology Services,0.04475205219055661
 Farm & Heavy Construction Machinery,-0.002200485821753517
 Insurance - Life,-0.19758662625538476
-REIT - Residential,-0.3302453156731008
+REIT - Residential,-0.33024531567310084
 Agricultural Inputs,-0.41656692637648707
 Apparel Retail,-0.5681408506299088
+Building Products & Equipment,-0.5870848364532627
 Lodging,-0.6589996754644107
-Steel,-0.7852486621533524
-Packaged Foods,-1.1501319767654183
+Steel,-0.7852486621533525
+Packaged Foods,-1.1501319767654186
 Packaging & Containers,-1.2719999071099082
 Beverages - Non-Alcoholic,-1.3282461685104685
-"Furnishings, Fixtures & Appliances",-1.338759942547357
-Specialty Chemicals,-1.3573095323033557
+"Furnishings, Fixtures & Appliances",-1.3387599425473569
+Specialty Chemicals,-1.3573095323033555
 Auto Parts,-1.4118891929473867
 Personal Services,-1.6063940252059932
 Oil & Gas Integrated,-1.6560028230759813
@@ -82,21 +84,19 @@ Industrial Distribution,-2.1827928509580956
 Beverages - Brewers,-2.747917519021014
 Utilities - Diversified,-3.08974679260804
 Residential Construction,-3.1766736329653544
-Drug Manufacturers - Specialty & Generic,-3.184301815638456
+Drug Manufacturers - Specialty & Generic,-3.1823863989630805
 Healthcare Plans,-3.241054280919252
 Security & Protection Services,-3.364712998845505
 Luxury Goods,-3.7744607631104343
 Home Improvement Retail,-4.035769663031233
-Consumer Electronics,-4.170054143088521
-Specialty Industrial Machinery,-4.236211889214897
+Specialty Industrial Machinery,-4.2371053057890995
 Credit Services,-4.717933615641419
 Diagnostics & Research,-4.827290451243922
 Tobacco,-4.87471424163621
 Banks - Diversified,-4.884189893746398
-Software - Infrastructure,-5.661751788555846
 Footwear & Accessories,-5.68621976632579
 Asset Management,-6.248353175917747
-Software - Application,-6.419255270440642
+Software - Application,-6.7293112408125095
 Auto Manufacturers,-6.777092735645369
 Travel Services,-6.983000750661361
 Insurance - Reinsurance,-7.201534442717692
@@ -108,12 +108,12 @@ Airlines,-7.951696518556792
 Insurance Brokers,-8.367814105893457
 Farm Products,-8.899649488035426
 Computer Hardware,-9.603188973628251
-Capital Markets,-11.069877212796788
+Capital Markets,-10.979388731965193
 Auto & Truck Dealerships,-11.120452621930488
-Banks - Regional,-11.182656510465456
+Banks - Regional,-11.182656721043363
 Solar,-12.579721431167519
 Leisure,-13.565991723577971
 Specialty Retail,-15.445918485304825
 Electronics & Computer Distribution,-15.449749077903045
 Electrical Equipment & Parts,-15.963990377893623
-Real Estate Services,-18.373252441684485
+Real Estate Services,-18.375521640163143
