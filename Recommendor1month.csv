@@ -1,501 +1,506 @@
-CURV,0.01,1.68,216.32,-27.21,-2,0.01,-1.87,-2/5,hold,0.939-6.69,-5.36,75.0,2.25,1.92,mere Sell (some bought),400.54 thousand,Consumer Cyclical,Apparel Retail,1.052,1.91,2.26,1.14,0.74,0.02
-DMAC,0.02,5.96,152.41,-76.19,0,0.0,-0.01,0/5,buy,3.475-10.4195,-11.41,43.0,25.0,20.25,mere Sell (some bought),205.00 thousand,Healthcare,Biotechnology,1.153,6.48,7.89,1.09,0.76,-0.22
-BBAR,0.03,14.22,8.41,6.66,-2,0,0,-2/5,strongBuy,7.76-23.1,-0.4,38.0,29.0,26.25,Sell ALL,511.24 thousand,Financial Services,Banks - Regional,0.147,15.44,18.49,1.09,0.77,0.03
-SUPN,0.06,48.55,136.05,-11.04,-2,0.39,1.89,-2/5,buy,29.16-59.68,-1.65,19.0,66.0,64.33,== less Sell ALL==,502.84 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.732,50.57,60.32,1.04,0.8,-0.02
-EGAN,0.09,7.35,189.85,-49.25,-1,0.11,1.12,-1/5,hold,4.81-15.95,-6.94,54.0,20.0,17.25,mere Sell (some bought),190.64 thousand,Technology,Software - Application,0.935,7.78,9.2,1.06,0.8,-0.1
-SABS,0.11,3.48,147.95,-58.79,-1,0.72,0.67,-1/5,buy,1.53-6.6,-8.62,47.0,15.0,12.25,mere Sell (some bought),435.72 thousand,Healthcare,Biotechnology,0.613,3.8,4.5,1.09,0.77,0.16
-CRESY,0.18,11.24,-51.02,-62.89,0,1,1,0/5,strongBuy,8.185366-14.21,-8.99,21.0,16.0,15.46,Buy,279.60 thousand,Industrials,Conglomerates,0.103,11.97,14.14,1.06,0.79,0.2
-LNSR,0.19,5.39,229.89,-46.47,-1,-0.04,-0.45,-1/5,buy,5.06-14.31,-8.91,62.0,10.0,9.25,Buy time,98.64 thousand,Healthcare,Medical Devices,0.985,5.77,6.8,1.07,0.79,-0.06
-XLO,0.19,7.79,-43.64,-39.15,-1,-1.12,-2.67,-1/5,buy,6.468-16.52,-5.71,53.0,20.0,20.0,mere Sell (some bought),22.88 thousand,Healthcare,Biotechnology,1,8.5,9.95,1.09,0.78,0.39
-DHX,0.22,2.48,191.92,-55.06,-1,0.08,1.89,-1/5,strongBuy,1.21-3.34,-8.87,26.0,10.0,7.62,Sell ALL,181.60 thousand,Technology,Software - Application,1.261,2.83,3.35,1.14,0.74,0.14
-TPB,0.26,77.18,176.99,-81.38,-1,0.31,0.37,-1/5,buy,60.84-146.9,-11.71,47.0,140.0,135.62,Sell ALL,397.70 thousand,Consumer Defensive,Tobacco,1.03,81.74,97.65,1.06,0.79,0.56
-QTTB,0.28,5.5,-86.9,-21.68,0,6.03,6.82,0/5,buy,1.345-8.045,-7.27,32.0,20.0,17.17,Sell,295.86 thousand,Healthcare,Biotechnology,1,6.32,7.37,1.15,0.75,-0.08
-DEC,0.37,16.36,27.48,-77.61,1,1,1,1/5,buy,12.26-18.9,-11.86,13.0,28.0,25.12,Buy,730.48 thousand,Energy,Oil & Gas Integrated,0.426,16.68,20.08,1.02,0.81,-0.09
-HTCO,0.39,7.17,137.72,-100.87,0,1,1,0/5,,4.55-61.75,-26.22,88.0,0.1,0.1,Sell,406.52 thousand,Industrials,Marine Shipping,1,9.64,11.38,1.34,0.63,0.88
-SONY,0.39,19.78,117.85,-2.46,-2,0.07,0.22,-2/5,buy,19.725-30.34,-0.71,35.0,32.5,30.52,Sell ALL,5.90 million,Technology,Consumer Electronics,0.751,20.63,24.84,1.04,0.8,0.24
-SUPV,0.41,8.53,86.37,19.87,-2,-0.13,-4.39,-2/5,hold,4.54-16.897,1.29,50.0,15.0,13.89,Sell ALL,695.34 thousand,Financial Services,Banks - Regional,0.671,9.37,11.13,1.1,0.77,0.05
-CRK,0.45,17.47,3.13,-150.4,3,0.08,1.03,3/5,hold,14.65-31.17,-25.24,44.0,29.0,24.46,Buy time,2.09 million,Energy,Oil & Gas E&P,0.39,18.85,22.52,1.08,0.78,0.1
-PAM,0.46,82.79,-54.53,-34.65,0,1.93,1.4,0/5,buy,54.95-94.5,-4.9,12.0,140.0,126.64,Buy,242.16 thousand,Industrials,Conglomerates,1,86.06,102.63,1.04,0.81,0.08
-VITL,0.49,12.1,285.17,-64.3,-1,0.02,0.09,-1/5,buy,11.8-53.125,-9.09,77.0,47.0,36.8,Sell ALL,2.61 million,Consumer Defensive,Farm Products,1.347,13.13,15.76,1.09,0.77,0.3
-PRDO,0.53,34.34,121.89,-55.17,0,0.09,0.16,0/5,strongBuy,24.84-38.5,-8.27,11.0,42.0,42.0,Buy,606.72 thousand,Consumer Defensive,Education & Training Services,0.839,35.61,42.42,1.04,0.81,0.05
-GPOR,0.58,192.63,40.62,-78.94,1,0.37,0.08,1/5,buy,160.95-225.78,-11.54,15.0,287.0,265.25,Buy,274.76 thousand,Energy,Oil & Gas E&P,0.591,201.7,239.33,1.05,0.8,0.09
-CALM,0.6,75.07,40.37,-31.16,0,0.42,0.43,0/5,hold,71.92-126.4,-4.3,41.0,100.0,94.0,Sell ALL,766.76 thousand,Consumer Defensive,Farm Products,0.298,77.28,92.96,1.03,0.81,-0.05
-RNA,0.66,12.99,213.22,-30.34,-1,1,1,-1/5,buy,11.95-16.77,-4.31,23.0,25.0,25.0,Sell,363.12 thousand,Healthcare,Biotechnology,1,13.68,17.13,1.05,0.76,0.14
-DLNG,0.7,3.86,109.12,-52.03,-2,0.06,0.21,-2/5,,3.31-4.45,-7.25,13.0,0.1,0.1,Sell ALL,81.32 thousand,Energy,Oil & Gas Midstream,0.662,4.1,4.94,1.06,0.78,1.27
-DDL,0.75,2.5,154.75,-4.46,-2,1,1,-2/5,buy,1.65-3.41,-1.2,27.0,3.5405629,3.34,Sell ALL,508.46 thousand,Consumer Defensive,Grocery Stores,1,2.67,3.14,1.07,0.8,0.55
-IMMX,0.77,8.63,66.88,17.07,-1,-0.17,-1.01,-1/5,buy,1.87-11.61,0.58,26.0,23.0,20.28,Sell ALL,671.06 thousand,Healthcare,Biotechnology,0.206,9.61,11.5,1.11,0.75,-0.03
-PHR,0.78,9.37,281.58,-102.34,2,0.19,0.66,2/5,buy,7.77-32.76,-21.77,71.0,24.0,20.08,Sell,1.82 million,Healthcare,Health Information Services,0.855,9.58,11.38,1.02,0.82,-0.25
-RYAM,0.88,9.39,395.21,-73.11,0,-0.19,-2.36,0/5,strongBuy,3.35-11.85,-12.03,21.0,15.0,14.75,== less Sell ALL==,754.34 thousand,Basic Materials,Chemicals,2.032,10.13,11.85,1.08,0.79,0.07
-DOGZ,0.96,1.2,537.99,-108.1,0,1,1,0/5,,1.02-31.48,-15.83,96.0,0.1,0.1,mere Sell (some bought),30.28 thousand,Consumer Cyclical,Leisure,2.533,1.34,1.55,1.12,0.77,0.29
-WK,0.97,53.91,103.46,-62.16,0,0.25,0.56,0/5,buy,50.98-97.095,-8.89,44.0,102.0,95.14,Buy,911.92 thousand,Technology,Software - Application,0.679,56.24,70.06,1.04,0.77,0.63
-JILL,1.04,12.68,163.85,-99.37,2,0.27,1.12,2/5,buy,10.405-18.8,-17.1,33.0,18.0,16.25,Sell,76.86 thousand,Consumer Cyclical,Apparel Retail,0.816,13.3,15.98,1.05,0.79,0.1
-CDZI,1.05,4.19,458.97,-106.78,0,-0.03,-0.29,0/5,buy,2.58-6.96,-16.23,40.0,15.0,13.33,Sell,1.12 million,Utilities,Utilities - Regulated Water,2.078,4.91,5.91,1.17,0.71,0.56
-FTAI,1.06,213.11,369.09,-36.89,-1,0.02,0.01,-1/5,buy,86.84-323.51,-7.34,34.0,375.0,356.95,Sell ALL,1.54 million,Industrials,Rental & Leasing Services,1.649,246.37,293.43,1.16,0.73,0.35
-FWONA,1.07,78.38,177.35,24.72,-1,0.03,0.15,-1/5,buy,73.7-99.52,2.87,21.0,115.0,111.42,Sell ALL,151.94 thousand,Communication Services,Entertainment,0.739,80.89,99.98,1.03,0.78,-0.13
-TNDM,1.09,18.16,389.73,-49.55,-1,0.11,0.98,-1/5,hold,9.98-29.65,-7.85,39.0,56.0,43.6,Sell ALL,1.73 million,Healthcare,Medical Devices,1.743,20.38,23.27,1.12,0.78,0.47
-RCAT,1.1,11.07,291.46,-29.6,0,-0.08,-0.73,0/5,buy,5.03-18.78,-4.7,41.0,25.0,23.38,Sell,10.76 million,Industrials,Aerospace & Defense,1.361,12.78,14.74,1.15,0.75,-0.13
-HQY,1.1,81.48,67.95,0.96,0,0.15,0.17,0/5,buy,72.76-116.65,0.0,30.0,128.0,120.44,== less Sell ALL==,1.12 million,Healthcare,Health Information Services,0.262,82.84,98.83,1.02,0.82,-0.06
-RGEN,1.14,113.11,351.51,20.7,-2,0.1,0.21,-2/5,buy,109.5-175.77,1.43,36.0,220.0,199.89,mere Sell (some bought),917.48 thousand,Healthcare,Medical Instruments & Supplies,1.189,120.32,145.04,1.06,0.78,0.16
-PDEX,1.14,49.84,36.98,40.18,-1,0.79,1.57,-1/5,,23.47-67.87,4.82,27.0,0.1,0.1,mere Sell (some bought),22.08 thousand,Healthcare,Medical Instruments & Supplies,1,51.4,61.38,1.03,0.81,0.04
-CMMB,1.15,1.46,92.71,-0.11,-1,0.05,1.6,-1/5,strongBuy,1.35-5.88,-1.37,75.0,25.0,20.0,mere Sell (some bought),55.18 thousand,Healthcare,Biotechnology,0.583,1.68,2.05,1.15,0.71,0.52
-APYX,1.15,3.46,278.88,-17.87,-1,0.08,0.98,-1/5,buy,0.97-4.5,-3.47,23.0,8.0,7.2,mere Sell (some bought),110.84 thousand,Healthcare,Medical Devices,1.543,3.86,4.96,1.12,0.7,0.33
-FUN,1.19,18.02,84.05,44.81,-1,0.56,-2.22,-1/5,buy,12.51-38.47,4.44,53.0,29.0,26.25,Sell ALL,1.76 million,Consumer Cyclical,Leisure,0.309,18.88,22.46,1.05,0.8,-0.05
-THC,1.2,180.1,328.7,-27.43,-1,0.98,0.26,-1/5,buy,140.28-247.21,-4.39,27.0,288.0,275.45,mere Sell (some bought),1.49 million,Healthcare,Medical Care Facilities,1.495,192.47,236.69,1.07,0.76,0.39
-AKBA,1.2,1.36,121.35,31.71,-1,0.02,1.17,-1/5,buy,1.14-4.079,2.94,67.0,6.0,5.2,mere Sell (some bought),2.15 million,Healthcare,Drug Manufacturers - Specialty & Generic,0.37,1.45,1.72,1.07,0.79,0.05
-PRKS,1.21,32.61,264.83,59.18,-2,-1.02,-0.62,-2/5,hold,28.77-56.95,5.27,43.0,54.0,48.15,mere Sell (some bought),916.70 thousand,Consumer Cyclical,Leisure,1.185,35.16,42.15,1.08,0.77,-0.07
-WBD,1.21,27.05,399.42,-0.95,-1,-0.08,-27.62,-1/5,hold,8.06-30.0,-0.15,10.0,31.25,30.42,mere Sell (some bought),20.25 million,Communication Services,Entertainment,1.637,27.3,32.66,1.01,0.83,-0.15
-USLM,1.22,128.24,203.49,21.63,-1,-0.21,-0.18,-1/5,buy,91.04-141.44,2.36,9.0,138.0,138.0,mere Sell (some bought),121.72 thousand,Basic Materials,Building Materials,0.916,134.22,160.67,1.05,0.8,-0.0
-LINK,1.22,2.85,189.1,30.04,-1,0,0,-1/5,,2.66-10.101333,3.51,72.0,0.1,0.1,Sell,15.60 thousand,Technology,Electronic Components,0.664,3.04,3.6,1.07,0.79,-0.08
-IAG,1.3,16.36,558.71,-31.61,-1,0.19,0.54,-1/5,buy,6.06-24.87,-6.97,34.0,34.0,30.65,mere Sell (some bought),6.80 million,Basic Materials,Gold,2.283,18.6,21.78,1.14,0.75,0.09
-ALGT,1.31,74.51,372.2,-6.49,-1,0.57,0.27,-1/5,hold,42.56-118.0,-2.75,37.0,120.0,110.59,Sell ALL,463.14 thousand,Industrials,Airlines,1.629,83.85,98.44,1.13,0.76,0.15
-CDE,1.33,17.33,310.5,58.71,-2,0.0,-0.04,-2/5,buy,5.21-27.77,4.79,38.0,40.0,33.77,Sell ALL,20.76 million,Basic Materials,Gold,1.328,19.22,23.1,1.11,0.75,-0.04
-LOMA,1.34,10.86,138.97,33.0,-1,0,0,-1/5,strongBuy,7.04-14.17,3.68,23.0,15.0,15.0,Sell,412.74 thousand,Basic Materials,Building Materials,0.691,11.31,13.76,1.04,0.79,0.12
-GBX,1.38,47.8,329.19,-50.71,-1,0.0,0.01,-1/5,buy,38.23-59.19,-7.32,19.0,52.0,48.33,Sell ALL,586.32 thousand,Industrials,Railroads,1.61,51.28,61.77,1.07,0.77,0.9
-PPTA,1.38,26.24,138.83,48.1,-1,-0.78,-19.56,-1/5,buy,11.22-37.37,3.54,30.0,42.0,40.2,Sell ALL,1.27 million,Basic Materials,Other Precious Metals & Mining,0.716,29.51,35.03,1.12,0.75,0.01
-FPI,1.4,11.48,211.48,34.42,-1,0.05,4.33,-1/5,hold,9.365-13.225,4.26,13.0,12.5,12.5,Sell ALL,358.78 thousand,Real Estate,REIT - Specialty,0.856,11.62,13.87,1.01,0.83,-0.02
-BARK,1.42,9.11,485.39,-75.28,1,-0.1,-0.75,1/5,buy,8.15-28.4,-12.4,68.0,60.0,47.5,Sell,68.90 thousand,Consumer Cyclical,Specialty Retail,2.069,9.66,11.01,1.06,0.83,-0.1
-CSBR,1.43,5.85,90.67,1.6,1,0.09,3.0,1/5,,5.5-9.63,0.17,39.0,0.1,0.1,mere Buy (some sold),4.50 thousand,Healthcare,Biotechnology,0.404,5.91,7.34,1.01,0.8,-0.34
-ESQ,1.49,105.42,81.13,2.06,0,-0.1,-0.06,0/5,hold,80.194-134.815,-0.5,22.0,130.0,127.5,Buy,156.28 thousand,Financial Services,Banks - Regional,0.445,112.22,132.03,1.06,0.8,0.3
-RZLT,1.49,3.12,133.33,99.75,-2,0.04,0.09,-2/5,buy,1.07-11.457,8.65,73.0,6.0,5.56,Buy,1.26 million,Healthcare,Biotechnology,0.659,3.36,3.98,1.08,0.78,0.0
-EVER,1.52,15.76,153.25,4.87,0,1.28,2.37,0/5,strongBuy,13.93-28.73,0.63,45.0,30.0,27.08,Sell ALL,542.16 thousand,Communication Services,Internet Content & Information,0.613,15.96,19.13,1.01,0.82,0.1
-CAPL,1.52,21.09,94.17,19.26,0,0.25,4.38,0/5,hold,19.61-24.53,2.47,14.000000000000002,0.1,0.1,- Buy time -,48.32 thousand,Energy,Oil & Gas Refining & Marketing,0.336,21.34,26.8,1.01,0.79,0.04
-EMBC,1.52,8.71,242.29,-8.08,0,0.08,0.16,0/5,hold,8.47-15.55,-1.49,44.0,22.0,18.5,Sell ALL,784.46 thousand,Healthcare,Medical Instruments & Supplies,1.101,9.19,11.12,1.06,0.78,0.09
-AR,1.52,39.01,68.94,-84.18,3,-0.18,-0.55,3/5,buy,29.1-45.75,-13.38,15.0,56.0,52.69,Buy time,4.98 million,Energy,Oil & Gas E&P,0.42,40.14,47.54,1.03,0.82,0.0
-UAL,1.53,88.62,249.47,38.33,-1,0.27,0.15,-1/5,buy,68.88-119.21,3.85,26.0,156.0,142.92,Sell,7.18 million,Industrials,Airlines,1.286,94.09,113.35,1.06,0.78,0.0
-MNPR,1.57,50.12,326.91,-39.38,0,-0.18,-0.39,0/5,buy,28.4-105.0,-6.32,52.0,130.0,121.39,Sell,207.96 thousand,Healthcare,Biotechnology,1.655,56.33,69.02,1.12,0.73,0.41
-TGLS,1.58,42.47,370.02,-6.39,0,-0.32,-0.35,0/5,buy,39.53-90.34,-1.22,53.0,61.0,59.0,mere Sell (some bought),337.48 thousand,Basic Materials,Building Materials,1.547,45.0,54.6,1.06,0.78,-0.16
-BRZE,1.58,22.69,173.03,-13.65,1,-0.05,-0.36,1/5,buy,15.26-37.67,-3.53,40.0,50.0,42.48,Sell ALL,3.23 million,Technology,Software - Application,0.891,22.59,26.52,1.0,0.86,-0.11
-ATRA,1.59,4.6,58.6,56.47,-1,0.06,-4.31,-1/5,buy,3.92-19.145,6.09,76.0,18.0,13.67,Sell ALL,76.70 thousand,Healthcare,Biotechnology,1,5.0,5.95,1.09,0.77,0.24
-NTRP,1.62,2.62,714.93,-117.3,0,-0.42,-2.47,0/5,buy,1.5-5.2,-17.98,50.0,8.5,8.17,Buy,104.74 thousand,Consumer Cyclical,Travel Services,3.343,3.01,3.84,1.15,0.68,0.71
-ETON,1.63,23.58,280.85,55.55,-1,-0.13,-0.8,-1/5,buy,13.09-27.29,4.24,14.000000000000002,52.0,45.67,Buy,281.10 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.973,25.05,30.03,1.06,0.79,-0.16
-XERS,1.64,6.02,256.78,56.21,-1,0.01,-0.67,-1/5,buy,4.26-10.08,6.98,40.0,18.0,14.57,== less Sell ALL==,1.49 million,Healthcare,Biotechnology,0.987,6.0,7.37,1.0,0.82,-0.18
-VOR,1.68,14.03,530.61,-26.51,0,191.19,230.54,0/5,buy,2.62-65.8,-4.78,79.0,50.0,43.75,Buy,950.88 thousand,Healthcare,Biotechnology,1.923,15.39,17.94,1.1,0.78,-0.12
-FWONK,1.69,85.09,184.93,23.57,-1,-0.01,-0.01,-1/5,buy,80.15-109.363,2.73,22.0,135.0,124.59,Sell,2.06 million,Communication Services,Entertainment,0.739,87.94,108.78,1.03,0.78,0.49
-TPR,1.69,141.6,341.19,30.59,-1,0.57,0.3,-1/5,buy,70.4-161.97,3.31,13.0,190.0,176.03,Sell ALL,1.45 million,Consumer Cyclical,Luxury Goods,1.61,148.34,177.41,1.05,0.8,0.04
-BMA,1.72,73.49,175.68,50.31,-1,-1603.43,-1.11,-1/5,strongBuy,38.3-106.15,5.15,31.0,151.94244,134.74,Sell ALL,231.98 thousand,Financial Services,Banks - Regional,0.661,77.46,92.67,1.05,0.79,0.2
-QFIN,1.73,12.62,144.85,64.04,-1,-1.39,-0.13,-1/5,buy,12.29-47.0,7.58,73.0,32.197224,27.86,Sell,1.26 million,Financial Services,Credit Services,0.562,12.92,15.44,1.02,0.82,0.06
-ETR,1.74,114.67,130.96,25.42,0,0.01,-0.0,0/5,buy,79.4-117.95,3.15,3.0,131.0,124.71,- Buy time -,3.05 million,Utilities,Utilities - Regulated Electric,0.565,115.53,139.72,1.01,0.82,0.09
-ASTS,1.86,69.85,521.62,-11.5,-1,-0.25,-1.04,-1/5,hold,22.47-129.89,-5.68,46.0,117.0,101.7,Sell ALL,16.70 million,Technology,Communication Equipment,2.8,86.67,102.65,1.24,0.68,0.49
-EE,1.86,33.48,363.32,5.31,0,0.0,-0.03,0/5,buy,21.285-43.175,0.51,22.0,50.0,46.38,Sell ALL,410.30 thousand,Energy,Oil & Gas Midstream,1.411,34.3,41.14,1.02,0.81,-0.04
-REAX,1.87,2.15,357.99,-67.23,0,0.02,1.4,0/5,buy,1.92-5.405,-12.09,60.0,8.0,6.67,Sell ALL,1.63 million,Real Estate,Real Estate Services,1.04,2.51,3.19,1.17,0.67,1.09
-SPOT,1.89,443.57,481.67,-41.55,0,2.12,0.74,0/5,buy,405.0-785.0,-7.09,43.0,746.8443,672.71,Sell ALL,1.85 million,Communication Services,Internet Content & Information,1.702,492.47,588.21,1.11,0.75,0.42
-KRMD,1.89,3.97,115.76,-48.25,0,0.04,2.8,0/5,buy,2.62-6.608,-7.05,40.0,8.0,7.4,Buy,249.16 thousand,Healthcare,Medical Instruments & Supplies,0.544,4.28,5.56,1.08,0.71,1.32
-TECH,1.91,51.95,392.9,4.43,0,0.03,0.05,0/5,buy,46.05-72.16,-0.17,28.000000000000004,80.0,76.14,mere Sell (some bought),1.98 million,Healthcare,Biotechnology,1.486,55.48,66.5,1.07,0.78,-0.03
-TASK,1.93,6.31,561.24,-8.97,0,0.08,0.21,0/5,hold,6.2-18.39,-1.43,66.0,14.0,13.0,Sell,438.80 thousand,Technology,Information Technology Services,2.243,6.64,7.92,1.05,0.8,-0.22
-SNCY,1.94,15.65,368.81,-2.62,0,0.05,0.38,0/5,hold,9.735-22.29,-1.41,30.0,22.0,21.14,Sell ALL,630.36 thousand,Industrials,Airlines,1.592,17.17,20.74,1.1,0.75,0.17
-VIRC,1.96,6.05,66.15,-17.52,2,-0.55,-1.17,2/5,buy,5.16-9.36,-3.64,35.0,7.0,7.0,Sell ALL,29.92 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.274,6.13,7.26,1.01,0.83,0.02
-PTGX,1.97,98.52,515.45,-8.68,0,-0.13,-0.24,0/5,buy,41.285-107.84,-1.37,9.0,125.0,119.17,mere Sell (some bought),757.76 thousand,Healthcare,Biotechnology,2.114,103.83,123.08,1.05,0.8,-0.08
-A,1.97,111.3,319.37,-0.84,0,0.0,-0.0,0/5,buy,104.1-160.27,-0.41,31.0,185.0,172.84,Sell ALL,1.77 million,Healthcare,Diagnostics & Research,1.303,116.52,141.9,1.05,0.78,0.26
-DYN,1.97,17.41,286.29,23.46,0,0.12,0.14,0/5,buy,8.06-25.0,1.84,30.0,50.0,44.09,Sell ALL,1.75 million,Healthcare,Biotechnology,1.285,18.86,22.61,1.08,0.77,0.03
-EQT,1.98,59.11,108.73,-61.01,3,0.38,0.29,3/5,buy,48.47-68.24,-9.02,13.0,83.0,76.68,Buy time,7.66 million,Energy,Oil & Gas E&P,0.693,61.16,72.08,1.03,0.82,0.01
-LUV,2.0,37.22,269.37,25.3,0,-0.01,-0.03,0/5,hold,28.14-55.11,2.5,32.0,60.0,52.63,mere Sell (some bought),7.52 million,Industrials,Airlines,1.184,39.54,47.59,1.06,0.78,0.06
-ELTX,2.02,10.32,496.63,30.13,-1,-0.16,-0.35,-1/5,buy,4.85-14.93,2.33,31.0,18.0,17.75,Sell ALL,121.38 thousand,Healthcare,Biotechnology,1.882,11.32,13.37,1.1,0.77,0.05
-VLRS,2.05,7.1,231.73,22.58,0,-0.16,-0.74,0/5,buy,3.54-10.8,2.11,34.0,12.0,10.45,Sell ALL,589.62 thousand,Industrials,Airlines,1.118,7.53,8.92,1.06,0.8,0.23
-GPRK,2.06,9.51,29.57,14.5,1,0.61,61.17,1/5,buy,5.75-10.34,-2.1,8.0,18.0,14.99,- +Buy time -,1.05 million,Energy,Oil & Gas E&P,0.334,9.51,11.76,1.0,0.81,0.37
-BRKR,2.08,34.29,283.33,8.79,0,0.07,0.29,0/5,buy,28.53-56.22,-0.06,39.0,60.0,53.39,Sell ALL,1.87 million,Healthcare,Medical Devices,1.201,37.61,46.02,1.1,0.75,0.35
-BBVA,2.1,21.29,251.1,68.47,-1,0.01,0.02,-1/5,buy,13.71-26.2,7.4,19.0,28.56,25.54,Sell ALL,2.17 million,Financial Services,Banks - Diversified,0.923,22.08,27.0,1.04,0.79,0.15
-EXE,2.11,100.99,69.07,-67.87,3,0.31,0.11,3/5,buy,91.015-126.621,-10.36,20.0,165.0,148.69,Buy time,3.43 million,Energy,Oil & Gas E&P,0.459,102.15,122.17,1.01,0.83,0.33
-WSM,2.12,181.18,394.75,24.62,0,0.22,0.09,0/5,hold,147.39-222.0,2.78,18.0,230.0,218.37,== less Sell ALL==,1.04 million,Consumer Cyclical,Specialty Retail,1.578,189.57,230.26,1.05,0.79,-0.11
-RDNT,2.14,55.89,388.75,2.71,0,0.0,0.01,0/5,buy,50.76-85.84,0.27,35.0,100.0,95.19,Sell ALL,630.82 thousand,Healthcare,Diagnostics & Research,1.533,57.64,69.22,1.03,0.81,0.22
-BBIO,2.14,70.94,273.47,21.84,0,-0.26,-0.43,0/5,buy,31.77-84.94,2.23,16.0,157.0,128.95,mere Sell (some bought),2.67 million,Healthcare,Biotechnology,1.094,74.51,89.79,1.05,0.79,0.23
-RRC,2.14,43.26,82.85,-45.65,3,0.31,0.3,3/5,hold,32.6-48.31,-6.82,10.0,59.0,52.89,- +Buy time -,3.70 million,Energy,Oil & Gas E&P,0.517,44.1,52.37,1.02,0.83,-0.0
-FOUR,2.18,45.09,344.35,29.71,0,-0.01,-0.01,0/5,buy,39.905-108.5,3.26,57.99999999999999,120.0,91.74,mere Sell (some bought),1.63 million,Technology,Software - Infrastructure,1.595,45.53,54.15,1.01,0.83,-0.0
-ANGO,2.2,10.66,105.78,-10.17,2,0.23,2.18,2/5,buy,8.36-13.99,-1.97,24.0,24.0,21.0,== less Sell ALL==,418.54 thousand,Healthcare,Medical Instruments & Supplies,0.435,10.88,13.07,1.02,0.82,0.05
-NBIX,2.24,131.23,112.07,15.19,1,-0.32,-0.13,1/5,buy,105.45-160.18,1.91,18.0,250.65,218.15,- Buy time -,1.12 million,Healthcare,Drug Manufacturers - Specialty & Generic,0.35,131.16,157.01,1.0,0.84,0.24
-KMX,2.26,38.35,206.75,-20.07,0,-0.96,-4.44,0/5,hold,30.26-71.99,-4.28,47.0,99.0,70.35,Buy,4.54 million,Consumer Cyclical,Auto & Truck Dealerships,1.299,41.82,54.19,1.09,0.71,1.12
-RNGR,2.27,17.62,-26.92,12.85,1,-0.14,-0.48,1/5,strongBuy,10.56-18.815,1.08,6.0,21.0,19.75,Sell ALL,333.94 thousand,Energy,Oil & Gas Equipment & Services,0.17,17.66,20.91,1.0,0.84,0.63
-CRVS,2.27,14.42,283.19,70.34,-1,0.0,-0.02,-1/5,buy,3.165-26.95,7.07,46.0,42.0,37.67,Sell ALL,1.30 million,Healthcare,Biotechnology,0.967,15.57,18.7,1.08,0.77,0.24
-MGNX,2.28,2.94,178.25,72.44,0,0.58,-8.47,0/5,hold,1.185-3.88,6.12,24.0,9.0,7.1,mere Sell (some bought),626.76 thousand,Healthcare,Biotechnology,1.096,3.26,3.9,1.11,0.75,-0.04
-GH,2.3,83.41,416.13,-22.79,1,0.07,0.14,1/5,buy,36.36-120.74,-3.34,31.0,180.0,154.17,Sell ALL,1.91 million,Healthcare,Diagnostics & Research,1.65,88.36,104.27,1.06,0.8,0.14
-CAE,2.31,25.42,293.2,3.58,1,0.07,0.26,1/5,hold,23.88-34.24,-0.31,26.0,34.00218,33.76,Buy,926.10 thousand,Industrials,Aerospace & Defense,1.051,26.57,31.61,1.05,0.8,0.08
-CQP,2.32,65.73,71.89,-13.53,3,0.23,0.2,3/5,hold,49.53-70.64,-2.11,7.000000000000001,75.0,67.47,- +Buy time -,104.18 thousand,Energy,Oil & Gas Midstream,0.353,65.01,81.09,0.99,0.81,-0.26
-NEXT,2.33,7.69,367.64,-28.16,2,0.13,0.3,2/5,hold,4.75-12.12,-4.68,37.0,12.0,10.5,Buy,4.11 million,Energy,Oil & Gas Equipment & Services,1.693,7.95,9.53,1.03,0.81,-0.16
-RAIL,2.33,8.13,403.69,36.6,0,0.05,0.41,0/5,buy,5.95-14.9,3.32,45.0,16.5,15.83,mere Sell (some bought),173.68 thousand,Industrials,Railroads,1.706,8.89,10.63,1.09,0.76,-0.06
-GTLS,2.34,207.9,431.04,3.99,1,-0.84,-0.28,1/5,hold,140.5-208.51,0.53,0.0,212.0,208.83,Buy,1.57 million,Industrials,Specialty Industrial Machinery,1.708,207.92,253.4,1.0,0.82,-0.24
-NRG,2.35,149.01,321.79,52.09,0,0.8,0.47,0/5,buy,111.25-189.96,5.22,22.0,306.0,253.88,mere Sell (some bought),2.18 million,Utilities,Utilities - Independent Power Producers,1.338,162.13,193.84,1.09,0.77,-0.06
-TNXP,2.35,12.4,456.15,26.6,0,-1.99,-0.7,0/5,buy,11.6-69.97,2.98,82.0,65.0,59.67,== less Sell ALL==,518.14 thousand,Healthcare,Biotechnology,1.763,13.13,15.76,1.06,0.79,-0.05
-WMT,2.36,128.01,201.61,28.68,1,0.03,0.05,1/5,buy,91.89-134.69,3.52,5.0,150.0,143.28,== less Sell ALL==,16.43 million,Consumer Defensive,Discount Stores,0.661,128.07,153.73,1.0,0.83,-0.03
-CENT,2.37,37.47,127.9,8.64,1,0.18,1.06,1/5,buy,28.77-41.25,1.01,9.0,51.0,48.75,Sell ALL,75.88 thousand,Consumer Defensive,Packaged Foods,0.542,38.22,47.09,1.02,0.8,0.42
-ZVIA,2.38,1.25,219.75,33.52,1,0.02,0.4,1/5,buy,1.11-3.66,4.0,66.0,6.0,5.09,Sell,379.34 thousand,Consumer Defensive,Beverages - Non-Alcoholic,0.929,1.25,1.51,1.0,0.83,-0.12
-VVOS,2.4,0.78,1715.47,-163.77,0,-0.08,-0.16,0/5,buy,0.761-7.95,-39.21,90.0,3.0,2.71,Sell ALL,154.52 thousand,Healthcare,Medical Devices,6.897,1.1,1.07,1.41,0.73,0.31
-MUFG,2.41,17.44,88.42,55.11,1,0.09,0.24,1/5,buy,12.1-20.15,6.42,13.0,22.24682,20.34,Buy,2.42 million,Financial Services,Banks - Diversified,0.295,17.59,21.33,1.01,0.82,-0.08
-CHWY,2.42,25.96,406.5,2.34,1,0.01,0.02,1/5,buy,22.74-48.62,0.31,47.0,50.0,45.4,== less Sell ALL==,6.97 million,Consumer Cyclical,Internet Retail,1.612,26.58,31.84,1.02,0.82,-0.08
-TMDX,2.43,98.57,547.92,48.56,-1,0.45,1.24,-1/5,buy,89.1-156.0,4.32,37.0,190.0,173.0,Sell ALL,872.58 thousand,Healthcare,Medical Devices,2.082,108.89,130.67,1.1,0.75,0.1
-OSIS,2.43,281.84,325.4,52.07,0,0.1,0.05,0/5,buy,204.0-311.72,6.08,10.0,345.0,325.71,mere Sell (some bought),232.48 thousand,Technology,Electronic Components,1.339,292.78,356.92,1.04,0.79,-0.02
-GDYN,2.43,5.61,233.82,-6.97,2,0.01,0.06,2/5,buy,5.13-15.32,-1.25,63.0,12.0,11.05,Sell ALL,1.39 million,Technology,Information Technology Services,0.878,5.68,6.84,1.01,0.82,-0.07
-DAKT,2.43,19.04,451.39,-0.37,1,0.04,0.03,1/5,buy,12.6-28.27,-0.37,33.0,34.0,33.5,Sell,369.22 thousand,Technology,Electronic Components,1.774,19.86,23.68,1.04,0.8,-0.12
-GMED,2.44,87.79,329.99,43.38,0,0.53,0.62,0/5,buy,51.79-101.4,4.88,13.0,123.0,116.82,Sell ALL,916.98 thousand,Healthcare,Medical Devices,1.092,91.77,110.16,1.05,0.8,0.1
-VSTM,2.44,5.4,198.9,95.41,-1,0.11,0.19,-1/5,buy,4.01-11.25,10.19,52.0,19.0,17.69,Sell ALL,2.40 million,Healthcare,Biotechnology,0.43,5.74,6.84,1.06,0.79,0.26
-SPRY,2.46,7.84,235.31,4.99,1,0.03,0.06,1/5,buy,6.66-18.9,0.32,59.0,34.0,30.36,mere Buy (some sold),1.43 million,Healthcare,Biotechnology,0.925,8.22,10.06,1.05,0.78,0.33
-CRDL,2.47,1.31,129.24,61.02,1,0.02,0.22,1/5,buy,0.88-1.71,6.87,23.0,9.159926,8.31,mere Sell (some bought),893.06 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.43,1.39,1.66,1.06,0.79,-0.18
-HWM,2.48,236.52,295.56,52.59,0,0.12,0.13,0/5,buy,144.71-267.31,5.72,12.0,315.0,297.82,Sell ALL,2.02 million,Industrials,Aerospace & Defense,1.235,247.03,297.48,1.04,0.8,0.1
-WLKP,2.49,22.86,153.79,38.43,1,0.0,0.02,1/5,buy,17.75-23.8,4.9,4.0,28.0,26.75,Buy,26.10 thousand,Basic Materials,Chemicals,0.546,22.66,27.81,0.99,0.82,0.07
-WHR,2.51,54.64,299.52,59.14,0,0.28,0.23,0/5,hold,50.41-111.96,6.9,51.0,137.0,103.45,Buy,1.94 million,Consumer Cyclical,Furnishings, Fixtures & Appliances,1.264,55.29,66.37,1.01,0.82,0.02
-NTRA,2.54,194.75,439.75,36.69,0,0.6,0.87,0/5,buy,131.811-256.36,4.06,24.0,300.0,279.0,mere Sell (some bought),1.24 million,Healthcare,Diagnostics & Research,1.68,203.53,250.03,1.05,0.78,0.05
-CHRS,2.56,1.74,298.05,66.5,0,-0.05,-0.15,0/5,buy,0.71-2.616,8.05,33.0,10.0,8.38,mere Sell (some bought),879.02 thousand,Healthcare,Biotechnology,1.039,1.74,2.08,1.0,0.84,-0.03
-LPX,2.58,72.09,429.65,22.29,0,0.03,2.74,0/5,buy,68.87-102.86,2.52,30.0,115.0,104.88,Sell ALL,969.20 thousand,Industrials,Building Products & Equipment,1.773,75.28,92.11,1.04,0.78,0.3
-FICO,2.59,1043.57,375.13,-0.95,1,1.78,0.17,1/5,buy,870.01-2217.6,-0.42,53.0,2400.0,1999.21,Buy,372.80 thousand,Technology,Software - Application,1.376,1060.77,1259.36,1.02,0.83,0.22
-FOXA,2.59,62.94,143.93,48.26,1,0.71,0.96,1/5,hold,47.66-76.39,6.05,18.0,97.0,84.0,Buy,3.95 million,Communication Services,Entertainment,0.505,62.97,76.41,1.0,0.82,0.06
-MLAB,2.59,95.76,307.41,93.52,-1,0.84,0.55,-1/5,hold,55.45-131.2,11.16,27.0,115.0,109.75,== less Sell ALL==,116.42 thousand,Technology,Scientific & Technical Instruments,0.894,96.03,116.72,1.0,0.82,0.15
-CRS,2.59,406.53,237.71,79.83,-1,0.24,0.1,-1/5,buy,198.45-459.18,8.85,11.0,495.0,467.17,Sell ALL,856.84 thousand,Industrials,Metal Fabrication,1,430.44,531.75,1.06,0.76,0.52
-FIVE,2.6,228.14,267.57,30.03,1,0.73,1.73,1/5,buy,73.88-251.63,3.65,9.0,305.0,283.39,mere Buy (some sold),999.62 thousand,Consumer Cyclical,Specialty Retail,1.066,230.23,278.84,1.01,0.82,0.04
-AISP,2.6,2.21,254.36,62.88,0,-0.13,-7.16,0/5,buy,2.03-7.2,6.33,69.0,6.5,6.5,Sell ALL,484.26 thousand,Technology,Software - Infrastructure,0.472,2.32,2.76,1.05,0.8,0.2
-DCTH,2.62,10.21,255.06,113.09,-1,0.09,0.66,-1/5,buy,8.12-18.23,12.93,44.0,30.0,25.67,Sell ALL,261.62 thousand,Healthcare,Medical Devices,0.435,10.26,12.21,1.0,0.84,0.05
-RLX,2.63,2.14,329.88,1.52,2,-0.03,-0.12,2/5,buy,1.79-2.84,0.0,25.0,3.5557964,3.33,mere Buy (some sold),1.83 million,Consumer Defensive,Tobacco,1.233,2.19,2.67,1.02,0.8,-0.21
-ARQT,2.63,22.37,416.1,46.4,0,0.19,2.1,0/5,buy,12.42-31.77,4.65,30.0,36.0,35.38,== less Sell ALL==,1.19 million,Healthcare,Biotechnology,1.767,23.71,28.79,1.06,0.78,0.07
-HMY,2.64,15.06,232.41,75.82,0,1,1,0/5,hold,12.58-26.06,7.75,42.0,27.0,25.37,== less Sell ALL==,4.83 million,Basic Materials,Gold,0.796,16.03,19.44,1.06,0.77,0.11
-SLNG,2.65,4.18,8.69,-37.69,4,0.0,-1.2,4/5,buy,3.21-6.36,-8.85,34.0,9.0,9.0,Buy time,21.82 thousand,Energy,Oil & Gas Integrated,1,4.04,4.72,0.97,0.89,0.13
-ELMD,2.65,25.1,132.72,25.18,2,0.11,0.45,2/5,buy,17.73-30.73,3.03,18.0,38.0,37.5,Sell ALL,50.12 thousand,Healthcare,Medical Devices,0.317,25.45,31.35,1.01,0.8,-0.07
-NATL,2.67,44.47,207.97,32.54,2,0.17,0.13,2/5,hold,23.56-48.5,4.18,8.0,50.4,50.33,mere Buy (some sold),1.50 million,Technology,Software - Application,0.779,44.56,54.77,1.0,0.81,-0.33
-ACAD,2.68,22.2,220.81,41.27,1,0.26,1.85,1/5,buy,14.2-28.35,5.09,22.0,45.0,38.35,- Buy time -,1.42 million,Healthcare,Biotechnology,0.834,22.18,26.81,1.0,0.83,0.07
-UFCS,2.69,39.83,123.43,52.28,1,1.38,1.74,1/5,buy,25.79-41.76,6.53,5.0,41.0,40.75,Sell ALL,114.16 thousand,Financial Services,Insurance - Property & Casualty,0.408,39.77,47.92,1.0,0.83,0.15
-APEI,2.69,57.58,395.86,15.34,1,0.66,2.08,1/5,buy,23.0-61.59,1.88,7.000000000000001,62.0,59.67,Buy,235.14 thousand,Consumer Defensive,Education & Training Services,1.494,57.86,69.32,1.0,0.83,0.04
-WFC,2.7,81.51,261.61,51.18,0,-0.03,-0.02,0/5,buy,70.43-97.76,5.78,17.0,113.0,104.83,- Buy time -,18.60 million,Financial Services,Banks - Diversified,1.056,81.98,100.1,1.01,0.81,0.41
-GDDY,2.74,85.76,224.69,38.75,1,0.27,0.17,1/5,hold,73.06-193.55,4.69,56.00000000000001,190.0,153.33,Sell ALL,2.32 million,Technology,Software - Infrastructure,0.977,83.97,101.27,0.98,0.85,0.16
-SE,2.74,83.21,423.9,48.73,0,-0.23,-0.25,0/5,buy,77.05-199.3,5.89,57.99999999999999,195.0,166.32,Sell ALL,3.59 million,Consumer Cyclical,Internet Retail,1.697,85.56,103.98,1.03,0.8,0.11
-AVAH,2.78,6.55,526.04,20.26,0,0.03,0.24,0/5,hold,3.73-10.32,2.6,37.0,13.0,11.3,Sell ALL,1.17 million,Healthcare,Medical Care Facilities,2.086,6.62,8.12,1.01,0.81,0.3
-ICL,2.79,5.33,272.07,20.77,2,0.0,0.02,2/5,hold,4.76-7.35,2.63,27.0,6.0,5.86,Buy,1.43 million,Basic Materials,Agricultural Inputs,0.938,5.33,6.46,1.0,0.83,-0.19
-ELF,2.83,61.08,655.96,28.82,0,0.63,0.91,0/5,buy,58.05-150.99,2.83,60.0,135.0,114.73,Sell ALL,2.29 million,Consumer Defensive,Household & Personal Products,2.389,65.53,78.23,1.07,0.78,-0.04
-WLFC,2.83,185.61,213.98,119.84,-1,0.73,0.22,-1/5,buy,114.01-217.54,12.21,15.0,190.0,190.0,Sell ALL,85.32 thousand,Industrials,Rental & Leasing Services,0.749,194.09,233.21,1.05,0.8,0.31
-BBW,2.84,36.71,321.78,-2.03,2,0.07,0.08,2/5,buy,35.0-75.85,-0.44,52.0,65.0,63.5,Sell ALL,429.96 thousand,Consumer Cyclical,Specialty Retail,1.175,38.34,46.2,1.04,0.79,0.07
-SMFG,2.84,20.77,129.58,72.16,1,0.22,0.56,1/5,buy,13.59-24.34,8.43,15.0,25.83659,25.84,Buy,1.88 million,Financial Services,Banks - Diversified,0.349,20.64,24.54,0.99,0.85,0.03
-NXT,2.85,114.27,537.71,14.23,1,0.34,0.34,1/5,buy,40.6-131.72,1.54,13.0,145.0,135.52,Sell,1.59 million,Technology,Solar,2.023,120.48,144.01,1.05,0.79,-0.1
-FSK,2.85,10.68,275.96,54.69,1,-0.07,-0.12,1/5,hold,9.72-22.68,6.84,53.0,17.0,14.65,Buy,2.73 million,Financial Services,Asset Management,0.898,10.54,12.63,0.99,0.85,-0.07
-WRBY,2.85,21.47,541.86,46.17,0,0.0,-0.2,0/5,buy,14.96-31.0,5.26,31.0,35.0,32.08,== less Sell ALL==,2.19 million,Healthcare,Medical Instruments & Supplies,2.076,22.18,27.13,1.03,0.79,-0.01
-YMM,2.86,8.32,141.16,30.14,2,-0.06,-0.05,2/5,buy,8.04-14.07,3.76,41.0,16.454313,14.47,== less Sell ALL==,3.98 million,Technology,Software - Application,0.281,8.5,10.15,1.02,0.82,0.05
-PROV,2.86,17.2,88.38,53.69,2,-0.18,-0.59,2/5,buy,14.85-17.42,6.69,1.0,16.0,16.0,Buy,11.76 thousand,Financial Services,Banks - Regional,0.283,17.03,20.17,0.99,0.85,-0.16
-YPF,2.9,44.81,16.44,-18.52,4,-3.66,-5.2,4/5,buy,22.82-48.96,-2.92,8.0,70.0,61.97,Buy time,2.59 million,Energy,Oil & Gas Integrated,0.029,44.76,54.66,1.0,0.82,-0.01
-ADPT,2.91,13.53,597.94,42.86,0,0.29,1.94,0/5,buy,7.2-20.76,5.03,35.0,22.0,21.29,Sell ALL,1.42 million,Healthcare,Biotechnology,2.296,14.16,17.2,1.05,0.79,-0.04
-EAT,2.93,147.8,391.18,73.42,-1,0.28,0.11,-1/5,buy,100.3-187.12,7.52,21.0,210.0,198.43,- Buy time -,1.55 million,Consumer Cyclical,Restaurants,1,149.2,190.32,1.01,0.78,0.61
-SRFM,2.93,1.03,808.43,-12.15,0,-0.1,-0.23,0/5,buy,1.03-9.91,-2.91,90.0,12.0,9.56,Sell ALL,2.38 million,Industrials,Airlines,3.366,1.18,1.43,1.15,0.72,0.29
-MPLX,2.93,55.52,106.81,-28.06,3,0.45,0.42,3/5,hold,47.8-59.98,-3.87,7.000000000000001,73.0,66.82,Buy time,2.91 million,Energy,Oil & Gas Midstream,0.544,56.59,66.64,1.02,0.83,0.47
-USAC,2.94,27.19,75.07,12.17,3,0.0,0.02,3/5,hold,21.85-28.9,1.55,6.0,33.0,31.0,- +Buy time -,187.66 thousand,Energy,Oil & Gas Equipment & Services,0.169,27.48,32.97,1.01,0.82,-0.01
-CLBT,2.98,12.71,253.45,-26.01,4,0.01,0.09,4/5,buy,11.02-20.53,-4.09,38.0,28.0,24.83,Buy,3.11 million,Technology,Software - Infrastructure,1.275,13.01,15.79,1.02,0.8,-0.36
-VERX,2.99,12.27,191.76,41.38,2,0.02,0.11,2/5,hold,10.59-42.44,4.89,71.0,25.0,21.81,Sell,1.24 million,Technology,Software - Application,0.791,12.09,14.58,0.99,0.84,-0.08
-HBB,2.99,20.13,51.49,81.52,1,-0.46,-0.47,1/5,,12.72-21.71,9.34,7.000000000000001,0.1,0.1,Sell ALL,21.88 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.186,20.5,24.1,1.02,0.84,0.24
-CXT,3.01,43.62,424.74,77.25,0,0.03,0.03,0/5,buy,39.23-69.0,9.24,37.0,85.0,77.75,== less Sell ALL==,702.38 thousand,Industrials,Specialty Industrial Machinery,1.467,44.51,53.32,1.02,0.82,-0.01
-GRND,3.02,13.29,112.93,59.25,2,0.05,0.44,2/5,strongBuy,9.732-25.13,7.22,47.0,22.0,20.0,Sell,1.08 million,Technology,Software - Application,0.211,12.92,15.51,0.97,0.86,-0.12
-IPX,3.07,29.05,418.76,176.85,-2,1,1,-2/5,buy,19.43-61.45,17.18,53.0,71.0,62.6,Sell ALL,198.10 thousand,Basic Materials,Other Industrial Metals & Mining,1.284,30.55,37.72,1.05,0.77,-0.11
-ALK,3.08,38.31,384.75,99.11,0,0.23,2.91,0/5,buy,33.03-65.88,10.75,42.0,94.0,76.38,== less Sell ALL==,4.94 million,Industrials,Airlines,1.275,40.14,49.64,1.05,0.77,-0.12
-BKTI,3.09,90.51,150.05,180.44,-1,0.78,0.99,-1/5,buy,36.17-98.36,19.05,8.0,97.0,97.0,Sell,50.36 thousand,Technology,Communication Equipment,0.543,90.51,107.62,1.0,0.84,-0.1
-FTK,3.1,16.94,406.18,7.15,2,0.34,2.36,2/5,buy,7.0-20.41,0.0,17.0,22.0,21.62,Sell,172.20 thousand,Energy,Oil & Gas Equipment & Services,1.456,16.86,20.35,1.0,0.83,0.03
-PTC,3.12,137.5,263.06,-10.82,3,1.56,0.75,3/5,buy,130.89-219.69,-1.57,37.0,230.0,207.08,- +Buy time -,1.24 million,Technology,Software - Application,1.058,139.39,165.03,1.01,0.83,0.06
-CCB,3.16,75.71,209.12,21.91,0,-0.46,-0.44,0/5,buy,70.72-120.05,1.95,37.0,145.0,135.62,Sell ALL,194.58 thousand,Financial Services,Banks - Regional,0.869,81.75,107.81,1.08,0.7,1.4
-CCL,3.17,25.58,586.27,60.76,0,0.11,0.48,0/5,buy,18.51-34.03,6.33,25.0,45.0,39.75,Sell ALL,23.21 million,Consumer Cyclical,Travel Services,2.482,27.04,32.35,1.06,0.79,0.03
-CZWI,3.2,20.83,155.29,48.61,2,0.07,0.2,2/5,buy,12.83-22.62,6.1,8.0,24.0,23.38,- Buy time -,27.80 thousand,Financial Services,Banks - Regional,0.563,20.8,25.51,1.0,0.82,0.1
-PLTR,3.21,137.97,424.72,5.46,2,0.06,0.34,2/5,buy,105.32-207.52,0.3,34.0,255.0,219.73,Sell,51.65 million,Technology,Software - Infrastructure,1.674,140.96,170.58,1.02,0.81,0.1
-ALRM,3.22,44.44,248.28,36.78,2,0.23,0.37,2/5,hold,41.5-60.76,4.73,27.0,85.0,71.5,== less Sell ALL==,480.90 thousand,Technology,Software - Application,0.83,44.31,53.89,1.0,0.82,0.07
-AAP,3.23,55.76,318.67,72.99,1,0.63,1.33,1/5,hold,30.84-70.0,8.66,20.0,70.0,63.58,== less Sell ALL==,1.25 million,Consumer Cyclical,Auto Parts,1.071,56.17,67.5,1.01,0.83,-0.03
-SOFI,3.24,15.52,405.28,34.68,0,0.01,0.04,0/5,hold,12.43-32.73,2.42,53.0,38.0,30.71,Sell ALL,80.70 million,Financial Services,Credit Services,1,17.06,21.1,1.1,0.74,0.89
-LOVE,3.3,15.62,592.57,86.18,0,0.06,0.04,0/5,buy,10.33-21.9,10.12,28.999999999999996,35.0,29.58,== less Sell ALL==,279.12 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,2.218,15.92,19.66,1.02,0.79,-0.22
-ALTO,3.31,5.31,106.25,113.64,1,0.44,7.57,1/5,buy,0.8-5.58,13.56,5.0,8.0,7.38,== less Sell ALL==,1.42 million,Basic Materials,Specialty Chemicals,0.059,5.08,6.04,0.96,0.88,-0.02
-RMNI,3.31,3.39,377.31,64.88,0,-0.02,-0.33,0/5,buy,2.87-5.38,7.96,37.0,7.0,6.45,mere Sell (some bought),333.42 thousand,Technology,Software - Application,1.275,3.4,4.12,1.0,0.82,0.56
-WGS,3.32,62.9,596.29,47.71,1,0.09,0.33,1/5,buy,55.17-170.87,5.23,63.0,177.0,156.56,Sell,728.00 thousand,Healthcare,Diagnostics & Research,2.191,65.56,80.3,1.04,0.78,-0.21
-SN,3.33,113.13,383.09,121.48,0,0.27,0.18,0/5,buy,78.82-133.99,13.71,16.0,200.0,174.46,mere Sell (some bought),1.25 million,Consumer Cyclical,Furnishings, Fixtures & Appliances,1.491,113.81,140.57,1.01,0.8,-0.18
-GDS,3.34,41.54,251.89,47.01,2,-8.47,-5.33,2/5,buy,22.53-48.61,5.46,15.0,71.21002,64.01,Sell,1.49 million,Technology,Information Technology Services,0.456,42.99,51.27,1.03,0.81,0.05
-WEAV,3.34,4.84,494.57,73.55,0,0.0,0.59,0/5,strongBuy,4.24-11.32,8.88,56.99999999999999,9.0,8.88,Sell ALL,1.74 million,Healthcare,Health Information Services,1.714,4.87,5.91,1.01,0.82,0.2
-MGX,3.35,1.35,259.09,57.41,2,-0.04,-0.06,2/5,buy,1.25-3.95,6.3,66.0,12.0,10.67,== less Sell ALL==,187.12 thousand,Healthcare,Biotechnology,0.57,1.43,1.74,1.06,0.78,-0.08
-FHN,3.36,24.41,167.17,80.39,1,0.09,0.19,1/5,hold,17.95-26.56,9.67,8.0,30.0,28.42,Buy,5.62 million,Financial Services,Banks - Regional,0.629,24.24,30.19,0.99,0.81,0.34
-CANG,3.36,0.41,318.94,167.78,-1,0,0,-1/5,buy,0.33-2.875,17.07,86.0,3.0,3.0,mere Sell (some bought),883.56 thousand,Financial Services,Capital Markets,1,0.45,0.53,1.1,0.77,-0.03
-AAL,3.37,11.31,408.55,86.98,0,-0.13,-0.42,0/5,buy,9.98-16.5,9.99,31.0,22.0,18.43,Sell ALL,52.25 million,Industrials,Airlines,1.248,11.59,14.29,1.02,0.79,0.26
-RICK,3.4,25.22,283.35,61.11,2,0.15,0.02,2/5,,20.76-47.0,7.57,46.0,0.1,0.1,== less Sell ALL==,39.38 thousand,Consumer Cyclical,Restaurants,0.775,24.97,30.07,0.99,0.84,-0.16
-BLFS,3.41,19.99,565.76,52.51,1,0.07,26.78,1/5,buy,17.86-29.62,6.05,33.0,34.0,33.2,Sell,384.62 thousand,Healthcare,Medical Instruments & Supplies,1.996,20.68,25.2,1.03,0.79,-0.13
-AMRX,3.42,12.8,400.55,54.57,1,0.06,0.37,1/5,strongBuy,7.02-15.42,6.64,17.0,19.0,18.0,Buy,1.39 million,Healthcare,Drug Manufacturers - Specialty & Generic,1.318,12.73,15.75,0.99,0.81,0.22
-RXRX,3.43,3.3,344.77,125.01,0,0.13,0.39,0/5,hold,2.8-7.18,13.94,54.0,11.0,8.86,Sell ALL,11.23 million,Healthcare,Biotechnology,1.013,3.38,4.13,1.02,0.8,-0.03
-RDW,3.45,8.6,702.36,101.26,-1,-0.12,-0.84,-1/5,buy,4.87-22.25,10.35,61.0,22.0,18.06,mere Sell (some bought),18.72 million,Industrials,Aerospace & Defense,2.505,9.57,11.68,1.11,0.74,0.05
-INTA,3.45,23.2,225.82,-55.94,5,0.12,0.51,5/5,hold,19.24-59.1,-9.57,61.0,58.0,46.5,Buy time,920.56 thousand,Technology,Software - Application,0.633,23.18,27.93,1.0,0.83,0.1
-HWKN,3.46,164.57,163.43,70.12,2,-0.16,-0.14,2/5,strongBuy,115.35-186.15,7.87,12.0,200.0,194.0,Sell,159.68 thousand,Basic Materials,Specialty Chemicals,0.791,158.55,189.64,0.96,0.87,0.07
-OKTA,3.49,76.16,112.81,23.68,4,0.11,0.14,4/5,buy,62.66-127.567,0.91,40.0,140.0,120.14,- +Buy time -,3.82 million,Technology,Software - Infrastructure,0.762,74.8,88.1,0.98,0.86,-0.18
-CLMB,3.5,21.27,400.52,77.07,1,0.01,-0.03,1/5,strongBuy,18.905-36.255,8.84,41.0,32.5,32.0,Buy,171.66 thousand,Technology,Electronics & Computer Distribution,1.191,21.64,25.91,1.02,0.82,0.01
-WING,3.51,171.21,343.47,93.2,-1,0.32,0.35,-1/5,buy,142.24-388.14,9.68,56.00000000000001,400.0,337.73,Sell ALL,1.58 million,Consumer Cyclical,Restaurants,1,182.15,223.45,1.06,0.77,1.04
-GRAL,3.54,49.69,363.52,49.95,2,0.9,0.28,2/5,buy,29.95-118.84,5.61,57.99999999999999,82.0,74.86,Sell,668.94 thousand,Healthcare,Diagnostics & Research,1,51.52,62.29,1.04,0.8,-0.03
-UPLD,3.54,0.65,408.3,61.44,1,0.18,0.97,1/5,strongBuy,0.496-3.91,7.24,83.0,4.5,4.12,- Buy time -,200.98 thousand,Technology,Software - Application,1.342,0.67,0.78,1.03,0.83,0.24
-BLX,3.55,53.58,269.27,48.28,2,1,1,2/5,buy,37.88-57.79,5.82,7.000000000000001,67.0,66.27,Sell ALL,123.92 thousand,Financial Services,Banks - Regional,0.818,54.3,64.48,1.01,0.83,0.2
-RSSS,3.55,2.48,288.19,83.72,1,-0.01,-0.32,1/5,buy,2.15-4.12,9.68,40.0,5.0,5.0,mere Buy (some sold),51.76 thousand,Technology,Software - Application,0.763,2.45,3.01,0.99,0.82,0.22
-VST,3.56,153.79,430.95,35.12,2,-1.97,-0.87,2/5,buy,133.73-219.82,4.06,30.0,318.0,274.47,Sell ALL,4.21 million,Utilities,Utilities - Independent Power Producers,1.498,162.67,194.47,1.06,0.79,0.03
-DSP,3.57,10.61,232.1,-16.28,4,-0.02,-0.15,4/5,buy,8.11-16.25,-2.45,35.0,22.0,19.75,Buy,189.38 thousand,Technology,Software - Application,0.941,10.76,12.89,1.01,0.82,0.13
-BAM,3.58,46.04,381.13,50.77,2,0.04,0.1,2/5,hold,42.2-64.1,6.28,28.000000000000004,74.0,65.72,Sell ALL,3.40 million,Financial Services,Asset Management,1.242,46.46,56.82,1.01,0.81,-0.06
-RBLX,3.63,56.28,508.43,63.76,1,0.14,0.29,1/5,buy,51.23-150.59,7.76,63.0,166.94,134.14,Buy,8.89 million,Communication Services,Electronic Gaming & Multimedia,1.673,56.17,68.68,1.0,0.82,0.06
-FSLY,3.63,26.39,521.23,82.76,1,0.13,411.86,1/5,hold,5.63-34.82,3.3,24.0,32.0,25.93,- +Buy time -,14.24 million,Technology,Software - Application,0.616,27.65,32.59,1.05,0.81,-0.03
-GL,3.63,152.54,169.12,88.13,2,-0.1,-0.03,2/5,buy,111.13-155.08,10.76,2.0,199.0,185.95,Sell,559.60 thousand,Financial Services,Insurance - Life,0.467,149.11,180.73,0.98,0.84,-0.04
-CXDO,3.66,6.56,284.18,72.58,2,0.04,0.55,2/5,buy,5.026-7.8,8.69,16.0,12.0,10.71,== less Sell ALL==,116.04 thousand,Communication Services,Telecom Services,0.938,6.49,7.93,0.99,0.83,-0.05
-AS,3.66,34.5,703.97,88.69,0,0.11,0.42,0/5,buy,24.05-42.76,10.12,19.0,60.0,54.44,== less Sell ALL==,3.43 million,Consumer Cyclical,Leisure,2.803,35.22,42.92,1.02,0.8,-0.14
-UTI,3.66,36.08,339.83,-18.16,4,0.17,0.99,4/5,buy,21.29-40.41,-2.58,11.0,40.0,38.67,Buy time,500.56 thousand,Consumer Defensive,Education & Training Services,1.332,36.67,44.08,1.02,0.82,-0.0
-BKR,3.66,68.81,289.4,100.5,1,0.2,0.34,1/5,buy,35.1-70.41,11.82,2.0,85.0,77.36,mere Buy (some sold),9.37 million,Energy,Oil & Gas Equipment & Services,0.898,66.11,80.68,0.96,0.85,0.1
-ULCC,3.66,3.75,687.34,77.88,0,0.13,0.8,0/5,hold,2.97-6.66,9.07,44.0,8.0,6.22,== less Sell ALL==,4.70 million,Industrials,Airlines,2.576,3.84,4.69,1.02,0.8,0.04
-VUZI,3.68,2.38,394.59,116.18,0,-0.02,-0.23,0/5,buy,1.71-4.29,13.03,45.0,6.0,6.0,mere Sell (some bought),566.18 thousand,Technology,Consumer Electronics,1.372,2.43,2.91,1.02,0.82,0.22
-ECOR,3.72,6.15,120.37,77.05,-2,0.05,0.13,-2/5,buy,4.16-8.64,8.29,28.999999999999996,25.0,22.4,Sell ALL,69.52 thousand,Healthcare,Medical Devices,0.596,6.51,8.02,1.06,0.77,2.5
-GCMG,3.72,10.72,279.18,78.82,2,0.09,0.38,2/5,buy,9.3-13.22,9.7,19.0,17.0,15.75,== less Sell ALL==,483.46 thousand,Financial Services,Asset Management,0.883,10.41,12.41,0.97,0.86,-0.07
-VCYT,3.74,31.78,535.4,37.94,2,0.31,0.89,2/5,buy,22.61-50.71,4.22,37.0,53.0,49.77,== less Sell ALL==,737.60 thousand,Healthcare,Diagnostics & Research,1.957,33.05,40.54,1.04,0.78,-0.06
-DK,3.75,46.67,197.6,30.59,3,2.5,12.93,3/5,hold,13.09-48.32,2.01,3.0,63.0,55.58,Buy time,1.48 million,Energy,Oil & Gas Refining & Marketing,1,44.13,53.4,0.95,0.87,0.32
-C,3.78,127.61,322.87,139.95,0,0.09,-0.06,0/5,buy,67.89-135.29,15.94,6.0,162.0,152.3,Sell ALL,13.16 million,Financial Services,Banks - Diversified,1.085,124.77,151.23,0.98,0.84,0.16
-URBN,3.8,68.69,415.8,102.88,1,-0.11,-0.08,1/5,hold,51.12-84.35,11.3,19.0,102.0,92.21,Sell,1.09 million,Consumer Cyclical,Apparel Retail,1.204,68.78,83.46,1.0,0.82,-0.06
-MOD,3.81,233.39,483.56,123.28,0,0.25,0.25,0/5,buy,84.2-260.01,13.37,10.0,310.0,287.79,Sell ALL,900.98 thousand,Consumer Cyclical,Auto Parts,1.679,245.18,296.51,1.05,0.79,0.07
-AZTA,3.82,23.13,574.18,112.76,0,-0.03,-0.26,0/5,hold,19.87-41.73,12.45,45.0,44.0,39.7,Sell,839.72 thousand,Healthcare,Medical Instruments & Supplies,1.465,23.85,29.08,1.03,0.8,-0.0
-YELP,3.85,28.01,201.57,95.13,2,0.11,0.21,2/5,hold,19.6-41.22,11.42,32.0,31.0,28.31,Sell ALL,901.96 thousand,Communication Services,Internet Content & Information,0.477,26.86,32.01,0.96,0.88,0.02
-BILL,3.86,37.25,341.37,0.71,4,0.18,0.35,4/5,buy,34.44-57.21,0.03,35.0,84.0,69.29,- +Buy time -,1.64 million,Technology,Software - Application,1.325,37.84,44.97,1.02,0.83,-0.08
-GO,3.87,7.69,244.04,97.93,2,0.0,0.03,2/5,hold,5.655-19.41,11.83,60.0,10.5,9.06,Sell,3.22 million,Consumer Defensive,Grocery Stores,0.627,7.46,9.04,0.97,0.85,-0.1
-DKL,3.89,53.06,150.22,25.98,4,0.25,0.17,4/5,hold,37.5-55.89,3.13,5.0,57.0,53.9,Buy time,58.18 thousand,Energy,Oil & Gas Refining & Marketing,0.51,51.56,61.35,0.97,0.86,0.04
-PRTH,3.89,5.14,451.01,70.75,2,0.0,0.0,2/5,buy,4.44-8.89,8.56,42.0,13.0,11.4,Sell ALL,164.26 thousand,Technology,Software - Infrastructure,1.511,5.1,6.25,0.99,0.82,-0.18
-HOOD,3.93,71.2,470.77,86.71,0,0.01,0.02,0/5,buy,45.56-153.86,8.48,54.0,155.0,127.03,Sell ALL,39.27 million,Financial Services,Capital Markets,1,75.66,94.15,1.06,0.76,0.73
-SFIX,4.0,3.67,614.47,96.79,1,0.04,1.06,1/5,hold,2.95-5.94,10.9,38.0,6.0,5.25,Sell,1.76 million,Consumer Cyclical,Apparel Retail,2.34,3.54,4.39,0.96,0.84,-0.24
-AIOT,4.01,3.05,470.25,43.78,2,-0.04,-0.93,2/5,buy,2.78-6.07,4.92,50.0,13.0,11.67,Sell,2.10 million,Technology,Software - Infrastructure,1.392,3.19,3.82,1.05,0.8,0.27
-VCEL,4.02,33.43,392.31,73.41,2,0.18,8.68,2/5,buy,28.95-45.97,8.62,27.0,64.0,59.29,Sell ALL,607.84 thousand,Healthcare,Biotechnology,1.207,34.27,41.62,1.03,0.8,0.05
-AGX,4.05,630.07,224.73,167.74,1,1.56,0.79,1/5,hold,155.65-683.12,18.49,8.0,550.0,511.6,== less Sell ALL==,381.48 thousand,Industrials,Engineering & Construction,0.459,624.33,786.86,0.99,0.8,-0.24
-BRLT,4.06,1.4,467.07,115.05,1,-0.08,-4.16,1/5,hold,1.21-3.1,13.57,55.00000000000001,2.0,1.86,Sell ALL,37.86 thousand,Consumer Cyclical,Luxury Goods,1.422,1.38,1.72,0.99,0.81,-0.11
-FULC,4.08,7.15,803.71,78.94,0,0.04,0.15,0/5,buy,3.73-15.74,7.97,55.00000000000001,25.0,22.0,Sell ALL,812.58 thousand,Healthcare,Biotechnology,3.268,7.7,9.38,1.08,0.76,0.21
-GKOS,4.1,116.96,221.13,87.92,2,0.02,-0.07,2/5,buy,73.16-130.23,10.22,10.0,170.0,155.08,Sell ALL,668.46 thousand,Healthcare,Medical Devices,0.783,118.1,143.55,1.01,0.81,0.33
-MEOH,4.12,63.31,249.01,14.4,4,-1.14,-2.07,4/5,buy,30.33-66.75,1.33,5.0,75.0,71.17,Buy time,1.75 million,Basic Materials,Chemicals,0.816,62.65,74.2,0.99,0.85,0.22
-ESTC,4.14,47.4,302.58,-27.59,5,0.14,0.24,5/5,buy,42.05-96.07,-4.24,51.0,116.0,97.3,Buy,1.78 million,Technology,Software - Application,1.029,47.99,58.19,1.01,0.81,0.17
-PRTS,4.14,0.95,196.0,155.42,1,0.15,0.63,1/5,buy,0.37-1.36,16.84,30.0,1.5,1.25,Sell ALL,452.24 thousand,Consumer Cyclical,Auto Parts,0.784,0.88,1.07,0.93,0.89,0.09
-LZB,4.14,35.21,420.88,74.0,2,0.19,0.34,2/5,buy,29.03-44.49,9.23,21.0,46.0,45.25,Sell ALL,356.46 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,1.294,34.48,41.65,0.98,0.85,0.08
-ASAN,4.16,6.4,210.02,34.74,4,0.03,0.43,4/5,hold,5.38-19.0,2.97,66.0,15.0,12.45,Buy,7.27 million,Technology,Software - Application,1.082,6.23,7.43,0.97,0.86,0.09
-SHOP,4.16,121.26,783.89,64.17,1,-0.03,-0.05,1/5,buy,88.14-182.19,7.83,33.0,200.0,179.75,Sell,8.15 million,Technology,Software - Application,2.822,120.56,146.15,0.99,0.83,-0.05
-OXBR,4.18,0.93,643.27,83.59,2,-0.01,-1.0,2/5,,0.66-2.86,6.97,67.0,0.1,0.1,Buy time,341.28 thousand,Financial Services,Insurance - Reinsurance,2.223,0.83,1.27,0.89,0.73,-0.41
-CLPT,4.18,10.34,550.28,154.32,0,-0.08,-0.4,0/5,buy,8.27-30.1,16.25,66.0,30.0,27.5,Sell,501.06 thousand,Healthcare,Medical Devices,1.184,10.3,12.46,1.0,0.83,-0.12
-LFCR,4.21,4.94,348.14,222.39,-1,-0.32,-2.13,-1/5,hold,3.63-8.98,23.28,45.0,9.0,7.83,mere Sell (some bought),493.48 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.878,4.82,6.08,0.98,0.81,0.02
-WWW,4.21,16.91,516.12,64.58,2,0.04,0.12,2/5,buy,12.99-32.8,7.67,48.0,29.0,26.1,Sell,873.18 thousand,Consumer Cyclical,Footwear & Accessories,1.869,17.18,20.92,1.02,0.81,0.08
-JVA,4.23,4.67,424.58,64.89,2,0.05,1.84,2/5,,2.93-5.63,8.14,17.0,0.1,0.1,Buy,83.84 thousand,Consumer Defensive,Packaged Foods,1.415,4.66,5.71,1.0,0.82,0.29
-MGNI,4.23,12.92,691.51,84.65,1,0.0,-0.01,1/5,buy,10.82-26.65,10.45,52.0,39.0,30.61,Sell,1.95 million,Communication Services,Advertising Agencies,2.386,12.59,15.4,0.97,0.84,-0.05
-CREX,4.23,3.71,402.07,79.29,0,-0.82,-10.57,0/5,buy,1.6-4.42,9.43,16.0,10.0,9.42,Sell,29.32 thousand,Technology,Software - Application,1.443,3.71,4.61,1.0,0.8,1.23
-BKV,4.25,30.62,264.31,40.28,4,0.3,1.43,4/5,buy,17.795-32.81,4.41,7.000000000000001,39.0,37.23,- +Buy time -,758.84 thousand,Energy,Oil & Gas E&P,1,29.23,34.88,0.95,0.88,-0.04
-PSIX,4.25,66.96,603.24,185.45,-1,0.28,0.32,-1/5,buy,25.04-121.78,16.2,45.0,109.0,105.98,Sell ALL,580.66 thousand,Industrials,Specialty Industrial Machinery,2.191,75.09,92.07,1.12,0.73,0.06
-SNOW,4.27,141.22,353.26,-54.61,5,0.09,0.3,5/5,buy,118.3-280.67,-8.82,50.0,500.0,366.37,Buy,8.78 million,Technology,Software - Application,1.228,147.09,172.88,1.04,0.82,0.59
-VFC,4.29,18.25,357.6,101.78,2,0.21,0.49,2/5,hold,11.06-22.27,11.51,18.0,39.5,30.1,Sell,5.41 million,Consumer Cyclical,Apparel Manufacturing,0.974,18.69,22.6,1.02,0.81,0.03
-CTRN,4.29,47.79,628.15,104.82,1,-0.01,-0.01,1/5,buy,21.82-56.78,12.07,16.0,68.0,67.75,Sell,68.36 thousand,Consumer Cyclical,Apparel Retail,2.047,47.73,57.95,1.0,0.82,-0.1
-INN,4.32,4.99,405.52,104.93,2,0.09,0.63,2/5,hold,3.98-6.0,12.63,17.0,6.0,5.69,Buy,844.52 thousand,Real Estate,REIT - Hotel & Motel,1.207,4.79,5.9,0.96,0.85,-0.11
-OMF,4.34,57.91,389.43,80.89,2,0.35,0.22,2/5,buy,45.78-71.93,9.83,19.0,85.0,76.5,Sell,1.26 million,Financial Services,Credit Services,1.264,57.26,70.04,0.99,0.83,0.27
-TWLO,4.35,140.91,358.76,123.56,1,0.28,0.25,1/5,buy,91.84-154.64,14.14,9.0,190.0,170.17,== less Sell ALL==,2.13 million,Technology,Software - Infrastructure,1.284,133.75,164.67,0.95,0.86,0.33
-SMR,4.38,11.32,642.71,92.09,1,-2.36,-16.03,1/5,hold,8.85-57.42,9.45,80.0,52.0,35.68,Sell,28.93 million,Industrials,Specialty Industrial Machinery,2.279,11.45,14.14,1.01,0.8,0.17
-MXCT,4.4,0.82,518.74,158.17,0,0.04,0.44,0/5,buy,0.643-2.875,17.36,72.0,5.0,4.55,Sell ALL,670.26 thousand,Healthcare,Medical Devices,1.452,0.82,1.02,1.0,0.8,0.1
-JOBY,4.42,8.7,769.03,71.3,1,-0.03,-0.18,1/5,hold,6.18-20.95,8.74,57.99999999999999,18.0,14.89,- Buy time -,24.24 million,Industrials,Airports & Air Services,2.678,8.65,10.53,0.99,0.83,0.15
-ALAR,4.44,6.61,214.59,129.76,2,0.09,6.48,2/5,buy,5.5-18.0,15.28,63.0,16.0,15.5,Sell,27.50 thousand,Technology,Software - Infrastructure,0.255,6.55,7.98,0.99,0.83,0.11
-RIVN,4.44,16.06,546.29,79.7,2,0.03,0.05,2/5,hold,11.57-22.69,9.78,28.999999999999996,25.0,21.58,Sell,21.10 million,Consumer Cyclical,Auto Manufacturers,1.691,16.07,19.48,1.0,0.82,0.02
-ADMA,4.46,10.6,398.35,117.34,2,0.02,0.1,2/5,buy,7.21-24.19,13.68,56.00000000000001,24.0,22.33,== less Sell ALL==,5.43 million,Healthcare,Biotechnology,0.821,10.52,12.76,0.99,0.83,-0.11
-LFVN,4.47,5.05,131.8,123.66,2,-0.01,-0.05,2/5,buy,3.9-15.0,12.87,66.0,11.0,9.5,Sell,141.60 thousand,Consumer Defensive,Packaged Foods,0.391,4.69,5.52,0.93,0.91,0.47
-LRN,4.47,95.16,138.14,95.66,2,0.27,0.12,2/5,hold,60.61-171.17,11.55,44.0,125.0,119.25,Sell ALL,1.01 million,Consumer Defensive,Education & Training Services,0.049,94.37,117.81,0.99,0.81,0.77
-SYF,4.47,75.12,423.46,101.13,2,0.27,0.13,2/5,buy,51.72-88.77,12.13,15.0,103.0,96.3,Sell,3.31 million,Financial Services,Credit Services,1.381,73.76,89.94,0.98,0.84,0.05
-DTST,4.51,3.99,307.34,22.23,0,0.75,7.04,0/5,hold,3.25-5.44,2.76,27.0,0.1,0.1,Buy,128.02 thousand,Technology,Information Technology Services,1.182,4.15,7.81,1.04,0.51,2.5
-TLN,4.51,351.91,524.47,93.2,2,-0.33,-0.09,2/5,buy,216.2-451.28,11.05,22.0,594.0,531.35,Sell,753.76 thousand,Utilities,Utilities - Independent Power Producers,1.781,347.73,424.48,0.99,0.83,-0.03
-IKT,4.52,1.86,329.31,128.09,2,0.03,0.24,2/5,buy,1.33-2.365,15.05,21.0,8.0,7.0,Sell,914.62 thousand,Healthcare,Biotechnology,0.864,1.81,2.17,0.97,0.86,-0.05
-INGN,4.53,7.0,550.64,110.15,1,0.1,0.94,1/5,buy,5.34-9.13,12.71,23.0,14.0,13.33,Sell ALL,268.40 thousand,Healthcare,Medical Devices,1.705,6.83,8.36,0.98,0.84,0.25
-SSYS,4.54,8.47,504.29,104.82,2,0.03,7.22,2/5,buy,7.34-12.81,12.4,34.0,13.5,12.92,Sell,576.14 thousand,Technology,Computer Hardware,1.81,8.41,10.37,0.99,0.82,-0.11
-RLJ,4.56,8.27,371.61,89.7,2,0.06,0.82,2/5,hold,6.54-8.63,10.88,4.0,12.0,10.22,Buy time,1.89 million,Real Estate,REIT - Hotel & Motel,1.087,8.0,9.7,0.97,0.85,0.41
-ARHS,4.6,7.34,728.35,95.55,1,0.03,0.3,1/5,hold,6.17-12.98,11.31,43.0,14.0,12.36,Sell,915.86 thousand,Consumer Cyclical,Specialty Retail,2.558,7.14,9.01,0.97,0.81,0.1
-KVYO,4.61,19.89,177.76,45.61,4,0.06,0.4,4/5,buy,15.53-37.79,4.63,47.0,40.0,36.23,Buy time,4.39 million,Technology,Software - Application,0.862,19.07,22.61,0.96,0.88,0.46
-FTNT,4.61,86.11,311.53,66.54,4,0.18,0.26,4/5,hold,70.12-109.33,8.2,21.0,120.0,104.71,Buy,5.67 million,Technology,Software - Infrastructure,0.998,83.12,99.68,0.97,0.86,-0.16
-AVXL,4.64,3.26,434.7,113.3,2,0.09,0.72,2/5,buy,2.61-13.99,13.5,77.0,24.0,23.0,== less Sell ALL==,1.08 million,Healthcare,Biotechnology,1.178,3.2,3.99,0.98,0.82,0.03
-CNVS,4.66,2.59,472.01,92.59,2,-0.16,-1.49,2/5,buy,1.77-7.39,11.2,65.0,12.0,11.5,Buy,123.04 thousand,Communication Services,Entertainment,1.575,2.48,2.98,0.96,0.87,0.24
-HNST,4.67,3.31,629.17,114.84,1,0.0,20.9,1/5,buy,2.07-5.545,12.69,40.0,5.0,4.25,Sell,1.71 million,Consumer Defensive,Household & Personal Products,2.161,3.22,4.03,0.97,0.82,0.16
-KINS,4.68,16.95,294.96,126.4,2,0.02,0.03,2/5,buy,13.08-22.4,14.87,24.0,21.5,21.5,Sell,119.02 thousand,Financial Services,Insurance - Property & Casualty,0.448,16.59,20.33,0.98,0.83,0.22
-TS,4.68,63.54,173.11,81.26,4,0.18,0.24,4/5,buy,31.76-63.9,9.98,1.0,72.0,65.28,- +Buy time -,1.73 million,Energy,Oil & Gas Equipment & Services,0.46,61.33,74.75,0.97,0.85,0.02
-AI,4.69,8.86,598.55,100.85,2,-0.03,-0.13,2/5,hold,7.675-30.24,12.08,71.0,17.0,12.91,- +Buy time -,4.43 million,Technology,Software - Infrastructure,2.07,8.63,10.62,0.97,0.83,-0.13
-ONDS,4.71,9.49,873.13,128.84,0,0.03,0.82,0/5,buy,0.731-15.28,14.12,38.0,25.0,22.56,Sell ALL,50.96 million,Technology,Communication Equipment,2.593,9.88,12.33,1.04,0.77,0.0
-INOD,4.72,39.95,734.69,120.57,1,0.07,0.46,1/5,buy,31.9-93.85,13.77,56.99999999999999,110.0,100.62,Sell,1.14 million,Technology,Information Technology Services,2.505,41.11,50.2,1.03,0.8,-0.12
-LB,4.73,68.7,309.17,9.66,5,0.04,0.04,5/5,hold,43.75-87.597,0.98,22.0,98.0,89.29,Buy time,402.56 thousand,Energy,Oil & Gas Equipment & Services,1,70.4,86.09,1.02,0.8,0.21
-EXOD,4.76,7.07,1007.47,121.23,0,-0.08,-0.07,0/5,buy,5.89-56.0,12.31,87.0,25.0,22.25,Sell,58.14 thousand,Technology,Software - Infrastructure,3.177,7.54,9.55,1.07,0.74,-0.13
-NGS,4.76,40.86,153.19,51.11,5,0.29,0.84,5/5,strongBuy,17.89-40.98,6.51,0.0,50.0,48.62,Buy time,96.24 thousand,Energy,Oil & Gas Equipment & Services,0.387,39.77,47.3,0.97,0.86,0.02
-SLAB,4.79,217.19,405.82,40.59,4,0.02,0.06,4/5,hold,100.87-217.33,5.22,0.0,231.0,226.93,- +Buy time -,392.18 thousand,Technology,Semiconductors,1.45,212.54,261.57,0.98,0.83,0.15
-SONO,4.79,14.67,575.84,94.32,2,0.14,-1.83,2/5,buy,8.73-19.82,11.45,26.0,21.0,20.06,Sell ALL,1.12 million,Technology,Consumer Electronics,1.995,13.99,17.13,0.95,0.86,0.11
-PL,4.8,34.08,511.86,168.51,1,0.09,2.0,1/5,buy,3.29-41.71,18.16,18.0,40.0,37.61,Sell,12.21 million,Industrials,Aerospace & Defense,1.833,35.91,43.61,1.05,0.78,-0.14
-AMPL,4.81,7.18,444.92,53.36,4,0.0,0.28,4/5,buy,5.51-14.49,5.29,50.0,18.0,14.7,- +Buy time -,1.78 million,Technology,Software - Application,1.488,6.72,8.08,0.94,0.89,-0.05
-ASPN,4.82,3.61,857.75,115.25,1,-0.18,-15.33,1/5,buy,2.3-9.78,12.19,63.0,6.0,5.1,Buy,1.54 million,Industrials,Building Products & Equipment,2.898,3.58,4.37,0.99,0.83,-0.2
-TPC,4.83,86.04,624.71,131.17,1,-0.12,-0.13,1/5,buy,21.4-89.51,15.35,4.0,120.0,114.75,Sell,408.24 thousand,Industrials,Engineering & Construction,2.114,84.24,102.77,0.98,0.84,0.09
-BROS,4.84,55.34,725.09,121.91,1,0.09,0.85,1/5,buy,44.58-77.88,13.28,28.999999999999996,95.0,85.48,Sell,3.88 million,Consumer Cyclical,Restaurants,2.506,54.7,68.04,0.99,0.81,0.02
-ALLT,4.85,7.23,553.57,110.89,2,0.06,1.5,2/5,buy,5.61-11.92,13.28,39.0,19.0,16.05,Sell,309.36 thousand,Technology,Software - Infrastructure,1.531,7.05,8.6,0.98,0.84,0.0
-PMTS,4.85,16.94,354.36,132.71,2,0.62,0.88,2/5,buy,10.81-27.31,14.7,38.0,30.0,29.12,mere Buy (some sold),35.28 thousand,Financial Services,Credit Services,1.025,17.29,21.48,1.02,0.79,0.19
-RPID,4.86,2.3,463.19,28.38,4,-0.07,-0.3,4/5,buy,2.01-4.94,3.48,53.0,8.0,8.0,Buy time,227.74 thousand,Healthcare,Medical Devices,1.602,2.31,2.79,1.0,0.82,0.26
-CAVA,4.86,91.11,673.43,135.42,1,0.0,0.44,1/5,buy,43.41-101.5,15.55,10.0,110.0,98.44,Sell,2.30 million,Consumer Cyclical,Restaurants,2.042,89.04,108.94,0.98,0.84,-0.04
-AKA,4.87,10.63,499.04,85.06,1,-0.52,-0.6,1/5,hold,7.0-16.38,9.22,35.0,30.0,24.88,Sell,3.24 thousand,Consumer Cyclical,Apparel Retail,1.573,10.85,12.83,1.02,0.83,1.06
-ACHR,4.89,5.6,917.37,97.84,1,0.11,0.6,1/5,buy,4.8-14.62,11.79,62.0,18.0,14.47,== less Sell ALL==,24.73 million,Industrials,Aerospace & Defense,3.243,5.62,6.97,1.0,0.8,-0.08
-CDRO,4.89,8.98,155.47,55.32,5,1,1,5/5,buy,5.18-9.68,7.02,7.000000000000001,14.0,12.5,Buy time,20.26 thousand,Consumer Cyclical,Gambling,0.408,8.78,10.43,0.98,0.86,0.08
-BCSF,4.91,13.35,212.0,66.02,5,-0.01,-0.02,5/5,hold,11.82-16.0,8.31,17.0,15.0,14.33,- +Buy time -,355.94 thousand,Financial Services,Asset Management,0.62,12.98,15.59,0.97,0.86,-0.17
-FINV,4.91,4.85,141.98,69.52,5,0,0,5/5,buy,4.505-10.9,8.68,56.00000000000001,8.277952,7.99,Buy,1.21 million,Financial Services,Credit Services,0.349,4.82,5.76,0.99,0.84,-0.06
-SMWB,4.92,2.71,348.25,68.76,4,0.03,2.0,4/5,hold,2.22-10.75,8.49,75.0,5.0,4.58,- +Buy time -,445.44 thousand,Technology,Software - Application,1.115,2.62,3.2,0.97,0.85,0.03
-NRGV,4.92,4.12,230.95,231.15,1,-0.01,1.0,1/5,buy,0.654-6.35,21.84,35.0,6.05,5.12,Sell,2.87 million,Utilities,Utilities - Renewable,0.902,3.88,4.67,0.94,0.88,-0.12
-UNCY,4.93,7.16,591.31,123.44,2,-0.16,-0.42,2/5,buy,3.71-11.0,14.66,35.0,90.0,66.73,Sell,437.04 thousand,Healthcare,Biotechnology,1.801,6.96,8.47,0.97,0.85,-0.17
-FBRX,4.95,28.03,765.96,84.12,0,-0.22,-0.19,0/5,buy,6.13-35.8,6.1,22.0,75.0,69.38,- Buy time -,796.92 thousand,Healthcare,Biotechnology,3.199,31.02,42.02,1.11,0.67,1.17
-PLBY,4.95,1.72,801.9,126.88,1,0.04,2.25,1/5,buy,1.0-2.75,14.53,37.0,4.0,3.46,mere Buy (some sold),475.64 thousand,Consumer Cyclical,Leisure,2.527,1.69,2.07,0.98,0.83,-0.13
-CBRL,4.95,31.04,476.84,95.34,3,0.54,1.82,3/5,hold,24.85-71.93,11.32,56.99999999999999,35.0,33.19,- +Buy time -,1.07 million,Consumer Cyclical,Restaurants,1.241,29.4,35.57,0.95,0.87,-0.05
-APP,4.95,443.43,705.1,139.22,1,0.36,0.13,1/5,buy,276.8-745.61,16.09,41.0,860.0,749.68,mere Buy (some sold),4.29 million,Communication Services,Advertising Agencies,2.502,425.34,524.5,0.96,0.85,-0.08
-NET,4.95,211.97,492.07,75.03,3,0.05,0.19,3/5,buy,120.455-260.0,8.18,18.0,300.0,265.93,Buy time,4.94 million,Technology,Software - Infrastructure,1.875,206.7,252.0,0.98,0.84,0.22
-VSCO,4.96,50.88,663.19,137.77,1,0.56,0.64,1/5,hold,17.53-66.889,14.92,24.0,81.0,73.28,Sell ALL,1.84 million,Consumer Cyclical,Apparel Retail,2.346,51.15,63.37,1.01,0.8,0.08
-AVPT,4.96,9.92,353.58,44.16,5,0.06,0.85,5/5,buy,8.835-20.245,5.54,51.0,26.0,21.32,- +Buy time -,1.58 million,Technology,Software - Infrastructure,1.201,9.8,11.81,0.99,0.84,-0.14
-GHM,4.97,90.76,326.88,156.64,2,0.11,0.64,2/5,buy,30.51-98.4,16.86,8.0,101.0,100.62,Sell ALL,143.98 thousand,Industrials,Specialty Industrial Machinery,0.943,91.99,109.99,1.01,0.83,0.07
-BLIN,4.98,0.94,292.59,134.9,2,0.04,2.64,2/5,,0.69-2.22,14.89,57.99999999999999,4.62,4.62,mere Buy (some sold),39.00 thousand,Technology,Software - Infrastructure,0.874,0.94,1.17,1.0,0.8,0.44
-LITE,4.98,858.32,358.82,245.0,0,0.33,0.26,0/5,buy,60.38-960.0,23.71,11.0,1225.0,1028.52,Sell ALL,6.05 million,Technology,Communication Equipment,1.391,876.8,1062.64,1.02,0.81,-0.01
-RGTI,5.01,16.08,597.84,180.66,0,0.01,0.34,0/5,buy,8.935-58.15,19.78,72.0,43.0,36.79,== less Sell ALL==,29.06 million,Technology,Computer Hardware,1.828,15.81,19.93,0.98,0.81,0.24
-QNCX,5.03,1.23,477.35,171.15,2,-5.62,-2.5,2/5,hold,0.8-45.5,17.89,97.0,0.0,0.0,Sell,7.79 million,Healthcare,Biotechnology,1.333,1.34,1.81,1.09,0.68,-0.39
-XMTR,5.04,45.29,462.7,152.0,2,0.05,0.46,2/5,buy,25.815-73.867,17.4,39.0,75.0,68.67,Sell ALL,638.10 thousand,Industrials,Industrial Distribution,0.881,44.32,54.31,0.98,0.83,-0.14
-BBSI,5.04,31.57,330.22,43.41,5,-0.01,-0.02,5/5,strongBuy,25.33-49.65,5.38,36.0,43.0,42.62,- +Buy time -,159.00 thousand,Industrials,Staffing & Employment Services,0.985,30.11,36.13,0.95,0.87,-0.0
-SLM,5.05,22.99,364.57,84.52,2,0.5,0.46,2/5,buy,17.77-34.97,10.22,34.0,35.0,31.95,mere Buy (some sold),4.52 million,Financial Services,Credit Services,1.055,22.61,28.45,0.98,0.81,0.99
-PARR,5.08,66.46,318.1,33.37,5,3.87,1.93,5/5,strongBuy,14.0-68.0,3.85,2.0,80.0,75.14,Buy time,1.27 million,Energy,Oil & Gas Refining & Marketing,0.972,65.81,78.06,0.99,0.85,0.22
-FSTR,5.09,30.61,356.75,74.18,2,-0.66,-1.02,2/5,hold,17.16-32.63,8.89,6.0,33.0,32.75,mere Buy (some sold),128.20 thousand,Industrials,Railroads,1.015,30.57,36.54,1.0,0.84,1.19
-DBX,5.09,24.31,203.82,57.55,5,0.1,0.16,5/5,hold,21.695-32.4,7.2,25.0,30.0,27.75,Buy time,3.34 million,Technology,Software - Infrastructure,0.616,23.45,28.3,0.96,0.86,0.14
-DY,5.1,390.31,418.54,153.74,2,0.67,0.27,2/5,buy,169.18-445.53,16.8,12.0,510.0,488.95,Sell ALL,391.70 thousand,Industrials,Engineering & Construction,1.382,394.4,478.18,1.01,0.82,0.02
-XPO,5.1,216.71,513.57,120.71,2,0.18,0.21,2/5,buy,103.71-231.46,13.99,6.0,275.0,241.39,Sell ALL,1.07 million,Industrials,Trucking,1.717,215.92,265.09,1.0,0.82,0.22
-INLX,5.11,7.09,131.27,-20.67,3,0.05,0.57,3/5,,6.9-15.0,-3.1,53.0,0.1,0.1,Buy time,1.04 thousand,Technology,Software - Application,0.361,7.19,9.12,1.01,0.78,2.5
-ACIW,5.12,43.6,300.64,59.67,5,-0.01,-0.0,5/5,buy,38.05-55.45,7.55,21.0,70.0,67.0,- +Buy time -,622.42 thousand,Technology,Software - Infrastructure,1.034,42.22,51.13,0.97,0.85,-0.08
-OM,5.12,4.18,559.79,125.61,2,-0.19,-0.3,2/5,buy,3.0-21.98,13.64,81.0,12.0,10.5,Sell ALL,115.56 thousand,Healthcare,Medical Devices,1.963,4.29,5.25,1.03,0.8,0.1
-KD,5.14,13.98,562.96,82.07,3,-0.06,-0.08,3/5,hold,10.1-44.2,10.23,68.0,16.5,15.6,Buy time,3.44 million,Technology,Information Technology Services,1.897,13.37,16.12,0.96,0.87,0.11
-RDDT,5.15,147.75,777.35,140.81,1,0.59,0.87,1/5,buy,94.89-282.95,15.99,48.0,300.0,261.67,== less Sell ALL==,4.12 million,Communication Services,Internet Content & Information,2.407,146.35,179.62,0.99,0.82,-0.06
-ATEN,5.15,26.63,443.55,138.96,2,0.03,0.14,2/5,buy,15.92-28.59,16.03,7.000000000000001,32.0,29.83,Sell ALL,1.30 million,Technology,Software - Infrastructure,1.088,25.56,31.84,0.96,0.84,0.19
-VIR,5.16,10.08,495.33,141.15,2,-0.17,-0.04,2/5,buy,4.155-11.66,16.07,14.000000000000002,30.0,25.39,== less Sell ALL==,1.77 million,Healthcare,Biotechnology,1.656,9.87,12.29,0.98,0.82,0.05
-TDOC,5.17,5.95,604.03,113.71,2,0.23,0.91,2/5,hold,4.4-9.77,13.61,39.0,11.0,9.03,Buy time,4.38 million,Healthcare,Health Information Services,2.079,5.56,6.9,0.93,0.86,0.17
-UNFI,5.2,48.92,254.69,70.61,5,0.27,0.63,5/5,hold,20.78-49.84,8.79,2.0,56.0,51.12,Buy time,540.74 thousand,Consumer Defensive,Food Distribution,0.833,47.8,57.42,0.98,0.85,-0.04
-SYM,5.21,57.35,685.93,151.09,1,0.81,10.0,1/5,hold,21.33-87.88,17.33,35.0,83.0,73.91,Sell,1.13 million,Industrials,Specialty Industrial Machinery,2.111,56.9,69.35,0.99,0.83,0.07
-DXPE,5.21,165.04,415.18,155.04,2,-0.13,-0.07,2/5,buy,75.58-174.0,17.75,5.0,154.0,146.75,Sell ALL,193.98 thousand,Industrials,Industrial Distribution,0.965,160.53,193.73,0.97,0.85,0.1
-FTI,5.23,76.99,279.99,101.41,4,0.27,0.5,4/5,buy,28.0-77.1,12.21,0.0,83.0,75.43,Buy time,3.89 million,Energy,Oil & Gas Equipment & Services,0.711,74.73,90.18,0.97,0.85,0.06
-MESO,5.23,15.55,229.22,60.62,5,1,1,5/5,strongBuy,9.88-21.5,7.59,28.000000000000004,35.0,35.0,Buy time,200.50 thousand,Healthcare,Biotechnology,0.817,15.16,18.37,0.97,0.85,0.18
-PRIM,5.24,166.07,419.05,175.71,2,0.64,0.5,2/5,buy,62.18-176.68,19.12,6.0,205.0,190.21,Sell ALL,666.06 thousand,Industrials,Engineering & Construction,1.39,164.6,203.45,0.99,0.82,-0.13
-FSS,5.25,121.48,353.01,115.21,2,0.36,0.39,2/5,buy,80.79-132.89,13.76,9.0,150.0,144.0,- Buy time -,580.72 thousand,Industrials,Pollution & Treatment Controls,1,117.6,145.24,0.97,0.84,0.8
-FIP,5.25,5.67,701.93,150.15,1,-1.42,-2.82,1/5,buy,3.9-7.935,16.93,28.999999999999996,13.0,12.33,- Buy time -,780.76 thousand,Industrials,Conglomerates,2.025,5.56,6.73,0.98,0.84,0.09
-JXN,5.33,115.21,417.15,86.43,4,1.46,0.26,4/5,hold,77.58-123.61,10.61,7.000000000000001,136.0,129.0,Buy time,563.84 thousand,Financial Services,Insurance - Life,1.459,109.42,132.95,0.95,0.87,0.04
-AROC,5.34,38.0,293.79,73.73,5,0.28,0.69,5/5,buy,21.17-38.6,9.24,2.0,42.0,40.83,Buy time,1.57 million,Energy,Oil & Gas Equipment & Services,0.904,37.15,44.54,0.98,0.85,-0.03
-PRAX,5.35,323.19,856.74,129.16,1,-0.24,-0.08,1/5,buy,34.893-356.0,14.47,9.0,1245.0,939.62,== less Sell ALL==,448.04 thousand,Healthcare,Biotechnology,2.968,328.48,408.77,1.02,0.79,0.12
-KOD,5.36,43.67,687.31,218.43,0,-0.11,-0.1,0/5,buy,2.81-47.84,22.92,9.0,80.0,68.17,Sell,1.03 million,Healthcare,Biotechnology,2.396,43.58,56.92,1.0,0.77,-0.09
-OSPN,5.37,11.49,455.05,93.44,4,0.11,0.37,4/5,buy,10.07-18.13,11.49,37.0,22.0,19.12,- +Buy time -,421.34 thousand,Technology,Software - Infrastructure,1.506,11.1,13.55,0.97,0.85,-0.1
-GRPN,5.39,14.24,214.84,209.34,2,-2.92,-98.15,2/5,buy,9.17-43.08,22.96,67.0,40.0,31.67,== less Sell ALL==,1.34 million,Communication Services,Internet Content & Information,1,13.09,15.88,0.92,0.9,0.03
-PSTG,5.39,70.31,514.92,164.9,2,0.05,0.06,2/5,buy,43.51-100.5899,18.94,30.0,105.0,97.45,Sell,2.46 million,Technology,Computer Hardware,1.343,66.42,80.4,0.94,0.87,-0.09
-IMPP,5.42,4.94,368.49,91.23,4,0.19,1.67,4/5,strongBuy,2.45-6.57,10.93,25.0,8.0,8.0,Buy time,631.04 thousand,Energy,Oil & Gas Midstream,1.114,4.6,5.62,0.93,0.88,0.19
-PGNY,5.42,18.42,326.96,63.59,5,0.14,0.35,5/5,buy,16.1-28.75,7.87,36.0,31.0,29.23,- +Buy time -,1.36 million,Healthcare,Healthcare Plans,0.993,17.64,21.43,0.96,0.86,0.11
-TSSI,5.44,14.19,797.8,151.73,1,0,0,1/5,strongBuy,6.67-31.94,16.7,56.00000000000001,20.0,19.0,Sell,1.50 million,Technology,Information Technology Services,2.043,14.71,18.05,1.04,0.79,0.06
-OPBK,5.52,14.43,178.92,57.96,5,0.05,0.15,5/5,buy,11.52-15.27,7.28,6.0,17.0,16.75,- +Buy time -,56.14 thousand,Financial Services,Banks - Regional,0.606,14.28,17.78,0.99,0.81,0.63
-ALNT,5.54,73.92,507.91,172.11,2,0.2,0.44,2/5,buy,21.07-77.28,19.48,4.0,79.0,74.05,Sell ALL,147.94 thousand,Technology,Electronic Components,1.532,71.17,86.13,0.96,0.86,-0.01
-LAKE,5.59,9.74,504.22,177.36,2,-1.8,-8.1,2/5,buy,7.15-20.5,19.92,52.0,19.0,17.25,Sell,65.72 thousand,Consumer Cyclical,Apparel Manufacturing,1.336,9.39,11.56,0.96,0.84,-0.02
-STT,5.59,150.7,476.43,162.22,2,0.33,0.12,2/5,buy,87.22-156.18,18.65,4.0,175.0,166.23,Sell ALL,1.79 million,Financial Services,Asset Management,1.384,142.01,173.22,0.94,0.87,0.24
-FOA,5.59,19.36,629.84,158.99,2,0.66,0.98,2/5,buy,15.77-29.58,17.1,35.0,22.5,22.5,mere Buy (some sold),77.86 thousand,Financial Services,Credit Services,1.707,19.83,24.24,1.02,0.8,-0.03
-PAYS,5.6,6.59,301.52,105.99,5,-0.01,-0.19,5/5,buy,2.28-8.88,12.59,26.0,12.0,10.9,Buy time,833.12 thousand,Technology,Software - Infrastructure,0.643,6.16,7.6,0.93,0.87,-0.22
-LZ,5.61,6.47,438.91,98.88,4,-0.03,-0.13,4/5,hold,5.28-12.4,12.06,48.0,11.0,9.86,Buy time,3.11 million,Industrials,Specialty Business Services,1.304,6.15,7.54,0.95,0.86,0.1
-TTI,5.63,9.7,359.65,117.52,4,0.0,0.0,4/5,buy,2.6-12.54,13.51,23.0,14.0,13.25,Buy,2.04 million,Industrials,Conglomerates,1.225,9.15,11.09,0.94,0.87,0.07
-NFE,5.66,0.69,478.69,150.62,3,0.32,0.26,3/5,hold,0.555-7.365,16.62,91.0,8.5,6.5,- +Buy time -,10.46 million,Energy,Oil & Gas Midstream,1.207,0.7,0.84,1.01,0.82,-0.06
-RVPH,5.66,0.87,247.91,234.62,2,-3.38,-3.48,2/5,buy,0.59-23.2,24.14,96.0,140.0,99.1,Sell ALL,474.14 thousand,Healthcare,Biotechnology,0.642,0.88,1.04,1.01,0.84,-0.06
-OOMA,5.68,16.1,341.31,95.41,5,0.09,0.34,5/5,buy,9.793-16.89,11.24,5.0,20.0,19.18,Buy time,268.24 thousand,Technology,Software - Application,1.195,15.13,18.52,0.94,0.87,-0.08
-LVO,5.72,5.13,428.95,85.3,3,-0.03,-0.18,3/5,buy,3.7-9.8,9.16,48.0,14.0,13.0,Buy time,117.14 thousand,Communication Services,Entertainment,1.631,5.17,6.57,1.01,0.78,1.0
-BBCP,5.75,7.81,268.6,112.38,5,0.04,0.46,5/5,hold,5.555-7.91,13.32,1.0,8.0,8.0,Buy time,176.98 thousand,Industrials,Engineering & Construction,0.949,7.65,9.81,0.98,0.8,-0.08
-SNEX,5.82,103.65,307.54,230.55,2,0.42,0.33,2/5,buy,53.52667-107.92,24.79,4.0,107.0,107.0,== less Sell ALL==,707.12 thousand,Financial Services,Capital Markets,0.425,98.11,118.0,0.95,0.88,-0.02
-AENT,5.84,7.75,265.18,136.66,4,-0.13,-0.42,4/5,buy,2.219-8.8,15.87,12.0,10.0,9.5,Buy time,25.72 thousand,Communication Services,Entertainment,0.398,7.36,9.14,0.95,0.85,0.24
-GEO,5.88,18.95,258.99,116.28,5,0.02,0.09,5/5,buy,12.51-32.09,13.88,41.0,33.0,31.25,Buy time,1.19 million,Industrials,Security & Protection Services,0.686,18.31,21.84,0.97,0.87,0.02
-KGS,5.92,66.8,339.45,115.64,5,-0.54,-1.04,5/5,buy,30.061-67.7,13.98,1.0,70.0,65.88,Buy time,1.02 million,Energy,Oil & Gas Equipment & Services,0.876,63.6,77.39,0.95,0.86,-0.12
-PAY,5.93,27.97,444.91,96.38,4,0.06,0.38,4/5,buy,22.02-40.433,11.83,31.0,36.0,34.14,Buy,440.36 thousand,Technology,Software - Infrastructure,1.436,26.43,32.47,0.94,0.86,0.44
-CYRX,5.93,9.8,547.18,184.65,2,0.1,0.49,2/5,buy,5.31-11.45,19.49,14.000000000000002,16.0,14.81,Sell ALL,429.02 thousand,Industrials,Integrated Freight & Logistics,1.686,9.78,11.97,1.0,0.82,0.17
-SKYT,5.94,30.51,1102.07,126.3,1,0.4,1.6,1/5,hold,6.99-36.268,14.19,16.0,35.0,35.0,== less Sell ALL==,1.39 million,Technology,Semiconductors,3.474,30.7,39.32,1.01,0.78,0.19
-HRMY,5.94,31.05,312.26,111.11,5,-0.28,-0.21,5/5,buy,25.52-40.87,13.37,24.0,72.0,57.5,- +Buy time -,704.40 thousand,Healthcare,Biotechnology,0.891,29.93,36.34,0.96,0.85,0.02
-PVH,5.98,91.0,457.37,277.95,1,0.81,0.27,1/5,hold,59.6-100.15,26.86,9.0,135.0,116.29,Sell,1.33 million,Consumer Cyclical,Apparel Manufacturing,1.609,87.51,109.27,0.96,0.83,-0.2
-GCO,6.0,34.58,609.99,172.11,2,0.09,-0.04,2/5,buy,19.18-38.95,19.58,11.0,43.0,39.5,== less Sell ALL==,231.66 thousand,Consumer Cyclical,Apparel Retail,1.777,33.29,42.64,0.96,0.81,0.22
-DUOT,6.0,8.25,516.09,215.0,2,-0.08,-13.5,2/5,buy,5.775-12.17,23.7,32.0,17.0,17.0,Sell ALL,550.14 thousand,Technology,Software - Application,0.847,7.8,9.51,0.95,0.87,-0.12
-CDNA,6.02,20.8,358.22,192.07,2,0.1,1.14,2/5,hold,10.96-23.24,21.01,10.0,28.0,26.7,Sell ALL,902.38 thousand,Healthcare,Diagnostics & Research,1,19.42,24.66,0.93,0.84,0.57
-KLTR,6.03,1.42,434.56,138.38,4,0.05,3.0,4/5,strongBuy,1.055-2.325,14.79,39.0,4.0,3.75,Buy time,302.30 thousand,Technology,Software - Application,1.082,1.26,1.53,0.89,0.93,0.05
-VLN,6.08,1.51,453.34,283.3,0,0.03,0.38,0/5,buy,1.1-3.34,26.49,55.00000000000001,5.0,4.5,Sell,720.88 thousand,Technology,Semiconductors,0.391,1.47,1.78,0.97,0.85,0.4
-EVEX,6.09,2.78,304.95,121.67,5,0.02,0.08,5/5,buy,2.34-7.699,14.39,64.0,9.0,7.91,Buy time,1.19 million,Industrials,Aerospace & Defense,0.974,2.73,3.3,0.98,0.84,0.05
-HROW,6.11,40.24,172.53,147.96,5,0.04,0.14,5/5,buy,21.12-54.85,17.25,27.0,91.0,79.56,- +Buy time -,452.66 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.307,38.23,45.41,0.95,0.89,0.03
-QTWO,6.15,52.51,465.08,92.34,4,0.01,0.02,4/5,buy,44.65-96.68,11.29,46.0,86.0,80.54,Buy time,887.80 thousand,Technology,Software - Application,1.422,49.27,62.31,0.94,0.84,0.67
-ZETA,6.15,17.81,459.07,142.46,4,0.23,1.05,4/5,buy,12.1-24.9,16.84,28.000000000000004,44.0,36.19,Buy time,7.75 million,Technology,Software - Infrastructure,1.285,16.55,20.02,0.93,0.89,0.02
-RGP,6.19,4.09,233.99,79.32,5,0.04,0.87,5/5,buy,3.06-6.3,9.29,35.0,7.0,6.25,Buy,482.14 thousand,Industrials,Consulting Services,0.432,3.92,4.99,0.96,0.82,0.89
-LC,6.19,16.55,702.56,144.19,2,0.09,0.28,2/5,strongBuy,9.54-21.67,16.56,24.0,29.0,26.02,Sell ALL,2.61 million,Financial Services,Banks - Regional,1.954,16.04,20.2,0.97,0.82,0.57
-NN,6.2,17.93,364.65,125.57,5,-0.35,-2.7,5/5,buy,10.84-24.188,14.84,26.0,29.0,28.0,Buy time,2.20 million,Technology,Software - Infrastructure,0.983,17.16,20.35,0.96,0.88,-0.03
-FNKO,6.21,4.27,400.33,278.95,1,0.17,2.1,1/5,buy,2.22-6.04,28.34,28.999999999999996,5.0,4.75,Sell ALL,531.62 thousand,Consumer Cyclical,Leisure,0.572,3.93,4.79,0.92,0.89,0.1
-BFLY,6.22,4.92,784.9,207.72,1,0.03,0.76,1/5,buy,1.32-5.72,22.15,14.000000000000002,6.0,5.78,== less Sell ALL==,4.76 million,Healthcare,Medical Devices,2.219,4.64,5.8,0.94,0.85,0.14
-ACVA,6.25,5.22,571.36,163.6,3,0.02,0.58,3/5,hold,4.065-17.54,18.97,70.0,16.0,12.49,Buy time,2.73 million,Consumer Cyclical,Auto & Truck Dealerships,1.687,4.83,5.97,0.93,0.87,0.12
-APG,6.26,48.66,569.96,171.62,3,0.04,0.1,3/5,buy,26.046667-49.63,19.63,2.0,54.0,53.0,Buy time,2.40 million,Industrials,Engineering & Construction,1.686,45.74,56.09,0.94,0.87,0.03
-PI,6.28,120.04,574.89,180.06,2,0.07,0.16,2/5,buy,87.36-247.064,19.97,51.0,180.0,171.94,Sell ALL,466.84 thousand,Technology,Semiconductors,1.663,113.73,143.46,0.95,0.84,0.48
-TKNO,6.31,3.23,218.32,144.22,5,0.01,0.17,5/5,buy,1.91-7.48,17.03,56.99999999999999,12.0,10.5,- +Buy time -,94.98 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.33,3.11,3.8,0.96,0.85,0.17
-FLXS,6.32,56.89,313.92,193.9,3,0.78,1.01,3/5,buy,29.38-59.95,21.27,5.0,69.0,66.0,Buy time,44.48 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.534,50.75,61.59,0.89,0.92,0.4
-IESC,6.33,572.01,595.01,213.36,2,0.57,0.14,2/5,buy,202.96-611.21,22.78,6.0,458.0,458.0,Sell,221.96 thousand,Industrials,Engineering & Construction,1.672,557.63,687.18,0.97,0.83,0.07
-MBLY,6.37,8.73,418.93,234.8,2,0.03,0.43,2/5,hold,6.47-20.18,24.86,56.99999999999999,27.0,20.21,mere Buy (some sold),7.00 million,Consumer Cyclical,Auto Parts,0.74,8.12,9.97,0.93,0.88,0.23
-GEV,6.42,1063.11,574.79,219.97,2,25.61,10.88,2/5,buy,378.47-1181.95,23.12,10.0,1424.0,1315.28,== less Sell ALL==,2.85 million,Industrials,Specialty Industrial Machinery,1.196,1024.59,1250.11,0.96,0.85,0.13
-KN,6.43,30.36,512.23,166.51,2,0.04,0.16,2/5,buy,15.82-31.95,19.04,5.0,39.0,37.62,mere Buy (some sold),909.66 thousand,Technology,Electronic Components,1.488,29.06,36.35,0.96,0.84,0.94
-JBL,6.43,333.86,530.96,241.52,2,0.3,0.12,2/5,buy,146.88-346.22,25.87,4.0,355.0,333.0,Sell,990.70 thousand,Technology,Electronic Components,1.159,311.17,376.49,0.93,0.89,-0.06
-LQDT,6.47,35.37,373.57,132.95,5,0.17,0.55,5/5,strongBuy,21.67-36.05,15.8,2.0,44.0,43.5,Buy time,138.70 thousand,Consumer Cyclical,Internet Retail,1.023,33.38,40.61,0.94,0.87,0.12
-HPE,6.49,28.3,458.49,179.59,4,0.1,0.17,4/5,hold,16.175-29.63,20.11,4.0,38.0,32.37,Buy time,15.10 million,Technology,Communication Equipment,1.215,26.18,32.09,0.93,0.88,-0.11
-UI,6.51,971.0,533.13,229.37,2,1.34,0.44,2/5,strongBuy,333.33-1099.99,24.1,12.0,980.0,866.75,Sell ALL,84.80 thousand,Technology,Communication Equipment,1.322,947.94,1161.05,0.98,0.84,0.19
-SOUN,6.51,7.71,967.04,200.09,1,0.0,0.03,1/5,buy,5.83-22.17,21.79,65.0,20.0,17.31,Sell,21.35 million,Technology,Software - Application,2.966,7.29,9.4,0.95,0.82,0.1
-SEI,6.53,71.2,534.32,237.96,2,0.28,1.1,2/5,buy,21.22-81.24,25.79,12.0,110.8,96.72,Sell ALL,3.08 million,Energy,Oil & Gas Equipment & Services,1.061,69.24,83.84,0.97,0.85,0.07
-CAKE,6.53,62.67,338.39,109.65,5,0.09,0.15,5/5,hold,43.07-69.7,13.24,10.0,76.0,70.08,Buy time,1.25 million,Consumer Cyclical,Restaurants,1.007,60.53,74.66,0.97,0.84,0.57
-RKLB,6.54,77.02,829.36,236.36,1,0.08,0.79,1/5,buy,20.232-99.58,25.5,23.0,105.0,96.28,Sell,20.31 million,Industrials,Aerospace & Defense,2.205,74.12,91.95,0.96,0.84,-0.03
-NPCE,6.56,16.54,682.87,200.8,2,0.15,0.92,2/5,buy,7.563-18.975,22.37,13.0,22.0,21.0,Sell ALL,182.60 thousand,Healthcare,Medical Devices,1.878,15.56,19.01,0.94,0.87,0.24
-EFXT,6.59,26.34,654.12,194.79,3,-0.1,-2.32,3/5,buy,6.46-26.39,21.98,0.0,26.0,25.88,- +Buy time -,506.34 thousand,Energy,Oil & Gas Equipment & Services,2.012,23.62,28.96,0.9,0.91,-0.13
-WAVE,6.63,7.1,140.22,164.72,5,0.09,0.86,5/5,strongBuy,4.41-9.87,19.01,28.000000000000004,15.0,15.0,- +Buy time -,8.46 thousand,Utilities,Utilities - Renewable,1,6.71,8.37,0.95,0.85,0.4
-EXFY,6.65,1.05,678.41,194.39,3,-0.07,-1.71,3/5,hold,0.691-3.06,21.52,66.0,1.5,1.44,- +Buy time -,628.40 thousand,Technology,Software - Application,1.7,0.9,1.12,0.86,0.94,-0.11
-ESOA,6.67,16.24,500.98,162.34,4,0.05,0.46,4/5,buy,7.83-17.13,18.97,5.0,21.0,21.0,Buy time,102.30 thousand,Industrials,Engineering & Construction,1.363,15.21,18.86,0.94,0.86,0.18
-INSG,6.71,14.79,538.03,258.81,2,0.0,0.29,2/5,buy,6.27-18.11,27.32,18.0,20.0,18.75,Sell,93.64 thousand,Technology,Communication Equipment,1.307,14.0,17.45,0.95,0.85,-0.01
-SVCO,6.73,9.87,411.06,271.11,2,0.06,-0.17,2/5,buy,3.07-10.575,28.06,7.000000000000001,12.0,10.58,Sell,335.64 thousand,Technology,Software - Application,1,8.55,10.48,0.87,0.94,0.15
-AEYE,6.79,7.27,358.55,174.86,5,0.02,0.14,5/5,buy,5.31-16.39,20.08,56.00000000000001,25.0,20.0,- +Buy time -,128.08 thousand,Technology,Software - Application,0.683,6.75,8.1,0.93,0.9,-0.07
-NVDA,6.85,209.25,776.28,184.89,3,0.12,0.09,3/5,buy,110.82-216.83,21.07,3.0,380.0,324.58,Buy,159.85 million,Technology,Semiconductors,2.335,194.74,243.87,0.93,0.86,-0.02
-OPFI,6.91,9.19,586.27,145.24,3,0.16,0.5,3/5,strongBuy,7.36-15.03,17.19,39.0,16.0,14.67,Buy time,503.88 thousand,Financial Services,Credit Services,1.801,8.61,11.28,0.94,0.81,0.98
-NTGR,6.93,25.89,417.56,144.16,5,0.35,6.0,5/5,buy,19.0-36.86,16.99,30.0,40.0,38.33,Buy time,561.70 thousand,Technology,Communication Equipment,1.086,24.6,30.3,0.95,0.85,0.33
-MVST,6.94,1.81,1191.09,199.16,1,-0.14,-6.7,1/5,buy,1.37-7.12,22.1,75.0,6.0,6.0,Sell,2.63 million,Consumer Cyclical,Auto Parts,3.598,1.74,2.27,0.96,0.8,0.02
-PUMP,6.95,18.2,265.83,185.54,5,0.26,1.95,5/5,hold,4.51-18.5,19.51,2.0,20.0,17.59,Buy time,2.56 million,Energy,Oil & Gas Equipment & Services,0.631,15.92,19.43,0.87,0.94,0.21
-BFRI,6.96,1.1,260.89,294.35,2,0.39,3.97,2/5,buy,0.536-1.19,29.18,8.0,9.0,7.5,Buy time,93.58 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.644,1.04,1.27,0.95,0.87,0.46
-MSTR,6.96,158.19,1081.18,222.77,1,-23.19,-1.17,1/5,buy,104.17-457.22,23.23,65.0,705.0,538.75,== less Sell ALL==,16.02 million,Technology,Software - Application,3.56,149.85,195.87,0.95,0.81,0.02
-TH,7.0,14.19,244.28,421.87,-1,0.03,0.95,-1/5,buy,5.97-16.12,34.81,12.0,18.0,17.0,mere Sell (some bought),1.00 million,Industrials,Specialty Business Services,1.118,13.7,17.34,0.97,0.82,0.69
-LPTH,7.03,12.19,720.19,273.65,1,0.06,0.64,1/5,buy,2.21-16.53,23.63,26.0,17.0,16.05,mere Buy (some sold),3.01 million,Technology,Electronic Components,1.074,13.36,16.56,1.1,0.74,0.39
-BBAI,7.05,3.82,990.57,176.79,2,0.13,1.97,2/5,hold,2.96-9.39,20.42,59.0,6.0,5.67,Buy time,31.55 million,Technology,Information Technology Services,3.236,3.67,4.87,0.96,0.78,0.32
-ADTN,7.07,16.79,516.89,259.8,2,0.07,0.76,2/5,buy,7.11-17.99,27.4,7.000000000000001,18.0,17.08,Sell ALL,2.99 million,Technology,Communication Equipment,1.234,15.54,18.79,0.93,0.89,0.38
-SYNA,7.12,88.54,689.04,255.34,2,0.09,0.08,2/5,buy,55.57-97.0,26.5,9.0,125.0,113.23,mere Buy (some sold),976.24 thousand,Technology,Semiconductors,1.71,81.74,103.67,0.92,0.85,0.11
-BTDR,7.13,10.83,820.42,281.4,1,-0.21,-1.84,1/5,buy,6.916-27.8,27.24,61.0,30.0,25.27,Sell ALL,6.83 million,Technology,Software - Application,2.284,11.15,14.05,1.03,0.77,0.07
-SMTC,7.18,98.29,866.6,289.21,1,0.04,0.1,1/5,buy,32.3-113.05,28.16,13.0,122.0,113.77,Sell,2.86 million,Technology,Semiconductors,2.058,95.06,120.08,0.97,0.82,-0.09
-ANTX,7.2,4.68,83.09,294.95,4,-0.14,-0.62,4/5,hold,1.0-6.91,26.07,32.0,1.0,1.0,- +Buy time -,293.62 thousand,Healthcare,Biotechnology,1,3.89,4.84,0.83,0.97,0.12
-GOOGL,7.25,349.94,401.68,195.28,5,0.79,0.34,5/5,buy,147.84-355.79,21.84,2.0,443.0,410.75,Buy time,29.58 million,Communication Services,Internet Content & Information,1.128,326.2,400.29,0.93,0.87,0.03
-USEG,7.27,1.1,435.94,168.89,4,-0.01,0.04,4/5,strongBuy,0.66-2.75,13.64,60.0,3.5,3.12,Buy time,3.88 million,Energy,Oil & Gas E&P,0.647,0.92,1.12,0.84,0.98,1.02
-MMYT,7.31,47.54,366.32,210.59,5,0.05,0.11,5/5,buy,32.67-113.85,23.5,57.99999999999999,117.0,102.55,Buy time,1.68 million,Consumer Cyclical,Travel Services,0.83,43.6,53.98,0.92,0.88,-0.03
-BKSY,7.33,31.66,617.28,347.42,1,0.15,0.58,1/5,buy,8.29-42.75,30.8,26.0,42.0,34.81,Sell,1.81 million,Industrials,Specialty Business Services,2.246,33.38,42.9,1.05,0.74,-0.03
-QBTS,7.42,18.27,680.46,277.31,2,-0.01,-0.21,2/5,buy,6.82-46.75,28.95,61.0,45.0,40.39,Sell,25.48 million,Technology,Computer Hardware,1.773,16.74,20.99,0.92,0.87,0.14
-CRNC,7.43,8.54,904.33,300.38,1,0.01,0.09,1/5,hold,5.85-13.738,30.21,38.0,12.0,11.12,mere Buy (some sold),535.22 thousand,Technology,Software - Application,2.728,7.91,10.35,0.93,0.83,-0.1
-NOTV,7.44,0.31,1254.38,176.94,2,-0.32,-1.87,2/5,buy,0.22-3.32,19.35,91.0,5.0,4.12,Buy time,415.90 thousand,Healthcare,Diagnostics & Research,4.082,0.28,0.35,0.9,0.89,0.14
-HIMS,7.58,26.33,778.5,319.1,1,0.0,0.52,1/5,hold,13.74-70.43,28.67,63.0,35.0,30.62,mere Buy (some sold),23.32 million,Healthcare,Drug Manufacturers - Specialty & Generic,2.315,24.08,31.81,0.91,0.83,0.2
-ANET,7.63,168.68,673.22,310.58,2,0.1,0.13,2/5,buy,82.8-179.8,31.15,6.0,220.0,199.88,Sell,7.14 million,Technology,Computer Hardware,1.475,154.69,191.23,0.92,0.88,-0.04
-NRXP,7.75,2.91,738.8,265.0,2,-0.23,-26.09,2/5,buy,1.62-3.84,28.18,24.0,49.0,43.62,Sell,715.34 thousand,Healthcare,Biotechnology,1.83,2.61,3.39,0.9,0.86,0.48
-NEO,7.75,8.96,626.69,171.04,2,0.03,8.51,2/5,hold,4.72-13.74,19.64,35.0,17.0,15.41,- Buy time -,3.25 million,Healthcare,Diagnostics & Research,1.712,8.52,12.07,0.95,0.74,1.94
-QUBT,7.79,8.28,1181.49,224.38,1,0.12,2.41,1/5,buy,6.18-25.84,23.79,68.0,27.0,22.42,Sell,12.25 million,Technology,Computer Hardware,3.665,7.96,10.39,0.96,0.8,0.59
-PRM,7.83,30.44,809.99,289.55,2,0.15,0.26,2/5,strongBuy,10.02-31.92,30.09,5.0,35.0,33.75,== less Sell ALL==,949.90 thousand,Basic Materials,Specialty Chemicals,1.904,27.31,35.01,0.9,0.87,0.09
-STIM,7.87,1.7,402.02,232.18,5,0.0,0.01,5/5,strongBuy,0.8-4.85,25.29,65.0,7.0,5.67,Buy time,1.77 million,Healthcare,Medical Devices,0.871,1.55,1.89,0.91,0.9,0.17
-LUNR,7.89,24.79,562.69,353.03,2,-0.01,-0.16,2/5,buy,7.78-31.15,34.05,20.0,35.0,29.44,Sell,14.59 million,Industrials,Aerospace & Defense,1.315,24.46,30.29,0.99,0.82,-0.04
-AXGN,7.9,41.77,422.22,225.82,5,-0.03,-0.3,5/5,buy,9.22-45.83,25.02,9.0,55.0,51.94,- +Buy time -,1.10 million,Healthcare,Medical Devices,0.978,36.6,44.56,0.88,0.94,0.23
-REAL,7.91,11.77,1081.64,303.31,1,0.04,0.91,1/5,buy,4.7-17.392,31.01,32.0,20.0,19.09,== less Sell ALL==,3.02 million,Consumer Cyclical,Luxury Goods,2.811,10.87,14.34,0.92,0.82,-0.08
-PTON,7.94,5.57,836.12,264.43,3,0.0,8.74,3/5,hold,3.65-9.2,28.19,39.0,20.0,13.94,Buy time,15.04 million,Consumer Cyclical,Leisure,2.377,5.08,6.43,0.91,0.87,-0.08
-CVLT,7.95,101.18,380.04,231.95,5,0.38,0.37,5/5,buy,71.75-200.68,25.7,50.0,175.0,154.1,Buy time,1.08 million,Technology,Software - Application,0.623,89.37,109.14,0.88,0.93,0.29
-EOSE,7.99,6.34,997.94,342.15,0,-3.11,-20.75,0/5,hold,3.69-19.86,30.68,68.0,18.0,13.43,mere Buy (some sold),33.13 million,Industrials,Electrical Equipment & Parts,2.337,6.51,8.36,1.03,0.76,0.35
-CVNA,8.0,396.59,1229.64,248.63,1,2.75,2.37,1/5,buy,245.0-486.89,26.67,19.0,519.0,472.39,Sell ALL,3.23 million,Consumer Cyclical,Auto & Truck Dealerships,3.614,368.27,484.15,0.93,0.82,0.36
-HUMA,8.05,0.82,817.31,283.87,3,0.05,0.29,3/5,buy,0.547-2.93,29.88,72.0,25.0,15.05,Buy time,6.03 million,Healthcare,Biotechnology,2.105,0.73,0.93,0.89,0.88,-0.18
-KEQU,8.07,38.54,255.99,95.0,5,-0.68,-1.28,5/5,,30.78-60.89,11.6,37.0,0.1,0.1,Buy time,2.18 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.673,35.88,44.85,0.93,0.86,2.5
-CLS,8.15,376.54,695.36,324.02,2,0.21,0.11,2/5,buy,89.02-423.25,31.68,11.0,500.0,463.95,Sell ALL,2.50 million,Technology,Electronic Components,1.354,360.15,447.13,0.96,0.84,0.28
-FVRR,8.17,12.12,445.07,165.44,4,0.13,0.18,4/5,hold,9.67-34.13,18.98,64.0,24.0,20.0,Buy time,1.39 million,Communication Services,Internet Content & Information,1.354,11.0,14.51,0.91,0.84,1.77
-PODC,8.2,2.99,259.91,370.78,1,0.01,0.61,1/5,buy,1.3-3.42,32.78,13.0,5.0,4.83,mere Buy (some sold),81.98 thousand,Communication Services,Internet Content & Information,0.487,2.71,3.43,0.91,0.87,1.36
-RMBS,8.22,112.16,1088.56,364.88,0,-0.01,-0.01,0/5,buy,48.8-161.8,28.91,31.0,172.0,155.62,== less Sell ALL==,3.56 million,Technology,Semiconductors,1.629,119.28,148.17,1.06,0.76,0.2
-ATLC,8.52,76.68,822.64,329.81,2,-0.21,-0.12,2/5,buy,45.74-80.29,33.07,4.0,105.0,98.7,Sell ALL,67.08 thousand,Financial Services,Credit Services,1.884,68.88,87.95,0.9,0.87,0.26
-DMRC,8.63,7.13,648.19,400.71,2,0.03,3.67,2/5,strongBuy,4.07-14.64,37.03,51.0,10.0,9.0,== less Sell ALL==,164.86 thousand,Technology,Software - Application,1.634,6.38,8.15,0.89,0.87,-0.06
-GRRR,8.63,14.09,313.68,308.51,5,0.03,0.09,5/5,buy,9.04-27.9,32.36,49.0,40.0,38.33,Buy time,633.04 thousand,Technology,Software - Infrastructure,1,12.03,15.09,0.85,0.93,0.16
-SPIR,8.68,15.81,731.45,326.12,-1,0.04,0.0,-1/5,buy,6.6-23.59,25.62,33.0,22.0,19.8,Sell,3.48 million,Industrials,Specialty Business Services,2.236,17.86,24.56,1.13,0.64,2.5
-ALGM,8.74,44.07,704.08,379.34,2,0.02,0.09,2/5,buy,18.17-45.39,36.37,3.0,52.0,49.38,Sell ALL,1.97 million,Technology,Semiconductors,1.695,39.17,49.27,0.89,0.89,0.15
-RSI,8.78,27.98,517.38,239.6,4,-0.01,-0.07,4/5,buy,11.12-29.0,26.02,4.0,32.0,29.82,Buy time,2.33 million,Consumer Cyclical,Gambling,1.457,23.75,30.9,0.85,0.91,1.26
-AFRM,8.79,63.48,1325.14,311.76,1,-0.13,-0.15,1/5,buy,42.095-100.0,32.21,37.0,100.0,89.54,Sell,4.37 million,Financial Services,Credit Services,3.633,55.57,75.6,0.88,0.84,0.13
-CLOV,8.9,2.58,830.54,323.57,3,-0.02,-0.75,3/5,hold,1.58-3.92,33.33,34.0,3.2,3.01,Buy time,3.91 million,Healthcare,Healthcare Plans,2.251,2.17,2.81,0.84,0.92,0.14
-SLQT,8.98,0.92,619.07,332.03,4,0.09,0.28,4/5,buy,0.563-3.26,33.55,72.0,5.0,4.03,- +Buy time -,1.05 million,Financial Services,Insurance Brokers,1.351,0.8,1.01,0.87,0.91,0.07
-TTMI,9.32,137.5,951.15,373.25,2,0.1,0.15,2/5,buy,22.58-149.08,35.79,8.0,162.0,148.12,Sell ALL,2.16 million,Technology,Electronic Components,1.76,124.72,159.33,0.91,0.86,0.25
-PRCH,9.37,10.13,970.93,318.42,2,0.11,1.2,2/5,buy,5.83-19.436,31.89,48.0,22.0,19.43,Buy time,2.50 million,Financial Services,Insurance - Property & Casualty,3.074,7.99,11.58,0.79,0.87,0.92
-PLUG,9.43,3.41,686.47,380.54,3,0.06,0.51,3/5,hold,0.69-4.58,37.24,26.0,7.0,4.92,Buy time,84.48 million,Industrials,Electrical Equipment & Parts,1.792,2.98,3.83,0.87,0.89,0.31
-DAVE,9.46,257.27,1328.36,352.52,1,1.84,0.79,1/5,buy,93.733-287.69,34.13,11.0,347.0,334.06,Sell ALL,560.42 thousand,Technology,Software - Application,3.822,226.71,322.49,0.88,0.8,0.32
-EHTH,9.52,1.97,486.86,345.84,5,0.03,0.06,5/5,hold,1.2-7.09,34.01,72.0,3.0,2.62,Buy time,511.34 thousand,Financial Services,Insurance Brokers,1.148,1.61,2.0,0.82,0.98,0.23
-IONQ,9.57,42.11,1075.49,382.31,1,2.4,5.08,1/5,buy,25.89-84.64,36.86,50.0,100.0,82.28,Sell ALL,29.64 million,Technology,Computer Hardware,2.803,36.06,49.67,0.86,0.85,0.63
-OSCR,9.64,17.93,732.06,418.28,3,-0.27,-0.26,3/5,hold,10.69-23.8,39.49,25.0,23.0,19.55,Buy time,5.72 million,Healthcare,Healthcare Plans,1.932,15.38,19.92,0.86,0.9,-0.03
-CEVA,9.74,27.36,737.33,396.94,2,0.01,0.04,2/5,buy,17.02-30.88,37.1,11.0,40.0,35.29,mere Buy (some sold),653.16 thousand,Technology,Semiconductors,1.528,23.46,31.28,0.86,0.87,0.88
-SKIL,9.75,6.77,777.07,389.9,3,0.38,0.3,3/5,hold,3.43-24.01,37.37,72.0,0.1,0.1,Buy time,128.80 thousand,Consumer Defensive,Education & Training Services,1.738,5.66,7.46,0.84,0.91,0.32
-CHGG,10.48,1.14,816.8,435.11,3,0.09,1.5,3/5,hold,0.45-1.9,41.23,40.0,4.0,3.4,Buy time,1.70 million,Consumer Defensive,Education & Training Services,1.859,0.98,1.26,0.86,0.9,0.39
-CTOR,10.58,0.86,1317.77,469.15,1,-0.02,-0.5,1/5,strongBuy,0.491-6.19,42.67,86.0,6.0,6.0,Sell,129.30 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,3.434,0.77,1.1,0.9,0.78,0.04
-MRVL,10.66,156.57,971.82,497.17,2,0.03,0.04,2/5,buy,53.78-170.84,43.94,8.0,170.0,149.18,Sell,29.17 million,Technology,Semiconductors,1.822,136.66,174.78,0.87,0.9,0.05
-CNC,10.75,53.98,601.55,439.69,4,1.27,0.6,4/5,hold,25.08-64.15,41.09,16.0,70.0,60.68,Buy time,7.44 million,Healthcare,Healthcare Plans,0.587,41.03,50.87,0.76,1.06,0.58
-BB,10.89,5.38,720.76,443.29,4,0.03,0.75,4/5,hold,3.12-5.79,41.45,7.000000000000001,6.0,5.4,Buy time,15.11 million,Technology,Software - Infrastructure,1.265,4.43,5.59,0.82,0.96,0.4
-TBRG,10.91,25.73,788.85,507.56,2,0.56,1.11,2/5,hold,13.88-26.74,45.59,4.0,26.25,25.96,mere Buy (some sold),401.42 thousand,Healthcare,Health Information Services,0.757,21.35,27.57,0.83,0.93,0.57
-HUT,11.25,71.0,1732.05,458.16,1,-1.96,-21.12,1/5,buy,12.23-83.18,39.83,15.0,136.0,110.25,mere Buy (some sold),5.14 million,Financial Services,Capital Markets,5.712,69.11,104.0,0.97,0.68,-0.04
-TZOO,11.45,9.74,469.6,470.25,5,-0.03,-0.43,5/5,buy,4.72-16.18,41.89,40.0,30.0,25.5,Buy,288.32 thousand,Communication Services,Internet Content & Information,0.789,7.95,10.15,0.82,0.96,0.71
-EUDA,11.59,14.49,535.02,395.31,4,1,1,4/5,buy,5.26-86.0,24.78,83.0,55.0,55.0,Buy time,207.90 thousand,Real Estate,Real Estate Services,0.164,12.46,33.69,0.86,0.43,2.5
-AIP,11.75,27.03,860.03,503.65,4,0.02,0.29,4/5,buy,6.59-27.11,44.51,0.0,24.0,22.25,Buy,708.82 thousand,Technology,Semiconductors,1.429,22.17,28.65,0.82,0.94,0.24
-NVTS,12.15,15.48,1161.5,673.07,0,0.0,0.03,0/5,hold,1.8-19.79,49.42,22.0,13.0,10.57,Sell,26.66 million,Technology,Semiconductors,3.141,12.85,19.46,0.83,0.8,0.25
-ALAB,12.39,196.85,1256.32,586.02,2,0.17,0.38,2/5,buy,63.4-262.9,49.06,25.0,250.0,226.43,Sell,5.63 million,Technology,Semiconductors,1.793,165.18,216.58,0.84,0.91,0.09
-CRDO,12.87,175.77,1357.7,623.25,1,0.3,0.49,1/5,buy,45.15-213.8,50.04,18.0,260.0,234.65,Sell,8.09 million,Technology,Semiconductors,2.72,149.43,213.43,0.85,0.82,0.47
-KOPN,13.58,3.93,1315.18,647.19,2,0.03,0.0,2/5,buy,1.23-4.63,52.16,15.0,6.0,5.47,Buy time,5.98 million,Technology,Electronic Components,2.726,3.16,4.67,0.8,0.84,0.43
-ATOM,14.45,7.25,835.42,695.49,1,-0.03,-0.21,1/5,buy,1.892-9.59,50.62,24.0,7.0,7.0,mere Buy (some sold),6.36 million,Technology,Semiconductor Equipment & Materials,1.074,6.22,11.57,0.86,0.63,2.5
-BE,15.88,287.97,1674.64,756.64,2,0.46,2.93,2/5,hold,16.05-290.5,58.5,1.0,335.0,277.15,Buy time,14.99 million,Industrials,Electrical Equipment & Parts,3.185,209.8,317.62,0.73,0.91,0.62
-APLS,16.32,40.95,10.68,1039.46,5,0.65,0.58,5/5,hold,16.1-41.0,58.27,0.0,41.0,40.97,Buy time,3.72 million,Healthcare,Biotechnology,1,36.17,48.91,0.88,0.84,0.42
-MXL,26.44,67.52,955.54,1678.25,3,0.05,0.32,3/5,hold,10.07-71.28,76.18,5.0,75.0,62.23,Buy,9.87 million,Technology,Semiconductors,1.703,38.73,92.63,0.57,0.73,2.5
+DMAC,0.08,5.95,150.04,-77.37,0,0.0,-0.01,0/5,buy,3.475-10.4195,-11.6,43.0,25.0,20.25,== less Sell ALL==,209.38 thousand,Healthcare,Biotechnology,1.153,6.48,7.91,1.09,0.75,-0.18
+BBAR,0.1,14.2,6.33,5.62,-2,0,0,-2/5,strongBuy,7.76-23.1,-0.54,39.0,29.0,26.25,Sell ALL,528.57 thousand,Financial Services,Banks - Regional,0.147,15.44,18.28,1.09,0.78,0.09
+SIBN,0.11,12.08,178.49,-0.52,-3,0.15,1.01,-3/5,buy,11.8-21.89,-1.66,45.0,32.0,28.75,Sell ALL,667.00 thousand,Healthcare,Medical Devices,0.768,13.41,16.05,1.11,0.75,0.33
+XLO,0.17,7.74,-43.64,-43.66,-1,-1.12,-2.67,-1/5,buy,6.468-16.52,-6.4,53.0,20.0,20.0,== less Sell ALL==,23.28 thousand,Healthcare,Biotechnology,1,8.5,9.96,1.1,0.78,0.4
+CRESY,0.19,11.19,-51.02,-66.29,0,1,1,0/5,strongBuy,8.185366-14.21,-9.47,21.0,16.0,15.46,- Buy time -,283.96 thousand,Industrials,Conglomerates,0.103,11.97,14.15,1.07,0.79,0.22
+PEGA,0.19,36.0,163.35,-100.68,0,-0.2,-0.3,0/5,buy,34.34-68.1,-15.14,47.0,71.0,64.59,mere Sell (some bought),2.20 million,Technology,Software - Application,1.096,39.82,46.56,1.11,0.77,0.23
+MAMA,0.19,13.92,121.08,-59.69,-2,0.04,4.08,-2/5,buy,6.37-17.85,-8.84,22.0,25.0,23.5,Sell ALL,399.68 thousand,Consumer Defensive,Packaged Foods,0.716,15.22,18.63,1.09,0.75,0.79
+EGAN,0.2,7.37,193.86,-47.24,-1,0.11,1.12,-1/5,hold,4.81-15.95,-6.65,54.0,20.0,17.25,mere Sell (some bought),194.44 thousand,Technology,Software - Application,0.935,7.78,9.22,1.06,0.8,-0.07
+HTCO,0.21,6.93,137.72,-116.8,0,1,1,0/5,,4.55-61.75,-30.57,89.0,0.1,0.1,== less Sell ALL==,424.82 thousand,Industrials,Marine Shipping,1,9.64,11.44,1.39,0.61,0.91
+SUPN,0.24,48.97,148.56,-4.79,-2,0.39,1.89,-2/5,buy,29.16-59.68,-0.79,18.0,66.0,64.33,Sell ALL,517.07 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.732,50.61,60.54,1.03,0.81,0.02
+SUPV,0.24,8.34,61.75,4.0,-2,-0.13,-4.39,-2/5,hold,4.54-16.897,-0.96,51.0,15.0,13.89,Sell ALL,742.41 thousand,Financial Services,Banks - Regional,0.671,9.37,11.19,1.12,0.75,0.14
+LNSR,0.24,5.39,229.89,-46.47,-1,-0.04,-0.45,-1/5,buy,5.06-14.31,-8.91,62.0,10.0,9.25,Buy time,99.11 thousand,Healthcare,Medical Devices,0.985,5.77,6.8,1.07,0.79,-0.05
+PHR,0.26,8.98,220.26,-133.0,2,0.19,0.66,2/5,buy,7.77-32.76,-27.06,73.0,24.0,20.08,Sell,1.86 million,Healthcare,Health Information Services,0.855,9.58,11.4,1.07,0.79,-0.22
+QTTB,0.28,5.47,-94.13,-25.3,0,6.03,6.82,0/5,buy,1.345-8.045,-7.86,32.0,20.0,17.17,Sell,305.07 thousand,Healthcare,Biotechnology,1,6.32,7.39,1.16,0.74,-0.04
+CURV,0.32,1.72,245.01,-12.87,-2,0.01,-1.87,-2/5,hold,0.939-6.69,-3.21,74.0,2.25,1.92,mere Sell (some bought),403.65 thousand,Consumer Cyclical,Apparel Retail,1.052,1.91,2.26,1.11,0.76,0.03
+GOCO,0.34,1.13,331.23,-174.93,2,-8.75,-4.41,2/5,hold,1.0-10.555,-35.76,89.0,10.0,7.35,Sell ALL,58.85 thousand,Financial Services,Insurance Brokers,1.599,1.26,1.42,1.12,0.8,0.26
+PAM,0.38,81.86,-54.53,-43.31,0,1.93,1.4,0/5,buy,54.95-94.5,-6.1,13.0,140.0,126.64,Buy,246.42 thousand,Industrials,Conglomerates,1,86.13,102.9,1.05,0.8,0.1
+SONY,0.42,19.74,114.53,-4.12,-2,0.07,0.22,-2/5,buy,19.625-30.34,-0.94,35.0,32.5,30.52,Sell ALL,6.11 million,Technology,Consumer Electronics,0.751,20.63,24.91,1.05,0.79,0.28
+DEC,0.47,16.43,27.48,-74.22,1,1,1,1/5,buy,12.26-18.9,-11.38,13.0,28.0,25.12,Buy,742.42 thousand,Energy,Oil & Gas Integrated,0.426,16.68,20.12,1.02,0.82,-0.07
+PRDO,0.5,34.12,121.89,-60.27,0,0.09,0.16,0/5,strongBuy,24.84-38.5,-8.97,11.0,42.0,42.0,Buy,615.15 thousand,Consumer Defensive,Education & Training Services,0.839,35.61,42.29,1.04,0.81,0.06
+TPB,0.51,78.24,192.01,-71.22,-1,0.31,0.37,-1/5,buy,60.84-146.9,-10.2,47.0,140.0,135.62,Sell ALL,402.41 thousand,Consumer Defensive,Tobacco,1.03,81.89,98.03,1.05,0.8,0.58
+CRK,0.57,17.51,7.11,-148.4,3,0.08,1.03,3/5,hold,14.65-31.17,-24.92,44.0,29.0,24.46,Buy time,2.13 million,Energy,Oil & Gas E&P,0.39,18.85,22.31,1.08,0.78,0.13
+GPOR,0.65,193.08,40.62,-77.14,1,0.37,0.08,1/5,buy,160.95-225.78,-11.28,14.000000000000002,287.0,265.25,Buy,276.70 thousand,Energy,Oil & Gas E&P,0.591,201.7,239.47,1.04,0.81,0.1
+RNA,0.67,12.85,212.11,-37.85,-1,1,1,-1/5,buy,11.95-16.77,-5.41,23.0,25.0,25.0,Sell ALL,379.02 thousand,Healthcare,Biotechnology,1,13.77,17.16,1.07,0.75,0.24
+RYAM,0.82,9.3,380.4,-80.52,0,-0.19,-2.36,0/5,strongBuy,3.35-11.85,-13.18,22.0,15.0,14.75,Sell ALL,788.52 thousand,Basic Materials,Chemicals,2.032,10.13,11.9,1.09,0.78,0.12
+FICO,0.89,983.63,308.7,-45.69,-1,1.78,0.17,-1/5,buy,870.01-2217.6,-6.54,56.00000000000001,2400.0,1999.21,Sell ALL,407.04 thousand,Technology,Software - Application,1.376,1060.77,1268.06,1.08,0.78,0.35
+PDEX,0.93,49.84,36.98,40.18,-1,0.79,1.57,-1/5,,23.47-67.87,4.82,27.0,0.1,0.1,Sell,17.83 thousand,Healthcare,Medical Instruments & Supplies,1,51.4,61.23,1.03,0.81,-0.16
+HQY,0.97,80.42,48.66,-8.68,0,0.15,0.17,0/5,buy,72.76-116.65,-1.32,31.0,128.0,120.44,Sell ALL,1.15 million,Healthcare,Health Information Services,0.262,82.84,99.03,1.03,0.81,-0.02
+THC,0.98,176.53,299.08,-42.24,-1,1.28,0.31,-1/5,buy,140.28-247.21,-6.5,28.999999999999996,288.0,275.45,mere Sell (some bought),1.55 million,Healthcare,Medical Care Facilities,1.495,192.91,238.84,1.09,0.74,0.42
+DDL,0.98,2.53,172.19,4.26,-2,1,1,-2/5,buy,1.65-3.41,0.0,26.0,3.542637,3.34,Sell ALL,514.69 thousand,Consumer Defensive,Grocery Stores,1,2.67,3.15,1.06,0.8,0.6
+DOGZ,1.02,1.2,537.99,-108.1,0,1,1,0/5,,1.02-31.48,-15.83,96.0,0.1,0.1,mere Sell (some bought),30.67 thousand,Consumer Cyclical,Leisure,2.533,1.34,1.55,1.12,0.77,0.31
+IMMX,1.08,8.8,66.88,29.95,-1,-0.17,-1.01,-1/5,buy,1.87-11.61,2.49,24.0,23.0,20.28,Sell ALL,707.61 thousand,Healthcare,Biotechnology,0.206,9.65,11.34,1.1,0.78,0.09
+JILL,1.09,12.68,163.85,-99.37,2,0.27,1.12,2/5,buy,10.405-18.8,-17.1,33.0,18.0,16.25,== less Sell ALL==,77.46 thousand,Consumer Cyclical,Apparel Retail,0.816,13.3,15.99,1.05,0.79,0.12
+APYX,1.09,3.42,278.88,-24.92,-1,0.08,0.98,-1/5,buy,0.97-4.5,-4.53,24.0,8.0,7.2,mere Sell (some bought),112.56 thousand,Healthcare,Medical Devices,1.543,3.86,4.97,1.13,0.69,0.36
+FWONA,1.12,78.51,177.35,25.91,-1,0.03,0.15,-1/5,buy,73.7-99.52,3.03,21.0,115.0,111.42,Sell ALL,154.67 thousand,Communication Services,Entertainment,0.739,80.89,98.88,1.03,0.79,-0.09
+LINK,1.13,2.81,189.1,19.91,-1,0,0,-1/5,,2.66-10.101333,2.14,72.0,0.1,0.1,Sell,16.50 thousand,Technology,Electronic Components,0.664,3.04,3.61,1.08,0.78,-0.03
+EVER,1.13,15.0,153.25,-31.03,0,1.28,2.37,0/5,strongBuy,13.93-28.73,-4.4,48.0,30.0,27.08,Sell ALL,588.13 thousand,Communication Services,Internet Content & Information,0.613,15.96,19.26,1.06,0.78,0.21
+MRBK,1.14,18.48,184.38,-8.57,-2,-0.08,-0.18,-2/5,strongBuy,11.16-21.67,-2.11,15.0,23.0,22.75,Buy,189.41 thousand,Financial Services,Banks - Regional,0.75,20.19,25.43,1.09,0.73,0.92
+ATRA,1.17,4.6,58.6,56.47,-1,0.06,-4.31,-1/5,buy,3.92-19.145,6.09,76.0,18.0,13.67,Sell,68.11 thousand,Healthcare,Biotechnology,1,5.0,5.9,1.09,0.78,-0.16
+WBD,1.23,27.05,399.42,-0.95,-1,-0.08,-27.62,-1/5,hold,8.06-30.0,-0.15,10.0,31.25,30.42,mere Sell (some bought),20.50 million,Communication Services,Entertainment,1.637,27.3,32.69,1.01,0.83,-0.13
+PTC,1.28,135.11,236.93,-23.89,0,1.56,0.75,0/5,buy,130.89-219.69,-3.37,38.0,230.0,207.08,Sell,1.26 million,Technology,Software - Application,1.058,139.39,165.24,1.03,0.82,0.07
+BRZE,1.3,22.14,137.58,-31.38,1,-0.05,-0.36,1/5,buy,15.26-37.67,-6.1,41.0,50.0,42.48,Sell ALL,3.29 million,Technology,Software - Application,0.891,22.59,26.56,1.02,0.83,-0.06
+AKBA,1.32,1.37,131.84,36.96,-1,0.02,1.17,-1/5,buy,1.14-4.079,3.65,66.0,6.0,5.2,== less Sell ALL==,2.21 million,Healthcare,Drug Manufacturers - Specialty & Generic,0.37,1.45,1.71,1.06,0.8,0.09
+FPI,1.32,11.32,211.48,24.17,-1,0.05,4.33,-1/5,hold,9.365-13.225,2.9,14.000000000000002,12.5,12.5,Sell ALL,372.94 thousand,Real Estate,REIT - Specialty,0.856,11.62,13.8,1.03,0.82,0.05
+CSBR,1.33,5.85,90.7,1.62,1,0.09,3.0,1/5,,5.5-9.63,0.17,39.0,0.1,0.1,mere Buy (some sold),4.41 thousand,Healthcare,Biotechnology,0.404,5.91,7.32,1.01,0.8,-0.42
+CDZI,1.34,4.29,458.97,-90.89,0,-0.03,-0.29,0/5,buy,2.58-6.96,-13.52,38.0,15.0,13.33,Sell,1.14 million,Utilities,Utilities - Regulated Water,2.078,4.91,5.92,1.14,0.72,0.57
+OKTA,1.39,73.39,58.13,-3.67,1,0.11,0.14,1/5,buy,62.66-127.567,-2.83,42.0,140.0,120.14,Sell,3.89 million,Technology,Software - Infrastructure,0.762,74.8,88.24,1.02,0.83,-0.15
+AR,1.44,38.41,45.16,-96.07,3,-0.18,-0.55,3/5,buy,29.1-45.75,-15.15,16.0,56.0,52.69,Buy time,5.31 million,Energy,Oil & Gas E&P,0.42,40.14,47.28,1.05,0.81,0.13
+BARK,1.45,9.11,486.01,-74.96,1,-0.1,-0.75,1/5,buy,8.15-28.4,-12.35,68.0,60.0,47.5,Sell,69.32 thousand,Consumer Cyclical,Specialty Retail,2.069,9.66,11.02,1.06,0.83,-0.09
+LOMA,1.45,10.94,150.44,38.74,-1,0,0,-1/5,strongBuy,7.04-14.17,4.43,23.0,15.0,15.0,Sell,415.30 thousand,Basic Materials,Building Materials,0.691,11.31,13.77,1.03,0.79,0.13
+RGEN,1.45,115.11,377.09,33.49,-2,0.1,0.21,-2/5,buy,109.5-175.77,3.15,35.0,220.0,199.89,mere Sell (some bought),985.80 thousand,Healthcare,Medical Instruments & Supplies,1.189,120.32,142.09,1.05,0.81,0.23
+KTOS,1.5,61.9,390.38,-24.94,0,0.05,0.34,0/5,buy,32.85-134.0,-5.47,54.0,150.0,133.38,Buy,4.15 million,Industrials,Aerospace & Defense,1.219,70.14,82.3,1.13,0.75,0.02
+RCAT,1.53,11.4,334.04,-8.31,0,-0.08,-0.73,0/5,buy,5.03-18.78,-1.62,39.0,25.0,23.38,mere Sell (some bought),11.12 million,Industrials,Aerospace & Defense,1.361,12.83,14.88,1.13,0.77,-0.1
+GBX,1.55,48.24,342.43,-44.09,-1,0.0,0.01,-1/5,buy,38.23-59.19,-6.36,19.0,52.0,48.33,Sell ALL,589.62 thousand,Industrials,Railroads,1.61,51.28,61.59,1.06,0.78,0.91
+CAPL,1.56,21.14,97.76,21.06,0,0.25,4.38,0/5,hold,19.61-24.53,2.7,14.000000000000002,0.1,0.1,- Buy time -,48.83 thousand,Energy,Oil & Gas Refining & Marketing,0.336,21.34,26.83,1.01,0.79,0.06
+CMMB,1.56,1.5,92.71,18.52,-1,0.05,1.6,-1/5,strongBuy,1.35-5.88,1.33,74.0,25.0,20.0,Sell ALL,60.65 thousand,Healthcare,Biotechnology,0.583,1.69,2.05,1.13,0.73,0.66
+SABS,1.58,3.57,184.84,-39.61,1,0.72,0.67,1/5,buy,1.53-6.6,-5.88,46.0,15.0,12.25,Buy,449.40 thousand,Healthcare,Biotechnology,0.613,3.81,4.51,1.07,0.79,0.19
+TENX,1.58,13.6,229.99,-19.24,-1,0.75,0.73,-1/5,buy,5.335-18.38,-3.01,26.0,35.0,32.29,Sell ALL,610.16 thousand,Healthcare,Biotechnology,1.187,14.91,17.54,1.1,0.78,0.86
+TGLS,1.61,42.54,370.02,-5.15,0,-0.32,-0.35,0/5,buy,39.53-90.34,-1.05,53.0,61.0,59.0,mere Sell (some bought),341.22 thousand,Basic Materials,Building Materials,1.547,45.0,54.64,1.06,0.78,-0.14
+ESQ,1.61,106.27,93.27,8.13,0,-0.1,-0.06,0/5,hold,80.194-134.815,0.3,21.0,130.0,127.5,Buy,157.05 thousand,Financial Services,Banks - Regional,0.445,112.22,132.08,1.06,0.8,0.31
+EMBC,1.62,8.78,242.29,-2.39,0,0.08,0.16,0/5,hold,8.47-15.55,-0.68,44.0,22.0,18.5,Sell ALL,795.72 thousand,Healthcare,Medical Instruments & Supplies,1.101,9.19,11.14,1.05,0.79,0.12
+IAG,1.64,16.68,587.0,-17.46,-1,0.19,0.54,-1/5,buy,6.06-24.87,-4.88,33.0,34.0,30.65,Sell ALL,7.23 million,Basic Materials,Gold,2.283,18.74,22.27,1.12,0.75,0.15
+BMA,1.69,73.19,169.7,47.33,-1,-1603.43,-1.11,-1/5,strongBuy,38.3-106.15,4.77,31.0,153.32123,135.96,Sell ALL,237.06 thousand,Financial Services,Banks - Regional,0.661,77.46,92.84,1.06,0.79,0.24
+ETON,1.71,23.7,288.67,59.46,-1,-0.13,-0.8,-1/5,buy,13.09-27.29,4.73,13.0,52.0,45.67,Buy,285.92 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.973,25.05,30.07,1.06,0.79,-0.13
+NTRP,1.74,2.63,721.25,-114.14,0,-0.42,-2.47,0/5,buy,1.5-5.2,-17.49,49.0,8.5,8.17,Buy,104.99 thousand,Consumer Cyclical,Travel Services,3.343,3.01,3.85,1.14,0.68,0.72
+TATT,1.74,37.01,382.15,3.55,0,-0.04,-0.13,0/5,buy,25.52-64.5,-2.73,43.0,66.0,63.07,Buy,221.75 thousand,Industrials,Aerospace & Defense,1.108,41.44,48.39,1.12,0.76,-0.08
+UAL,1.75,90.0,265.89,49.46,-1,0.27,0.15,-1/5,buy,68.88-119.21,5.32,25.0,156.0,142.92,== less Sell ALL==,7.34 million,Industrials,Airlines,1.286,94.25,113.43,1.05,0.79,0.04
+FWONK,1.77,85.07,184.93,23.4,-1,-0.01,-0.01,-1/5,buy,80.15-109.363,2.7,22.0,135.0,124.59,mere Sell (some bought),2.30 million,Communication Services,Entertainment,0.739,87.94,105.95,1.03,0.8,0.57
+PPTA,1.79,27.09,172.05,69.98,-1,-0.78,-19.56,-1/5,buy,11.22-37.37,6.57,28.000000000000004,42.0,40.2,Sell ALL,1.31 million,Basic Materials,Other Precious Metals & Mining,0.716,29.54,34.83,1.09,0.78,0.06
+QFIN,1.82,12.77,144.85,72.69,-1,-1.39,-0.13,-1/5,buy,12.29-47.0,8.66,73.0,32.213726,27.87,mere Sell (some bought),1.28 million,Financial Services,Credit Services,0.562,12.92,15.45,1.01,0.83,0.07
+SPOT,1.83,436.85,481.67,-51.28,0,2.12,0.74,0/5,buy,405.0-785.0,-8.73,44.0,748.50653,674.21,Sell ALL,1.93 million,Communication Services,Internet Content & Information,1.702,492.47,590.83,1.13,0.74,0.49
+ALGT,1.84,77.33,425.7,20.26,-1,0.57,0.27,-1/5,hold,42.56-118.0,1.0,34.0,120.0,110.59,Sell ALL,471.69 thousand,Industrials,Airlines,1.629,84.01,98.92,1.09,0.78,0.18
+VOR,1.84,14.16,545.27,-19.17,0,191.19,230.54,0/5,buy,2.62-65.8,-3.78,78.0,50.0,43.75,Buy,973.33 thousand,Healthcare,Biotechnology,1.923,15.39,17.98,1.09,0.79,-0.1
+TASK,1.85,6.27,551.98,-13.6,0,0.08,0.21,0/5,hold,6.2-18.39,-2.07,66.0,14.0,13.0,mere Sell (some bought),446.05 thousand,Technology,Information Technology Services,2.243,6.64,7.92,1.06,0.79,-0.2
+PTGX,1.88,97.86,505.48,-13.66,0,-0.13,-0.24,0/5,buy,41.285-107.84,-2.06,9.0,125.0,119.17,mere Sell (some bought),764.92 thousand,Healthcare,Biotechnology,2.114,103.83,123.17,1.06,0.79,-0.07
+TNDM,1.92,18.5,389.73,-37.21,0,0.11,0.98,0/5,hold,9.98-29.65,-5.89,38.0,56.0,43.6,Sell ALL,1.80 million,Healthcare,Medical Devices,1.743,20.54,23.67,1.11,0.78,0.57
+REAX,1.93,2.12,357.99,-74.22,0,0.02,1.4,0/5,buy,1.92-5.405,-13.41,61.0,8.0,6.67,Sell ALL,1.72 million,Real Estate,Real Estate Services,1.04,2.51,3.22,1.18,0.66,1.22
+TPR,1.94,144.1,366.9,43.44,-1,0.57,0.3,-1/5,buy,70.4-161.97,4.98,11.0,190.0,176.03,Sell ALL,1.48 million,Consumer Cyclical,Luxury Goods,1.61,148.47,178.0,1.03,0.81,0.07
+RZLT,1.94,3.22,184.14,125.15,-2,0.04,0.09,-2/5,buy,1.07-11.457,11.63,72.0,6.0,5.56,Buy,1.28 million,Healthcare,Biotechnology,0.659,3.37,4.0,1.05,0.8,0.03
+FOUR,1.97,44.38,320.83,17.95,0,-0.01,-0.01,0/5,buy,39.905-108.5,1.71,59.0,120.0,91.74,== less Sell ALL==,1.66 million,Technology,Software - Infrastructure,1.595,45.53,54.04,1.03,0.82,0.02
+SNOW,1.97,133.8,273.94,-94.27,2,0.09,0.3,2/5,buy,118.3-280.67,-14.85,52.0,500.0,366.37,Sell,9.26 million,Technology,Software - Application,1.228,147.09,173.72,1.1,0.77,0.64
+VIRC,2.0,6.05,66.15,-17.52,2,-0.55,-1.17,2/5,buy,5.16-9.36,-3.64,35.0,7.0,7.0,Sell ALL,30.86 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.274,6.13,7.24,1.01,0.84,0.08
+DYN,2.01,17.45,289.58,25.1,0,0.12,0.14,0/5,buy,8.06-25.0,2.06,30.0,50.0,44.09,Sell ALL,1.79 million,Healthcare,Biotechnology,1.285,18.86,22.62,1.08,0.77,0.06
+ESTC,2.03,45.74,248.91,-54.42,2,0.14,0.24,2/5,buy,42.05-96.07,-8.02,52.0,116.0,97.3,Sell,1.81 million,Technology,Software - Application,1.029,47.99,58.27,1.05,0.78,0.18
+KRMD,2.03,4.0,127.12,-42.56,0,0.04,2.8,0/5,buy,2.62-6.608,-6.25,39.0,8.0,7.4,Buy,251.05 thousand,Healthcare,Medical Instruments & Supplies,0.544,4.28,5.5,1.07,0.73,1.33
+GDYN,2.08,5.46,194.48,-26.64,2,0.01,0.06,2/5,buy,5.13-15.32,-4.03,64.0,12.0,11.05,Sell ALL,1.42 million,Technology,Information Technology Services,0.878,5.68,6.78,1.04,0.81,-0.03
+RNGR,2.09,17.3,-26.92,-0.25,1,-0.14,-0.48,1/5,strongBuy,10.56-18.815,-0.75,8.0,21.0,19.75,Sell ALL,339.87 thousand,Energy,Oil & Gas Equipment & Services,0.17,17.66,20.94,1.02,0.83,0.65
+ASAN,2.09,6.18,159.55,9.51,1,0.03,0.43,1/5,hold,5.38-19.0,-0.4,67.0,15.0,12.45,Sell,7.49 million,Technology,Software - Application,1.082,6.23,7.45,1.01,0.83,0.13
+RDNT,2.1,55.26,388.75,-5.55,0,0.0,0.01,0/5,buy,50.76-85.84,-0.88,36.0,100.0,95.19,Sell ALL,656.62 thousand,Healthcare,Diagnostics & Research,1.533,57.64,69.46,1.04,0.8,0.3
+CHWY,2.11,25.11,403.61,-22.16,1,0.01,0.02,1/5,buy,22.74-48.62,-3.07,48.0,50.0,45.4,Sell ALL,7.24 million,Consumer Cyclical,Internet Retail,1.612,26.58,31.42,1.06,0.8,-0.02
+WING,2.16,165.05,343.47,68.82,-3,0.32,0.35,-3/5,buy,142.24-388.14,6.31,56.99999999999999,400.0,337.73,Sell ALL,1.62 million,Consumer Cyclical,Restaurants,1,182.15,224.02,1.1,0.74,1.11
+WSM,2.18,182.42,394.75,29.5,0,0.22,0.09,0/5,hold,147.39-222.0,3.44,18.0,230.0,218.37,Sell ALL,1.05 million,Consumer Cyclical,Specialty Retail,1.578,189.57,229.08,1.04,0.8,-0.09
+ELTX,2.2,10.42,496.63,36.54,-1,-0.16,-0.35,-1/5,buy,4.85-14.93,3.26,30.0,18.0,17.75,Sell ALL,127.92 thousand,Healthcare,Biotechnology,1.882,11.32,13.38,1.09,0.78,0.16
+EQT,2.2,59.93,129.61,-50.57,3,0.38,0.29,3/5,buy,48.47-68.24,-7.53,12.0,83.0,76.68,Buy time,7.86 million,Energy,Oil & Gas E&P,0.693,61.16,72.24,1.02,0.83,0.04
+RRC,2.21,43.47,90.29,-41.93,3,0.31,0.3,3/5,hold,32.6-48.31,-6.3,10.0,59.0,52.89,- +Buy time -,3.76 million,Energy,Oil & Gas E&P,0.517,44.1,52.22,1.01,0.83,0.02
+EXE,2.22,101.28,69.07,-65.62,3,0.31,0.11,3/5,buy,91.015-126.621,-10.04,20.0,165.0,148.69,Buy time,3.55 million,Energy,Oil & Gas E&P,0.459,102.34,122.83,1.01,0.82,0.41
+GPRK,2.24,9.62,48.63,24.04,1,0.61,61.17,1/5,buy,5.75-10.34,-0.88,7.000000000000001,18.0,14.99,- +Buy time -,1.06 million,Energy,Oil & Gas E&P,0.334,9.53,11.81,0.99,0.81,0.4
+MNPR,2.27,52.65,398.24,-3.71,0,-0.18,-0.39,0/5,buy,28.4-105.0,-1.22,50.0,130.0,121.39,== less Sell ALL==,211.28 thousand,Healthcare,Biotechnology,1.655,56.33,68.72,1.07,0.77,0.44
+MGNX,2.28,2.94,180.6,73.61,0,0.58,-8.47,0/5,hold,1.185-3.88,6.28,24.0,9.0,7.1,mere Sell (some bought),635.89 thousand,Healthcare,Biotechnology,1.096,3.26,3.91,1.11,0.75,-0.02
+A,2.29,113.61,349.29,14.12,0,0.0,-0.0,0/5,buy,104.1-160.27,1.63,28.999999999999996,185.0,172.84,Sell ALL,1.84 million,Healthcare,Diagnostics & Research,1.303,116.52,142.4,1.03,0.8,0.32
+BBIO,2.3,71.81,291.28,30.75,0,-0.26,-0.43,0/5,buy,31.77-84.94,3.41,15.0,157.0,128.95,mere Sell (some bought),2.72 million,Healthcare,Biotechnology,1.094,74.75,90.37,1.04,0.79,0.25
+ANGO,2.33,10.76,119.3,-3.42,2,0.23,2.18,2/5,buy,8.36-13.99,-1.02,23.0,24.0,21.0,== less Sell ALL==,424.42 thousand,Healthcare,Medical Instruments & Supplies,0.435,10.88,13.09,1.01,0.82,0.08
+LUV,2.34,38.32,292.2,46.21,0,-0.01,-0.03,0/5,hold,28.14-55.11,5.3,30.0,60.0,52.63,mere Sell (some bought),7.67 million,Industrials,Airlines,1.184,39.64,47.44,1.03,0.81,0.08
+CQP,2.34,65.99,71.89,-10.42,3,0.23,0.2,3/5,hold,49.53-70.64,-1.71,7.000000000000001,75.0,67.47,- +Buy time -,105.18 thousand,Energy,Oil & Gas Midstream,0.353,65.01,81.18,0.99,0.81,-0.24
+GTLS,2.35,207.88,430.9,3.92,1,-0.84,-0.28,1/5,hold,140.5-208.51,0.52,0.0,212.0,208.83,Buy,1.60 million,Industrials,Specialty Industrial Machinery,1.708,207.92,253.88,1.0,0.82,-0.2
+TECH,2.36,53.74,442.45,29.2,0,0.03,0.05,0/5,buy,46.05-72.16,3.16,26.0,80.0,76.14,mere Sell (some bought),2.01 million,Healthcare,Biotechnology,1.486,55.51,66.64,1.03,0.81,-0.01
+VITL,2.36,12.89,299.95,-17.43,1,0.02,0.09,1/5,buy,11.8-53.125,-2.4,76.0,47.0,36.8,- Buy time -,2.77 million,Consumer Defensive,Farm Products,1.347,13.13,15.85,1.02,0.81,0.4
+OSIS,2.37,280.43,325.4,48.45,0,0.1,0.05,0/5,buy,204.0-311.72,5.61,10.0,345.0,325.71,mere Sell (some bought),238.44 thousand,Technology,Electronic Components,1.339,292.78,353.04,1.04,0.79,0.01
+ZVIA,2.39,1.25,219.75,36.43,1,0.02,0.4,1/5,buy,1.11-3.66,4.38,66.0,6.0,5.09,Sell,381.38 thousand,Consumer Defensive,Beverages - Non-Alcoholic,0.929,1.25,1.51,1.0,0.83,-0.11
+NBIX,2.39,133.12,112.07,26.29,1,-0.32,-0.13,1/5,buy,105.45-160.18,3.31,17.0,250.65,218.15,- Buy time -,1.13 million,Healthcare,Drug Manufacturers - Specialty & Generic,0.35,131.56,157.71,0.99,0.84,0.26
+CENT,2.4,37.55,127.9,10.2,1,0.18,1.06,1/5,buy,28.77-41.25,1.23,9.0,51.0,48.75,Sell ALL,76.34 thousand,Consumer Defensive,Packaged Foods,0.542,38.48,47.51,1.02,0.79,0.45
+TMDX,2.42,98.39,547.92,47.34,-1,0.45,1.24,-1/5,buy,89.1-156.0,4.15,37.0,190.0,173.0,Sell ALL,894.47 thousand,Healthcare,Medical Devices,2.082,108.89,130.97,1.11,0.75,0.13
+KMX,2.42,38.72,221.45,-12.72,0,-0.96,-4.44,0/5,hold,30.26-71.99,-3.27,46.0,99.0,70.35,Buy,4.59 million,Consumer Cyclical,Auto & Truck Dealerships,1.299,41.82,53.43,1.08,0.72,1.14
+GH,2.43,84.35,416.13,-14.86,1,0.07,0.14,1/5,buy,36.36-120.74,-2.19,30.0,180.0,154.17,Sell ALL,1.93 million,Healthcare,Diagnostics & Research,1.65,88.55,104.8,1.05,0.8,0.17
+SNCY,2.43,16.21,420.03,22.99,0,0.05,0.38,0/5,hold,9.735-22.29,2.1,27.0,22.0,21.14,Sell ALL,641.93 thousand,Industrials,Airlines,1.592,17.17,20.78,1.06,0.78,0.2
+TNXP,2.44,12.47,464.48,30.77,0,-1.99,-0.7,0/5,buy,11.6-69.97,3.53,82.0,65.0,59.67,Sell ALL,526.64 thousand,Healthcare,Biotechnology,1.763,13.13,15.79,1.05,0.79,-0.01
+DLNG,2.46,3.96,124.5,-33.0,0,0.06,0.21,0/5,,3.31-4.45,-4.55,11.0,0.1,0.1,- Buy time -,85.23 thousand,Energy,Oil & Gas Midstream,0.662,4.1,4.86,1.04,0.81,1.63
+FUN,2.47,18.32,108.25,56.91,1,0.56,-2.22,1/5,buy,12.51-38.47,5.98,52.0,29.0,26.25,Buy time,1.78 million,Consumer Cyclical,Leisure,0.309,18.88,22.48,1.03,0.81,-0.02
+CALM,2.47,76.36,65.92,-18.39,3,0.42,0.43,3/5,hold,71.92-126.4,-2.54,40.0,100.0,94.0,Buy time,787.29 thousand,Consumer Defensive,Farm Products,0.298,77.28,92.11,1.01,0.83,0.0
+NEXT,2.47,7.78,367.64,-19.16,2,0.13,0.3,2/5,hold,4.75-12.12,-3.54,36.0,12.0,10.5,Buy,4.20 million,Energy,Oil & Gas Equipment & Services,1.693,7.95,9.55,1.02,0.81,-0.12
+VLRS,2.47,7.31,253.08,43.55,0,-0.16,-0.74,0/5,buy,3.54-10.8,4.92,32.0,12.0,10.45,Sell ALL,612.33 thousand,Industrials,Airlines,1.118,7.58,8.99,1.04,0.81,0.34
+SPRY,2.48,7.85,235.31,6.03,1,0.03,0.06,1/5,buy,6.66-18.9,0.46,57.99999999999999,34.0,30.36,Sell,1.46 million,Healthcare,Biotechnology,0.925,8.23,9.94,1.05,0.79,0.35
+WLKP,2.49,22.8,149.8,36.43,1,0.0,0.02,1/5,buy,17.75-23.8,4.65,4.0,28.0,26.75,Buy,27.22 thousand,Basic Materials,Chemicals,0.546,22.67,27.95,0.99,0.82,0.14
+AVAH,2.5,6.39,507.94,1.94,0,0.03,0.24,0/5,hold,3.73-10.32,0.16,38.0,13.0,11.3,Sell ALL,1.19 million,Healthcare,Medical Care Facilities,2.086,6.62,8.13,1.04,0.79,0.33
+LPX,2.51,71.61,429.65,17.56,0,0.03,2.74,0/5,buy,68.87-102.86,1.88,30.0,115.0,104.88,Sell ALL,987.14 thousand,Industrials,Building Products & Equipment,1.773,75.28,92.28,1.05,0.78,0.32
+CAE,2.52,25.82,316.9,15.43,1,0.07,0.26,1/5,hold,23.88-34.24,1.24,25.0,34.084957,33.84,Buy,937.64 thousand,Industrials,Aerospace & Defense,1.051,26.65,31.78,1.03,0.81,0.1
+BILL,2.53,36.59,314.75,-12.6,2,0.18,0.35,2/5,buy,34.44-57.21,-1.78,36.0,84.0,69.29,Sell,1.67 million,Technology,Software - Application,1.325,37.84,45.03,1.03,0.81,-0.05
+FTNT,2.54,83.3,261.55,41.55,1,0.18,0.26,1/5,hold,70.12-109.33,5.1,24.0,120.0,104.71,Sell,5.88 million,Technology,Software - Infrastructure,0.998,83.12,99.98,1.0,0.83,-0.12
+DAKT,2.54,19.25,451.39,7.71,1,0.04,0.03,1/5,buy,12.6-28.27,0.75,32.0,34.0,33.5,Sell,374.25 thousand,Technology,Electronic Components,1.774,19.87,23.72,1.03,0.81,-0.1
+ETR,2.54,116.95,161.06,40.46,1,0.01,-0.0,1/5,buy,79.4-117.95,5.04,1.0,131.0,124.71,- Buy time -,3.12 million,Utilities,Utilities - Regulated Electric,0.565,115.53,139.98,0.99,0.84,0.12
+VSTM,2.55,5.48,198.9,105.56,-1,0.11,0.19,-1/5,buy,4.01-11.25,11.5,51.0,19.0,17.69,Sell ALL,2.43 million,Healthcare,Biotechnology,0.43,5.76,6.88,1.05,0.8,0.28
+ASTS,2.56,73.24,588.11,21.74,-1,-0.25,-1.04,-1/5,hold,22.47-129.89,-0.8,44.0,117.0,101.7,Sell ALL,17.41 million,Technology,Communication Equipment,2.8,87.1,104.41,1.19,0.7,0.57
+RAIL,2.58,8.3,431.74,51.16,0,0.05,0.41,0/5,buy,5.95-14.9,5.3,44.0,16.5,15.83,mere Sell (some bought),175.62 thousand,Industrials,Railroads,1.706,8.89,10.63,1.07,0.78,-0.04
+NATL,2.59,44.3,207.97,29.68,2,0.17,0.13,2/5,hold,23.56-48.5,3.81,9.0,50.4,50.33,mere Buy (some sold),1.51 million,Technology,Software - Application,0.779,44.56,54.79,1.01,0.81,-0.32
+CDE,2.6,17.63,312.0,70.47,0,0.0,-0.04,0/5,buy,5.21-27.77,6.42,37.0,40.0,33.77,Sell ALL,21.47 million,Basic Materials,Gold,1.328,19.33,23.39,1.1,0.75,0.03
+GMED,2.6,89.22,329.99,54.69,0,0.53,0.62,0/5,buy,51.79-101.4,6.4,12.0,123.0,116.82,Sell ALL,942.46 thousand,Healthcare,Medical Devices,1.092,91.77,110.42,1.03,0.81,0.14
+SLNG,2.63,4.16,8.69,-41.81,4,0.0,-1.2,4/5,buy,3.21-6.36,-9.38,35.0,9.0,9.0,Buy time,22.41 thousand,Energy,Oil & Gas Integrated,1,4.04,4.73,0.97,0.88,0.19
+FSLY,2.65,24.6,408.22,26.25,1,0.13,411.86,1/5,hold,5.63-34.82,-3.74,28.999999999999996,32.0,25.93,Buy time,14.73 million,Technology,Software - Application,0.616,27.73,32.81,1.13,0.75,0.06
+CRDL,2.67,1.34,129.24,77.09,1,0.02,0.22,1/5,buy,0.88-1.71,8.96,22.0,9.180607,8.33,mere Sell (some bought),915.98 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.43,1.39,1.67,1.04,0.8,-0.15
+BRKR,2.67,35.65,339.14,36.7,0,0.07,0.29,0/5,buy,28.53-56.22,3.76,37.0,60.0,53.39,Sell ALL,1.97 million,Healthcare,Medical Devices,1.201,37.61,46.27,1.05,0.77,0.44
+APEI,2.69,57.6,395.86,15.61,1,0.66,2.08,1/5,buy,23.0-61.59,1.91,6.0,62.0,59.67,Buy,241.23 thousand,Consumer Defensive,Education & Training Services,1.494,57.86,69.25,1.0,0.83,0.07
+UFCS,2.7,39.98,127.31,55.08,1,1.38,1.74,1/5,buy,25.79-41.76,6.88,4.0,41.0,40.75,Sell ALL,115.25 thousand,Financial Services,Insurance - Property & Casualty,0.408,39.77,47.96,0.99,0.83,0.16
+ELMD,2.7,25.3,132.72,30.86,2,0.11,0.45,2/5,buy,17.73-30.73,3.79,18.0,38.0,37.5,Sell ALL,50.51 thousand,Healthcare,Medical Devices,0.317,25.45,31.38,1.01,0.81,-0.05
+NRG,2.7,153.34,358.84,72.39,0,0.8,0.47,0/5,buy,111.25-189.96,7.89,19.0,306.0,253.88,== less Sell ALL==,2.23 million,Utilities,Utilities - Independent Power Producers,1.338,162.13,194.2,1.06,0.79,-0.03
+GDDY,2.71,85.73,224.16,38.49,1,0.27,0.17,1/5,hold,73.06-193.55,4.65,56.00000000000001,190.0,153.33,Sell ALL,2.35 million,Technology,Software - Infrastructure,0.977,83.97,101.41,0.98,0.85,0.18
+AISP,2.71,2.23,254.36,68.83,0,-0.13,-7.16,0/5,buy,2.03-7.2,7.17,69.0,6.5,6.5,Sell ALL,501.26 thousand,Technology,Software - Infrastructure,0.472,2.32,2.77,1.04,0.81,0.27
+DCTH,2.72,10.26,255.06,116.55,-1,0.09,0.66,-1/5,buy,8.12-18.23,13.35,44.0,30.0,25.67,Sell ALL,279.17 thousand,Healthcare,Medical Devices,0.435,10.26,12.17,1.0,0.84,0.16
+MUFG,2.72,17.86,124.96,73.38,1,0.09,0.24,1/5,buy,12.1-20.15,8.63,11.0,22.24682,20.34,Buy,2.49 million,Financial Services,Banks - Diversified,0.295,17.66,21.15,0.99,0.84,-0.04
+PRKS,2.75,33.82,318.53,86.03,0,-1.02,-0.62,0/5,hold,28.77-56.95,8.66,41.0,54.0,48.15,Buy,931.37 thousand,Consumer Cyclical,Leisure,1.185,35.16,42.21,1.04,0.8,-0.05
+LB,2.76,66.86,268.76,-10.54,2,0.04,0.04,2/5,hold,43.75-87.597,-1.75,24.0,98.0,89.29,Sell ALL,408.72 thousand,Energy,Oil & Gas Equipment & Services,1,70.4,85.3,1.05,0.78,0.26
+SE,2.76,83.4,423.9,50.4,0,-0.23,-0.25,0/5,buy,77.05-199.3,6.1,57.99999999999999,195.0,166.32,Sell ALL,3.67 million,Consumer Cyclical,Internet Retail,1.697,85.56,104.2,1.03,0.8,0.14
+ACAD,2.78,22.41,235.15,48.44,1,0.26,1.85,1/5,buy,14.2-28.35,5.98,21.0,45.0,38.35,- Buy time -,1.44 million,Healthcare,Biotechnology,0.834,22.18,26.69,0.99,0.84,0.09
+HWM,2.79,242.26,331.08,70.35,0,0.12,0.13,0/5,buy,144.71-267.31,7.95,9.0,315.0,297.82,Sell ALL,2.07 million,Industrials,Aerospace & Defense,1.235,247.2,298.5,1.02,0.81,0.14
+VERX,2.79,12.11,172.59,31.8,2,0.02,0.11,2/5,hold,10.59-42.44,3.63,71.0,25.0,21.81,Sell,1.27 million,Technology,Software - Application,0.791,12.09,14.55,1.0,0.83,-0.06
+BBW,2.81,36.56,321.78,-4.95,2,0.07,0.08,2/5,buy,35.0-75.85,-0.85,52.0,65.0,63.5,Sell ALL,438.25 thousand,Consumer Cyclical,Specialty Retail,1.175,38.34,46.29,1.05,0.79,0.11
+RLX,2.82,2.18,329.88,16.59,2,-0.03,-0.12,2/5,buy,1.79-2.84,2.06,23.0,3.5577233,3.33,mere Buy (some sold),1.86 million,Consumer Defensive,Tobacco,1.233,2.19,2.68,1.0,0.81,-0.19
+YPF,2.88,44.68,16.44,-20.79,4,-3.66,-5.2,4/5,buy,22.82-48.96,-3.22,9.0,70.0,61.97,Buy time,2.65 million,Energy,Oil & Gas Integrated,0.029,44.79,54.82,1.0,0.82,0.04
+USAC,2.88,27.1,70.07,9.67,3,0.0,0.02,3/5,hold,21.85-28.9,1.22,6.0,33.0,31.0,- +Buy time -,192.39 thousand,Energy,Oil & Gas Equipment & Services,0.169,27.48,33.04,1.01,0.82,0.02
+WRBY,2.88,21.48,541.86,46.49,0,0.0,-0.2,0/5,buy,14.96-31.0,5.31,31.0,35.0,32.08,Sell ALL,2.29 million,Healthcare,Medical Instruments & Supplies,2.076,22.18,26.7,1.03,0.8,0.06
+ICL,2.92,5.39,272.07,30.18,2,0.0,0.02,2/5,hold,4.76-7.35,3.8,27.0,6.0,5.86,Buy,1.48 million,Basic Materials,Agricultural Inputs,0.938,5.34,6.5,0.99,0.83,-0.14
+GRND,2.93,13.24,107.92,56.74,2,0.05,0.44,2/5,strongBuy,9.732-25.13,6.91,47.0,22.0,20.0,Sell,1.09 million,Technology,Software - Application,0.211,12.92,15.52,0.98,0.85,-0.11
+AVPT,2.93,9.61,307.13,20.94,2,0.06,0.85,2/5,buy,8.835-20.245,2.55,53.0,26.0,21.32,Sell,1.63 million,Technology,Software - Infrastructure,1.201,9.8,11.84,1.02,0.81,-0.09
+PROV,2.93,17.36,102.49,60.75,2,-0.18,-0.59,2/5,buy,14.85-17.42,7.55,0.0,16.0,16.0,Buy,11.88 thousand,Financial Services,Banks - Regional,0.283,17.05,20.21,0.98,0.86,-0.15
+NTRA,2.94,200.43,481.57,57.6,0,0.6,0.87,0/5,buy,131.811-256.36,6.78,22.0,300.0,279.0,Sell ALL,1.27 million,Healthcare,Diagnostics & Research,1.68,203.74,247.82,1.02,0.81,0.1
+INTA,2.95,22.42,173.24,-82.23,5,0.12,0.51,5/5,hold,19.24-59.1,-13.38,62.0,58.0,46.5,Buy time,931.90 thousand,Technology,Software - Application,0.633,23.18,27.96,1.03,0.8,0.12
+ARQT,2.96,22.98,455.44,66.07,0,0.19,2.1,0/5,buy,12.42-31.77,7.18,28.000000000000004,36.0,35.38,== less Sell ALL==,1.22 million,Healthcare,Biotechnology,1.767,23.71,28.61,1.03,0.8,0.09
+SFM,2.98,83.01,126.05,60.84,1,0.07,0.06,1/5,hold,64.75-182.0,6.93,54.0,140.0,115.96,- Buy time -,2.05 million,Consumer Defensive,Grocery Stores,0.666,77.58,94.6,0.93,0.88,0.39
+WEAV,2.99,4.71,458.99,53.53,0,0.0,0.59,0/5,strongBuy,4.24-11.32,6.37,57.99999999999999,9.0,8.88,Sell ALL,1.79 million,Healthcare,Health Information Services,1.714,4.87,5.92,1.03,0.8,0.26
+CLBT,3.02,12.77,260.54,-22.47,4,0.01,0.09,4/5,buy,11.02-20.53,-3.6,38.0,28.0,24.83,Buy,3.14 million,Technology,Software - Infrastructure,1.275,13.01,15.82,1.02,0.81,-0.34
+ELF,3.03,62.17,655.96,41.11,0,0.63,0.91,0/5,buy,58.05-150.99,4.53,59.0,135.0,114.73,Sell ALL,2.38 million,Consumer Defensive,Household & Personal Products,2.389,65.53,78.36,1.05,0.79,0.02
+ALRM,3.06,43.81,248.28,26.22,2,0.23,0.37,2/5,hold,41.5-60.76,3.36,28.000000000000004,85.0,71.5,Sell ALL,491.33 thousand,Technology,Software - Application,0.83,44.31,53.4,1.01,0.82,0.1
+CXT,3.08,44.07,424.74,84.76,0,0.03,0.03,0/5,buy,39.23-69.0,10.17,36.0,85.0,77.75,Sell ALL,709.86 thousand,Industrials,Specialty Industrial Machinery,1.467,44.51,53.37,1.01,0.83,0.01
+MPLX,3.08,56.42,110.93,-15.87,3,0.45,0.42,3/5,hold,47.8-59.98,-2.22,6.0,73.0,66.82,Buy time,2.95 million,Energy,Oil & Gas Midstream,0.544,56.73,66.92,1.01,0.84,0.48
+CRS,3.12,423.87,264.43,110.27,-1,0.24,0.1,-1/5,buy,198.45-459.18,12.58,8.0,495.0,467.17,Sell ALL,890.24 thousand,Industrials,Metal Fabrication,1,430.44,533.93,1.02,0.79,0.62
+SRFM,3.13,1.04,808.43,-2.2,0,-0.1,-0.23,0/5,buy,1.01-9.91,-1.44,89.0,12.0,9.56,Sell ALL,2.57 million,Industrials,Airlines,3.366,1.18,1.44,1.13,0.72,0.37
+NXT,3.14,117.66,537.71,35.16,1,0.34,0.34,1/5,buy,40.6-131.72,4.38,11.0,145.0,135.52,Sell,1.63 million,Technology,Solar,2.023,120.48,144.35,1.02,0.82,-0.06
+YMM,3.16,8.54,141.16,49.2,2,-0.06,-0.05,2/5,buy,8.04-14.07,6.24,39.0,16.463713,14.48,Sell ALL,4.24 million,Technology,Software - Application,0.281,8.5,10.17,1.0,0.84,0.14
+SMFG,3.17,21.19,160.76,87.75,1,0.22,0.56,1/5,buy,13.59-24.34,10.24,13.0,25.83659,25.84,- Buy time -,2.06 million,Financial Services,Banks - Diversified,0.349,20.69,24.74,0.98,0.86,0.14
+GDS,3.18,41.01,251.89,38.28,2,-8.47,-5.33,2/5,buy,22.53-48.61,4.25,16.0,71.250694,64.04,Sell,1.52 million,Technology,Information Technology Services,0.456,42.99,50.95,1.05,0.8,0.07
+ALK,3.19,39.02,384.75,111.91,0,0.23,2.91,0/5,buy,33.03-65.88,12.38,41.0,94.0,76.38,== less Sell ALL==,4.99 million,Industrials,Airlines,1.275,40.14,49.37,1.03,0.79,-0.11
+WGS,3.2,62.13,596.29,39.28,1,0.09,0.33,1/5,buy,55.17-170.87,4.06,64.0,177.0,156.56,== less Sell ALL==,746.22 thousand,Healthcare,Diagnostics & Research,2.191,65.56,80.5,1.06,0.77,-0.16
+CZWI,3.2,20.87,158.03,49.98,2,0.07,0.2,2/5,buy,12.83-22.62,6.27,8.0,24.0,23.38,- Buy time -,27.99 thousand,Financial Services,Banks - Regional,0.563,20.8,25.42,1.0,0.82,0.13
+WLFC,3.21,189.94,248.04,136.87,-1,0.73,0.22,-1/5,buy,114.01-217.54,14.21,13.0,190.0,190.0,Sell ALL,91.48 thousand,Industrials,Rental & Leasing Services,0.749,194.98,236.12,1.03,0.8,0.45
+NET,3.21,201.24,414.34,36.16,1,0.05,0.19,1/5,buy,120.455-260.0,3.28,23.0,300.0,265.93,Sell ALL,5.09 million,Technology,Software - Infrastructure,1.875,206.7,252.8,1.03,0.8,0.31
+HBB,3.21,20.48,66.69,94.1,1,-0.46,-0.47,1/5,,12.72-21.71,10.89,6.0,0.1,0.1,Sell ALL,22.44 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.186,20.5,24.11,1.0,0.85,0.31
+FOXA,3.22,63.49,157.12,54.85,2,0.71,0.96,2/5,hold,47.66-76.39,6.87,17.0,97.0,84.0,Buy,4.04 million,Communication Services,Entertainment,0.505,62.97,76.57,0.99,0.83,0.09
+CHRS,3.23,1.76,316.14,75.54,1,-0.05,-0.15,1/5,buy,0.71-2.616,9.15,33.0,10.0,8.38,Buy,900.34 thousand,Healthcare,Biotechnology,1.039,1.75,2.1,0.99,0.84,-0.0
+CCB,3.23,76.31,209.12,27.38,0,-0.46,-0.44,0/5,buy,70.72-120.05,2.73,36.0,145.0,135.62,Sell ALL,196.45 thousand,Financial Services,Banks - Regional,0.869,81.75,107.98,1.07,0.71,1.42
+RMNI,3.23,3.37,377.31,60.55,0,-0.02,-0.33,0/5,buy,2.87-5.38,7.42,37.0,7.0,6.45,mere Sell (some bought),339.52 thousand,Technology,Software - Application,1.275,3.4,4.13,1.01,0.82,0.58
+ADPT,3.23,13.94,616.99,64.61,0,0.29,1.94,0/5,buy,7.2-20.76,7.82,33.0,22.0,21.29,Sell ALL,1.44 million,Healthcare,Biotechnology,2.296,14.16,17.19,1.02,0.81,-0.01
+PLTR,3.25,138.21,427.18,6.69,2,0.06,0.34,2/5,buy,105.32-207.52,0.47,33.0,255.0,219.73,== less Sell ALL==,53.45 million,Technology,Software - Infrastructure,1.674,140.96,170.83,1.02,0.81,0.16
+ACIW,3.28,42.83,300.64,46.22,2,-0.01,-0.0,2/5,buy,38.05-55.45,5.87,23.0,70.0,67.0,== less Sell ALL==,634.03 thousand,Technology,Software - Infrastructure,1.034,42.22,50.99,0.99,0.84,-0.06
+EAT,3.29,151.62,432.48,94.07,-1,0.28,0.11,-1/5,buy,100.3-187.12,9.85,19.0,210.0,198.43,- Buy time -,1.60 million,Consumer Cyclical,Restaurants,1,149.8,192.18,0.99,0.79,0.65
+WHR,3.31,55.93,335.49,77.13,1,0.28,0.23,1/5,hold,50.41-111.96,9.05,50.0,137.0,103.45,Buy,1.97 million,Consumer Cyclical,Furnishings, Fixtures & Appliances,1.264,55.46,66.77,0.99,0.84,0.03
+RICK,3.32,25.13,283.35,58.52,2,0.15,0.02,2/5,,20.76-47.0,7.24,47.0,0.1,0.1,Sell ALL,39.85 thousand,Consumer Cyclical,Restaurants,0.775,24.97,30.1,0.99,0.83,-0.14
+CANG,3.33,0.41,319.29,167.96,-1,0,0,-1/5,buy,0.33-2.875,17.09,86.0,3.0,3.0,mere Sell (some bought),921.46 thousand,Financial Services,Capital Markets,1,0.45,0.53,1.1,0.77,0.02
+WFC,3.33,82.21,274.83,57.79,1,-0.03,-0.02,1/5,buy,70.43-97.76,6.58,16.0,113.0,104.83,- Buy time -,19.05 million,Financial Services,Banks - Diversified,1.056,82.03,100.43,1.0,0.82,0.44
+LOVE,3.34,15.74,597.31,91.78,0,0.06,0.04,0/5,buy,10.33-21.9,10.8,28.000000000000004,35.0,29.58,Sell ALL,280.82 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,2.218,15.92,19.67,1.01,0.8,-0.2
+AMPL,3.36,7.0,406.67,34.24,2,0.0,0.28,2/5,buy,5.51-14.49,2.86,52.0,18.0,14.7,Sell,1.82 million,Technology,Software - Application,1.488,6.72,8.1,0.96,0.86,-0.02
+MGX,3.42,1.36,259.09,59.91,2,-0.04,-0.06,2/5,buy,1.25-3.95,6.64,66.0,12.0,10.67,Sell ALL,197.91 thousand,Healthcare,Biotechnology,0.57,1.43,1.7,1.05,0.8,0.02
+SN,3.44,114.88,383.33,132.79,0,0.27,0.18,0/5,buy,78.82-133.99,15.02,14.000000000000002,200.0,174.46,== less Sell ALL==,1.27 million,Consumer Cyclical,Furnishings, Fixtures & Appliances,1.491,113.88,140.5,0.99,0.82,-0.14
+XERS,3.46,6.13,281.58,69.86,2,0.01,-0.67,2/5,buy,4.26-10.08,8.65,39.0,18.0,14.57,Buy,1.51 million,Healthcare,Biotechnology,0.987,6.02,7.36,0.98,0.83,-0.15
+AMRX,3.47,12.87,408.93,58.76,1,0.06,0.37,1/5,strongBuy,7.02-15.42,7.15,17.0,19.0,18.0,Buy,1.43 million,Healthcare,Drug Manufacturers - Specialty & Generic,1.318,12.75,15.83,0.99,0.81,0.25
+DSP,3.48,10.57,226.42,-19.12,4,-0.02,-0.15,4/5,buy,8.11-16.25,-2.84,35.0,22.0,19.75,Buy,193.14 thousand,Technology,Software - Application,0.941,10.82,13.02,1.02,0.81,0.14
+BLX,3.48,53.31,269.27,44.76,2,1,1,2/5,buy,37.88-57.79,5.35,8.0,67.0,66.27,Sell ALL,126.44 thousand,Financial Services,Banks - Regional,0.818,54.3,64.58,1.02,0.83,0.24
+MESO,3.5,15.39,229.22,52.89,2,1,1,2/5,strongBuy,9.88-21.5,6.63,28.000000000000004,35.0,35.0,Sell ALL,204.05 thousand,Healthcare,Biotechnology,0.817,15.16,18.4,0.99,0.84,0.23
+UPLD,3.51,0.65,400.86,57.72,1,0.18,0.97,1/5,strongBuy,0.496-3.91,6.81,83.0,4.5,4.12,- Buy time -,207.41 thousand,Technology,Software - Application,1.342,0.67,0.77,1.03,0.84,0.33
+DK,3.54,45.97,197.6,17.36,3,2.5,12.93,3/5,hold,13.09-48.32,0.52,5.0,63.0,55.58,Buy time,1.50 million,Energy,Oil & Gas Refining & Marketing,1,44.13,53.49,0.96,0.86,0.34
+SOFI,3.55,15.85,405.28,48.1,0,0.01,0.04,0/5,hold,12.43-32.73,4.45,52.0,38.0,30.71,Sell ALL,85.58 million,Financial Services,Credit Services,1,17.06,21.25,1.08,0.75,1.04
+YELP,3.56,27.29,201.57,76.34,2,0.11,0.21,2/5,hold,19.6-41.22,9.09,34.0,31.0,28.31,Sell ALL,921.25 thousand,Communication Services,Internet Content & Information,0.477,26.89,32.04,0.99,0.85,0.06
+FHN,3.56,24.84,193.81,93.71,1,0.09,0.19,1/5,hold,17.95-26.56,11.23,6.0,30.0,28.42,Buy,5.69 million,Financial Services,Banks - Regional,0.629,24.27,30.28,0.98,0.82,0.37
+ECOR,3.56,6.08,103.37,68.55,-2,0.05,0.13,-2/5,buy,4.16-8.64,7.24,30.0,25.0,22.4,Sell ALL,71.97 thousand,Healthcare,Medical Devices,0.596,6.51,8.05,1.07,0.76,2.5
+AAL,3.57,11.57,408.55,103.1,0,-0.13,-0.42,0/5,buy,9.98-16.5,12.01,30.0,22.0,18.43,Sell ALL,53.83 million,Industrials,Airlines,1.248,11.6,14.33,1.0,0.81,0.31
+CRVS,3.57,14.82,283.19,89.0,1,0.0,-0.02,1/5,buy,3.165-26.95,9.58,45.0,42.0,37.67,Sell ALL,1.33 million,Healthcare,Biotechnology,0.967,15.57,18.73,1.05,0.79,0.27
+RBLX,3.58,56.21,506.56,62.83,1,0.14,0.29,1/5,buy,51.23-150.59,7.65,63.0,166.94,134.14,Buy,9.16 million,Communication Services,Electronic Gaming & Multimedia,1.673,56.17,68.34,1.0,0.82,0.09
+CXDO,3.6,6.5,284.18,65.98,2,0.04,0.55,2/5,buy,5.026-7.8,7.85,17.0,12.0,10.71,Sell ALL,123.26 thousand,Communication Services,Telecom Services,0.938,6.49,7.75,1.0,0.84,0.05
+BBVA,3.62,22.0,299.46,92.65,1,0.01,0.02,1/5,buy,13.71-26.2,10.37,16.0,28.56,25.54,- Buy time -,2.25 million,Financial Services,Banks - Diversified,0.923,22.1,26.62,1.0,0.83,0.23
+FSK,3.63,10.9,308.04,70.73,2,-0.07,-0.12,2/5,hold,9.72-22.68,8.76,52.0,17.0,14.65,Buy,2.78 million,Financial Services,Asset Management,0.898,10.55,12.68,0.97,0.86,-0.05
+AS,3.65,34.65,703.97,91.73,0,0.11,0.42,0/5,buy,24.05-42.76,10.49,19.0,60.0,54.44,== less Sell ALL==,3.47 million,Consumer Cyclical,Leisure,2.803,35.22,42.97,1.02,0.81,-0.12
+BLFS,3.67,20.62,565.76,74.61,1,0.07,26.78,1/5,buy,17.86-29.62,8.92,30.0,34.0,33.2,Sell,390.68 thousand,Healthcare,Medical Instruments & Supplies,1.996,20.68,25.24,1.0,0.82,-0.11
+ULCC,3.67,3.77,687.34,80.73,0,0.13,0.8,0/5,hold,2.97-6.66,9.43,43.0,8.0,6.22,Sell ALL,4.78 million,Industrials,Airlines,2.576,3.85,4.67,1.02,0.81,0.07
+HWKN,3.69,167.82,176.65,84.42,2,-0.16,-0.14,2/5,strongBuy,115.35-186.15,9.66,10.0,200.0,194.0,Sell ALL,170.60 thousand,Basic Materials,Specialty Chemicals,0.791,159.21,191.62,0.95,0.88,0.15
+SFIX,3.7,3.57,614.47,77.31,1,0.04,1.06,1/5,hold,2.95-5.94,8.4,40.0,6.0,5.25,Sell,1.79 million,Consumer Cyclical,Apparel Retail,2.34,3.54,4.4,0.99,0.81,-0.2
+BAM,3.75,46.96,381.13,65.28,2,0.04,0.1,2/5,hold,42.2-64.1,8.11,27.0,74.0,65.72,Sell ALL,3.47 million,Financial Services,Asset Management,1.242,46.52,56.44,0.99,0.83,-0.02
+RXRX,3.75,3.41,344.77,149.45,0,0.13,0.39,0/5,hold,2.8-7.18,16.82,52.0,11.0,8.86,Sell ALL,11.85 million,Healthcare,Biotechnology,1.013,3.38,4.17,0.99,0.82,0.05
+TDOC,3.76,5.44,548.99,47.18,1,0.23,0.91,1/5,hold,4.4-9.77,5.51,44.0,11.0,9.03,Sell ALL,5.06 million,Healthcare,Health Information Services,2.079,5.56,6.99,1.02,0.78,0.38
+UTI,3.77,36.61,339.83,-6.96,4,0.17,0.99,4/5,buy,21.29-40.41,-1.09,9.0,40.0,38.67,Buy time,505.06 thousand,Consumer Defensive,Education & Training Services,1.332,36.69,44.16,1.0,0.83,0.01
+EE,3.78,34.21,395.75,21.53,3,0.0,-0.03,3/5,buy,21.285-43.175,2.63,21.0,50.0,46.38,Buy time,430.21 thousand,Energy,Oil & Gas Midstream,1.411,34.37,40.68,1.0,0.84,0.03
+VVOS,3.8,0.86,1846.41,-98.3,0,-0.08,-0.16,0/5,buy,0.761-7.95,-27.26,89.0,3.0,2.71,- Buy time -,162.86 thousand,Healthcare,Medical Devices,6.897,1.1,1.08,1.28,0.8,0.37
+OOMA,3.83,15.88,320.29,84.91,2,0.09,0.34,2/5,buy,9.793-16.89,9.98,6.0,20.0,19.18,Sell ALL,275.19 thousand,Technology,Software - Application,1.195,15.13,18.57,0.95,0.86,-0.05
+URBN,3.83,69.32,415.8,109.29,1,-0.11,-0.08,1/5,hold,51.12-84.35,12.1,18.0,102.0,92.21,Sell,1.11 million,Consumer Cyclical,Apparel Retail,1.204,68.78,83.59,0.99,0.83,-0.03
+DKL,3.87,52.56,150.22,18.62,4,0.25,0.17,4/5,hold,37.5-55.89,2.22,6.0,57.0,53.9,Buy time,64.58 thousand,Energy,Oil & Gas Refining & Marketing,0.51,51.56,61.89,0.98,0.85,0.19
+VST,3.87,158.79,430.95,57.92,2,-1.97,-0.87,2/5,buy,133.73-219.82,7.08,28.000000000000004,318.0,274.47,Sell ALL,4.37 million,Utilities,Utilities - Independent Power Producers,1.498,162.67,195.09,1.02,0.81,0.09
+VCYT,3.88,32.4,535.4,51.4,2,0.31,0.89,2/5,buy,22.61-50.71,6.04,36.0,53.0,49.77,Sell ALL,748.96 thousand,Healthcare,Diagnostics & Research,1.957,33.05,40.6,1.02,0.8,-0.04
+GRAL,3.91,51.7,363.52,77.65,2,0.9,0.28,2/5,buy,29.95-118.84,9.28,56.00000000000001,82.0,74.86,Sell ALL,697.08 thousand,Healthcare,Diagnostics & Research,1,51.59,61.7,1.0,0.84,0.03
+FTAI,3.93,248.87,599.45,78.3,0,0.02,0.01,0/5,buy,86.84-323.51,8.08,23.0,375.0,356.95,- Buy time -,1.78 million,Industrials,Rental & Leasing Services,1.649,253.84,314.78,1.02,0.79,0.59
+FULC,3.97,7.09,803.71,73.2,0,0.04,0.15,0/5,buy,3.73-15.74,7.19,55.00000000000001,25.0,22.0,Sell ALL,834.66 thousand,Healthcare,Biotechnology,3.268,7.7,9.41,1.09,0.75,0.24
+SHOP,4.0,119.72,783.89,54.99,1,-0.03,-0.05,1/5,buy,88.14-182.19,6.64,34.0,200.0,179.75,Sell,8.41 million,Technology,Software - Application,2.822,120.67,146.84,1.01,0.82,-0.01
+GEO,4.02,18.6,251.11,102.34,2,0.02,0.09,2/5,buy,12.51-32.09,12.26,42.0,33.0,31.25,Sell ALL,1.22 million,Industrials,Security & Protection Services,0.686,18.31,21.88,0.98,0.85,0.07
+MLAB,4.03,98.62,332.82,115.42,1,0.84,0.55,1/5,hold,55.45-131.2,13.74,25.0,115.0,109.75,- Buy time -,128.12 thousand,Technology,Scientific & Technical Instruments,0.894,96.03,117.78,0.97,0.84,0.25
+MEOH,4.04,62.83,249.01,8.37,4,-1.14,-2.07,4/5,buy,30.33-66.75,0.57,6.0,75.0,71.17,Buy time,1.78 million,Basic Materials,Chemicals,0.816,62.7,73.86,1.0,0.85,0.29
+MGNI,4.07,12.77,691.51,75.98,1,0.0,-0.01,1/5,buy,10.82-26.65,9.4,52.0,39.0,30.61,Sell,2.00 million,Communication Services,Advertising Agencies,2.386,12.59,15.44,0.99,0.83,-0.02
+LZ,4.07,6.28,393.72,76.28,2,-0.03,-0.13,2/5,hold,5.28-12.4,9.39,49.0,11.0,9.86,Sell ALL,3.15 million,Industrials,Specialty Business Services,1.304,6.15,7.55,0.98,0.83,0.13
+PRTH,4.07,5.16,451.01,73.56,2,0.0,0.0,2/5,buy,4.44-8.89,8.91,42.0,13.0,11.4,Sell ALL,178.84 thousand,Technology,Software - Infrastructure,1.511,5.1,6.18,0.99,0.83,0.04
+CREX,4.09,3.67,402.07,71.46,0,-0.82,-10.57,0/5,buy,1.6-4.42,8.45,17.0,10.0,9.42,Sell,29.90 thousand,Technology,Software - Application,1.443,3.71,4.56,1.01,0.8,1.25
+RSSS,4.11,2.5,300.19,89.72,2,-0.01,-0.32,2/5,buy,2.15-4.12,10.4,39.0,5.0,5.0,mere Buy (some sold),52.12 thousand,Technology,Software - Application,0.763,2.45,2.99,0.98,0.84,0.22
+VCEL,4.12,33.95,392.31,84.35,2,0.18,8.68,2/5,buy,28.95-45.97,10.01,26.0,64.0,59.29,Sell ALL,623.09 thousand,Healthcare,Biotechnology,1.207,34.27,41.72,1.01,0.81,0.09
+JVA,4.16,4.67,423.39,64.29,2,0.05,1.84,2/5,,2.93-5.63,8.07,17.0,0.1,0.1,- +Buy time -,84.06 thousand,Consumer Defensive,Packaged Foods,1.415,4.66,5.71,1.0,0.82,0.3
+PRTS,4.17,0.95,196.0,153.03,1,0.15,0.63,1/5,buy,0.37-1.36,16.57,30.0,1.5,1.25,Sell ALL,486.79 thousand,Consumer Cyclical,Auto Parts,0.784,0.88,1.08,0.93,0.88,0.25
+HMY,4.17,15.85,232.41,110.93,2,1,1,2/5,hold,12.58-26.06,12.32,39.0,27.0,25.01,Sell ALL,5.02 million,Basic Materials,Gold,0.796,16.12,19.29,1.02,0.82,0.17
+CTRN,4.17,47.4,628.15,99.05,1,-0.01,-0.01,1/5,buy,21.82-56.78,11.35,17.0,68.0,67.75,Sell,71.00 thousand,Consumer Cyclical,Apparel Retail,2.047,47.73,58.12,1.01,0.82,-0.05
+CLPT,4.19,10.44,550.28,160.69,0,-0.08,-0.4,0/5,buy,8.27-30.1,17.05,65.0,30.0,27.5,Sell,515.60 thousand,Healthcare,Medical Devices,1.184,10.3,12.49,0.99,0.84,-0.09
+HOOD,4.19,72.75,470.77,100.48,0,0.01,0.02,0/5,buy,45.56-153.86,10.44,53.0,155.0,127.03,Sell ALL,41.38 million,Financial Services,Capital Markets,1,75.66,94.76,1.04,0.77,0.86
+AGX,4.2,645.4,224.73,185.35,1,1.56,0.79,1/5,hold,155.65-683.12,20.43,6.0,550.0,511.6,== less Sell ALL==,386.38 thousand,Industrials,Engineering & Construction,0.459,627.39,781.53,0.97,0.83,-0.21
+HROW,4.2,39.28,172.53,129.82,2,0.04,0.14,2/5,buy,21.12-54.85,15.22,28.000000000000004,91.0,79.56,== less Sell ALL==,468.05 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.307,38.29,45.43,0.97,0.86,0.07
+BRLT,4.21,1.43,467.07,130.52,1,-0.08,-4.16,1/5,hold,1.21-3.1,15.36,54.0,2.0,1.86,Sell ALL,38.28 thousand,Consumer Cyclical,Luxury Goods,1.422,1.38,1.71,0.97,0.84,-0.07
+QNCX,4.22,1.21,477.35,157.36,1,-5.62,-2.5,1/5,hold,0.8-45.5,16.18,97.0,0.0,0.0,Sell,7.82 million,Healthcare,Biotechnology,1.333,1.34,1.81,1.11,0.67,-0.36
+OXBR,4.24,0.94,643.27,91.13,2,-0.01,-1.0,2/5,,0.66-2.86,7.76,67.0,0.1,0.1,Buy time,342.46 thousand,Financial Services,Insurance - Reinsurance,2.223,0.83,1.27,0.88,0.74,-0.36
+WMT,4.26,131.17,238.1,46.92,4,0.03,0.05,4/5,buy,91.89-134.69,5.85,3.0,150.0,143.28,Buy time,17.01 million,Consumer Defensive,Discount Stores,0.661,128.69,155.13,0.98,0.85,0.01
+MXCT,4.26,0.81,518.74,150.7,0,0.04,0.44,0/5,buy,0.643-2.875,16.48,72.0,5.0,4.55,Sell ALL,687.64 thousand,Healthcare,Medical Devices,1.452,0.82,1.02,1.01,0.79,0.16
+WWW,4.29,17.17,516.12,75.57,2,0.04,0.12,2/5,buy,12.99-32.8,9.06,48.0,29.0,26.1,Sell,883.66 thousand,Consumer Cyclical,Footwear & Accessories,1.869,17.18,20.94,1.0,0.82,0.09
+LFCR,4.29,5.01,369.05,232.85,-1,-0.32,-2.13,-1/5,hold,3.63-8.98,24.35,44.0,9.0,7.83,mere Sell (some bought),496.20 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.878,4.82,6.08,0.96,0.82,0.03
+AIOT,4.29,3.15,470.25,67.35,2,-0.04,-0.93,2/5,buy,2.78-6.07,8.08,48.0,13.0,11.67,Sell,2.17 million,Technology,Software - Infrastructure,1.392,3.2,3.82,1.02,0.82,0.3
+LFVN,4.29,5.01,119.99,117.75,2,-0.01,-0.05,2/5,buy,3.9-15.0,12.18,67.0,11.0,9.5,Sell,145.25 thousand,Consumer Defensive,Packaged Foods,0.391,4.69,5.53,0.94,0.91,0.49
+INN,4.3,4.99,407.09,105.71,2,0.09,0.63,2/5,hold,3.98-6.0,12.71,17.0,6.0,5.69,- Buy time -,874.31 thousand,Real Estate,REIT - Hotel & Motel,1.207,4.79,5.82,0.96,0.86,-0.05
+DTST,4.32,3.94,288.26,12.69,0,0.75,7.04,0/5,hold,3.25-5.44,1.52,28.000000000000004,0.1,0.1,Buy,128.09 thousand,Technology,Information Technology Services,1.182,4.15,7.73,1.05,0.51,2.5
+INGN,4.36,6.94,537.87,103.76,1,0.1,0.94,1/5,buy,5.34-9.13,11.96,24.0,14.0,13.33,Sell ALL,274.39 thousand,Healthcare,Medical Devices,1.705,6.83,8.37,0.98,0.83,0.28
+C,4.37,128.56,334.0,145.52,1,0.09,-0.06,1/5,buy,67.89-135.29,16.56,5.0,162.0,152.3,Buy time,13.43 million,Financial Services,Banks - Diversified,1.085,124.77,150.26,0.97,0.86,0.21
+ALAR,4.38,6.61,214.59,129.76,2,0.09,6.48,2/5,buy,5.5-18.0,15.28,63.0,16.0,15.5,== less Sell ALL==,28.32 thousand,Technology,Software - Infrastructure,0.255,6.55,7.99,0.99,0.83,0.16
+LVO,4.38,5.02,396.47,69.06,1,-0.03,-0.18,1/5,buy,3.7-9.8,7.17,49.0,14.0,13.0,Sell ALL,121.52 thousand,Communication Services,Entertainment,1.631,5.17,6.6,1.03,0.76,1.09
+RDW,4.39,9.02,702.36,133.81,0,-0.12,-0.84,0/5,buy,4.87-22.25,14.52,59.0,22.0,18.06,mere Sell (some bought),19.60 million,Industrials,Aerospace & Defense,2.505,9.61,11.74,1.07,0.77,0.1
+FTK,4.42,17.3,437.93,23.03,4,0.34,2.36,4/5,buy,7.0-20.41,2.08,15.0,22.0,21.62,- +Buy time -,174.25 thousand,Energy,Oil & Gas Equipment & Services,1.456,16.91,20.48,0.98,0.84,0.05
+AI,4.42,8.73,575.11,89.13,2,-0.03,-0.13,2/5,hold,7.675-30.24,10.72,71.0,17.0,12.91,- +Buy time -,4.56 million,Technology,Software - Infrastructure,2.07,8.63,10.65,0.99,0.82,-0.09
+BKTI,4.44,93.52,166.26,204.68,1,0.78,0.99,1/5,buy,36.17-98.36,21.65,5.0,97.0,97.0,Buy time,50.96 thousand,Technology,Communication Equipment,0.543,90.79,108.12,0.97,0.86,-0.06
+OMF,4.44,58.9,389.43,93.38,2,0.35,0.22,2/5,buy,45.78-71.93,11.34,18.0,85.0,76.5,== less Sell ALL==,1.27 million,Financial Services,Credit Services,1.264,57.26,70.09,0.97,0.84,0.29
+VFC,4.45,18.71,357.6,119.22,2,0.21,0.49,2/5,hold,11.06-22.27,13.68,16.0,39.5,30.1,Sell,5.49 million,Consumer Cyclical,Apparel Manufacturing,0.974,18.69,22.52,1.0,0.83,0.05
+RIVN,4.46,16.15,546.29,83.79,2,0.03,0.05,2/5,hold,11.57-22.69,10.28,28.999999999999996,25.0,21.58,Sell,22.24 million,Consumer Cyclical,Auto Manufacturers,1.691,16.1,19.46,1.0,0.83,0.08
+LRN,4.46,95.46,138.14,97.99,2,0.27,0.12,2/5,hold,60.61-171.17,11.83,44.0,125.0,119.25,Sell ALL,1.03 million,Consumer Defensive,Education & Training Services,0.049,94.37,118.1,0.99,0.81,0.82
+SYF,4.47,75.63,423.46,106.14,2,0.27,0.13,2/5,buy,51.72-88.77,12.72,15.0,103.0,96.3,Sell,3.38 million,Financial Services,Credit Services,1.381,73.76,89.82,0.98,0.84,0.08
+RLJ,4.48,8.25,367.84,87.82,2,0.06,0.82,2/5,hold,6.54-8.63,10.67,4.0,12.0,10.22,Buy time,1.92 million,Real Estate,REIT - Hotel & Motel,1.087,8.0,9.72,0.97,0.85,0.45
+BKV,4.48,31.15,291.65,53.95,4,0.3,1.43,4/5,buy,17.795-32.81,6.04,5.0,39.0,37.23,Buy time,798.73 thousand,Energy,Oil & Gas E&P,1,29.35,34.95,0.94,0.89,0.03
+ADMA,4.48,10.71,398.35,124.67,2,0.02,0.1,2/5,buy,7.21-24.19,14.57,56.00000000000001,24.0,22.33,== less Sell ALL==,5.50 million,Healthcare,Biotechnology,0.821,10.52,12.78,0.98,0.84,-0.09
+KINS,4.49,16.7,294.96,115.96,2,0.02,0.03,2/5,buy,13.08-22.4,13.62,25.0,21.5,21.5,Sell,123.33 thousand,Financial Services,Insurance - Property & Casualty,0.448,16.59,20.09,0.99,0.83,0.27
+TWLO,4.49,142.01,358.76,129.29,1,0.28,0.25,1/5,buy,91.84-154.64,14.81,8.0,190.0,170.17,Sell ALL,2.32 million,Technology,Software - Infrastructure,1.284,134.1,166.16,0.94,0.85,0.48
+WAVE,4.5,6.78,140.22,130.75,2,0.09,0.86,2/5,strongBuy,4.41-9.87,15.2,31.0,15.0,15.0,Sell ALL,8.95 thousand,Utilities,Utilities - Renewable,1,6.71,8.42,0.99,0.81,0.44
+FIVE,4.53,234.77,308.05,51.29,4,0.73,1.73,4/5,buy,73.88-251.63,6.37,7.000000000000001,305.0,283.39,Buy,1.03 million,Consumer Cyclical,Specialty Retail,1.066,230.27,279.58,0.98,0.84,0.06
+PSIX,4.54,69.29,603.24,208.08,-1,0.28,0.32,-1/5,buy,25.04-121.78,19.02,43.0,109.0,105.98,Sell ALL,603.80 thousand,Industrials,Specialty Industrial Machinery,2.191,75.09,92.36,1.08,0.75,0.15
+EXOD,4.55,6.95,1007.47,110.26,0,-0.08,-0.07,0/5,buy,5.89-56.0,10.79,88.0,25.0,22.25,== less Sell ALL==,58.84 thousand,Technology,Software - Infrastructure,3.177,7.54,9.57,1.08,0.73,-0.1
+CCL,4.55,27.26,670.99,107.27,1,0.11,0.48,1/5,buy,18.51-34.03,12.12,20.0,45.0,39.75,- Buy time -,24.65 million,Consumer Cyclical,Travel Services,2.482,27.29,33.17,1.0,0.82,0.13
+SONO,4.56,14.4,575.84,80.6,2,0.14,-1.83,2/5,buy,8.73-19.82,9.79,27.0,21.0,20.06,Sell ALL,1.15 million,Technology,Consumer Electronics,1.995,13.99,17.17,0.97,0.84,0.15
+CNVS,4.57,2.55,472.01,80.04,2,-0.16,-1.49,2/5,buy,1.77-7.39,9.8,65.0,12.0,11.5,Buy,133.04 thousand,Communication Services,Entertainment,1.575,2.48,3.0,0.97,0.85,0.4
+JOBY,4.58,8.82,790.2,81.88,1,-0.03,-0.18,1/5,hold,6.18-20.95,9.98,57.99999999999999,18.0,14.89,- Buy time -,25.30 million,Industrials,Airports & Air Services,2.678,8.69,10.68,0.99,0.83,0.2
+TS,4.62,63.54,173.11,81.26,4,0.18,0.24,4/5,buy,31.76-63.9,9.98,1.0,72.0,65.28,- +Buy time -,1.78 million,Energy,Oil & Gas Equipment & Services,0.46,61.33,74.94,0.97,0.85,0.06
+FBRX,4.65,27.51,737.54,69.92,0,-0.22,-0.19,0/5,buy,6.13-35.8,4.33,23.0,75.0,69.38,- Buy time -,799.36 thousand,Healthcare,Biotechnology,3.199,31.02,41.77,1.13,0.66,1.19
+NGS,4.69,40.79,153.19,49.88,5,0.29,0.84,5/5,strongBuy,17.89-41.51,6.36,2.0,50.0,48.62,Buy time,98.94 thousand,Energy,Oil & Gas Equipment & Services,0.387,39.88,47.54,0.98,0.86,0.06
+PLBY,4.71,1.68,801.9,110.49,1,0.04,2.25,1/5,buy,1.0-2.75,12.5,39.0,4.0,3.46,Sell,504.62 thousand,Consumer Cyclical,Leisure,2.527,1.69,2.08,1.01,0.81,-0.05
+HPE,4.71,28.09,447.57,174.13,1,0.1,0.17,1/5,hold,16.175-29.63,19.52,5.0,38.0,32.37,Sell ALL,15.54 million,Technology,Communication Equipment,1.215,26.2,32.21,0.93,0.87,-0.06
+SMR,4.72,11.65,684.72,113.1,1,-2.36,-16.03,1/5,hold,8.85-57.42,12.05,80.0,52.0,35.68,Sell,30.11 million,Industrials,Specialty Industrial Machinery,2.279,11.45,13.95,0.98,0.84,0.21
+ALLT,4.73,7.19,553.57,106.86,2,0.06,1.5,2/5,buy,5.61-11.92,12.8,40.0,19.0,16.05,Sell,316.92 thousand,Technology,Software - Infrastructure,1.531,7.07,8.62,0.98,0.83,0.03
+APP,4.74,437.7,705.1,129.64,1,0.36,0.13,1/5,buy,276.8-745.61,14.99,41.0,860.0,749.68,Sell,4.37 million,Communication Services,Advertising Agencies,2.502,425.34,525.25,0.97,0.83,-0.06
+SLAB,4.75,217.01,404.57,39.96,4,0.02,0.06,4/5,hold,100.87-217.33,5.14,0.0,231.0,226.93,- +Buy time -,417.29 thousand,Technology,Semiconductors,1.45,212.54,263.27,0.98,0.82,0.21
+TLN,4.76,363.16,524.47,116.36,2,-0.33,-0.09,2/5,buy,216.2-451.28,13.8,20.0,594.0,531.35,== less Sell ALL==,772.10 thousand,Utilities,Utilities - Independent Power Producers,1.781,348.13,426.28,0.96,0.85,0.01
+AEYE,4.78,7.05,358.55,152.1,2,0.02,0.14,2/5,buy,5.31-16.39,17.59,56.99999999999999,25.0,20.0,Sell,130.43 thousand,Technology,Software - Application,0.683,6.78,8.16,0.96,0.86,-0.05
+NTGR,4.79,24.58,417.56,105.82,2,0.35,6.0,2/5,buy,19.0-36.86,12.57,33.0,40.0,38.33,Sell ALL,589.64 thousand,Technology,Communication Equipment,1.086,24.66,30.54,1.0,0.8,0.42
+KVYO,4.79,19.85,174.68,44.06,4,0.06,0.4,4/5,buy,15.53-37.79,4.43,47.0,40.0,36.23,Buy time,4.94 million,Technology,Software - Application,0.862,19.07,22.83,0.96,0.87,0.75
+KD,4.8,13.67,546.33,64.92,3,-0.06,-0.08,3/5,hold,10.1-44.2,8.19,69.0,16.5,15.6,Buy time,3.51 million,Technology,Information Technology Services,1.897,13.37,16.14,0.98,0.85,0.13
+SMWB,4.81,2.7,342.46,65.86,4,0.03,2.0,4/5,hold,2.22-10.75,8.15,75.0,5.0,4.58,- +Buy time -,455.13 thousand,Technology,Software - Application,1.115,2.63,3.22,0.97,0.84,0.07
+ARHS,4.82,7.51,728.35,112.22,1,0.03,0.3,1/5,hold,6.17-12.98,13.32,42.0,14.0,12.36,Sell ALL,964.57 thousand,Consumer Cyclical,Specialty Retail,2.558,7.14,8.9,0.95,0.84,0.19
+PARR,4.82,65.47,294.96,21.8,5,3.87,1.93,5/5,strongBuy,14.0-68.0,2.4,4.0,80.0,75.14,Buy time,1.30 million,Energy,Oil & Gas Refining & Marketing,0.972,65.81,78.18,1.01,0.84,0.26
+GRPN,4.84,13.56,214.84,174.58,2,-2.92,-98.15,2/5,buy,9.17-43.08,19.1,69.0,40.0,31.67,Sell ALL,1.38 million,Communication Services,Internet Content & Information,1,13.12,15.98,0.97,0.85,0.07
+RPID,4.85,2.31,466.48,30.03,4,-0.07,-0.3,4/5,buy,2.01-4.94,3.69,53.0,8.0,8.0,Buy time,229.92 thousand,Healthcare,Medical Devices,1.602,2.31,2.79,1.0,0.83,0.31
+BBSI,4.85,31.33,318.41,37.5,5,-0.01,-0.02,5/5,strongBuy,25.33-49.65,4.66,37.0,43.0,42.62,- +Buy time -,161.88 thousand,Industrials,Staffing & Employment Services,0.985,30.11,35.93,0.96,0.87,0.02
+UNCY,4.85,7.16,591.31,123.44,2,-0.16,-0.42,2/5,buy,3.71-11.0,14.66,35.0,90.0,66.73,Sell,442.77 thousand,Healthcare,Biotechnology,1.801,6.98,8.52,0.97,0.84,-0.14
+FTI,4.88,75.21,244.18,83.5,4,0.27,0.5,4/5,buy,28.0-77.78,10.13,3.0,83.0,75.43,Buy time,4.12 million,Energy,Oil & Gas Equipment & Services,0.711,74.87,90.89,1.0,0.83,0.14
+ATEN,4.88,26.01,443.55,122.08,2,0.03,0.14,2/5,buy,15.92-28.59,14.03,9.0,32.0,29.83,Sell ALL,1.35 million,Technology,Software - Infrastructure,1.088,25.56,31.97,0.98,0.81,0.25
+PMTS,4.9,17.01,354.36,135.6,2,0.62,0.88,2/5,buy,10.81-27.31,15.05,38.0,30.0,29.12,Sell,41.57 thousand,Financial Services,Credit Services,1.025,17.29,20.84,1.02,0.82,0.31
+NRGV,4.93,4.17,230.95,240.23,1,-0.01,1.0,1/5,buy,0.654-6.35,22.86,34.0,6.05,5.12,Sell,2.93 million,Utilities,Utilities - Renewable,0.902,3.88,4.67,0.93,0.89,-0.09
+ACHR,4.93,5.65,917.37,104.75,1,0.11,0.6,1/5,buy,4.8-14.62,12.61,61.0,18.0,14.47,Sell ALL,25.39 million,Industrials,Aerospace & Defense,3.243,5.62,6.98,0.99,0.81,-0.04
+HNST,4.93,3.42,629.17,137.95,1,0.0,20.9,1/5,buy,2.07-5.545,15.5,38.0,5.0,4.25,Sell ALL,1.80 million,Consumer Defensive,Household & Personal Products,2.161,3.22,4.05,0.94,0.84,0.21
+CAVA,4.96,92.94,673.43,149.8,1,0.0,0.44,1/5,buy,43.41-101.5,17.22,8.0,110.0,98.44,Sell,2.34 million,Consumer Cyclical,Restaurants,2.042,89.04,109.07,0.96,0.85,-0.02
+BFLY,4.96,4.51,784.9,150.03,0,0.03,0.76,0/5,buy,1.32-5.72,15.08,21.0,6.0,5.78,Sell ALL,5.58 million,Healthcare,Medical Devices,2.219,4.64,5.87,1.03,0.77,0.31
+ASPN,4.97,3.66,881.32,127.04,1,-0.18,-15.33,1/5,buy,2.3-9.78,13.51,63.0,6.0,5.1,- +Buy time -,1.58 million,Industrials,Building Products & Equipment,2.898,3.6,4.42,0.98,0.83,-0.16
+INOD,4.98,41.24,734.69,143.33,1,0.07,0.46,1/5,buy,31.9-93.85,16.45,56.00000000000001,110.0,100.62,Sell ALL,1.18 million,Technology,Information Technology Services,2.505,41.11,50.34,1.0,0.82,-0.06
+VSCO,4.98,51.26,673.99,143.17,1,0.56,0.64,1/5,hold,17.53-66.889,15.55,23.0,81.0,73.28,Sell ALL,1.87 million,Consumer Cyclical,Apparel Retail,2.346,51.15,63.45,1.0,0.81,0.11
+DBX,4.99,24.18,195.71,53.49,5,0.1,0.16,5/5,hold,21.695-32.4,6.7,25.0,30.0,27.75,Buy time,3.49 million,Technology,Software - Infrastructure,0.616,23.45,28.41,0.97,0.85,0.22
+OM,5.0,4.16,559.79,122.29,2,-0.19,-0.3,2/5,buy,3.0-21.98,13.22,81.0,12.0,10.5,Sell ALL,117.76 thousand,Healthcare,Medical Devices,1.963,4.29,5.26,1.03,0.79,0.13
+RDDT,5.0,145.4,777.35,129.41,1,0.59,0.87,1/5,buy,94.89-282.95,14.63,49.0,300.0,261.67,Sell ALL,4.41 million,Communication Services,Internet Content & Information,2.407,146.35,180.47,1.01,0.81,0.05
+PL,5.01,35.04,511.86,188.94,1,0.09,2.0,1/5,buy,3.29-41.71,20.42,16.0,40.0,37.61,Sell,12.65 million,Industrials,Aerospace & Defense,1.833,36.06,44.08,1.03,0.79,-0.08
+RGTI,5.03,16.19,597.84,185.85,0,0.01,0.34,0/5,buy,8.935-58.15,20.35,72.0,43.0,36.79,Sell ALL,29.99 million,Technology,Computer Hardware,1.828,15.86,19.71,0.98,0.82,0.3
+SLM,5.03,23.13,364.57,88.92,2,0.5,0.46,2/5,buy,17.77-34.97,10.77,34.0,35.0,31.95,mere Buy (some sold),4.58 million,Financial Services,Credit Services,1.055,22.61,28.5,0.98,0.81,0.99
+CDRO,5.04,9.15,168.03,69.53,5,1,1,5/5,buy,5.18-9.68,8.74,5.0,14.0,12.5,Buy time,20.52 thousand,Consumer Cyclical,Gambling,0.408,8.81,10.48,0.96,0.87,0.12
+FINV,5.06,4.93,168.48,82.77,5,0,0,5/5,buy,4.505-10.9,10.25,55.00000000000001,8.282802,7.99,- +Buy time -,1.23 million,Financial Services,Credit Services,0.349,4.82,5.77,0.98,0.85,-0.03
+FSTR,5.07,30.8,356.75,78.63,2,-0.66,-1.02,2/5,hold,17.16-32.63,9.45,6.0,33.0,32.75,mere Buy (some sold),129.11 thousand,Industrials,Railroads,1.015,30.57,36.56,0.99,0.84,1.19
+INLX,5.08,7.09,130.97,-20.82,3,0.05,0.57,3/5,,6.9-15.0,-3.12,53.0,0.1,0.1,Buy time,1.06 thousand,Technology,Software - Application,0.361,7.19,9.14,1.01,0.78,2.5
+ALTO,5.08,5.41,130.22,127.04,4,0.44,7.57,4/5,buy,0.8-5.58,15.08,3.0,8.0,7.38,Buy time,1.47 million,Basic Materials,Specialty Chemicals,0.059,5.11,6.06,0.94,0.89,0.03
+AZTA,5.09,23.83,574.18,133.02,2,-0.03,-0.26,2/5,hold,19.87-41.73,15.02,43.0,44.0,39.7,== less Sell ALL==,858.92 thousand,Healthcare,Medical Instruments & Supplies,1.465,23.85,29.1,1.0,0.82,0.03
+BCSF,5.09,13.61,241.7,80.87,5,-0.01,-0.02,5/5,hold,11.82-16.0,10.07,15.0,15.0,14.33,Buy time,361.76 thousand,Financial Services,Asset Management,0.62,13.01,15.65,0.96,0.87,-0.14
+LITE,5.13,871.97,382.04,256.61,0,0.33,0.26,0/5,buy,60.38-960.0,24.91,9.0,1225.0,1028.52,Sell ALL,6.38 million,Technology,Communication Equipment,1.391,880.12,1062.2,1.01,0.82,0.08
+MOD,5.14,252.0,496.94,178.73,1,0.25,0.25,1/5,buy,84.2-260.01,19.77,3.0,310.0,287.79,Buy time,953.61 thousand,Consumer Cyclical,Auto Parts,1.679,246.52,297.45,0.98,0.85,0.2
+IMPP,5.16,4.85,339.39,76.69,4,0.19,1.67,4/5,strongBuy,2.45-6.57,9.28,26.0,8.0,8.0,Buy time,672.91 thousand,Energy,Oil & Gas Midstream,1.114,4.6,5.66,0.95,0.86,0.29
+GL,5.18,153.1,169.12,90.86,5,-0.1,-0.03,5/5,buy,111.13-155.08,11.08,1.0,199.0,185.95,- +Buy time -,568.68 thousand,Financial Services,Insurance - Life,0.467,149.11,179.53,0.97,0.85,-0.02
+OSPN,5.18,11.38,455.05,86.17,4,0.11,0.37,4/5,buy,10.07-18.13,10.63,37.0,22.0,19.12,- +Buy time -,427.93 thousand,Technology,Software - Infrastructure,1.506,11.1,13.57,0.98,0.84,-0.08
+SSYS,5.19,8.63,504.29,118.74,3,0.03,7.22,3/5,buy,7.34-12.81,14.02,33.0,13.5,12.92,Buy time,592.48 thousand,Technology,Computer Hardware,1.81,8.43,10.44,0.98,0.83,-0.07
+XPO,5.19,217.74,513.57,124.16,2,0.18,0.21,2/5,buy,103.71-231.46,14.39,6.0,275.0,241.39,Sell ALL,1.16 million,Industrials,Trucking,1.717,215.92,266.92,0.99,0.82,0.37
+LZB,5.21,35.47,420.88,79.51,4,0.19,0.34,4/5,buy,29.03-44.49,9.9,20.0,46.0,45.25,Buy time,363.19 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,1.294,34.48,41.72,0.97,0.85,0.11
+PSTG,5.25,70.31,514.92,164.9,2,0.05,0.06,2/5,buy,43.51-100.5899,18.94,30.0,105.0,97.45,Sell,2.46 million,Technology,Computer Hardware,1.343,66.42,80.4,0.94,0.87,-0.09
+PRAX,5.25,321.81,856.74,126.16,1,-0.24,-0.08,1/5,buy,34.893-356.0,14.1,10.0,1245.0,939.62,Sell ALL,459.98 thousand,Healthcare,Biotechnology,2.968,329.67,407.44,1.02,0.79,0.17
+CBRL,5.25,32.0,498.0,119.86,3,0.54,1.82,3/5,hold,24.85-71.93,13.98,56.00000000000001,35.0,33.19,Buy time,1.10 million,Consumer Cyclical,Restaurants,1.241,29.54,35.94,0.92,0.89,-0.0
+PGNY,5.27,18.33,319.53,59.88,5,0.14,0.35,5/5,buy,16.1-28.75,7.42,36.0,31.0,29.23,- +Buy time -,1.39 million,Healthcare,Healthcare Plans,0.993,17.64,21.39,0.96,0.86,0.14
+BKR,5.28,69.35,301.15,106.37,4,0.2,0.34,4/5,buy,35.1-70.41,12.5,2.0,85.0,77.36,Buy,9.61 million,Energy,Oil & Gas Equipment & Services,0.898,66.24,79.99,0.96,0.87,0.12
+RVPH,5.28,0.84,247.91,209.78,2,-3.38,-3.48,2/5,buy,0.59-23.2,21.45,96.0,140.0,99.1,Sell ALL,487.75 thousand,Healthcare,Biotechnology,0.642,0.88,1.04,1.05,0.81,0.03
+VIR,5.29,10.31,495.33,157.78,2,-0.17,-0.04,2/5,buy,4.155-11.66,17.94,12.0,30.0,25.39,Sell ALL,1.81 million,Healthcare,Biotechnology,1.656,9.9,12.37,0.96,0.83,0.09
+AAP,5.3,58.59,336.44,109.47,4,0.63,1.33,4/5,hold,30.84-70.0,13.07,16.0,70.0,63.58,Buy time,1.29 million,Consumer Cyclical,Auto Parts,1.071,56.59,67.99,0.97,0.86,0.01
+NFE,5.3,0.68,448.4,135.47,3,0.32,0.26,3/5,hold,0.555-7.365,15.06,91.0,8.5,6.5,- +Buy time -,10.75 million,Energy,Oil & Gas Midstream,1.207,0.7,0.84,1.03,0.81,-0.02
+UNFI,5.32,49.67,277.9,82.21,5,0.27,0.63,5/5,hold,20.78-49.84,10.16,0.0,56.0,51.12,Buy time,549.80 thousand,Consumer Defensive,Food Distribution,0.833,47.92,57.66,0.96,0.86,-0.01
+NVDA,5.32,200.79,776.28,154.42,1,0.12,0.09,1/5,buy,110.82-216.83,17.74,7.000000000000001,380.0,324.58,Sell,172.20 million,Technology,Semiconductors,2.335,194.74,242.84,0.97,0.83,0.05
+PAYS,5.32,6.5,279.81,95.14,5,-0.01,-0.19,5/5,buy,2.28-8.88,11.38,27.0,12.0,10.9,Buy time,845.68 thousand,Technology,Software - Infrastructure,0.643,6.17,7.62,0.95,0.85,-0.18
+GHM,5.32,94.31,326.88,183.98,2,0.11,0.64,2/5,buy,30.51-98.4,19.99,4.0,101.0,100.62,Sell ALL,152.40 thousand,Industrials,Specialty Industrial Machinery,0.943,92.41,111.2,0.98,0.85,0.19
+GCMG,5.33,10.82,279.18,85.76,5,0.09,0.38,5/5,buy,9.3-13.22,10.54,18.0,17.0,15.75,Buy time,487.70 thousand,Financial Services,Asset Management,0.883,10.41,12.42,0.96,0.87,-0.05
+AKA,5.33,11.05,555.56,113.32,1,-0.52,-0.6,1/5,hold,7.0-16.38,12.67,33.0,30.0,24.88,== less Sell ALL==,3.38 thousand,Consumer Cyclical,Apparel Retail,1.573,10.85,12.87,0.98,0.86,1.1
+DXPE,5.39,168.35,415.18,169.68,2,-0.13,-0.07,2/5,buy,75.58-174.0,19.37,3.0,154.0,146.75,Sell ALL,210.39 thousand,Industrials,Industrial Distribution,0.965,160.53,195.05,0.95,0.86,0.21
+OPBK,5.42,14.4,175.78,56.39,5,0.05,0.15,5/5,buy,11.52-15.27,7.08,6.0,17.0,16.75,- +Buy time -,57.11 thousand,Financial Services,Banks - Regional,0.606,14.28,17.7,0.99,0.81,0.66
+SYM,5.43,59.14,685.93,173.7,1,0.81,10.0,1/5,hold,21.33-87.88,19.83,33.0,83.0,73.91,Sell,1.19 million,Industrials,Specialty Industrial Machinery,2.111,57.32,70.47,0.97,0.84,0.11
+ONDS,5.48,9.78,873.13,149.81,1,0.03,0.82,1/5,buy,0.731-15.28,16.71,36.0,25.0,22.56,Sell ALL,53.27 million,Technology,Communication Equipment,2.593,9.88,12.38,1.01,0.79,0.06
+LAKE,5.48,9.74,504.22,177.36,2,-1.8,-8.1,2/5,buy,7.15-20.5,19.92,52.0,19.0,17.25,Sell,66.86 thousand,Consumer Cyclical,Apparel Manufacturing,1.336,9.39,11.58,0.96,0.84,0.01
+JXN,5.49,117.33,445.26,100.48,4,1.46,0.26,4/5,hold,77.58-123.61,12.22,5.0,136.0,129.0,Buy time,574.03 thousand,Financial Services,Insurance - Life,1.459,109.59,132.53,0.93,0.89,0.07
+AROC,5.5,38.71,322.11,87.89,5,0.28,0.69,5/5,buy,21.17-38.705,10.89,-0.0,42.0,40.83,Buy time,1.60 million,Energy,Oil & Gas Equipment & Services,0.904,37.17,44.64,0.96,0.87,-0.01
+KOD,5.52,44.83,694.63,237.84,0,-0.11,-0.1,0/5,buy,2.81-47.84,24.92,6.0,80.0,68.17,== less Sell ALL==,1.04 million,Healthcare,Biotechnology,2.396,43.58,56.98,0.97,0.79,-0.06
+FOA,5.54,19.49,629.84,163.54,2,0.66,0.98,2/5,buy,15.77-29.58,17.65,34.0,22.5,22.5,mere Buy (some sold),79.05 thousand,Financial Services,Credit Services,1.707,19.83,24.27,1.02,0.8,-0.01
+DY,5.55,410.56,418.54,190.72,2,0.67,0.27,2/5,buy,169.18-445.53,20.91,8.0,510.0,488.95,Sell ALL,410.58 thousand,Industrials,Engineering & Construction,1.382,395.17,478.48,0.96,0.86,0.12
+KLTR,5.61,1.38,393.55,117.88,4,0.05,3.0,4/5,strongBuy,1.055-2.325,12.64,40.0,4.0,3.75,Buy time,317.71 thousand,Technology,Software - Application,1.082,1.26,1.54,0.91,0.9,0.13
+TTI,5.63,9.77,369.71,122.55,4,0.0,0.0,4/5,buy,2.6-12.54,14.08,22.0,14.0,13.25,Buy,2.15 million,Industrials,Conglomerates,1.225,9.2,11.22,0.94,0.87,0.11
+TSSI,5.65,14.64,797.8,173.15,1,0,0,1/5,strongBuy,6.67-31.94,19.26,54.0,20.0,19.0,Sell,1.54 million,Technology,Information Technology Services,2.043,14.71,18.1,1.0,0.81,0.1
+GO,5.65,7.91,244.04,118.57,5,0.0,0.03,5/5,hold,5.655-19.41,14.23,59.0,10.5,9.06,Buy time,3.28 million,Consumer Defensive,Grocery Stores,0.627,7.46,9.05,0.94,0.87,-0.07
+PAY,5.66,27.66,427.84,87.85,4,0.06,0.38,4/5,buy,22.02-40.433,10.85,32.0,36.0,34.14,Buy,445.88 thousand,Technology,Software - Infrastructure,1.436,26.43,32.4,0.96,0.85,0.44
+QTWO,5.68,50.2,417.47,57.32,4,0.01,0.02,4/5,buy,44.65-96.68,7.21,48.0,86.0,80.54,Buy time,1.01 million,Technology,Software - Application,1.422,49.27,63.38,0.98,0.79,0.88
+BROS,5.78,57.48,780.97,149.85,2,0.09,0.85,2/5,buy,44.58-77.88,16.51,26.0,95.0,85.48,- +Buy time -,3.98 million,Consumer Cyclical,Restaurants,2.506,55.01,69.02,0.96,0.83,0.05
+SNEX,5.8,104.76,307.54,238.39,2,0.42,0.33,2/5,buy,53.52667-107.92,25.59,3.0,107.0,107.0,Sell ALL,719.47 thousand,Financial Services,Capital Markets,0.425,98.19,118.3,0.94,0.89,0.02
+HRMY,5.82,31.08,313.72,111.84,5,-0.28,-0.21,5/5,buy,25.52-40.87,13.45,24.0,72.0,57.5,- +Buy time -,712.64 thousand,Healthcare,Biotechnology,0.891,29.93,36.33,0.96,0.86,0.03
+CDNA,5.83,20.53,358.22,182.53,2,0.1,1.14,2/5,hold,10.96-23.24,19.97,12.0,28.0,26.7,Sell ALL,936.11 thousand,Healthcare,Diagnostics & Research,1,19.42,24.76,0.95,0.83,0.64
+FSS,5.84,126.83,422.25,149.83,2,0.36,0.39,2/5,buy,80.79-132.89,17.4,5.0,150.0,144.0,- Buy time -,600.73 thousand,Industrials,Pollution & Treatment Controls,1,117.6,145.74,0.93,0.87,0.89
+KGS,5.89,67.24,339.45,120.64,5,-0.54,-1.04,5/5,buy,30.061-67.7,14.54,1.0,70.0,65.88,Buy time,1.05 million,Energy,Oil & Gas Equipment & Services,0.876,63.6,77.16,0.95,0.87,-0.08
+PVH,5.89,91.41,463.94,281.23,1,0.81,0.27,1/5,hold,59.6-100.15,27.19,9.0,135.0,116.29,Sell,1.35 million,Consumer Cyclical,Apparel Manufacturing,1.609,87.51,109.36,0.96,0.84,-0.18
+DUOT,5.9,8.24,516.09,214.12,2,-0.08,-13.5,2/5,buy,5.775-12.17,23.6,32.0,17.0,17.0,Sell ALL,565.52 thousand,Technology,Software - Application,0.847,7.82,9.43,0.95,0.87,-0.06
+IPX,5.92,32.76,607.6,271.27,0,1,1,0/5,buy,19.43-61.45,26.55,47.0,71.0,62.6,- Buy time -,218.20 thousand,Basic Materials,Other Industrial Metals & Mining,1.284,31.03,38.93,0.95,0.84,0.17
+AENT,5.93,7.87,289.93,149.03,4,-0.13,-0.42,4/5,buy,2.219-8.8,17.17,11.0,10.0,9.5,Buy time,25.84 thousand,Communication Services,Entertainment,0.398,7.36,9.15,0.94,0.86,0.25
+BBCP,5.95,7.98,301.55,128.85,5,0.04,0.46,5/5,hold,5.555-8.0,15.16,0.0,8.0,8.0,Buy time,179.10 thousand,Industrials,Engineering & Construction,0.949,7.67,9.86,0.96,0.81,-0.03
+GCO,6.0,35.01,609.99,181.39,2,0.09,-0.04,2/5,buy,19.18-38.95,20.58,10.0,43.0,39.5,== less Sell ALL==,232.52 thousand,Consumer Cyclical,Apparel Retail,1.777,33.29,42.66,0.95,0.82,0.23
+BLIN,6.0,1.0,292.59,179.9,3,0.04,2.64,3/5,,0.69-2.22,20.0,55.00000000000001,4.62,4.62,mere Buy (some sold),40.26 thousand,Technology,Software - Infrastructure,0.874,0.94,1.18,0.94,0.85,0.46
+CYRX,6.01,10.0,547.18,198.81,2,0.1,0.49,2/5,buy,5.31-11.45,21.1,13.0,16.0,14.81,Sell ALL,435.58 thousand,Industrials,Integrated Freight & Logistics,1.686,9.78,11.97,0.98,0.84,0.2
+ACVA,6.03,5.16,571.36,154.83,3,0.02,0.58,3/5,hold,4.065-17.54,18.02,71.0,16.0,12.49,Buy time,2.82 million,Consumer Cyclical,Auto & Truck Dealerships,1.687,4.83,5.99,0.94,0.86,0.16
+RGP,6.06,4.08,230.28,77.46,5,0.04,0.87,5/5,buy,3.06-6.3,9.07,35.0,7.0,6.25,- +Buy time -,487.88 thousand,Industrials,Consulting Services,0.432,3.92,5.0,0.96,0.82,0.91
+FLXS,6.06,56.16,313.92,182.54,3,0.78,1.01,3/5,buy,29.38-59.95,20.25,6.0,69.0,66.0,Buy time,45.72 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.534,50.75,61.75,0.9,0.91,0.44
+EVEX,6.08,2.81,304.95,129.79,5,0.02,0.08,5/5,buy,2.34-7.699,15.3,64.0,9.0,7.91,Buy time,1.22 million,Industrials,Aerospace & Defense,0.974,2.74,3.28,0.98,0.86,0.08
+SKYT,6.09,31.14,1102.07,140.37,1,0.4,1.6,1/5,hold,6.99-36.268,15.93,14.000000000000002,35.0,35.0,Sell ALL,1.45 million,Technology,Semiconductors,3.474,30.7,38.55,0.99,0.81,0.27
+ZETA,6.11,17.74,459.07,139.47,4,0.23,1.05,4/5,buy,12.1-24.9,16.52,28.999999999999996,44.0,36.19,Buy time,8.23 million,Technology,Software - Infrastructure,1.285,16.56,20.12,0.93,0.88,0.16
+TPC,6.2,89.0,653.08,156.8,3,-0.12,-0.13,3/5,buy,21.4-89.51,18.17,1.0,120.0,114.75,Buy time,416.60 thousand,Industrials,Engineering & Construction,2.114,84.67,103.43,0.95,0.86,0.12
+EXFY,6.21,1.02,673.95,170.04,3,-0.07,-1.71,3/5,hold,0.691-3.06,19.22,67.0,1.5,1.44,Buy time,644.14 thousand,Technology,Software - Application,1.7,0.9,1.13,0.88,0.9,-0.07
+LC,6.21,16.78,702.56,154.07,2,0.09,0.28,2/5,strongBuy,9.54-21.67,17.7,23.0,29.0,26.02,Sell ALL,2.64 million,Financial Services,Banks - Regional,1.954,16.04,20.22,0.96,0.83,0.58
+IKT,6.23,1.9,336.39,144.04,5,0.03,0.24,5/5,buy,1.33-2.365,16.84,20.0,8.0,7.0,- +Buy time -,927.93 thousand,Healthcare,Biotechnology,0.864,1.81,2.18,0.95,0.87,-0.02
+APG,6.25,49.01,569.96,177.0,3,0.05,0.12,3/5,buy,26.046667-49.98,20.2,2.0,54.0,53.0,Buy time,2.52 million,Industrials,Engineering & Construction,1.686,45.94,56.73,0.94,0.86,0.1
+KN,6.25,30.19,512.23,162.35,2,0.04,0.16,2/5,buy,15.82-31.95,18.58,6.0,39.0,37.62,mere Buy (some sold),926.58 thousand,Technology,Electronic Components,1.488,29.07,36.44,0.96,0.83,0.95
+MBLY,6.26,8.77,418.93,238.46,2,0.03,0.43,2/5,hold,6.47-20.18,25.24,56.99999999999999,27.0,20.21,mere Buy (some sold),7.14 million,Consumer Cyclical,Auto Parts,0.74,8.12,9.97,0.93,0.88,0.24
+JBL,6.35,335.97,530.96,246.15,2,0.3,0.12,2/5,buy,146.88-346.22,26.34,3.0,355.0,333.0,Sell,1.02 million,Technology,Electronic Components,1.159,311.93,378.61,0.93,0.89,-0.03
+LQDT,6.44,35.74,374.37,140.9,5,0.17,0.55,5/5,strongBuy,21.67-36.05,16.68,1.0,44.0,43.5,Buy time,140.88 thousand,Consumer Cyclical,Internet Retail,1.023,33.38,40.67,0.93,0.88,0.14
+AVXL,6.45,3.36,434.7,135.76,5,0.09,0.72,5/5,buy,2.61-13.99,16.07,76.0,24.0,23.0,Buy time,1.11 million,Healthcare,Biotechnology,1.178,3.21,4.01,0.96,0.84,0.08
+GEV,6.48,1085.43,574.79,234.54,2,25.61,10.88,2/5,buy,378.47-1181.95,24.7,8.0,1424.0,1315.28,== less Sell ALL==,2.94 million,Industrials,Specialty Industrial Machinery,1.196,1024.59,1253.12,0.94,0.87,0.16
+SOUN,6.49,7.79,967.04,207.42,1,0.0,0.03,1/5,buy,5.83-22.17,22.59,65.0,20.0,17.31,Sell,22.13 million,Technology,Software - Application,2.966,7.29,9.43,0.94,0.83,0.13
+EFXT,6.51,26.44,659.75,197.67,3,-0.1,-2.32,3/5,buy,6.46-26.6,22.27,1.0,26.0,25.88,- +Buy time -,515.95 thousand,Energy,Oil & Gas Equipment & Services,2.012,23.67,29.11,0.9,0.91,-0.1
+SVCO,6.52,9.82,411.06,267.34,2,0.06,-0.17,2/5,buy,3.07-10.575,27.7,7.000000000000001,12.0,10.58,Sell,343.95 thousand,Technology,Software - Application,1,8.55,10.51,0.87,0.93,0.17
+UI,6.54,987.91,533.13,241.64,2,1.34,0.44,2/5,strongBuy,333.33-1099.99,25.4,10.0,980.0,866.75,Sell ALL,86.48 thousand,Technology,Communication Equipment,1.322,953.35,1162.72,0.97,0.85,0.23
+TKNO,6.58,3.35,236.95,172.52,5,0.01,0.17,5/5,buy,1.91-7.48,20.0,55.00000000000001,12.0,10.5,- +Buy time -,96.27 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.33,3.11,3.8,0.93,0.88,0.19
+VUZI,6.58,2.66,567.67,202.72,2,-0.02,-0.23,2/5,buy,1.71-4.29,22.33,38.0,6.0,6.0,- Buy time -,765.69 thousand,Technology,Consumer Electronics,1.372,2.5,3.11,0.94,0.86,0.65
+NN,6.58,18.55,417.16,151.82,5,-0.35,-2.7,5/5,buy,10.84-24.188,17.68,23.0,29.0,28.0,Buy time,2.34 million,Technology,Software - Infrastructure,0.983,17.36,20.81,0.94,0.89,0.05
+ANTX,6.6,4.53,32.97,269.89,4,-0.14,-0.62,4/5,hold,1.0-6.91,23.7,34.0,1.0,1.0,- +Buy time -,300.50 thousand,Healthcare,Biotechnology,1,3.89,4.85,0.86,0.93,0.15
+CAKE,6.67,63.48,358.08,119.49,5,0.09,0.15,5/5,hold,43.07-69.7,14.35,9.0,76.0,70.08,Buy time,1.31 million,Consumer Cyclical,Restaurants,1.007,60.82,75.56,0.96,0.84,0.68
+STT,6.68,152.71,476.43,172.24,4,0.33,0.12,4/5,buy,87.22-156.18,19.72,2.0,175.0,166.23,Buy time,1.83 million,Financial Services,Asset Management,1.384,142.01,173.55,0.93,0.88,0.28
+ALNT,6.74,75.96,507.91,192.55,4,0.2,0.44,4/5,buy,21.07-77.28,21.64,2.0,79.0,74.05,Buy time,149.70 thousand,Technology,Electronic Components,1.532,71.29,86.46,0.94,0.88,0.02
+USEG,6.81,1.06,371.43,136.63,4,-0.01,0.04,4/5,strongBuy,0.66-2.75,10.38,61.0,3.5,3.12,Buy time,4.17 million,Energy,Oil & Gas E&P,0.647,0.92,1.13,0.87,0.94,1.26
+BFRI,6.81,1.1,260.89,294.35,2,0.39,3.97,2/5,buy,0.536-1.19,29.18,8.0,9.0,7.5,Buy time,95.97 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,0.644,1.04,1.26,0.95,0.87,0.5
+PRIM,6.83,176.55,439.23,221.51,4,0.64,0.5,4/5,buy,62.18-177.1,23.92,0.0,205.0,190.21,Buy time,680.52 thousand,Industrials,Engineering & Construction,1.39,165.83,204.38,0.94,0.86,-0.08
+FIP,6.85,6.07,813.37,205.87,1,-1.42,-2.82,1/5,buy,3.9-7.935,22.43,23.0,13.0,12.33,- Buy time -,1.15 million,Industrials,Conglomerates,2.025,5.74,7.4,0.95,0.82,0.86
+PUMP,6.87,18.07,254.36,179.81,5,0.26,1.95,5/5,hold,4.51-18.5,18.93,2.0,20.0,17.59,Buy time,2.87 million,Energy,Oil & Gas Equipment & Services,0.631,15.92,19.66,0.88,0.92,0.4
+BBAI,6.89,3.78,990.57,167.66,2,0.13,1.97,2/5,hold,2.96-9.39,19.47,60.0,6.0,5.67,Buy time,33.37 million,Technology,Information Technology Services,3.236,3.67,4.9,0.97,0.77,0.43
+LPTH,6.91,12.26,720.19,276.91,1,0.06,0.64,1/5,buy,2.21-16.53,24.06,26.0,17.0,16.05,mere Buy (some sold),3.10 million,Technology,Electronic Components,1.074,13.36,16.61,1.09,0.74,0.4
+ESOA,6.93,16.69,543.13,183.89,4,0.05,0.46,4/5,buy,7.83-17.13,21.15,3.0,21.0,21.0,Buy time,104.39 thousand,Industrials,Engineering & Construction,1.363,15.23,18.74,0.91,0.89,0.23
+NOTV,6.94,0.3,1208.87,154.18,2,-0.32,-1.87,2/5,buy,0.22-3.32,17.0,91.0,5.0,4.12,Buy time,424.18 thousand,Healthcare,Diagnostics & Research,4.082,0.28,0.35,0.93,0.86,0.19
+OPFI,6.95,9.22,591.43,147.82,3,0.16,0.5,3/5,strongBuy,7.36-15.03,17.46,39.0,16.0,14.67,Buy time,529.96 thousand,Financial Services,Credit Services,1.801,8.61,11.35,0.93,0.81,1.12
+MSTR,7.1,162.38,1081.18,241.17,1,-23.19,-1.17,1/5,buy,104.17-457.22,25.21,64.0,705.0,538.75,Sell ALL,16.76 million,Technology,Software - Application,3.56,149.85,195.82,0.92,0.83,0.09
+SYNA,7.13,90.43,689.04,270.48,2,0.09,0.08,2/5,buy,55.57-97.0,28.04,7.000000000000001,125.0,113.23,mere Buy (some sold),989.57 thousand,Technology,Semiconductors,1.71,81.89,104.14,0.91,0.87,0.11
+MMYT,7.14,47.19,363.85,204.88,5,0.05,0.11,5/5,buy,32.67-113.85,22.93,59.0,117.0,102.55,Buy time,1.73 million,Consumer Cyclical,Travel Services,0.83,43.66,53.34,0.93,0.88,0.06
+NPCE,7.15,16.85,682.87,214.64,3,0.15,0.92,3/5,buy,7.563-18.975,23.8,11.0,22.0,21.0,Buy time,185.70 thousand,Healthcare,Medical Devices,1.878,15.57,19.05,0.92,0.88,0.28
+MVST,7.19,1.89,1191.09,229.44,1,-0.14,-6.7,1/5,buy,1.37-7.12,25.25,74.0,6.0,6.0,Sell,2.71 million,Consumer Cyclical,Auto Parts,3.598,1.74,2.27,0.92,0.83,0.04
+BTDR,7.2,11.09,820.42,297.26,1,-0.21,-1.84,1/5,buy,6.916-27.8,28.91,60.0,30.0,25.27,Sell ALL,7.05 million,Technology,Software - Application,2.284,11.18,13.95,1.01,0.79,0.13
+HIMS,7.27,25.9,778.5,308.55,1,0.0,0.52,1/5,hold,13.74-70.43,27.49,63.0,35.0,30.62,Sell,24.33 million,Healthcare,Drug Manufacturers - Specialty & Generic,2.315,24.08,31.94,0.93,0.81,0.22
+XMTR,7.27,48.79,462.7,207.1,5,0.05,0.46,5/5,buy,25.815-73.867,23.33,34.0,75.0,68.67,Buy time,663.57 thousand,Industrials,Industrial Distribution,0.881,45.14,55.23,0.93,0.88,-0.06
+CVLT,7.34,97.78,336.24,204.8,5,0.38,0.37,5/5,buy,71.75-200.68,23.11,51.0,175.0,154.1,Buy time,1.09 million,Technology,Software - Application,0.623,89.37,109.29,0.91,0.89,0.32
+SMTC,7.37,102.3,866.6,316.61,1,0.04,0.1,1/5,buy,32.3-113.05,30.98,10.0,122.0,113.77,== less Sell ALL==,2.94 million,Technology,Semiconductors,2.058,95.64,120.44,0.93,0.85,-0.05
+CRNC,7.43,8.7,904.33,314.11,1,0.01,0.09,1/5,hold,5.85-13.738,31.49,37.0,12.0,11.12,Sell,548.56 thousand,Technology,Software - Application,2.728,7.92,10.38,0.91,0.84,-0.07
+ANET,7.46,168.71,673.22,310.7,2,0.1,0.13,2/5,buy,82.8-179.8,31.17,6.0,220.0,199.88,Sell,7.38 million,Technology,Computer Hardware,1.475,155.44,192.82,0.92,0.87,-0.0
+IESC,7.51,618.14,617.3,271.04,3,0.57,0.14,3/5,buy,202.96-618.14,28.54,-0.0,458.0,458.0,Buy time,229.47 thousand,Industrials,Engineering & Construction,1.672,559.42,692.89,0.91,0.89,0.11
+TH,7.53,14.43,269.54,434.5,0,0.03,0.95,0/5,buy,5.97-16.12,35.9,10.0,18.0,17.0,Buy,1.02 million,Industrials,Specialty Business Services,1.118,13.71,17.31,0.95,0.83,0.7
+PTON,7.53,5.46,805.3,249.02,3,0.0,8.74,3/5,hold,3.65-9.2,26.79,41.0,20.0,13.94,Buy time,15.51 million,Consumer Cyclical,Leisure,2.377,5.08,6.44,0.93,0.85,-0.03
+NRXP,7.54,2.88,738.8,258.62,2,-0.23,-26.09,2/5,buy,1.62-3.84,27.56,25.0,49.0,43.62,Sell ALL,736.72 thousand,Healthcare,Biotechnology,1.83,2.62,3.36,0.91,0.86,0.54
+FVRR,7.66,11.56,445.07,125.97,4,0.13,0.18,4/5,hold,9.67-34.13,15.05,66.0,24.0,20.0,Buy time,1.45 million,Communication Services,Internet Content & Information,1.354,11.0,14.6,0.95,0.79,1.91
+CVNA,7.69,377.04,1229.64,212.79,1,2.75,2.37,1/5,buy,245.0-486.89,22.87,23.0,519.0,472.39,Sell ALL,3.63 million,Consumer Cyclical,Auto & Truck Dealerships,3.614,370.03,487.3,0.98,0.77,0.68
+PRM,7.7,30.61,809.99,293.8,2,0.15,0.26,2/5,strongBuy,10.02-31.92,30.49,4.0,35.0,33.75,Sell ALL,960.39 thousand,Basic Materials,Specialty Chemicals,1.904,27.31,35.05,0.89,0.87,0.11
+GKOS,7.75,135.43,381.38,201.92,5,0.02,-0.07,5/5,buy,73.16-145.25,22.46,7.000000000000001,170.0,155.08,Buy time,796.91 thousand,Healthcare,Medical Devices,0.783,123.13,154.45,0.91,0.88,0.68
+PLUG,7.76,3.08,659.53,301.43,2,0.06,0.51,2/5,hold,0.69-4.58,30.49,33.0,7.0,4.92,Sell ALL,92.25 million,Industrials,Electrical Equipment & Parts,1.792,2.98,3.86,0.97,0.8,0.44
+REAL,7.81,11.87,1081.64,309.42,1,0.04,0.91,1/5,buy,4.7-17.392,31.59,32.0,20.0,19.09,Sell ALL,3.08 million,Consumer Cyclical,Luxury Goods,2.811,10.87,14.37,0.92,0.83,-0.05
+QUBT,7.82,8.43,1181.49,236.54,1,0.12,2.41,1/5,buy,6.18-25.84,25.1,67.0,27.0,22.42,== less Sell ALL==,12.65 million,Technology,Computer Hardware,3.665,7.96,10.3,0.94,0.82,0.63
+LUNR,7.89,25.3,562.69,368.01,2,-0.01,-0.16,2/5,buy,7.78-31.15,35.38,19.0,35.0,29.44,Sell,15.04 million,Industrials,Aerospace & Defense,1.315,24.67,30.77,0.98,0.82,0.01
+GOOGL,7.9,368.35,454.2,235.36,5,0.79,0.34,5/5,buy,147.84-377.03,25.75,2.0,443.0,410.75,Buy time,34.18 million,Communication Services,Internet Content & Information,1.128,330.44,413.5,0.9,0.89,0.25
+KEQU,7.95,38.54,255.99,95.0,5,-0.68,-1.28,5/5,,30.78-60.89,11.6,37.0,0.1,0.1,Buy time,1.94 thousand,Consumer Cyclical,Furnishings, Fixtures & Appliances,0.673,35.88,44.27,0.93,0.87,2.5
+AXGN,7.96,42.49,449.93,239.67,5,-0.03,-0.3,5/5,buy,9.22-45.83,26.3,7.000000000000001,55.0,51.94,- +Buy time -,1.13 million,Healthcare,Medical Devices,0.978,36.71,44.87,0.86,0.95,0.26
+EOSE,7.99,6.49,997.94,356.33,0,-3.11,-20.75,0/5,hold,3.69-19.86,32.23,67.0,18.0,13.43,Sell,33.86 million,Industrials,Electrical Equipment & Parts,2.337,6.51,8.38,1.0,0.77,0.38
+FNKO,8.02,4.41,436.89,302.06,4,0.17,2.1,4/5,buy,2.22-6.04,30.53,27.0,5.0,4.75,Buy time,540.16 thousand,Consumer Cyclical,Leisure,0.572,3.93,4.76,0.89,0.93,0.15
+NEO,8.03,9.18,659.62,190.94,2,0.03,8.51,2/5,hold,4.72-13.74,21.57,33.0,17.0,15.41,- Buy time -,3.34 million,Healthcare,Diagnostics & Research,1.712,8.52,12.12,0.93,0.76,2.03
+HUMA,8.05,0.83,817.31,296.3,3,0.05,0.29,3/5,buy,0.547-2.93,30.86,72.0,25.0,15.05,Buy time,6.15 million,Healthcare,Biotechnology,2.105,0.73,0.93,0.88,0.89,-0.11
+PODC,8.05,3.01,259.91,375.09,1,0.01,0.61,1/5,buy,1.3-3.42,33.19,12.0,5.0,4.83,mere Buy (some sold),84.12 thousand,Communication Services,Internet Content & Information,0.487,2.71,3.44,0.9,0.88,1.37
+RMBS,8.05,112.36,1088.56,365.8,0,-0.01,-0.01,0/5,buy,48.8-161.8,29.04,31.0,172.0,155.62,Sell ALL,3.65 million,Technology,Semiconductors,1.629,119.28,148.49,1.06,0.76,0.23
+RKLB,8.08,82.04,829.36,283.61,3,0.08,0.79,3/5,buy,20.232-99.58,30.06,18.0,105.0,96.28,Buy time,21.60 million,Industrials,Aerospace & Defense,2.205,74.96,94.32,0.91,0.87,0.04
+QBTS,8.18,18.99,680.46,306.51,3,-0.01,-0.21,3/5,buy,6.82-46.75,31.65,59.0,45.0,40.39,Buy time,26.82 million,Technology,Computer Hardware,1.773,16.89,21.37,0.89,0.89,0.21
+DMRC,8.18,6.95,648.19,381.68,2,0.03,3.67,2/5,strongBuy,4.07-14.64,35.35,53.0,10.0,9.0,Sell ALL,167.58 thousand,Technology,Software - Application,1.634,6.41,8.21,0.92,0.85,-0.03
+SEI,8.27,73.43,534.32,261.07,5,0.28,1.1,5/5,buy,21.22-81.24,28.04,10.0,110.8,96.72,Buy time,3.16 million,Energy,Oil & Gas Equipment & Services,1.061,69.24,84.02,0.94,0.87,0.12
+CLS,8.33,388.55,695.36,345.98,2,0.21,0.11,2/5,buy,89.02-423.25,33.79,8.0,500.0,463.95,Sell ALL,2.68 million,Technology,Electronic Components,1.354,365.74,460.91,0.94,0.84,0.4
+BKSY,8.39,33.94,650.18,397.97,2,0.15,0.58,2/5,buy,8.29-42.75,35.44,21.0,42.0,34.81,- +Buy time -,1.88 million,Industrials,Specialty Business Services,2.246,33.83,44.14,1.0,0.77,0.02
+ATLC,8.42,77.65,822.64,339.03,2,-0.21,-0.12,2/5,buy,45.74-80.29,33.91,3.0,105.0,98.7,Sell ALL,67.89 thousand,Financial Services,Credit Services,1.884,68.88,88.03,0.89,0.88,0.27
+AFRM,8.45,62.37,1325.14,298.7,1,-0.13,-0.15,1/5,buy,42.095-100.0,31.01,38.0,100.0,89.54,== less Sell ALL==,4.47 million,Financial Services,Credit Services,3.633,55.57,75.68,0.89,0.82,0.16
+RSI,8.48,27.62,517.38,228.19,4,-0.01,-0.07,4/5,buy,11.12-29.0,25.05,5.0,32.0,29.82,Buy time,2.36 million,Consumer Cyclical,Gambling,1.457,23.75,30.96,0.86,0.89,1.3
+STIM,8.49,1.8,454.81,276.82,5,0.0,0.01,5/5,strongBuy,0.8-4.85,29.44,63.0,7.0,5.67,Buy time,1.85 million,Healthcare,Medical Devices,0.871,1.57,1.93,0.87,0.93,0.33
+PRCH,8.5,9.44,970.93,252.41,2,0.11,1.2,2/5,buy,5.83-19.436,26.87,51.0,22.0,19.43,Buy time,2.70 million,Financial Services,Insurance - Property & Casualty,3.074,7.99,11.69,0.85,0.81,1.05
+GRRR,8.62,14.28,313.68,319.4,5,0.03,0.09,5/5,buy,9.04-27.9,33.26,49.0,40.0,38.33,Buy time,672.33 thousand,Technology,Software - Infrastructure,1,12.08,15.27,0.85,0.94,0.26
+ADTN,8.7,17.14,516.89,275.31,5,0.07,0.76,5/5,buy,7.11-17.99,28.88,5.0,18.0,17.08,Buy time,3.09 million,Technology,Communication Equipment,1.234,15.6,18.94,0.91,0.9,0.43
+SLQT,8.7,0.92,619.07,325.94,4,0.09,0.28,4/5,buy,0.563-3.26,33.01,72.0,5.0,4.03,- +Buy time -,1.10 million,Financial Services,Insurance Brokers,1.351,0.8,1.01,0.87,0.91,0.11
+CLOV,8.9,2.62,845.73,335.92,3,-0.02,-0.75,3/5,hold,1.58-3.92,34.35,33.0,3.2,3.01,Buy time,4.07 million,Healthcare,Healthcare Plans,2.251,2.18,2.83,0.83,0.93,0.19
+OSCR,9.24,17.68,709.75,407.13,3,-0.27,-0.26,3/5,hold,10.69-23.8,38.63,26.0,23.0,19.55,Buy time,5.89 million,Healthcare,Healthcare Plans,1.932,15.38,19.88,0.87,0.89,0.03
+DAVE,9.42,261.61,1328.36,364.38,1,1.84,0.79,1/5,buy,93.733-287.69,35.22,9.0,347.0,334.06,Sell ALL,572.49 thousand,Technology,Software - Application,3.822,226.71,323.03,0.87,0.81,0.37
+TZOO,9.43,9.59,469.6,458.65,2,-0.03,-0.43,2/5,buy,4.72-16.18,40.98,41.0,30.0,25.5,mere Buy (some sold),295.88 thousand,Communication Services,Internet Content & Information,0.789,7.95,10.18,0.83,0.94,0.72
+ALGM,9.45,45.83,711.22,409.25,3,0.02,0.09,3/5,buy,18.17-46.18,38.82,1.0,52.0,49.38,Buy time,2.05 million,Technology,Semiconductors,1.695,39.53,50.19,0.86,0.91,0.21
+SKIL,9.46,6.76,773.57,388.15,3,0.38,0.3,3/5,hold,3.43-24.01,37.23,72.0,0.1,0.1,Buy time,129.27 thousand,Consumer Defensive,Education & Training Services,1.738,5.66,7.44,0.84,0.91,0.33
+PI,9.47,140.68,765.53,304.99,4,0.07,0.16,4/5,buy,87.36-247.064,31.71,43.0,180.0,171.94,Buy time,556.23 thousand,Technology,Semiconductors,1.663,121.49,163.4,0.86,0.86,0.79
+IONQ,9.48,42.56,1075.49,390.13,1,2.4,5.08,1/5,buy,25.89-84.64,37.52,50.0,100.0,82.28,Sell ALL,30.57 million,Technology,Computer Hardware,2.803,36.17,50.14,0.85,0.85,0.69
+EHTH,9.59,2.0,510.67,357.75,5,0.03,0.06,5/5,hold,1.2-7.09,35.0,72.0,3.0,2.62,Buy time,544.04 thousand,Financial Services,Insurance Brokers,1.148,1.62,2.03,0.81,0.99,0.36
+SPIR,9.82,16.83,824.58,372.68,0,0.04,0.0,0/5,buy,6.6-23.59,30.15,28.999999999999996,22.0,19.8,Buy,3.52 million,Industrials,Specialty Business Services,2.236,18.11,25.29,1.08,0.67,2.5
+CHGG,9.88,1.11,773.12,413.26,3,0.09,1.5,3/5,hold,0.45-1.9,39.64,42.0,4.0,3.4,Buy time,1.75 million,Consumer Defensive,Education & Training Services,1.859,0.98,1.26,0.88,0.88,0.44
+VLN,10.19,1.79,453.34,400.91,5,0.03,0.38,5/5,buy,1.1-3.34,38.01,46.0,5.0,4.5,Buy time,919.00 thousand,Technology,Semiconductors,0.391,1.52,1.9,0.85,0.94,0.59
+CTOR,10.38,0.87,1317.77,474.97,1,-0.02,-0.5,1/5,strongBuy,0.491-6.19,43.12,86.0,6.0,6.0,Sell,130.86 thousand,Healthcare,Drug Manufacturers - Specialty & Generic,3.434,0.77,1.1,0.89,0.79,0.06
+BB,10.42,5.26,694.2,426.35,4,0.03,0.75,4/5,hold,3.12-5.79,40.17,9.0,6.0,5.4,Buy time,16.15 million,Technology,Software - Infrastructure,1.265,4.43,5.62,0.84,0.94,0.49
+CNC,10.45,53.61,601.55,433.05,4,1.27,0.6,4/5,hold,25.08-64.15,40.68,16.0,70.0,60.68,Buy time,7.77 million,Healthcare,Healthcare Plans,0.587,41.03,51.09,0.77,1.05,0.65
+MRVL,10.53,159.24,971.82,509.34,2,0.03,0.04,2/5,buy,53.78-170.84,44.88,7.000000000000001,170.0,149.18,Sell,30.25 million,Technology,Semiconductors,1.822,137.61,177.26,0.86,0.9,0.09
+TBRG,10.61,25.69,788.85,506.54,2,0.56,1.11,2/5,hold,13.88-26.74,45.51,4.0,26.25,25.96,mere Buy (some sold),413.73 thousand,Healthcare,Health Information Services,0.757,21.35,26.94,0.83,0.95,0.59
+TTMI,10.81,154.36,951.15,458.11,3,0.1,0.15,3/5,buy,22.58-180.0,42.8,14.000000000000002,162.0,148.12,Buy time,2.57 million,Technology,Electronic Components,1.76,132.39,179.05,0.86,0.86,0.44
+ALAB,11.07,184.8,1256.32,543.56,1,0.17,0.38,1/5,buy,63.4-262.9,45.74,30.0,250.0,226.43,Sell,5.92 million,Technology,Semiconductors,1.793,165.88,215.51,0.9,0.86,0.15
+INSG,11.14,17.97,743.78,417.6,4,0.0,0.29,4/5,buy,6.27-20.0,40.18,10.0,20.0,18.75,Buy time,163.58 thousand,Technology,Communication Equipment,1.307,14.96,20.1,0.83,0.89,1.18
+CEVA,11.26,29.44,737.33,450.97,4,0.01,0.04,4/5,buy,17.02-30.88,41.54,5.0,40.0,35.29,- +Buy time -,754.90 thousand,Technology,Semiconductors,1.528,23.89,32.81,0.81,0.9,0.96
+HUT,11.37,74.0,1732.05,487.43,1,-1.96,-21.12,1/5,buy,12.23-83.18,42.27,11.0,136.0,110.25,Sell,5.39 million,Financial Services,Capital Markets,5.712,69.91,107.96,0.94,0.69,0.02
+AIP,11.56,27.37,860.03,513.19,4,0.02,0.29,4/5,buy,6.59-28.0699,45.2,2.0,24.0,22.25,Buy,747.96 thousand,Technology,Semiconductors,1.429,22.37,29.19,0.82,0.94,0.27
+CRDO,11.71,168.39,1357.7,594.87,0,0.3,0.49,0/5,buy,45.15-213.8,47.85,21.0,260.0,234.65,Sell,8.37 million,Technology,Semiconductors,2.72,150.33,216.45,0.89,0.78,0.53
+NVTS,11.72,15.26,1161.5,663.52,0,0.0,0.03,0/5,hold,1.8-19.79,48.69,23.0,13.0,10.57,Sell,28.30 million,Technology,Semiconductors,3.141,12.97,19.87,0.85,0.77,0.3
+KOPN,13.38,3.97,1331.4,655.29,2,0.03,0.0,2/5,buy,1.23-4.63,52.64,14.000000000000002,6.0,5.47,Buy time,6.44 million,Technology,Electronic Components,2.726,3.16,4.71,0.8,0.84,0.5
+EUDA,13.49,16.4,803.81,530.19,4,1,1,4/5,buy,5.26-86.0,33.54,81.0,55.0,55.0,Buy time,223.01 thousand,Real Estate,Real Estate Services,0.164,12.46,35.16,0.76,0.47,2.5
+ATOM,14.39,7.56,835.42,722.52,1,-0.03,-0.21,1/5,buy,1.892-9.59,52.65,21.0,7.0,7.0,mere Buy (some sold),6.46 million,Technology,Semiconductor Equipment & Materials,1.074,6.27,10.49,0.83,0.72,2.5
+BE,14.57,267.22,1540.0,689.31,2,0.46,2.93,2/5,hold,16.05-296.5,55.28,10.0,335.0,277.15,Buy time,16.00 million,Industrials,Electrical Equipment & Parts,3.185,211.0,323.07,0.79,0.83,0.81
+APLS,14.78,40.94,10.68,1039.28,3,0.65,0.58,3/5,hold,16.1-41.0,58.26,0.0,41.0,40.97,Sell ALL,3.83 million,Healthcare,Biotechnology,1,36.17,48.2,0.88,0.85,0.49
+MXL,25.49,66.95,941.37,1671.16,3,0.05,0.32,3/5,hold,10.07-71.62,75.98,7.000000000000001,75.0,62.23,- +Buy time -,10.51 million,Technology,Semiconductors,1.703,38.79,94.98,0.58,0.7,2.5
